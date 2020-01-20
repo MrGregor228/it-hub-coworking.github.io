@@ -1,12 +1,12 @@
 @import "compass/reset";
-
+// @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 .navbar {
     position: fixed;
     width: 100%;
     z-index: 99999;
     box-shadow: 0 0 15px gray;
     .navbar-brand {
-        font-family: RighteousRegular!important, cursive;
+        font-family: 'Righteous', cursive !important;
         font-size: 25px!important;
         font-weight: bold!important;
     }

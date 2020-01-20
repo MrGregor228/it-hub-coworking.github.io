@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 8, ../sass/grisha.scss */
 .navbar .navbar-brand {
-  font-family: RighteousRegular !important, cursive;
+  font-family: 'Righteous', cursive !important;
   font-size: 25px !important;
   font-weight: bold !important;
 }
