@@ -67,7 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
+.navbar .navbar-brand {
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+
+/* line 15, ../sass/style.scss */
 .sec1 {
   height: 100vh;
 }
