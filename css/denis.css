@@ -1,4 +1,9 @@
 /* line 3, ../sass/denis.scss */
+.sec2 .row .nazva {
+  font-weight: bold !important;
+  font-size: 25px !important;
+}
+/* line 8, ../sass/denis.scss */
 .sec2 .row .text-slicer {
   width: 12em;
   height: 2.5px;
