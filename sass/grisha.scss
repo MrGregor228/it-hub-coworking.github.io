@@ -4,6 +4,7 @@
 
 * {
     font-family: 'IBM Plex Sans', sans-serif !important;
+    transition: all .3s linear;
 }
 
 $gray: rgb(37, 37, 37);
@@ -34,6 +35,7 @@ $yellow: #ffc107;
         left:50%;
         transform: translate(-50%, -50%);
         .middle-heading-container {
+            text-align: center;
             .main-heading {
                 font-family: 'Righteous', cursive !important;
                 text-shadow: 3px 3px 0px lighten($gray, 30%);
@@ -41,6 +43,15 @@ $yellow: #ffc107;
                 font-size: 70px;
                 font-weight: bold;
                 background-color: orange;
+                @media screen and (max-width:1108px) {
+                    font-size: 50px;
+                    @media screen and (max-width:776px){
+                        font-size: 40px;
+                        @media screen and (max-width:608px){
+                            font-size: 25px;
+                        }
+                    }
+                }
             }
             .text-slicer {
                 widows: 8em;
