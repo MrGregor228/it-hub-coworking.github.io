@@ -9,3 +9,7 @@
   height: 2.5px;
   background: yellow;
 }
+/* line 13, ../sass/denis.scss */
+.sec2 .row .card {
+  line-height: 1.5;
+}
