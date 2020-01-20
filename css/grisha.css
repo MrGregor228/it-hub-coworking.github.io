@@ -65,21 +65,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../sass/grisha.scss */
+/* line 5, ../sass/grisha.scss */
+* {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+/* line 11, ../sass/grisha.scss */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 99999;
   box-shadow: 0 0 15px #252525;
 }
-/* line 12, ../sass/grisha.scss */
+/* line 16, ../sass/grisha.scss */
 .navbar .navbar-brand {
   font-family: 'Righteous', cursive !important;
   font-size: 25px !important;
   font-weight: bold !important;
 }
 
-/* line 19, ../sass/grisha.scss */
+/* line 23, ../sass/grisha.scss */
 .sec1 {
   position: relative;
   height: 100vh;
@@ -89,28 +94,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
   clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
 }
-/* line 27, ../sass/grisha.scss */
+/* line 31, ../sass/grisha.scss */
 .sec1 .row {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-/* line 32, ../sass/grisha.scss */
+/* line 37, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .main-heading {
   font-family: 'Righteous', cursive !important;
   text-shadow: 3px 3px 0px #727272;
   color: white;
-  font-size: 40px;
+  font-size: 70px;
   font-weight: bold;
   background-color: orange;
 }
-/* line 40, ../sass/grisha.scss */
+/* line 45, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .text-slicer {
   widows: 8em;
   height: 2.5px;
   background: orange;
 }
-/* line 45, ../sass/grisha.scss */
+/* line 50, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container p {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;

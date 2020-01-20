@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
+* {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
 $gray: rgb(37, 37, 37);
 
 .navbar {
@@ -27,13 +31,14 @@ $gray: rgb(37, 37, 37);
     .row {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        left:50%;
+        transform: translate(-50%, -50%);
         .middle-heading-container {
             .main-heading {
                 font-family: 'Righteous', cursive !important;
                 text-shadow: 3px 3px 0px lighten($gray, 30%);
                 color: white;
-                font-size: 40px;
+                font-size: 70px;
                 font-weight: bold;
                 background-color: orange;
             }
