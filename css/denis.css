@@ -13,3 +13,7 @@
 .sec2 .row .card {
   line-height: 1.5;
 }
+/* line 15, ../sass/denis.scss */
+.sec2 .row .card .card-title {
+  font-weight: bold;
+}
