@@ -17,3 +17,11 @@
 .sec2 .row .card .card-title {
   font-weight: bold;
 }
+/* line 17, ../sass/denis.scss */
+.sec2 .row .card .card-title:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 65px;
+  background-color: orange;
+}
