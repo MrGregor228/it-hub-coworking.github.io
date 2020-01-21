@@ -1,0 +1,19 @@
+/* line 4, ../sass/navigHeader.scss */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  box-shadow: 0 0 15px #252525;
+}
+/* line 9, ../sass/navigHeader.scss */
+.navbar .navbar-brand {
+  font-family: 'Righteous', cursive !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+
+/* line 16, ../sass/navigHeader.scss */
+.scrolled {
+  background: #ED4949 !important;
+  box-shadow: 0 0 10px black;
+}

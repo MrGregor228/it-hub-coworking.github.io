@@ -71,21 +71,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all .3s linear;
 }
 
-/* line 12, ../sass/grisha.scss */
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 99999;
-  box-shadow: 0 0 15px #252525;
+/* line 13, ../sass/grisha.scss */
+.change6 {
+  background: none;
+  border-color: black;
+  border-radius: 0px;
+  color: #000;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+  box-shadow: 0px 0 0 #ffc107 inset;
 }
-/* line 17, ../sass/grisha.scss */
-.navbar .navbar-brand {
-  font-family: 'Righteous', cursive !important;
-  font-size: 25px !important;
-  font-weight: bold !important;
+/* line 23, ../sass/grisha.scss */
+.change6:hover {
+  box-shadow: 200px 0 0 #ffc107 inset;
 }
 
-/* line 24, ../sass/grisha.scss */
+/* line 28, ../sass/grisha.scss */
 .sec1 {
   position: relative;
   height: 100vh;
@@ -95,18 +97,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
   clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
 }
-/* line 32, ../sass/grisha.scss */
+/* line 36, ../sass/grisha.scss */
 .sec1 .row {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 37, ../sass/grisha.scss */
+/* line 41, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container {
   text-align: center;
 }
-/* line 39, ../sass/grisha.scss */
+/* line 43, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .main-heading {
   font-family: 'Righteous', cursive !important;
   text-shadow: 3px 3px 0px #727272;
@@ -116,32 +118,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: orange;
 }
 @media screen and (max-width: 1108px) {
-  /* line 39, ../sass/grisha.scss */
+  /* line 43, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 1108px) and (max-width: 776px) {
-  /* line 39, ../sass/grisha.scss */
+  /* line 43, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 1108px) and (max-width: 776px) and (max-width: 608px) {
-  /* line 39, ../sass/grisha.scss */
+  /* line 43, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 25px;
   }
 }
 
-/* line 56, ../sass/grisha.scss */
+/* line 60, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .text-slicer {
   widows: 8em;
   height: 2.5px;
   background: orange;
 }
-/* line 61, ../sass/grisha.scss */
+/* line 65, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container p {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
