@@ -11,7 +11,11 @@
   font-size: 35px !important;
   font-weight: bold !important;
 }
-/* line 15, ../sass/navigHeader.scss */
+/* line 14, ../sass/navigHeader.scss */
+.navbar .nav-link {
+  font-weight: bold;
+}
+/* line 16, ../sass/navigHeader.scss */
 .navbar .nav-link:after {
   position: relative;
   top: 3px;
@@ -22,12 +26,12 @@
   background-color: #727272;
   transition: width .3s ease-in-out;
 }
-/* line 25, ../sass/navigHeader.scss */
+/* line 26, ../sass/navigHeader.scss */
 .navbar .nav-link:hover:after {
   width: 100%;
 }
 
-/* line 31, ../sass/navigHeader.scss */
+/* line 32, ../sass/navigHeader.scss */
 .scrolled {
   box-shadow: 0 0 15px #252525;
 }
