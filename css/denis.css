@@ -56,3 +56,14 @@
   font-size: 3em;
   margin-bottom: 1em;
 }
+
+/* line 68, ../sass/denis.scss */
+.sec6 .headin6_foot {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: Gilroy,sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: .04em;
+}
