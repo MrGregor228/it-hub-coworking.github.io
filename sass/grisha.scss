@@ -21,7 +21,10 @@ $yellow: #ffc107;
     box-shadow:0px 0 0 $yellow  inset;
     
     &:hover{
+        background: none;
         box-shadow:200px 0 0 $yellow inset;
+        border-color: black;
+        border-radius: 0px;
     }
 }
 
@@ -55,7 +58,7 @@ $yellow: #ffc107;
                 color: white;
                 font-size: 70px;
                 font-weight: bold;
-                background-color: orange;
+                background-color: $yellow;
                 @media screen and (max-width:1108px) {
                     font-size: 50px;
                     @media screen and (max-width:776px){

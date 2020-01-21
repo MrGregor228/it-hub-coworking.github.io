@@ -10,6 +10,6 @@ function parallax() {
     $('.bg').css('top', +(scrolled * 0.2) + 'px');
 }
 
-$(window).scroll(function (e) {
+$(window).scroll(function () {
     parallax();
 });

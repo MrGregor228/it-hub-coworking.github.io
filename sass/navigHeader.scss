@@ -11,6 +11,21 @@ $yellow: #ffc107;
         font-size: 35px!important;
         font-weight: bold!important;
     }
+    .nav-link {
+        &:after {
+            position: relative;
+            top: 3px;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0%;
+            background-color: lighten($gray, 30%);
+            transition: width .3s ease-in-out;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+    }
 }
 
 .scrolled {
