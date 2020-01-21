@@ -174,3 +174,16 @@ path * {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
 }
+
+/* line 112, ../sass/grisha.scss */
+.sec5 iframe {
+  width: 70%;
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+  /* line 112, ../sass/grisha.scss */
+  .sec5 iframe {
+    width: 100%;
+    height: 350px;
+  }
+}

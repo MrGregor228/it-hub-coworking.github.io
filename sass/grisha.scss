@@ -107,3 +107,14 @@ $yellow: #ffc107;
         }
     }
 }
+
+.sec5 {
+    iframe {
+        width:70%;
+        height: 500px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
