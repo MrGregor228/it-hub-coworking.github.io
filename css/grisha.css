@@ -85,7 +85,7 @@ path * {
 }
 /* line 25, ../sass/grisha.scss */
 .lh-2 {
-  line-height: 2;
+  line-height: 1.5;
 }
 
 /* line 29, ../sass/grisha.scss */
@@ -181,12 +181,41 @@ path * {
 }
 
 /* line 116, ../sass/grisha.scss */
+.sec4 * {
+  text-align: left !important;
+}
+/* line 119, ../sass/grisha.scss */
+.sec4 .card {
+  border: none !important;
+}
+/* line 121, ../sass/grisha.scss */
+.sec4 .card .card-title {
+  font-weight: bold;
+}
+/* line 124, ../sass/grisha.scss */
+.sec4 .card .card-title:after {
+  display: none !important;
+}
+/* line 130, ../sass/grisha.scss */
+.sec4 .slider-text-slicer {
+  margin-bottom: 0.5em !important;
+  height: 3px;
+  width: 65px;
+  background: #ffc107;
+  box-sizing: border-box;
+}
+/* line 137, ../sass/grisha.scss */
+.sec4 .nazva {
+  text-align: center !important;
+}
+
+/* line 143, ../sass/grisha.scss */
 .sec5 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 116, ../sass/grisha.scss */
+  /* line 143, ../sass/grisha.scss */
   .sec5 iframe {
     width: 100%;
     height: 350px;
