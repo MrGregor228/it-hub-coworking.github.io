@@ -3,7 +3,7 @@ $yellow:#ffc107;
 .text-slicer {
     width: 12em;
     height: 2.5px;
-    background:$yellow;
+    background: $yellow;
 }
 
 .nazva {
@@ -13,32 +13,48 @@ $yellow:#ffc107;
 
 .card-title {
     font-weight: bold;
+    text-align: center;
+
     &:after {
+        margin-top: 7px;
         display: block;
+        margin-right: auto;
+        margin-left: auto;
         content: "";
         height: 3px;
         width: 65px;
         background-color: $yellow;
     }
 
-.sec2 {
-    .row {
-        .card {
-           line-height: 1.5;
+    .sec2 {
+        .row {
+            .card {
+                line-height: 1.5;
             }
         }
     }
 }
+
 .sec3 {
     .card {
-        margin-right: 15px!important;
+        margin-right: 15px !important;
+
         @media screen and (max-width:576px) {
-            margin-right: 0!important;
+            margin-right: 0 !important;
         }
+
         line-height: 1.5;
+
         .card-body {
-            .text-center *{                
-                    color: $yellow;
+            .conditioner {
+                margin-bottom: 0.5em !important;
+            }
+
+            .text-center * {
+                color: $yellow;
+                font-size: 3em;
+                margin-bottom: 1em;
+
             }
         }
     }

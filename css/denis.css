@@ -14,32 +14,42 @@
 /* line 14, ../sass/denis.scss */
 .card-title {
   font-weight: bold;
+  text-align: center;
 }
-/* line 16, ../sass/denis.scss */
+/* line 18, ../sass/denis.scss */
 .card-title:after {
+  margin-top: 7px;
   display: block;
+  margin-right: auto;
+  margin-left: auto;
   content: "";
   height: 3px;
   width: 65px;
   background-color: #ffc107;
 }
-/* line 26, ../sass/denis.scss */
+/* line 31, ../sass/denis.scss */
 .card-title .sec2 .row .card {
   line-height: 1.5;
 }
 
-/* line 33, ../sass/denis.scss */
+/* line 39, ../sass/denis.scss */
 .sec3 .card {
   margin-right: 15px !important;
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 33, ../sass/denis.scss */
+  /* line 39, ../sass/denis.scss */
   .sec3 .card {
     margin-right: 0 !important;
   }
 }
-/* line 40, ../sass/denis.scss */
+/* line 49, ../sass/denis.scss */
+.sec3 .card .card-body .conditioner {
+  margin-bottom: 0.5em !important;
+}
+/* line 53, ../sass/denis.scss */
 .sec3 .card .card-body .text-center * {
   color: #ffc107;
+  font-size: 3em;
+  margin-bottom: 1em;
 }
