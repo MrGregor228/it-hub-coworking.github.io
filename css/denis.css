@@ -5,36 +5,36 @@
   background: #ffc107;
 }
 
-/* line 8, ../sass/denis.scss */
+/* line 9, ../sass/denis.scss */
 .nazva {
   font-weight: bold !important;
   font-size: 35px !important;
 }
 
-/* line 15, ../sass/denis.scss */
-.sec2 .row .card {
-  line-height: 1.5;
-}
-/* line 17, ../sass/denis.scss */
-.sec2 .row .card .card-title {
+/* line 14, ../sass/denis.scss */
+.card-title {
   font-weight: bold;
 }
-/* line 19, ../sass/denis.scss */
-.sec2 .row .card .card-title:after {
+/* line 16, ../sass/denis.scss */
+.card-title:after {
   display: block;
   content: "";
   height: 3px;
   width: 65px;
   background-color: #ffc107;
 }
+/* line 26, ../sass/denis.scss */
+.card-title .sec2 .row .card {
+  line-height: 1.5;
+}
 
-/* line 31, ../sass/denis.scss */
+/* line 33, ../sass/denis.scss */
 .sec3 .card {
   margin-right: 15px !important;
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 31, ../sass/denis.scss */
+  /* line 33, ../sass/denis.scss */
   .sec3 .card {
     margin-right: 0 !important;
   }
