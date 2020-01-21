@@ -1,19 +1,19 @@
 $yellow:#ffc107;
 
+.text-slicer {
+    width: 12em;
+    height: 2.5px;
+    background:$yellow;
+}
+
 .sec2 {
     .row {
         .nazva {
             font-weight: bold !important;
             font-size: 35px !important;
         }
-
-        .text-slicer {
-            width: 12em;
-            height: 2.5px;
-            background:$yellow;
-        }
         .card {
-            line-height: 1.5;
+           line-height: 1.5;
             .card-title {
                 font-weight: bold;
                 &:after {
@@ -25,5 +25,12 @@ $yellow:#ffc107;
                 }
             }
         }
+    }
+}
+.sec3 {
+    .card {
+        margin-right: 15px!important;
+        margin-left: 15px!important;
+        line-height: 1.5;
     }
 }
