@@ -5,15 +5,15 @@ $yellow: #ffc107;
     position: fixed;
     width: 100%;
     z-index: 99999;
-    box-shadow: 0 0 15px $gray;
+    background: $yellow!important;
     .navbar-brand {
         font-family: 'Righteous', cursive !important;
-        font-size: 25px!important;
+        font-size: 35px!important;
         font-weight: bold!important;
     }
+
 }
 
 .scrolled {
-    background: #ED4949!important;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px $gray;
 }
