@@ -5,11 +5,12 @@
   background: #ffc107;
 }
 
-/* line 11, ../sass/denis.scss */
-.sec2 .row .nazva {
+/* line 8, ../sass/denis.scss */
+.nazva {
   font-weight: bold !important;
   font-size: 35px !important;
 }
+
 /* line 15, ../sass/denis.scss */
 .sec2 .row .card {
   line-height: 1.5;

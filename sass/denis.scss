@@ -5,13 +5,13 @@ $yellow:#ffc107;
     height: 2.5px;
     background:$yellow;
 }
+.nazva {
+    font-weight: bold !important;
+    font-size: 35px !important;
+}
 
 .sec2 {
     .row {
-        .nazva {
-            font-weight: bold !important;
-            font-size: 35px !important;
-        }
         .card {
            line-height: 1.5;
             .card-title {
