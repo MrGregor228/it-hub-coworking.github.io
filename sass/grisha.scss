@@ -23,7 +23,7 @@ $gray: rgb(37, 37, 37);
 $yellow: #ffc107;
 
 .lh-2 {
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .change6 {
@@ -109,6 +109,33 @@ $yellow: #ffc107;
                 font-weight: bold;
             }
         }
+    }
+}
+
+.sec4 {
+    * {
+        text-align: left!important;
+    }
+    .card {
+        border:none!important;
+        .card-title {
+            font-weight: bold;
+            
+            &:after {
+                display: none!important;
+            }    
+        }
+    }
+    
+    .slider-text-slicer {
+        margin-bottom: .5em!important;
+        height: 3px;
+        width: 65px;
+        background:$yellow;
+        box-sizing: border-box;
+    }
+    .nazva {
+        text-align: center!important;
     }
 }
 
