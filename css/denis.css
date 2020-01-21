@@ -39,3 +39,7 @@
     margin-right: 0 !important;
   }
 }
+/* line 40, ../sass/denis.scss */
+.sec3 .card .card-body .text-center * {
+  color: #ffc107;
+}

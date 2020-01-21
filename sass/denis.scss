@@ -36,5 +36,10 @@ $yellow:#ffc107;
             margin-right: 0!important;
         }
         line-height: 1.5;
+        .card-body {
+            .text-center *{                
+                    color: $yellow;
+            }
+        }
     }
 }
