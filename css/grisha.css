@@ -101,6 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .sec1 .image-pre-header {
   background: url("../images/fon1.jpg") no-repeat;
   background-size: cover;
+  background-position: center center;
   position: absolute;
   display: block;
   margin-left: auto;
@@ -110,18 +111,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   right: 0;
   bottom: 0;
 }
-/* line 48, ../sass/grisha.scss */
+/* line 49, ../sass/grisha.scss */
 .sec1 .row {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 53, ../sass/grisha.scss */
+/* line 54, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container {
   text-align: center;
 }
-/* line 55, ../sass/grisha.scss */
+/* line 56, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .main-heading {
   font-family: 'Righteous', cursive !important;
   text-shadow: 3px 3px 0px #727272;
@@ -131,32 +132,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ffc107;
 }
 @media screen and (max-width: 1108px) {
-  /* line 55, ../sass/grisha.scss */
+  /* line 56, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 1108px) and (max-width: 776px) {
-  /* line 55, ../sass/grisha.scss */
+  /* line 56, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 1108px) and (max-width: 776px) and (max-width: 608px) {
-  /* line 55, ../sass/grisha.scss */
+  /* line 56, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 25px;
   }
 }
 
-/* line 72, ../sass/grisha.scss */
+/* line 73, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .text-slicer {
   widows: 8em;
   height: 2.5px;
   background: orange;
 }
-/* line 77, ../sass/grisha.scss */
+/* line 78, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container p {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;

@@ -30,6 +30,11 @@
 /* line 31, ../sass/denis.scss */
 .sec3 .card {
   margin-right: 15px !important;
-  margin-left: 15px !important;
   line-height: 1.5;
+}
+@media screen and (max-width: 576px) {
+  /* line 31, ../sass/denis.scss */
+  .sec3 .card {
+    margin-right: 0 !important;
+  }
 }
