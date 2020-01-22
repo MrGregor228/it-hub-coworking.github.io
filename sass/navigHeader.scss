@@ -25,8 +25,20 @@ $yellow: #ffc107;
         }
         &:hover:after {
             width: 100%;
-        }
+        }        
     }
+}
+
+.tel-link-span {
+    color: $yellow;
+    fill: $yellow;
+    transition: none!important;
+}
+
+.tel-link:hover > .tel-link-span {
+    color: black!important;
+    fill: black!important;
+    transition: none!important;
 }
 
 .scrolled {
