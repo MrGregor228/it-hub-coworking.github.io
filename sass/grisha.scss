@@ -22,6 +22,10 @@ $darkgray: rgb(37, 37, 37);
 $yellow: #ffc107;
 $red: rgb(212, 16, 16);
 
+.golden {
+    color: $yellow!important;
+}
+
 .r-text {
     color: $red !important;
 }
@@ -33,6 +37,10 @@ $red: rgb(212, 16, 16);
 .mw320 {
     max-width: 200px !important;
     max-height: 200px !important;
+}
+
+.fz35 {
+    font-size: 35px;
 }
 
 .grayscale {
@@ -66,15 +74,16 @@ a:hover {
     border-radius: 0px;
     color: #000;
     box-shadow: 0 0 1px #ccc;
-    -webkit-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: linear;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: linear;
-    box-shadow: 0px 0 0 $yellow inset;
+    box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray;
+    
 
     &:hover {
         background: none;
-        box-shadow: 200px 0 0 $yellow inset;
+        box-shadow: 200px 0 0 $yellow inset, 2px 2px 0 lightgray;
         border-color: black;
         border-radius: 0px;
     }
@@ -101,6 +110,7 @@ a:hover {
     }
 
     .row {
+        width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -108,33 +118,35 @@ a:hover {
 
         .middle-heading-container {
             text-align: center;
-
             .main-heading {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                max-width:600px;
                 font-family: 'Righteous', cursive !important;
                 text-shadow: 3px 3px 0px lighten($darkgray, 30%);
                 color: white;
                 font-size: 70px;
                 font-weight: bold;
                 background-color: $yellow;
+                
 
                 @media screen and (max-width:1108px) {
                     font-size: 50px;
+                    max-width:450px;
                 }
 
                 @media screen and (max-width:776px) {
                     font-size: 40px;
-                }
-
-                @media screen and (max-width:608px) {
-                    font-size: 25px;
+                    max-width: 360px;
                 }
 
 
             }
 
             .main-btn {
-                padding: .7em;
-                max-width: 320px;
+                
+                max-width: 15em;
 
                 svg {
                     position: relative;
@@ -199,6 +211,21 @@ a:hover {
     }
 }
 
+
+/*      FOOTER      */
+
+.sec7 {
+    .adr {
+        width: 80%;
+    }
+    .fz35 *{
+        color: $yellow!important;
+        &:hover {
+            text-decoration: none!important;
+        }
+    }
+}
+
 // After form has submitted
 #shower {
 
@@ -251,12 +278,12 @@ a:hover {
     }
 
     .freebirdFormviewerViewNavigationNavControls {
-
+        max-width: 100px;
+        height: 100%;
         *,
         &:focus *,
         &:hover *,
         &:active * {
-            border: none !important;
             outline: none !important;
             box-shadow: none !important;
         }
@@ -266,7 +293,6 @@ a:hover {
 
         &[type="text"],
         &[type="email"] {
-            background: #fff !important;
             font-size: 15px !important;
             outline: none;
             padding: .5rem 1rem .5rem 1rem;
@@ -294,26 +320,45 @@ a:hover {
             background: lightgoldenrodyellow !important;
             border-radius: 30px;
             border: 2.5px solid $yellow;
+            font-size: 15px !important;
+            outline: none;
+            padding: .5rem 1rem .5rem 1rem;
 
             &:hover,
             &:focus,
             &:active {
                 background: darken(lightgoldenrodyellow, 10%) !important;
             }
+            
         }
 
         &[type="submit"] {
-            padding-right: 1rem;
-            padding-left: 1rem;
-            background: $yellow;
-            color: black;
+            background: none;
+            border-color: black;
+            border-radius: 0px;
+            color: #000;
+            box-shadow: 0 0 1px #ccc;
             font-weight: bold;
-            // &:hover,
-            // &:focus,
-            // &:active {
+            -webkit-transition-duration: 0.3s;
+            -webkit-transition-timing-function: linear;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+            box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray!important;
 
-            // }
+            &:hover {
+                background: none;
+                box-shadow: 200px 0 0 $yellow inset, 2px 2px 0 lightgray!important;
+                border-color: black;
+                border-radius: 0px;
+            }
+            &[disabled] {
+                pointer-events: none;
+                cursor: text;
+                box-shadow:none!important;
+                background-color: lightgray!important;
+            }
         }
+
     }
 
     textarea {
@@ -329,6 +374,8 @@ a:hover {
             background: darken(lightgoldenrodyellow, 10%) !important;
         }
     }
+    
 }
-
 // Google Form
+
+/*     FOOTER END     */

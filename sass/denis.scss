@@ -35,13 +35,14 @@ $yellow:#ffc107;
     .services {
         .card {
             line-height: 1.5;
+
             .card-title {
                 &:after {
-                       margin-top: 7px;
-                       margin-left: 0px;
-                       margin-right: 0px;
-                   }
-               }
+                    margin-top: 7px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
         }
     }
 }
@@ -76,29 +77,33 @@ $yellow:#ffc107;
 }
 
 .sec7 {
- .headin6_foot{
-    margin-top: 0;
-    margin-bottom: 0.4em;
-    padding-bottom: 0px!important;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: .04em;
- }
- .footer_soc {
-     color: gray;
-    &:hover {
-        text-decoration: none;
-        color:black;
+    .headin6_foot {
+        margin-top: 0;
+        margin-bottom: 0.4em;
+        padding-bottom: 0px !important;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: .04em;
     }
-     .yellow_bg {
-         color: $yellow!important;
-         font-size: 25px!important;
-     }
- }
- @media screen and (max-width:576px) {
-     *.col-12 {
-         padding-left: 0px;
-         padding-right: 0px;
-     }
- }
+
+    .footer_soc {
+        color: gray;
+
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .yellow_bg {
+            color: $yellow !important;
+            font-size: 25px !important;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        *.col-12 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
 }
