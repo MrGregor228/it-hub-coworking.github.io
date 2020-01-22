@@ -18,8 +18,12 @@ path * {
     }
 }
 
-$gray: rgb(37, 37, 37);
+$darkgray: rgb(37, 37, 37);
 $yellow: #ffc107;
+
+.gray {
+    color:gray;
+}
 
 .lh-2 {
     line-height: 1.5;
@@ -76,7 +80,7 @@ $yellow: #ffc107;
 
             .main-heading {
                 font-family: 'Righteous', cursive !important;
-                text-shadow: 3px 3px 0px lighten($gray, 30%);
+                text-shadow: 3px 3px 0px lighten($darkgray, 30%);
                 color: white;
                 font-size: 70px;
                 font-weight: bold;
@@ -95,6 +99,16 @@ $yellow: #ffc107;
                 }
 
 
+            }
+
+            .main-btn {
+                padding: .7em;
+                max-width: 320px;
+                svg {
+                    position: relative;
+                    font-size: 20px;
+                    top: 2px;
+                }
             }
 
             .text-slicer {

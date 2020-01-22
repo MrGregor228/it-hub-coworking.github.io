@@ -4,7 +4,7 @@ $(document).ready(function () {
 		loop: true,
 		margin: 10,
 		nav: true,
-		dots: true,
+		navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
 		pagination: true,
 		autoplay: true,
 		autoplayTimeout: 7000,
