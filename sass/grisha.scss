@@ -3,7 +3,7 @@
 
 * {
     font-family: 'IBM Plex Sans', sans-serif !important;
-    transition: all .3s linear;
+    transition: .3s linear;
 }
 
 path * {
@@ -23,6 +23,18 @@ $yellow: #ffc107;
 
 .gray {
     color:gray;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+.blck {
+    color:black!important;
 }
 
 .lh-2 {
