@@ -250,13 +250,13 @@ a:hover {
 }
 
 /* line 177, ../sass/grisha.scss */
-.sec5 iframe {
+.sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
   /* line 177, ../sass/grisha.scss */
-  .sec5 iframe {
+  .sec6 iframe {
     width: 100%;
     height: 350px;
   }
