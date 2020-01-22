@@ -11,17 +11,22 @@
   font-size: 35px !important;
 }
 
-/* line 16, ../sass/denis.scss */
+/* line 14, ../sass/denis.scss */
+.short-hr {
+  max-width: 992px;
+}
+
+/* line 20, ../sass/denis.scss */
 .sec2 .row .card {
   line-height: 1.5;
 }
 
-/* line 22, ../sass/denis.scss */
+/* line 26, ../sass/denis.scss */
 .card-title {
   font-weight: bold;
   text-align: center;
 }
-/* line 26, ../sass/denis.scss */
+/* line 30, ../sass/denis.scss */
 .card-title:after {
   margin-top: 7px;
   display: block;
@@ -33,7 +38,7 @@
   background-color: #ffc107;
 }
 
-/* line 41, ../sass/denis.scss */
+/* line 45, ../sass/denis.scss */
 .sec3 .card {
   text-align: center;
   margin-right: 15px !important;
@@ -41,23 +46,23 @@
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 41, ../sass/denis.scss */
+  /* line 45, ../sass/denis.scss */
   .sec3 .card {
     margin-right: 0 !important;
   }
 }
-/* line 53, ../sass/denis.scss */
+/* line 57, ../sass/denis.scss */
 .sec3 .card .card-body .conditioner {
   margin-bottom: 0.5em !important;
 }
-/* line 57, ../sass/denis.scss */
+/* line 61, ../sass/denis.scss */
 .sec3 .card .card-body .text-center * {
   color: #ffc107;
   font-size: 3em;
   margin-bottom: 1em;
 }
 
-/* line 68, ../sass/denis.scss */
+/* line 72, ../sass/denis.scss */
 .sec6 .headin6_foot {
   margin-top: 0;
   margin-bottom: 0.4em;
@@ -66,16 +71,16 @@
   font-size: 16px;
   letter-spacing: .04em;
 }
-/* line 76, ../sass/denis.scss */
+/* line 80, ../sass/denis.scss */
 .sec6 .footer_soc {
   color: gray;
 }
-/* line 78, ../sass/denis.scss */
+/* line 82, ../sass/denis.scss */
 .sec6 .footer_soc:hover {
   text-decoration: none;
   color: black;
 }
-/* line 82, ../sass/denis.scss */
+/* line 86, ../sass/denis.scss */
 .sec6 .footer_soc .yellow_bg {
   color: #ffc107 !important;
   font-size: 25px !important;
