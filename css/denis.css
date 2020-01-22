@@ -60,10 +60,23 @@
 /* line 68, ../sass/denis.scss */
 .sec6 .headin6_foot {
   margin-top: 0;
-  margin-bottom: 40px;
-  font-family: Gilroy,sans-serif;
+  margin-bottom: 0.4em;
+  padding-bottom: 0px !important;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.6;
   letter-spacing: .04em;
+}
+/* line 76, ../sass/denis.scss */
+.sec6 .footer_soc {
+  color: gray;
+}
+/* line 78, ../sass/denis.scss */
+.sec6 .footer_soc:hover {
+  text-decoration: none;
+  color: black;
+}
+/* line 82, ../sass/denis.scss */
+.sec6 .footer_soc .yellow_bg {
+  color: #ffc107 !important;
+  font-size: 25px !important;
 }

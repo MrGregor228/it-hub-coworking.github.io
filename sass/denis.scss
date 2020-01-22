@@ -67,11 +67,21 @@ $yellow:#ffc107;
 .sec6 {
  .headin6_foot{
     margin-top: 0;
-    margin-bottom: 40px;
-    font-family: Gilroy,sans-serif;
+    margin-bottom: 0.4em;
+    padding-bottom: 0px!important;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.6;
     letter-spacing: .04em;
+ }
+ .footer_soc {
+     color: gray;
+    &:hover {
+        text-decoration: none;
+        color:black;
+    }
+     .yellow_bg {
+         color: $yellow!important;
+         font-size: 25px!important;
+     }
  }
 }
