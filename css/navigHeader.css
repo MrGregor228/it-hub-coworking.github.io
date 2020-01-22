@@ -30,22 +30,26 @@
 .navbar .nav-link:hover:after {
   width: 100%;
 }
+/* line 30, ../sass/navigHeader.scss */
+.navbar .dropdown-menu {
+  max-width: 320px;
+}
 
-/* line 32, ../sass/navigHeader.scss */
+/* line 35, ../sass/navigHeader.scss */
 .tel-link-span {
   color: #ffc107;
   fill: #ffc107;
   transition: none !important;
 }
 
-/* line 38, ../sass/navigHeader.scss */
+/* line 41, ../sass/navigHeader.scss */
 .tel-link:hover > .tel-link-span {
   color: black !important;
   fill: black !important;
   transition: none !important;
 }
 
-/* line 44, ../sass/navigHeader.scss */
+/* line 47, ../sass/navigHeader.scss */
 .scrolled {
   box-shadow: 0 0 15px #252525;
 }
