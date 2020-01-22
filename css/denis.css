@@ -87,6 +87,6 @@
   font-size: 25px !important;
 }
 /* line 91, ../sass/denis.scss */
-.sec7 .footer_soc .adress {
-  max-width: 100px !important;
+.sec7 .footer_soc div.footer_f6 {
+  max-width: 50px !important;
 }
