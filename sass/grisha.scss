@@ -20,6 +20,11 @@ path * {
 
 $darkgray: rgb(37, 37, 37);
 $yellow: #ffc107;
+$red: rgb(212, 16, 16);
+
+.r-text {
+    color: $red !important;
+}
 
 .hid {
     display: none !important;
@@ -194,8 +199,57 @@ a:hover {
     }
 }
 
+// After form has submitted
+#shower {
+
+    display: none;
+    .tick-svg {
+        width: 60px;
+    }
+    .text-submitted {
+        font-weight: bold;
+        font-size: 20px;
+        color: $yellow;
+        .green {
+            color: green;
+        }
+    }
+}
+
+@keyframes showwww {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hiderrr {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+// After form has submitted
+
 // Google Form
 .myform {
+    .mega-legend {
+        font-size: 19.5px;
+        font-weight: bold;
+        color: gray;
+    }
+
+    .legends {
+        font-weight: bold;
+    }
+
     .freebirdFormviewerViewNavigationNavControls {
 
         *,
@@ -215,7 +269,7 @@ a:hover {
             background: #fff !important;
             font-size: 15px !important;
             outline: none;
-            padding: .25rem 1rem .25rem 1rem;
+            padding: .5rem 1rem .5rem 1rem;
             transition: .3s linear;
         }
     }
@@ -224,7 +278,7 @@ a:hover {
         background: #fff !important;
         font-size: 15px !important;
         outline: none;
-        padding: .25rem 1rem .25rem 1rem;
+        padding: .5rem 1rem .5rem 1rem;
         transition: .3s linear;
     }
 
@@ -233,9 +287,10 @@ a:hover {
         &[type="text"],
         &[type="email"] {
             border: none;
-            background: lightgoldenrodyellow!important;
+            background: lightgoldenrodyellow !important;
             border-radius: 30px;
-            border:2.5px solid $yellow;
+            border: 2.5px solid $yellow;
+
             &:hover,
             &:focus,
             &:active {
@@ -252,17 +307,17 @@ a:hover {
             // &:hover,
             // &:focus,
             // &:active {
-                
+
             // }
         }
     }
 
     textarea {
-        background: lightgoldenrodyellow!important;
+        background: lightgoldenrodyellow !important;
         overflow-y: hidden;
-        border:none;
+        border: none;
         border-radius: 8px;
-        border:2.5px solid $yellow;
+        border: 2.5px solid $yellow;
 
         &:hover,
         &:focus,
