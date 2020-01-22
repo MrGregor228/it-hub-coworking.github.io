@@ -331,7 +331,12 @@ a:hover {
   padding: .5rem 1rem .5rem 1rem;
   transition: .3s linear;
 }
-/* line 277, ../sass/grisha.scss */
+/* line 275, ../sass/grisha.scss */
+.myform input[disabled] {
+  pointer-events: none;
+  cursor: text;
+}
+/* line 281, ../sass/grisha.scss */
 .myform textarea {
   background: #fff !important;
   font-size: 15px !important;
@@ -339,18 +344,18 @@ a:hover {
   padding: .5rem 1rem .5rem 1rem;
   transition: .3s linear;
 }
-/* line 287, ../sass/grisha.scss */
+/* line 291, ../sass/grisha.scss */
 .myform input[type="text"], .myform input[type="email"] {
   border: none;
   background: lightgoldenrodyellow !important;
   border-radius: 30px;
   border: 2.5px solid #ffc107;
 }
-/* line 294, ../sass/grisha.scss */
+/* line 298, ../sass/grisha.scss */
 .myform input[type="text"]:hover, .myform input[type="text"]:focus, .myform input[type="text"]:active, .myform input[type="email"]:hover, .myform input[type="email"]:focus, .myform input[type="email"]:active {
   background: #f5f5a4 !important;
 }
-/* line 301, ../sass/grisha.scss */
+/* line 305, ../sass/grisha.scss */
 .myform input[type="submit"] {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -358,7 +363,7 @@ a:hover {
   color: black;
   font-weight: bold;
 }
-/* line 315, ../sass/grisha.scss */
+/* line 319, ../sass/grisha.scss */
 .myform textarea {
   background: lightgoldenrodyellow !important;
   overflow-y: hidden;
@@ -366,7 +371,7 @@ a:hover {
   border-radius: 8px;
   border: 2.5px solid #ffc107;
 }
-/* line 322, ../sass/grisha.scss */
+/* line 326, ../sass/grisha.scss */
 .myform textarea:hover, .myform textarea:focus, .myform textarea:active {
   background: #f5f5a4 !important;
 }

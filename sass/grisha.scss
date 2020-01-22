@@ -272,6 +272,10 @@ a:hover {
             padding: .5rem 1rem .5rem 1rem;
             transition: .3s linear;
         }
+        &[disabled] {
+            pointer-events: none;
+            cursor: text;
+        }
     }
 
     textarea {
