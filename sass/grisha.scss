@@ -267,6 +267,7 @@ a:hover {
 
 // Google Form
 .myform {
+    max-width: 320px;
     .mega-legend {
         font-size: 19.5px;
         font-weight: bold;
@@ -290,6 +291,7 @@ a:hover {
     }
 
     input {
+        width: 100%;
 
         &[type="text"],
         &[type="email"] {
@@ -305,6 +307,7 @@ a:hover {
     }
 
     textarea {
+        width: 100%;
         background: #fff !important;
         font-size: 15px !important;
         outline: none;
