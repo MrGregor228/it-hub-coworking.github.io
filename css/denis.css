@@ -12,22 +12,11 @@
 }
 
 /* line 14, ../sass/denis.scss */
-.short-hr {
-  max-width: 992px;
-}
-
-/* line 20, ../sass/denis.scss */
-.sec2 .row .card {
-  line-height: 1.5;
-}
-
-/* line 26, ../sass/denis.scss */
 .card-title {
   font-weight: bold;
-  text-align: center;
   font-size: 19.5px;
 }
-/* line 31, ../sass/denis.scss */
+/* line 18, ../sass/denis.scss */
 .card-title:after {
   margin-top: 7px;
   display: block;
@@ -39,7 +28,23 @@
   background-color: #ffc107;
 }
 
-/* line 46, ../sass/denis.scss */
+/* line 30, ../sass/denis.scss */
+.short-hr {
+  max-width: 992px;
+}
+
+/* line 36, ../sass/denis.scss */
+.sec2 .services .card {
+  line-height: 1.5;
+}
+/* line 39, ../sass/denis.scss */
+.sec2 .services .card .card-title:after {
+  margin-top: 7px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* line 52, ../sass/denis.scss */
 .sec3 .card {
   text-align: center;
   margin-right: 15px !important;
@@ -47,23 +52,23 @@
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 46, ../sass/denis.scss */
+  /* line 52, ../sass/denis.scss */
   .sec3 .card {
     margin-right: 0 !important;
   }
 }
-/* line 58, ../sass/denis.scss */
+/* line 64, ../sass/denis.scss */
 .sec3 .card .card-body .conditioner {
   margin-bottom: 0.5em !important;
 }
-/* line 62, ../sass/denis.scss */
+/* line 68, ../sass/denis.scss */
 .sec3 .card .card-body .text-center * {
   color: #ffc107;
   font-size: 3em;
   margin-bottom: 1em;
 }
 
-/* line 73, ../sass/denis.scss */
+/* line 79, ../sass/denis.scss */
 .sec7 .headin6_foot {
   margin-top: 0;
   margin-bottom: 0.4em;
@@ -72,22 +77,22 @@
   font-size: 16px;
   letter-spacing: .04em;
 }
-/* line 81, ../sass/denis.scss */
+/* line 87, ../sass/denis.scss */
 .sec7 .footer_soc {
   color: gray;
 }
-/* line 83, ../sass/denis.scss */
+/* line 89, ../sass/denis.scss */
 .sec7 .footer_soc:hover {
   text-decoration: none;
   color: black;
 }
-/* line 87, ../sass/denis.scss */
+/* line 93, ../sass/denis.scss */
 .sec7 .footer_soc .yellow_bg {
   color: #ffc107 !important;
   font-size: 25px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 93, ../sass/denis.scss */
+  /* line 99, ../sass/denis.scss */
   .sec7 *.col-12 {
     padding-left: 0px;
     padding-right: 0px;

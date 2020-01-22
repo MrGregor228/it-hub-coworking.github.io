@@ -11,21 +11,8 @@ $yellow:#ffc107;
     font-size: 35px !important;
 }
 
-.short-hr {
-    max-width: 992px;
-}
-
-.sec2 {
-    .row {
-        .card {
-            line-height: 1.5;
-        }
-    }
-}
-
 .card-title {
     font-weight: bold;
-    text-align: center;
     font-size: 19.5px;
 
     &:after {
@@ -38,9 +25,28 @@ $yellow:#ffc107;
         width: 65px;
         background-color: $yellow;
     }
-
-
 }
+
+.short-hr {
+    max-width: 992px;
+}
+
+.sec2 {
+    .services {
+        .card {
+            line-height: 1.5;
+            .card-title {
+                &:after {
+                       margin-top: 7px;
+                       margin-left: 0px;
+                       margin-right: 0px;
+                   }
+               }
+        }
+    }
+}
+
+
 
 .sec3 {
     .card {
