@@ -88,8 +88,11 @@ $yellow:#ffc107;
          color: $yellow!important;
          font-size: 25px!important;
      }
-     div.footer_f6 {
-             max-width: 50px!important;
+ }
+ @media screen and (max-width:576px) {
+     *.col-12 {
+         padding-left: 0px;
+         padding-right: 0px;
      }
  }
 }

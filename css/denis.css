@@ -86,7 +86,10 @@
   color: #ffc107 !important;
   font-size: 25px !important;
 }
-/* line 91, ../sass/denis.scss */
-.sec7 .footer_soc div.footer_f6 {
-  max-width: 50px !important;
+@media screen and (max-width: 576px) {
+  /* line 93, ../sass/denis.scss */
+  .sec7 *.col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
