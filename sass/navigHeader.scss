@@ -26,7 +26,8 @@ $yellow: #ffc107;
         &:hover:after {
             width: 100%;
         }    
-    }  .dropdown-toggle:after {
+    }  
+    .dropdown-toggle:after {
         display: none;
     }
     .fa-angle-down {
@@ -43,6 +44,10 @@ $yellow: #ffc107;
     color: $yellow;
     fill: $yellow;
     transition: none!important;
+    @media screen and (max-width:992px) {
+        color: black!important;
+    fill: black!important;
+    }
 }
 
 .tel-link:hover > .tel-link-span {
