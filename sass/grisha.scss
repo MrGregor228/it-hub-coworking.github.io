@@ -21,21 +21,26 @@ path * {
 $darkgray: rgb(37, 37, 37);
 $yellow: #ffc107;
 
+.hid {
+    display: none !important;
+}
+
 .mw320 {
-    max-width: 200px!important;
-    max-height: 200px!important;
+    max-width: 200px !important;
+    max-height: 200px !important;
 }
 
 .grayscale {
     -webkit-filter: grayscale(100%);
-    filter:grayscale(100%);
+    filter: grayscale(100%);
+
     &:hover {
         filter: grayscale(0%);
     }
 }
 
 a:hover {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 .bld {
@@ -43,7 +48,7 @@ a:hover {
 }
 
 .blck {
-    color:black!important;
+    color: black !important;
 }
 
 .lh-2 {
@@ -125,6 +130,7 @@ a:hover {
             .main-btn {
                 padding: .7em;
                 max-width: 320px;
+
                 svg {
                     position: relative;
                     font-size: 20px;
@@ -148,38 +154,112 @@ a:hover {
 
 .sec4 {
     * {
-        text-align: left!important;
+        text-align: left !important;
     }
+
     .card {
-        border:none!important;
+        border: none !important;
+
         .card-title {
             font-weight: bold;
-            
+
             &:after {
-                display: none!important;
-            }    
+                display: none !important;
+            }
         }
     }
-    
+
     .slider-text-slicer {
-        margin-bottom: .5em!important;
+        margin-bottom: .5em !important;
         height: 3px;
         width: 65px;
-        background:$yellow;
+        background: $yellow;
         box-sizing: border-box;
     }
+
     .nazva {
-        text-align: center!important;
+        text-align: center !important;
     }
 }
 
 .sec6 {
     iframe {
-        width:70%;
+        width: 70%;
         height: 500px;
+
         @media screen and (max-width: 768px) {
             width: 100%;
             height: 350px;
         }
     }
 }
+
+// Google Form
+.myform {
+    .freebirdFormviewerViewNavigationNavControls {
+
+        *,
+        &:focus *,
+        &:hover *,
+        &:active * {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    input {
+
+        &[type="text"],
+        &[type="email"] {
+            background: #fff !important;
+            font-size: 15px !important;
+            outline: none;
+            padding: .25rem 1rem .25rem 1rem;
+            transition: .3s linear;
+        }
+    }
+
+    textarea {
+        background: #fff !important;
+        font-size: 15px !important;
+        outline: none;
+        padding: .25rem 1rem .25rem 1rem;
+        transition: .3s linear;
+    }
+
+    input {
+
+        &[type="text"],
+        &[type="email"] {
+            
+        }
+
+        &[type="submit"] {
+            
+            padding-right: 1rem;
+            padding-left: 1rem;
+            
+           
+
+            &:hover,
+            &:focus,
+            &:active {
+                
+            }
+        }
+    }
+
+    textarea {
+       
+        overflow-y: hidden;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: #fff !important;
+        }
+    }
+}
+
+// Google Form
