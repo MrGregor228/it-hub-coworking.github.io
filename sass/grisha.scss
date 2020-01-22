@@ -21,8 +21,17 @@ path * {
 $darkgray: rgb(37, 37, 37);
 $yellow: #ffc107;
 
-.gray {
-    color:gray;
+.mw320 {
+    max-width: 200px!important;
+    max-height: 200px!important;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(100%);
+    &:hover {
+        filter: grayscale(0%);
+    }
 }
 
 a:hover {
