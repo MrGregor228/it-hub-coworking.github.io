@@ -63,7 +63,7 @@
 }
 
 /* line 72, ../sass/denis.scss */
-.sec6 .headin6_foot {
+.sec7 .headin6_foot {
   margin-top: 0;
   margin-bottom: 0.4em;
   padding-bottom: 0px !important;
@@ -72,16 +72,16 @@
   letter-spacing: .04em;
 }
 /* line 80, ../sass/denis.scss */
-.sec6 .footer_soc {
+.sec7 .footer_soc {
   color: gray;
 }
 /* line 82, ../sass/denis.scss */
-.sec6 .footer_soc:hover {
+.sec7 .footer_soc:hover {
   text-decoration: none;
   color: black;
 }
 /* line 86, ../sass/denis.scss */
-.sec6 .footer_soc .yellow_bg {
+.sec7 .footer_soc .yellow_bg {
   color: #ffc107 !important;
   font-size: 25px !important;
 }
