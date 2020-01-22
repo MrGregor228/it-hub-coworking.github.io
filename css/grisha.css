@@ -81,48 +81,53 @@ path * {
     stroke-dashoffset: 0;
   }
 }
-/* line 24, ../sass/grisha.scss */
+/* line 25, ../sass/grisha.scss */
+.r-text {
+  color: #d41010 !important;
+}
+
+/* line 29, ../sass/grisha.scss */
 .hid {
   display: none !important;
 }
 
-/* line 28, ../sass/grisha.scss */
+/* line 33, ../sass/grisha.scss */
 .mw320 {
   max-width: 200px !important;
   max-height: 200px !important;
 }
 
-/* line 33, ../sass/grisha.scss */
+/* line 38, ../sass/grisha.scss */
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 37, ../sass/grisha.scss */
+/* line 42, ../sass/grisha.scss */
 .grayscale:hover {
   filter: grayscale(0%);
 }
 
-/* line 42, ../sass/grisha.scss */
+/* line 47, ../sass/grisha.scss */
 a:hover {
   text-decoration: none !important;
 }
 
-/* line 46, ../sass/grisha.scss */
+/* line 51, ../sass/grisha.scss */
 .bld {
   font-weight: bold;
 }
 
-/* line 50, ../sass/grisha.scss */
+/* line 55, ../sass/grisha.scss */
 .blck {
   color: black !important;
 }
 
-/* line 54, ../sass/grisha.scss */
+/* line 59, ../sass/grisha.scss */
 .lh-2 {
   line-height: 1.5;
 }
 
-/* line 58, ../sass/grisha.scss */
+/* line 63, ../sass/grisha.scss */
 .change6 {
   background: none;
   border-color: black;
@@ -135,7 +140,7 @@ a:hover {
   transition-timing-function: linear;
   box-shadow: 0px 0 0 #ffc107 inset;
 }
-/* line 70, ../sass/grisha.scss */
+/* line 75, ../sass/grisha.scss */
 .change6:hover {
   background: none;
   box-shadow: 200px 0 0 #ffc107 inset;
@@ -143,14 +148,14 @@ a:hover {
   border-radius: 0px;
 }
 
-/* line 78, ../sass/grisha.scss */
+/* line 83, ../sass/grisha.scss */
 .sec1 {
   position: relative;
   height: 100vh;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
   clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
 }
-/* line 84, ../sass/grisha.scss */
+/* line 89, ../sass/grisha.scss */
 .sec1 .image-pre-header {
   background: url("../images/fon1.jpg") no-repeat;
   background-size: cover;
@@ -164,18 +169,18 @@ a:hover {
   right: 0;
   bottom: 0;
 }
-/* line 98, ../sass/grisha.scss */
+/* line 103, ../sass/grisha.scss */
 .sec1 .row {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 104, ../sass/grisha.scss */
+/* line 109, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container {
   text-align: center;
 }
-/* line 107, ../sass/grisha.scss */
+/* line 112, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .main-heading {
   font-family: 'Righteous', cursive !important;
   text-shadow: 3px 3px 0px #727272;
@@ -185,63 +190,63 @@ a:hover {
   background-color: #ffc107;
 }
 @media screen and (max-width: 1108px) {
-  /* line 107, ../sass/grisha.scss */
+  /* line 112, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 776px) {
-  /* line 107, ../sass/grisha.scss */
+  /* line 112, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 608px) {
-  /* line 107, ../sass/grisha.scss */
+  /* line 112, ../sass/grisha.scss */
   .sec1 .row .middle-heading-container .main-heading {
     font-size: 25px;
   }
 }
-/* line 130, ../sass/grisha.scss */
+/* line 135, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .main-btn {
   padding: .7em;
   max-width: 320px;
 }
-/* line 134, ../sass/grisha.scss */
+/* line 139, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .main-btn svg {
   position: relative;
   font-size: 20px;
   top: 2px;
 }
-/* line 141, ../sass/grisha.scss */
+/* line 146, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container .text-slicer {
   widows: 8em;
   height: 2.5px;
   background: orange;
 }
-/* line 147, ../sass/grisha.scss */
+/* line 152, ../sass/grisha.scss */
 .sec1 .row .middle-heading-container p {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
 }
 
-/* line 156, ../sass/grisha.scss */
+/* line 161, ../sass/grisha.scss */
 .sec4 * {
   text-align: left !important;
 }
-/* line 160, ../sass/grisha.scss */
+/* line 165, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 163, ../sass/grisha.scss */
+/* line 168, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 166, ../sass/grisha.scss */
+/* line 171, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 172, ../sass/grisha.scss */
+/* line 177, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -249,58 +254,103 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 180, ../sass/grisha.scss */
+/* line 185, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
 }
 
-/* line 186, ../sass/grisha.scss */
+/* line 191, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 186, ../sass/grisha.scss */
+  /* line 191, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;
   }
 }
 
-/* line 201, ../sass/grisha.scss */
+/* line 203, ../sass/grisha.scss */
+#shower {
+  display: none;
+}
+/* line 206, ../sass/grisha.scss */
+#shower .tick-svg {
+  width: 60px;
+}
+/* line 209, ../sass/grisha.scss */
+#shower .text-submitted {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffc107;
+}
+/* line 213, ../sass/grisha.scss */
+#shower .text-submitted .green {
+  color: green;
+}
+
+@keyframes showwww {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hiderrr {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 243, ../sass/grisha.scss */
+.myform .mega-legend {
+  font-size: 19.5px;
+  font-weight: bold;
+  color: gray;
+}
+/* line 249, ../sass/grisha.scss */
+.myform .legends {
+  font-weight: bold;
+}
+/* line 255, ../sass/grisha.scss */
 .myform .freebirdFormviewerViewNavigationNavControls *, .myform .freebirdFormviewerViewNavigationNavControls:focus *, .myform .freebirdFormviewerViewNavigationNavControls:hover *, .myform .freebirdFormviewerViewNavigationNavControls:active * {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
-/* line 213, ../sass/grisha.scss */
+/* line 267, ../sass/grisha.scss */
 .myform input[type="text"], .myform input[type="email"] {
   background: #fff !important;
   font-size: 15px !important;
   outline: none;
-  padding: .25rem 1rem .25rem 1rem;
+  padding: .5rem 1rem .5rem 1rem;
   transition: .3s linear;
 }
-/* line 223, ../sass/grisha.scss */
+/* line 277, ../sass/grisha.scss */
 .myform textarea {
   background: #fff !important;
   font-size: 15px !important;
   outline: none;
-  padding: .25rem 1rem .25rem 1rem;
+  padding: .5rem 1rem .5rem 1rem;
   transition: .3s linear;
 }
-/* line 233, ../sass/grisha.scss */
+/* line 287, ../sass/grisha.scss */
 .myform input[type="text"], .myform input[type="email"] {
   border: none;
   background: lightgoldenrodyellow !important;
   border-radius: 30px;
   border: 2.5px solid #ffc107;
 }
-/* line 239, ../sass/grisha.scss */
+/* line 294, ../sass/grisha.scss */
 .myform input[type="text"]:hover, .myform input[type="text"]:focus, .myform input[type="text"]:active, .myform input[type="email"]:hover, .myform input[type="email"]:focus, .myform input[type="email"]:active {
   background: #f5f5a4 !important;
 }
-/* line 246, ../sass/grisha.scss */
+/* line 301, ../sass/grisha.scss */
 .myform input[type="submit"] {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -308,7 +358,7 @@ a:hover {
   color: black;
   font-weight: bold;
 }
-/* line 260, ../sass/grisha.scss */
+/* line 315, ../sass/grisha.scss */
 .myform textarea {
   background: lightgoldenrodyellow !important;
   overflow-y: hidden;
@@ -316,7 +366,7 @@ a:hover {
   border-radius: 8px;
   border: 2.5px solid #ffc107;
 }
-/* line 267, ../sass/grisha.scss */
+/* line 322, ../sass/grisha.scss */
 .myform textarea:hover, .myform textarea:focus, .myform textarea:active {
   background: #f5f5a4 !important;
 }
