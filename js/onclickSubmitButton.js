@@ -15,8 +15,4 @@ function hideshow() {
 	document.getElementById("mG61Hd").style.cssText="animation:hierrr 1s 1 linear;display:none;";
 	document.getElementById("shower").style.cssText="display:block;animation:showwww 1s 1 linear;";
 }
-$('#subm').click(function remover(){
-	$('.privat').removeAttr('disabled');
-});
-
 // && email.typeof('string') == true && name.typeof('string') == true && text.typeof('string') == true
