@@ -88,6 +88,7 @@ $yellow:#ffc107;
 
     .footer_soc {
         color: gray;
+        transition: .3s linear;
 
         &:hover {
             text-decoration: none;

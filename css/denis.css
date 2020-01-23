@@ -80,19 +80,20 @@
 /* line 89, ../sass/denis.scss */
 .sec7 .footer_soc {
   color: gray;
+  transition: .3s linear;
 }
-/* line 92, ../sass/denis.scss */
+/* line 93, ../sass/denis.scss */
 .sec7 .footer_soc:hover {
   text-decoration: none;
   color: black;
 }
-/* line 97, ../sass/denis.scss */
+/* line 98, ../sass/denis.scss */
 .sec7 .footer_soc .yellow_bg {
   color: #ffc107 !important;
   font-size: 25px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 104, ../sass/denis.scss */
+  /* line 105, ../sass/denis.scss */
   .sec7 *.col-12 {
     padding-left: 0px;
     padding-right: 0px;
