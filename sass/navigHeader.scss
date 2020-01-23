@@ -5,11 +5,26 @@ $yellow: #ffc107;
     position: fixed;
     width: 100%;
     z-index: 99999;
-    background: $yellow!important;
-    .navbar-brand {
-        font-family: 'Righteous', cursive !important;
-        font-size: 35px!important;
-        font-weight: bold!important;
+    transition: .3s linear;
+    .gray-box {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 200px;
+        height: 65px;
+        background: gray;
+        -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+        z-index: 999999;
+        .navbar-brand {
+            padding-left: 20px;
+            font-family: 'Righteous', cursive !important;
+            font-size: 25px!important;
+            font-weight: bold!important;
+            color: white;
+            width: 100%;
+            height: 100%;
+        }
     }
     .nav-link {
         font-weight: bold;
@@ -41,8 +56,8 @@ $yellow: #ffc107;
 }
 
 .tel-link-span {
-    color: $yellow;
-    fill: $yellow;
+    color: white;
+    fill: white;
     transition: .3s linear;
     @media screen and (max-width:992px) {
         color: black!important;
@@ -52,8 +67,8 @@ $yellow: #ffc107;
 }
 
 .tel-link:hover > .tel-link-span {
-    color: black!important;
-    fill: black!important;
+    color: $yellow!important;
+    fill: $yellow!important;
 }
 
 .scrolled {
