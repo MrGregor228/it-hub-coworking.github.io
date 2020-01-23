@@ -1,76 +1,120 @@
 $gray: rgb(37, 37, 37);
 $yellow: #ffc107;
 
-.navbar {
+
+.nav-cont {
     position: fixed;
     width: 100%;
-    z-index: 99999;
-    transition: .3s linear;
-    .gray-box {
-        position: fixed;
-        top: 0;
-        left:0;
-        width: 200px;
-        height: 65px;
-        background: gray;
-        -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-        z-index: 999999;
-        .navbar-brand {
-            padding-left: 20px;
-            font-family: 'Righteous', cursive !important;
-            font-size: 25px!important;
-            font-weight: bold!important;
-            color: white;
-            width: 100%;
-            height: 100%;
+    background: white;
+    z-index: 999999;
+    @media screen and (min-width:1280px){
+        .mw1280 {
+            max-width: 1280px!important;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
-    .nav-link {
-        font-weight: bold;
-        &:after {
+    @media screen and (min-width:992px) and (max-width:1279px){
+        .mw992 {
+            max-width: 992px !important;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    
+
+    .navbar {
+        background: #fff !important;
+        z-index: 99999;
+        transition: .3s linear;
+
+        .gray-box {
             position: relative;
-            top: 3px;
-            display: block;
-            content: "";
-            height: 2px;
-            width: 0%;
-            background-color: lighten($gray, 30%);
-            transition: width .3s ease-in-out;
+
+            .navbar-brand {
+                padding-left: 20px;
+                font-family: 'Righteous', cursive !important;
+                font-size: 25px !important;
+                font-weight: bold !important;
+                color: black;
+                width: 100%;
+                height: 100%;
+            }
         }
-        &:hover:after {
-            width: 100%;
-        }    
-    }  
-    .dropdown-toggle:after {
-        display: none;
-    }
-    .fa-angle-down {
-        position: relative;
-        top:1px;
-        left:3px;
-    }
-    .dropdown-menu {
-        max-width: 320px;
-    }
-}
+        @media screen and (max-width:992px){
+            .nav-link,
+            &.nav-item{
+                display: list-item!important;
+                max-width:100px!important;
+            }
+        }
+        .nav-link {
+            font-weight: bold;
+            box-shadow: inset 0 0 #fff, inset 0 0 lighten($yellow, 30%);
+            transition: .3s linear;
+            // &:after {
+            //     position: relative;
+            //     top: 3px;
+            //     display: block;
+            //     content: "";
+            //     height: 2px;
+            //     width: 0%;
+            //     background-color: lighten($gray, 30%);
+            //     transition: width .3s ease-in-out;
 
-.tel-link-span {
-    color: white;
-    fill: white;
-    transition: .3s linear;
-    @media screen and (max-width:992px) {
-        color: black!important;
-    fill: black!important;
+            // }
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: inset 0 1.5em #fff, inset 0 1.8em lighten($yellow, 30%);
+            }
+        }
 
+        .active {
+            width: 75px;
+            box-shadow: inset 0 1.5em #fff, inset 0 1.8em lighten($yellow, 30%) !important;
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: inset 0 1.5em #fff, inset 0 1.8em lighten($yellow, 30%);
+            }
+        }
+
+        .dropdown-toggle:after {
+            display: none;
+        }
+
+        .fa-angle-down {
+            position: relative;
+            top: 1px;
+            left: 3px;
+        }
+
+        .dropdown-menu {
+            max-width: 320px;
+        }
     }
-}
 
-.tel-link:hover > .tel-link-span {
-    color: $yellow!important;
-    fill: $yellow!important;
+    .tel-link-span {
+        color: white;
+        fill: white;
+        transition: .3s linear;
+
+        @media screen and (max-width:992px) {
+            color: black !important;
+            fill: black !important;
+
+        }
+    }
+
+    .tel-link:hover>.tel-link-span {
+        color: $yellow !important;
+        fill: $yellow !important;
+    }
+
 }
 
 .scrolled {
-    box-shadow: 0 0 15px $gray;
+    box-shadow: 0 0 5px $gray;
 }
