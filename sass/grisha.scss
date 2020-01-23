@@ -34,11 +34,15 @@ $wht: #ffffff;
 .hid {
     display: none !important;
 }
-
+.mw1280 {
+    max-width: 1280px!important;
+}
 .mw992 {
     max-width: 992px!important;
 }
-
+.pt-10 {
+    padding-top:9vh;
+}
 .mw320 {
     max-width: 200px !important;
     max-height: 200px !important;
@@ -47,7 +51,9 @@ $wht: #ffffff;
 .fz35 {
     font-size: 35px;
 }
-
+.box-shadow-underlined {
+    box-shadow: inset 0 1em #fff, inset 0 1.8em lighten($yellow, 20%);
+}
 .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -105,46 +111,27 @@ a:hover {
         background: url('../images/fon1.jpg') no-repeat;
         background-size: cover;
         background-position: center center;
-        position: absolute;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        height: 50vh;
     }
 
-    .row {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+    .row {  
         .middle-heading-container {
-            text-align: center;
             .main-heading {
                 display: block;
-                margin-right: auto;
-                margin-left: auto;
-                max-width:700px;
                 font-family: 'Atures700', cursive !important;
                 text-shadow: 3px 3px 0px lighten($darkgray, 30%);
-                color: white;
-                font-size: 70px;
+                color: black;
+                font-size: 40px;
                 font-weight: bold;
                 letter-spacing: 5px;
                 transition: .3s linear;
 
                 @media screen and (max-width:1108px) {
                     font-size: 50px;
-                    max-width:550px;
                 }
 
                 @media screen and (max-width:776px) {
                     font-size: 40px;
-                    max-width: 360px;
                 }
 
 
