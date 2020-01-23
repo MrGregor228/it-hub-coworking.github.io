@@ -1,53 +1,10 @@
 /* line 3, ../sass/navigHeader.scss */
 .nav-cont {
-  background: none !important;
+  background: white !important;
   position: fixed;
   width: 100%;
   z-index: 999999;
   transition: .3s linear;
-}
-@media screen and (max-width: 992px) {
-  /* line 3, ../sass/navigHeader.scss */
-  .nav-cont {
-    background: white !important;
-  }
-  /* line 11, ../sass/navigHeader.scss */
-  .nav-cont .nav-link {
-    color: black !important;
-    box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffe7a0 !important;
-  }
-  /* line 14, ../sass/navigHeader.scss */
-  .nav-cont .nav-link:after {
-    display: none !important;
-  }
-  /* line 18, ../sass/navigHeader.scss */
-  .nav-cont .navbar-brand {
-    color: black !important;
-  }
-  /* line 21, ../sass/navigHeader.scss */
-  .nav-cont .tel-link {
-    color: black !important;
-  }
-}
-/* line 25, ../sass/navigHeader.scss */
-.nav-cont:hover, .nav-cont:focus {
-  background: white !important;
-}
-/* line 28, ../sass/navigHeader.scss */
-.nav-cont:hover .nav-link, .nav-cont:focus .nav-link {
-  color: black !important;
-}
-/* line 31, ../sass/navigHeader.scss */
-.nav-cont:hover .navbar-brand, .nav-cont:focus .navbar-brand {
-  color: black !important;
-}
-/* line 34, ../sass/navigHeader.scss */
-.nav-cont:hover .tel-link, .nav-cont:focus .tel-link {
-  color: black !important;
-}
-/* line 37, ../sass/navigHeader.scss */
-.nav-cont:hover .navbar-brand, .nav-cont:focus .navbar-brand {
-  text-shadow: 3px 3px 0px lightgray !important;
 }
 @media screen and (min-width: 1280px) {
   /* line 42, ../sass/navigHeader.scss */
@@ -83,7 +40,7 @@
   font-family: 'Atures900' !important;
   font-size: 30px !important;
   font-weight: bold !important;
-  color: white;
+  color: black;
   width: 100%;
   height: 100%;
   text-shadow: 3px 3px 0px gray;
@@ -104,108 +61,90 @@
 }
 /* line 88, ../sass/navigHeader.scss */
 .nav-cont .navbar .nav-link {
-  color: white;
+  color: black;
   font-size: 18px;
   font-weight: bolder !important;
   box-shadow: inset 0 0 #fff, inset 0 0 #ffe7a0;
   transition: .3s linear;
 }
-/* line 94, ../sass/navigHeader.scss */
-.nav-cont .navbar .nav-link:after {
-  position: relative;
-  top: 3px;
-  display: block;
-  content: "";
-  height: 2px;
-  width: 0%;
-  background-color: #727272;
-  transition: width .3s ease-in-out;
+/* line 108, ../sass/navigHeader.scss */
+.nav-cont .navbar .nav-link:hover, .nav-cont .navbar .nav-link:focus, .nav-cont .navbar .nav-link:active {
+  box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffdb6d;
 }
-/* line 105, ../sass/navigHeader.scss */
-.nav-cont .navbar .nav-link:hover:after {
-  width: 100%;
-}
-/* line 110, ../sass/navigHeader.scss */
+/* line 115, ../sass/navigHeader.scss */
 .nav-cont .navbar .active {
   width: 80px;
+  box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffdb6d;
 }
-/* line 114, ../sass/navigHeader.scss */
+/* line 120, ../sass/navigHeader.scss */
 .nav-cont .navbar .dropdown-toggle:after {
   display: none;
 }
-/* line 118, ../sass/navigHeader.scss */
+/* line 124, ../sass/navigHeader.scss */
 .nav-cont .navbar .fa-angle-down {
   position: relative;
   top: 1px;
   left: 3px;
 }
-/* line 124, ../sass/navigHeader.scss */
+/* line 130, ../sass/navigHeader.scss */
 .nav-cont .navbar .dropdown-menu {
   max-width: 320px;
 }
-/* line 129, ../sass/navigHeader.scss */
+/* line 135, ../sass/navigHeader.scss */
 .nav-cont .tel-link {
-  color: white !important;
+  color: black !important;
   transition: .3s linear;
 }
-/* line 134, ../sass/navigHeader.scss */
+/* line 140, ../sass/navigHeader.scss */
 .nav-cont .tel-link-span {
   color: transparent;
   fill: transparent;
   transition: .3s linear;
 }
 @media screen and (max-width: 992px) {
-  /* line 134, ../sass/navigHeader.scss */
+  /* line 140, ../sass/navigHeader.scss */
   .nav-cont .tel-link-span {
     color: #ffc107 !important;
     fill: #ffc107 !important;
   }
 }
-/* line 146, ../sass/navigHeader.scss */
+/* line 152, ../sass/navigHeader.scss */
 .nav-cont .tel-link:hover > .tel-link-span {
   color: #ffc107 !important;
   fill: #ffc107 !important;
 }
 
-/* line 153, ../sass/navigHeader.scss */
+/* line 159, ../sass/navigHeader.scss */
 .scrolled {
   box-shadow: 0 0 5px #252525;
 }
-/* line 155, ../sass/navigHeader.scss */
+/* line 161, ../sass/navigHeader.scss */
 .scrolled .navbar-brand {
   color: black !important;
   text-shadow: 3px 3px 0 lightgray !important;
 }
-/* line 159, ../sass/navigHeader.scss */
+/* line 165, ../sass/navigHeader.scss */
 .scrolled .tel-link {
   color: black !important;
 }
-/* line 162, ../sass/navigHeader.scss */
+/* line 168, ../sass/navigHeader.scss */
 .scrolled.nav-cont {
   background: white !important;
 }
-/* line 164, ../sass/navigHeader.scss */
+/* line 170, ../sass/navigHeader.scss */
 .scrolled.nav-cont .nav-link {
   color: black;
 }
-/* line 166, ../sass/navigHeader.scss */
-.scrolled.nav-cont .nav-link.wht {
-  color: black !important;
-}
-/* line 169, ../sass/navigHeader.scss */
+/* line 173, ../sass/navigHeader.scss */
 .scrolled.nav-cont .nav-link:after {
   display: none;
 }
-/* line 172, ../sass/navigHeader.scss */
-.scrolled.nav-cont .nav-link:hover, .scrolled.nav-cont .nav-link:focus, .scrolled.nav-cont .nav-link:active {
-  box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffe7a0;
-}
-/* line 180, ../sass/navigHeader.scss */
+/* line 179, ../sass/navigHeader.scss */
 .scrolled .active {
   box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffdb6d !important;
   transition: all .5s linear;
 }
-/* line 184, ../sass/navigHeader.scss */
+/* line 183, ../sass/navigHeader.scss */
 .scrolled .active:hover, .scrolled .active:focus, .scrolled .active:active {
   box-shadow: inset 0 1.8em #fff, inset 0 2em #ffdb6d;
 }
