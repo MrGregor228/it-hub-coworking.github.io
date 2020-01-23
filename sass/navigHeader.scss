@@ -15,6 +15,9 @@ $yellow: #ffc107;
         .navbar-brand {
             color: black!important;
         }
+        .tel-link {
+            color: black !important;
+        }
     }
     @media screen and (min-width:1280px){
         .mw1280 {
@@ -104,6 +107,11 @@ $yellow: #ffc107;
         }
     }
 
+    .tel-link {
+        color: white!important;
+        transition: .3s linear;
+    }
+
     .tel-link-span {
         color: transparent;
         fill: transparent;
@@ -126,6 +134,9 @@ $yellow: #ffc107;
 .scrolled {
     box-shadow: 0 0 5px $gray;
     .navbar-brand {
+        color: black!important;
+    }
+    .tel-link {
         color: black!important;
     }
     &.nav-cont {
