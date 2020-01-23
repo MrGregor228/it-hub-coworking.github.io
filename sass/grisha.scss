@@ -1,6 +1,5 @@
 @import "compass/reset";
 
-
 * {
     font-family: 'IBM Plex Serif', sans-serif !important;
 }
@@ -126,18 +125,18 @@ a:hover {
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
-                max-width:600px;
-                font-family: 'Righteous', cursive !important;
+                max-width:700px;
+                font-family: 'Atures700', cursive !important;
                 text-shadow: 3px 3px 0px lighten($darkgray, 30%);
                 color: white;
                 font-size: 70px;
                 font-weight: bold;
                 background-color: $yellow;
-                
+                transition: .3s linear;
 
                 @media screen and (max-width:1108px) {
                     font-size: 50px;
-                    max-width:450px;
+                    max-width:550px;
                 }
 
                 @media screen and (max-width:776px) {
@@ -283,7 +282,7 @@ a:hover {
     }
 
     .freebirdFormviewerViewNavigationNavControls {
-        max-width: 7em;
+        max-width: 8em;
         height: 100%;
         *,
         &:focus *,
@@ -325,7 +324,7 @@ a:hover {
         &[type="email"] {
             border: none;
             background: lightgoldenrodyellow !important;
-            border-radius: 30px;
+            border-radius: 0;
             border: 2.5px solid $yellow;
             font-size: 15px !important;
             outline: none;
@@ -372,7 +371,7 @@ a:hover {
         background: lightgoldenrodyellow !important;
         overflow-y: hidden;
         border: none;
-        border-radius: 8px;
+        border-radius: 0px;
         border: 2.5px solid $yellow;
 
         &:hover,
