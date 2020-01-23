@@ -33,6 +33,10 @@ $red: rgb(212, 16, 16);
     display: none !important;
 }
 
+.mw992 {
+    max-width: 992px!important;
+}
+
 .mw320 {
     max-width: 200px !important;
     max-height: 200px !important;
@@ -96,9 +100,9 @@ a:hover {
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
 
     .image-pre-header {
-        background: url('../images/fon1.jpg') no-repeat;
-        background-size: cover;
-        background-position: center center;
+        // background: url('../images/fon1.jpg') no-repeat;
+        // background-size: cover;
+        // background-position: center center;
         position: absolute;
         display: block;
         margin-left: auto;
