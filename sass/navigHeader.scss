@@ -1,7 +1,5 @@
 $gray: rgb(37, 37, 37);
 $yellow: #ffc107;
-
-
 .nav-cont {
     position: fixed;
     width: 100%;
@@ -22,21 +20,21 @@ $yellow: #ffc107;
             margin-left: auto;
         }
     }
-    
-    
 
     .navbar {
         background: #fff !important;
         z-index: 99999;
         transition: .3s linear;
+        padding-top: 2em;
+        padding-bottom: 2em;
 
         .gray-box {
             position: relative;
 
             .navbar-brand {
-                padding-left: 20px;
-                font-family: 'Atures700', !important;
-                font-size: 25px !important;
+                
+                font-family: 'Atures900' !important;
+                font-size: 30px !important;
                 font-weight: bold !important;
                 color: black;
                 width: 100%;
@@ -44,6 +42,9 @@ $yellow: #ffc107;
             }
         }
         @media screen and (max-width:992px){
+            padding-top: 1em;
+            padding-bottom: 1em;
+            box-shadow:  0 0 3px gray;
             .nav-link,
             &.nav-item{
                 display: list-item!important;
@@ -51,7 +52,8 @@ $yellow: #ffc107;
             }
         }
         .nav-link {
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: bolder!important;
             box-shadow: inset 0 0 #fff, inset 0 0 lighten($yellow, 30%);
             transition: .3s linear;
             // &:after {
@@ -74,11 +76,11 @@ $yellow: #ffc107;
 
         .active {
             width: 80px;
-            box-shadow: inset 0 1.5em #fff, inset 0 1.8em lighten($yellow, 30%) !important;
+            box-shadow: inset 0 1.5em #fff, inset 0 1.8em lighten($yellow, 20%) !important;
             &:hover,
             &:focus,
             &:active {
-                box-shadow: inset 0 1.5em #fff, inset 0 1.8em lighten($yellow, 30%);
+                box-shadow: inset 0 1.8em #fff, inset 0 2em lighten($yellow, 20%);
             }
         }
 
@@ -103,8 +105,8 @@ $yellow: #ffc107;
         transition: .3s linear;
 
         @media screen and (max-width:992px) {
-            color: black !important;
-            fill: black !important;
+            color: $yellow !important;
+            fill: $yellow !important;
 
         }
     }

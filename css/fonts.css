@@ -100,6 +100,10 @@
 @font-face {
   font-family: 'Atures700';
   font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/Atures700.ttf");
+  src: url("../fonts/Atures700.woff") format("woff");
+}
+@font-face {
+  font-family: 'Atures900';
+  font-style: bold;
+  src: url("../fonts/Atures900.woff") format("woff");
 }
