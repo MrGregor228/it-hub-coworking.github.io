@@ -43,17 +43,17 @@ $yellow: #ffc107;
 .tel-link-span {
     color: $yellow;
     fill: $yellow;
-    transition: none!important;
+    transition: .3s linear;
     @media screen and (max-width:992px) {
         color: black!important;
     fill: black!important;
+
     }
 }
 
 .tel-link:hover > .tel-link-span {
     color: black!important;
     fill: black!important;
-    transition: none!important;
 }
 
 .scrolled {

@@ -49,7 +49,7 @@
 .tel-link-span {
   color: #ffc107;
   fill: #ffc107;
-  transition: none !important;
+  transition: .3s linear;
 }
 @media screen and (max-width: 992px) {
   /* line 43, ../sass/navigHeader.scss */
@@ -59,11 +59,10 @@
   }
 }
 
-/* line 53, ../sass/navigHeader.scss */
+/* line 54, ../sass/navigHeader.scss */
 .tel-link:hover > .tel-link-span {
   color: black !important;
   fill: black !important;
-  transition: none !important;
 }
 
 /* line 59, ../sass/navigHeader.scss */
