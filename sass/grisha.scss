@@ -3,7 +3,6 @@
 
 * {
     font-family: 'IBM Plex Sans', sans-serif !important;
-    transition: .3s linear;
 }
 
 path * {
@@ -46,6 +45,7 @@ $red: rgb(212, 16, 16);
 .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: .3s linear;
 
     &:hover {
         filter: grayscale(0%);
