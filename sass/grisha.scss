@@ -193,11 +193,19 @@ a:hover {
         bottom:44%;
         z-index: 4;
         #previous,#next,#pause {
-            font-size: 20px;
+            color: orange;
+            font-size: 25px;
             background: white;
             border:none;
             outline:none;
-            padding: 1em;
+            padding: .75em;
+            transition: background .3s linear;
+            &:hover {
+                background: darken(white, 5%);
+            }
+        }
+        #pause {
+            font-size: 19.5px;
         }
     }   
         .showing {
