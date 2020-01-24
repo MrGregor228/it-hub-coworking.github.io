@@ -134,7 +134,7 @@ a:hover {
 // SLIDER
 
 .sec1 {
-    height: 100vh;
+    height: 90vh;
 
     // -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
     // clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
@@ -169,6 +169,8 @@ a:hover {
                 bottom: 0;
                 width: 100%;
                 height: 100%;
+                opacity: 0;
+                transition: .5s linear;
                 &:nth-of-type(1) {
                     background: url('../images/slide3.jpg') no-repeat;
                     background-position: center center;
@@ -205,7 +207,8 @@ a:hover {
                 }
             }
             .showing {
-                visibility: visible;
+                width: 100%;
+               opacity: 1;
                 z-index: 3;
             }
         }
@@ -218,14 +221,30 @@ a:hover {
         bottom:15%;
         z-index: 20;
         background: white;
-        transition: .3s linear;
+        transition:width .3s linear;
+        @media screen and (max-width:768px) {
+            text-align: center!important;
+            width: 160px!important;
+            bottom:0%;
+            .white-bg {
+                padding-top: .75em!important;
+            }
+            .text-of-the-slide {
+                font-size: 23px!important;
+            }
+            #previous,#next {
+                display: none!important;
+            }
+            
+        }
         .white-bg {
             background-color: white;
             padding: .75em;
             animation: width .3s linear 1;
+            transition: .3s linear;
             .text-of-the-slide {
                 font-size: 25px;
-                
+                transition: .3s linear;
             }
         }
         .buttons-panel {
@@ -251,19 +270,6 @@ a:hover {
     }
 }
 
-@keyframes showSlide {
-            0% {
-                opacity: 1;
-                visibility: hidden;
-                transition: .3s linear;
-            }
-        
-            100% {
-                opacity: 1;
-                visibility: visible;
-                transition: .3s linear;
-            }
-        }
 .sec4 {
     * {
         text-align: left !important;
