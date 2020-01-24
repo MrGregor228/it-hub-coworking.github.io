@@ -20,11 +20,13 @@ $darkgray: rgb(37, 37, 37);
 $yellow: #ffc107;
 $red: rgb(212, 16, 16);
 $wht: #ffffff;
+
 .wht {
-    color: $wht!important;
+    color: $wht !important;
 }
+
 .golden {
-    color: $yellow!important;
+    color: $yellow !important;
 }
 
 .r-text {
@@ -34,25 +36,32 @@ $wht: #ffffff;
 .hid {
     display: none !important;
 }
+
 .mw1280 {
-    max-width: 1280px!important;
+    max-width: 1280px !important;
 }
+
 .mw992 {
-    max-width: 992px!important;
+    max-width: 992px !important;
 }
+
 .pt-10 {
     height: 150px;
     background: orange;
-    @media screen and (max-width:576px){
+
+    @media screen and (max-width:576px) {
         height: 120px;
     }
-    @media screen and (min-width:900px) and (max-width:1280px){
+
+    @media screen and (min-width:900px) and (max-width:1280px) {
         height: 100px;
     }
-    @media screen and (min-width:1280px){
+
+    @media screen and (min-width:1280px) {
         height: 90px;
     }
 }
+
 .mw320 {
     max-width: 200px !important;
     max-height: 200px !important;
@@ -61,9 +70,11 @@ $wht: #ffffff;
 .fz35 {
     font-size: 35px;
 }
+
 .box-shadow-underlined {
     box-shadow: inset 0 1em #fff, inset 0 1.8em lighten($yellow, 20%);
 }
+
 .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -101,7 +112,7 @@ a:hover {
     transition-duration: 0.3s;
     transition-timing-function: linear;
     box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray;
-    
+
 
     &:hover {
         background: none;
@@ -110,62 +121,93 @@ a:hover {
         border-radius: 0px;
     }
 }
+
 // SLIDEER
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     font-size: 25px;
     color: greenyellow;
 }
+
 // SLIDER
 
 .sec1 {
-    height:100vh;
+    height: 100vh;
+
     // -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
     // clip-path: polygon(0 100%, 0 0, 100% 0, 100% 79%, 94% 88%, 86% 83%, 73% 93%, 65% 87%, 54% 97%, 38% 93%, 28% 100%, 16% 97%);
     .row {
         .col-12 {
             padding: 0;
         }
+
         .wrapper-centerd {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
             .main-text {
                 font-size: 30px;
-                font-family: "Atures900"!important;
+                font-family: "Atures900" !important;
             }
+
             .card-text {
                 font-weight: bold;
             }
         }
-                .it-1, .it-2, .it-3 {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                }
-                .it-1 {
-                    background: url('../images/card1.jpg') no-repeat;
-                    background-position: center center;
-                    background-size: cover;
-                }
-                .it-2 {
-                    background: url('../images/card2.jpg') no-repeat;
-                    background-position: center center;
-                    background-size: cover;
-                }
-        
-                .it-3 {
-                    background: url('../images/card3.jpg') no-repeat;
-                    background-position: center center;
-                    background-size: cover;
-                }
-}    
+    .relative-wrapper {
+        position: relative;
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &:nth-of-type(1) {
+                background: url('../images/card1.jpg') no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            &:nth-of-type(2) {
+                background: url('../images/card2.jpg') no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            &:nth-of-type(3) {
+                background: url('../images/card3.jpg') no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+    }
+    .buttons-panel {
+        position: absolute  ;
+        left: 0;
+        bottom:44%;
+        z-index: 4;
+        #previous,#next,#pause {
+            font-size: 20px;
+            background: white;
+            border:none;
+            outline:none;
+            padding: 1em;
+        }
+    }   
+        .showing {
+            opacity: 1;
+            z-index: 2;
+            animation: showwww .3s linear 1;
+        }
+    }
 }
+
 
 .sec4 {
     * {
@@ -216,10 +258,12 @@ a:hover {
     .adr {
         width: 80%;
     }
-    .fz35 *{
-        color: $yellow!important;
+
+    .fz35 * {
+        color: $yellow !important;
+
         &:hover {
-            text-decoration: none!important;
+            text-decoration: none !important;
         }
     }
 }
@@ -228,13 +272,16 @@ a:hover {
 #shower {
 
     display: none;
+
     .tick-svg {
         width: 60px;
     }
+
     .text-submitted {
         font-weight: bold;
         font-size: 20px;
         color: $yellow;
+
         .green {
             color: green;
         }
@@ -266,6 +313,7 @@ a:hover {
 // Google Form
 .myform {
     max-width: 320px;
+
     .mega-legend {
         font-size: 19.5px;
         font-weight: bold;
@@ -279,6 +327,7 @@ a:hover {
     .freebirdFormviewerViewNavigationNavControls {
         max-width: 8em;
         height: 100%;
+
         *,
         &:focus *,
         &:hover *,
@@ -298,6 +347,7 @@ a:hover {
             padding: .5rem 1rem .5rem 1rem;
             transition: .3s linear;
         }
+
         &[disabled] {
             pointer-events: none;
             cursor: text;
@@ -330,7 +380,7 @@ a:hover {
             &:active {
                 background: darken(lightgoldenrodyellow, 10%) !important;
             }
-            
+
         }
 
         &[type="submit"] {
@@ -344,19 +394,20 @@ a:hover {
             -webkit-transition-timing-function: linear;
             transition-duration: 0.3s;
             transition-timing-function: linear;
-            box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray!important;
+            box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray !important;
 
             &:hover {
                 background: none;
-                box-shadow: 200px 0 0 $yellow inset, 2px 2px 0 lightgray!important;
+                box-shadow: 200px 0 0 $yellow inset, 2px 2px 0 lightgray !important;
                 border-color: black;
                 border-radius: 0px;
             }
+
             &[disabled] {
                 pointer-events: none;
                 cursor: text;
-                box-shadow:none!important;
-                background-color: lightgray!important;
+                box-shadow: none !important;
+                background-color: lightgray !important;
             }
         }
 
@@ -375,8 +426,9 @@ a:hover {
             background: darken(lightgoldenrodyellow, 10%) !important;
         }
     }
-    
+
 }
+
 // Google Form
 
 /*     FOOTER END     */
