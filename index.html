@@ -96,7 +96,7 @@
             <div class="col-12 col-md-7 col-lg-8 col-xl-8">
                 <div class="relative-wrapper h-100">
                     <div class="slider" id="slides">
-                        <div class="slide showing"></div>
+                        <div class="slide propusk"></div>
                         <div class="slide"></div>
                         <div class="slide"></div>
                         <div class="slide"></div>
@@ -104,14 +104,19 @@
                         <div class="slide"></div>                        
                     </div>
                 </div> 
-                <div id="names-of-slides" class="d-inline-flex align-items-center">
-                    <div class="white-bg">
-                        <span class="text-of-the-slide lh-2" id="text-of-the-slide"></span>
-                        <div class="buttons-panel d-inline-flex">
-                            <button class="controls d-none d-md-block" id="previous" onclick="previousSlide()"><i class="fad fa-caret-left"></i></button>
-                            <button class="controls" id="pause"><i class="fas fa-pause"></i></button>
-                            <button class="controls d-none d-md-block" id="next" onclick="nextSlide();"><i class="fad fa-caret-right"></i></button>
+
+                <div id="names-of-slides" class="row justify-content-center align-items-center w-100">
+                    <div class="white-bg text-center">
+                        <strong><span class="text-of-the-slide lh-2" id="text-of-the-slide"></span></strong>
+                        
+                        <div class="d-block mx-auto text-center">
+                            <div class="buttons-panel d-block">
+                            <button class="controls d-inline" id="previous" onclick="previousSlide()"><i class="fad fa-caret-left"></i></button>
+                            <button class="controls d-inline" id="pause"><i class="fas fa-pause"></i></button>
+                            <button class="controls d-inline" id="next" onclick="nextSlide();"><i class="fad fa-caret-right"></i></button>
                         </div> 
+                        </div>
+                        
                     </div>
                 </div>               
                 
@@ -121,7 +126,7 @@
         
         
     </section>
-
+    <div class="pt-10"></div>
     <section class="sec2 container-fluid">
 
         <div class="row justify-content-center services">

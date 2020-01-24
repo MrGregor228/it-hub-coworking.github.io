@@ -1,21 +1,20 @@
-var slides = document.querySelectorAll('.slide');
+var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,4000);
+var slideInterval = setInterval(nextSlide,6000);
 var pauseButton = document.getElementById('pause');
 var playing = true;
 
 var textOfTheSliderContainer = document.getElementById('text-of-the-slide');
 var textOfTheSlide = ["White Zone", "Gray Zone", "Red Zone", "Blue Zone", "Meeting Room", "Event Hall"];
 
+
+
 function nextSlide() {
     goToSlide(currentSlide+1);
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide,4000);
 }
+
 function previousSlide() {
     goToSlide(currentSlide-1);
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide,4000);
 }
 
 function pauseSlideshow() {
@@ -23,11 +22,10 @@ function pauseSlideshow() {
     playing = false;
     clearInterval(slideInterval);
 }
- 
 function playSlideshow() {
     pauseButton.innerHTML = '<i class="fas fa-pause"></i>';
     playing = true;
-    slideInterval = setInterval(nextSlide,4000);
+    slideInterval = setInterval(nextSlide,6000);
 }
  
 pauseButton.onclick = function() {
@@ -37,7 +35,8 @@ pauseButton.onclick = function() {
     playSlideshow();
   }
 };
-setInterval(function checkCurrentSlide() {
+
+setInterval(function () {
     if (currentSlide == 0){
         textOfTheSliderContainer.innerHTML = textOfTheSlide[0];
     } else if (currentSlide == 1) {
@@ -54,7 +53,6 @@ setInterval(function checkCurrentSlide() {
         console.log("Ошибка");
     }
 }, 100);
-checkCurrentSlide();
 
 function goToSlide(n) {
     slides[currentSlide].className = 'slide';
