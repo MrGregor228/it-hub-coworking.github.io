@@ -267,14 +267,26 @@ a:hover {
   background-size: cover;
 }
 /* line 190, ../sass/grisha.scss */
-.sec1 .row .buttons-panel {
+.sec1 .row #names-of-slides {
   position: absolute;
   left: 0;
-  bottom: 44%;
+  bottom: 15%;
   z-index: 4;
+  transition: .3s linear;
 }
-/* line 195, ../sass/grisha.scss */
-.sec1 .row .buttons-panel #previous, .sec1 .row .buttons-panel #next, .sec1 .row .buttons-panel #pause {
+/* line 196, ../sass/grisha.scss */
+.sec1 .row #names-of-slides .white-bg {
+  max-width: 400px;
+  background-color: white;
+  padding: .75em;
+  animation: showwww .3s linear 1;
+}
+/* line 200, ../sass/grisha.scss */
+.sec1 .row #names-of-slides .white-bg .text-of-the-slide {
+  font-size: 18px;
+}
+/* line 207, ../sass/grisha.scss */
+.sec1 .row #names-of-slides .buttons-panel #previous, .sec1 .row #names-of-slides .buttons-panel #next, .sec1 .row #names-of-slides .buttons-panel #pause {
   color: orange;
   font-size: 25px;
   background: white;
@@ -283,38 +295,38 @@ a:hover {
   padding: .75em;
   transition: background .3s linear;
 }
-/* line 203, ../sass/grisha.scss */
-.sec1 .row .buttons-panel #previous:hover, .sec1 .row .buttons-panel #next:hover, .sec1 .row .buttons-panel #pause:hover {
+/* line 215, ../sass/grisha.scss */
+.sec1 .row #names-of-slides .buttons-panel #previous:hover, .sec1 .row #names-of-slides .buttons-panel #next:hover, .sec1 .row #names-of-slides .buttons-panel #pause:hover {
   background: #f2f2f2;
 }
-/* line 207, ../sass/grisha.scss */
-.sec1 .row .buttons-panel #pause {
+/* line 219, ../sass/grisha.scss */
+.sec1 .row #names-of-slides .buttons-panel #pause {
   font-size: 19.5px;
 }
-/* line 211, ../sass/grisha.scss */
+/* line 225, ../sass/grisha.scss */
 .sec1 .row .showing {
   opacity: 1;
   z-index: 2;
   animation: showwww .3s linear 1;
 }
 
-/* line 221, ../sass/grisha.scss */
+/* line 235, ../sass/grisha.scss */
 .sec4 * {
   text-align: left !important;
 }
-/* line 225, ../sass/grisha.scss */
+/* line 239, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 228, ../sass/grisha.scss */
+/* line 242, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 231, ../sass/grisha.scss */
+/* line 245, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 237, ../sass/grisha.scss */
+/* line 251, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -322,18 +334,18 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 245, ../sass/grisha.scss */
+/* line 259, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
 }
 
-/* line 251, ../sass/grisha.scss */
+/* line 265, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 251, ../sass/grisha.scss */
+  /* line 265, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;
@@ -341,34 +353,34 @@ a:hover {
 }
 
 /*      FOOTER      */
-/* line 266, ../sass/grisha.scss */
+/* line 280, ../sass/grisha.scss */
 .sec7 .adr {
   width: 80%;
 }
-/* line 270, ../sass/grisha.scss */
+/* line 284, ../sass/grisha.scss */
 .sec7 .fz35 * {
   color: #ffc107 !important;
 }
-/* line 273, ../sass/grisha.scss */
+/* line 287, ../sass/grisha.scss */
 .sec7 .fz35 *:hover {
   text-decoration: none !important;
 }
 
-/* line 280, ../sass/grisha.scss */
+/* line 294, ../sass/grisha.scss */
 #shower {
   display: none;
 }
-/* line 284, ../sass/grisha.scss */
+/* line 298, ../sass/grisha.scss */
 #shower .tick-svg {
   width: 60px;
 }
-/* line 288, ../sass/grisha.scss */
+/* line 302, ../sass/grisha.scss */
 #shower .text-submitted {
   font-weight: bold;
   font-size: 20px;
   color: #ffc107;
 }
-/* line 293, ../sass/grisha.scss */
+/* line 307, ../sass/grisha.scss */
 #shower .text-submitted .green {
   color: green;
 }
@@ -389,47 +401,47 @@ a:hover {
     opacity: 0;
   }
 }
-/* line 322, ../sass/grisha.scss */
+/* line 336, ../sass/grisha.scss */
 .myform {
   max-width: 320px;
 }
-/* line 325, ../sass/grisha.scss */
+/* line 339, ../sass/grisha.scss */
 .myform .mega-legend {
   font-size: 19.5px;
   font-weight: bold;
   color: gray;
 }
-/* line 331, ../sass/grisha.scss */
+/* line 345, ../sass/grisha.scss */
 .myform .legends {
   font-weight: bold;
 }
-/* line 335, ../sass/grisha.scss */
+/* line 349, ../sass/grisha.scss */
 .myform .freebirdFormviewerViewNavigationNavControls {
   max-width: 8em;
   height: 100%;
 }
-/* line 339, ../sass/grisha.scss */
+/* line 353, ../sass/grisha.scss */
 .myform .freebirdFormviewerViewNavigationNavControls *, .myform .freebirdFormviewerViewNavigationNavControls:focus *, .myform .freebirdFormviewerViewNavigationNavControls:hover *, .myform .freebirdFormviewerViewNavigationNavControls:active * {
   outline: none !important;
   box-shadow: none !important;
 }
-/* line 348, ../sass/grisha.scss */
+/* line 362, ../sass/grisha.scss */
 .myform input {
   width: 100%;
 }
-/* line 351, ../sass/grisha.scss */
+/* line 365, ../sass/grisha.scss */
 .myform input[type="text"], .myform input[type="email"] {
   font-size: 15px !important;
   outline: none;
   padding: .5rem 1rem .5rem 1rem;
   transition: .3s linear;
 }
-/* line 359, ../sass/grisha.scss */
+/* line 373, ../sass/grisha.scss */
 .myform input[disabled] {
   pointer-events: none;
   cursor: text;
 }
-/* line 365, ../sass/grisha.scss */
+/* line 379, ../sass/grisha.scss */
 .myform textarea {
   width: 100%;
   background: #fff !important;
@@ -438,7 +450,7 @@ a:hover {
   padding: .5rem 1rem .5rem 1rem;
   transition: .3s linear;
 }
-/* line 376, ../sass/grisha.scss */
+/* line 390, ../sass/grisha.scss */
 .myform input[type="text"], .myform input[type="email"] {
   border: none;
   background: lightgoldenrodyellow !important;
@@ -448,11 +460,11 @@ a:hover {
   outline: none;
   padding: .5rem 1rem .5rem 1rem;
 }
-/* line 386, ../sass/grisha.scss */
+/* line 400, ../sass/grisha.scss */
 .myform input[type="text"]:hover, .myform input[type="text"]:focus, .myform input[type="text"]:active, .myform input[type="email"]:hover, .myform input[type="email"]:focus, .myform input[type="email"]:active {
   background: #f5f5a4 !important;
 }
-/* line 394, ../sass/grisha.scss */
+/* line 408, ../sass/grisha.scss */
 .myform input[type="submit"] {
   background: none;
   border-color: black;
@@ -466,21 +478,21 @@ a:hover {
   transition-timing-function: linear;
   box-shadow: 0px 0 0 #ffc107 inset, 5px 5px 0 lightgray !important;
 }
-/* line 407, ../sass/grisha.scss */
+/* line 421, ../sass/grisha.scss */
 .myform input[type="submit"]:hover {
   background: none;
   box-shadow: 200px 0 0 #ffc107 inset, 2px 2px 0 lightgray !important;
   border-color: black;
   border-radius: 0px;
 }
-/* line 414, ../sass/grisha.scss */
+/* line 428, ../sass/grisha.scss */
 .myform input[type="submit"][disabled] {
   pointer-events: none;
   cursor: text;
   box-shadow: none !important;
   background-color: lightgray !important;
 }
-/* line 424, ../sass/grisha.scss */
+/* line 438, ../sass/grisha.scss */
 .myform textarea {
   background: lightgoldenrodyellow !important;
   overflow-y: hidden;
@@ -488,7 +500,7 @@ a:hover {
   border-radius: 0px;
   border: 2.5px solid #ffc107;
 }
-/* line 431, ../sass/grisha.scss */
+/* line 445, ../sass/grisha.scss */
 .myform textarea:hover, .myform textarea:focus, .myform textarea:active {
   background: #f5f5a4 !important;
 }

@@ -3,11 +3,10 @@ var currentSlide = 0;
 var slideInterval = setInterval(nextSlide,4000);
 var pauseButton = document.getElementById('pause');
 var playing = true;
-// function nextSlide() {
-//     slides[currentSlide].className = 'slide';
-//     currentSlide = (currentSlide+1)%slides.length;
-//     slides[currentSlide].className = 'slide showing';
-// }
+
+var textOfTheSliderContainer = document.getElementById('text-of-the-slide');
+var textOfTheSlide = ["White Zone", "Gray Zone", "Red Zone", "Blue Zone", "Meeting Room", "Event Hall"];
+
 function nextSlide() {
     goToSlide(currentSlide+1);
     clearInterval(slideInterval);
@@ -38,6 +37,24 @@ pauseButton.onclick = function() {
     playSlideshow();
   }
 };
+setInterval(function checkCurrentSlide() {
+    if (currentSlide == 0){
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[0];
+    } else if (currentSlide == 1) {
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[1];
+    } else if (currentSlide == 2) {
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[2];
+    }else if (currentSlide == 3) {
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[3];
+    }else if (currentSlide == 4) {
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[4];
+    }else if (currentSlide == 5) {
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[5];
+    } else {
+        console.log("Ошибка");
+    }
+}, 100);
+checkCurrentSlide();
 
 function goToSlide(n) {
     slides[currentSlide].className = 'slide';
