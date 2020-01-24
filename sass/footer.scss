@@ -3,15 +3,12 @@ $yellow: #ffc107;
 $red: rgb(212, 16, 16);
 $wht: #ffffff;
 /*      FOOTER      */
-.text-slicer {
-    width: 12em;
-    height: 2.5px;
-    background: $yellow;
-}
-
 .nazva {
     font-weight: bold !important;
     font-size: 35px !important;
+}
+.short-hr {
+    max-width: 992px;
 }
 
 // After form has submitted
@@ -176,7 +173,7 @@ $wht: #ffffff;
 }
 
 // Google Form
-.sec7 {
+.sec7 {    
     .adr {
         width: 80%;
     }
