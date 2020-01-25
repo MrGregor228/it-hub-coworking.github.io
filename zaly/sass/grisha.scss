@@ -97,6 +97,10 @@ strong {
     }
 }
 
+.br-0 {
+    border-radius: 0px!important;
+}
+
 .mw320 {
     max-width: 200px !important;
     max-height: 200px !important;
@@ -181,6 +185,25 @@ $images: (item1: "../images/whitezone.jpg",
                 &.img-6 {
                     background-image: url('../images/eventhall.jpg');
                 }
+                .show-button-on-hover {
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    background-color: rgba(#000, .5);
+                    z-index: 3;
+                    transition: .3s linear;
+                    .btn {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
                 .image-caption {
                     opacity: 0;
                     position: absolute;
@@ -188,6 +211,7 @@ $images: (item1: "../images/whitezone.jpg",
                     background: white;
                     font-weight: bold;
                     transition: .3s linear;
+                    z-index: 4;
                     &.top-left {
                         width: 50px;
                         height: 50px;
@@ -209,7 +233,7 @@ $images: (item1: "../images/whitezone.jpg",
                     }
                 }
                 &:hover {
-                    .image-caption {
+                    .image-caption, .show-button-on-hover {
                         opacity: 1;
                     }
                     @media screen and (max-width:768px){
@@ -220,6 +244,7 @@ $images: (item1: "../images/whitezone.jpg",
                 }
             }
             .text-container {
+                position: relative;
                 padding: .75em .75em 0 .75em;
                 @media screen and (max-width:768px){
                     padding: 0;
