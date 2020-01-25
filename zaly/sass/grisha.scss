@@ -1,0 +1,252 @@
+@import "compass/reset";
+
+* {
+    font-family: 'IBM Plex Serif', sans-serif !important;
+}
+
+$darkgray: rgb(37, 37, 37);
+$yellow: #ffc107;
+$red: rgb(212, 16, 16);
+$wht: #ffffff;
+
+// background style constants
+$bRepeat: no-repeat;
+$bPosition: center center;
+$bSize: cover;
+// background style constants
+
+.pt-10 {
+    height: 150px;
+    // background: orange;
+
+    @media screen and (max-width:576px) {
+        height: 120px;
+    }
+
+    @media screen and (min-width:900px) and (max-width:1280px) {
+        height: 100px;
+    }
+
+    @media screen and (min-width:1280px) {
+        height: 90px;
+    }
+}
+
+.change6 {
+    background: none;
+    border-color: black;
+    border-radius: 0px;
+    color: #000;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray;
+
+    &:hover {
+        background: none;
+        box-shadow: 200px 0 0 $yellow inset, 2px 2px 0 lightgray;
+        border-color: black;
+        border-radius: 0px;
+    }
+}
+
+strong {
+    font-weight: bold !important;
+}
+
+.wht {
+    color: $wht !important;
+}
+
+.golden {
+    color: $yellow !important;
+}
+
+.r-text {
+    color: $red !important;
+}
+
+.hid {
+    display: none !important;
+}
+
+.mw1280 {
+    max-width: 1280px !important;
+}
+
+.mw992 {
+    max-width: 992px !important;
+}
+
+.pt-10 {
+    height: 150px;
+    // background: orange;
+
+    @media screen and (max-width:576px) {
+        height: 120px;
+    }
+
+    @media screen and (min-width:900px) and (max-width:1280px) {
+        height: 100px;
+    }
+
+    @media screen and (min-width:1280px) {
+        height: 90px;
+    }
+}
+
+.mw320 {
+    max-width: 200px !important;
+    max-height: 200px !important;
+}
+
+.fz35 {
+    font-size: 35px;
+}
+
+.box-shadow-underlined {
+    box-shadow: inset 0 1em #fff, inset 0 1.8em lighten($yellow, 20%);
+}
+
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+.blck {
+    color: black !important;
+}
+
+.lh-2 {
+    line-height: 1.5;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.sec1 {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+
+    .wrapper-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+$images: (item1: "../images/whitezone.jpg",
+    item2: "../images/grayzone.jpg",
+    item3: "../images/redzone.jpg",
+    item4: "../images/bluezone.jpg",
+    item5: "../images/meetingroom.jpg",
+    item6: "../images/eventhall.jpg"
+);
+
+.sec2 {
+    .container {
+        .media-object {            
+            .small-img {
+                position: relative;
+                width: 100%;
+                min-height: 320px;
+                max-height: 400px;
+                background-repeat: $bRepeat;
+                background-size: $bSize;
+                background-position: $bPosition;
+                &.img-1 {
+                    background-image: url('../images/whitezone.jpg');
+                }
+                &.img-2 {
+                    background-image: url('../images/grayzone.jpg');
+                }
+                &.img-3 {
+                    background-image: url('../images/redzone.jpg');
+                }
+                &.img-4 {
+                    background-image: url('../images/bluezone.jpg');
+                }
+                &.img-5 {
+                    background-image: url('../images/meetingroom.jpg');
+                }
+                &.img-6 {
+                    background-image: url('../images/eventhall.jpg');
+                }
+                .image-caption {
+                    opacity: 0;
+                    position: absolute;
+                    width: 125px;
+                    background: white;
+                    font-weight: bold;
+                    transition: .3s linear;
+                    &.top-left {
+                        width: 50px;
+                        height: 50px;
+                        top: 0;
+                        left: 0;
+                        padding: 0.5em;
+                        font-size: 20px;
+                    }
+                    &.bottom-left {
+                        bottom: 0;
+                        left: 0;
+                        padding: 0.75em;
+                    }
+                    &.gray-bg{background-color: gray; color: white;}
+                    &.red-bg{background-color: $red; color: white;}
+                    &.blue-bg{background-color: rgb(43, 92, 255); color: white;}
+                    @media screen and (max-width:768px){
+                        opacity: 0;
+                    }
+                }
+                &:hover {
+                    .image-caption {
+                        opacity: 1;
+                    }
+                    @media screen and (max-width:768px){
+                        .top-left,.bottom-left {
+                            opacity: 0!important;
+                        }
+                    }
+                }
+            }
+            .text-container {
+                padding: .75em .75em 0 .75em;
+                @media screen and (max-width:768px){
+                    padding: 0;
+                    @media screen and (max-width:576px){   
+                        padding: .75em .75em 0 .75em;                 
+                    }
+                }
+                .media-object-heading {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                
+            }
+            .tick-after-ul {
+                ul {
+                    li{
+                        &:before {
+                            
+                            font-weight: 900;
+                            content: "\2713";
+                            font-size: 18px;
+                            margin-right: .25em;
+                            color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
