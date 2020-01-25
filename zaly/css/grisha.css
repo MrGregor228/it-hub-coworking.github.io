@@ -333,10 +333,20 @@ a:hover {
 
 /* line 230, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container .media-object-heading {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
-/* line 239, ../sass/grisha.scss */
+/* line 233, ../sass/grisha.scss */
+.sec2 .container .media-object .text-container .media-object-heading:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 175px;
+  background: #ffc107;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+/* line 248, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul ul li:before {
   font-weight: 900;
   content: "\2713";

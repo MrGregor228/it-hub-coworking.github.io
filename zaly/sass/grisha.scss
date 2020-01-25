@@ -228,8 +228,17 @@ $images: (item1: "../images/whitezone.jpg",
                     }
                 }
                 .media-object-heading {
-                    font-size: 20px;
+                    font-size: 25px;
                     font-weight: bold;
+                    &:after {
+                        display: block;
+                        content: "";
+                        height: 2px;
+                        width: 175px;
+                        background: $yellow;
+                        margin-top: .5em;
+                        margin-bottom: .5em;
+                    }
                 }
                 
             }
@@ -237,7 +246,6 @@ $images: (item1: "../images/whitezone.jpg",
                 ul {
                     li{
                         &:before {
-                            
                             font-weight: 900;
                             content: "\2713";
                             font-size: 18px;
