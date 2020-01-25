@@ -14,7 +14,9 @@ $bRepeat: no-repeat;
 $bPosition: center center;
 $bSize: cover;
 // background style constants
-
+sup {
+    font-size: 12px !important;
+}
 .pt-10 {
     height: 150px;
     // background: orange;
@@ -43,6 +45,7 @@ $bSize: cover;
     transition-duration: 0.3s;
     transition-timing-function: linear;
     box-shadow: 0px 0 0 $yellow inset, 5px 5px 0 lightgray;
+    padding: 0.35em;
 
     &:hover {
         background: none;
@@ -158,6 +161,26 @@ $images: (item1: "../images/whitezone.jpg",
 
 .sec2 {
     .container {
+        .card {
+            text-align: center;
+            margin-right: 15px !important;
+            border: none !important;
+            font-weight: bold;
+    
+            @media screen and (max-width:576px) {
+                margin-right: 0 !important;
+            }
+    
+            line-height: 1.5;
+    
+            .card-body {    
+                .text-center * {
+                    color: $yellow;
+                    font-size: 3em;
+                    margin-bottom: .5em;    
+                }
+            }
+        }
         .media-object {            
             .small-img {
                 position: relative;
