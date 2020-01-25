@@ -261,7 +261,7 @@ $images: (item1: "../images/whitezone.jpg",
                     }
                     @media screen and (max-width:768px){
                         .top-left,.bottom-left {
-                            opacity: 0!important;
+                            opacity: 0;
                         }
                     }
                 }
@@ -301,6 +301,11 @@ $images: (item1: "../images/whitezone.jpg",
                             color: green;
                         }
                     }
+                }
+            }
+            @media screen and (max-width:768px){
+                .top-left, .show-button-on-hover {
+                    opacity: 1!important;
                 }
             }
         }

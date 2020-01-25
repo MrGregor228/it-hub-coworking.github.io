@@ -364,7 +364,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   /* line 263, ../sass/grisha.scss */
   .sec2 .container .media-object .small-img:hover .top-left, .sec2 .container .media-object .small-img:hover .bottom-left {
-    opacity: 0 !important;
+    opacity: 0;
   }
 }
 /* line 269, ../sass/grisha.scss */
@@ -407,4 +407,10 @@ a:hover {
   font-size: 18px;
   margin-right: .25em;
   color: green;
+}
+@media screen and (max-width: 768px) {
+  /* line 307, ../sass/grisha.scss */
+  .sec2 .container .media-object .top-left, .sec2 .container .media-object .show-button-on-hover {
+    opacity: 1 !important;
+  }
 }
