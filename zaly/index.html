@@ -36,6 +36,98 @@
     <script src="js/loadingHeader.js"></script>
     <div class="pt-10"></div>
 
+
+
+    <!-- Modal -->
+    <div class="modal fade lh-2" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content container-fluid">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body row">
+                    <h5>1. Ви є студентом / працівником КЕІ КНЕУ?</h5>
+                    <div class="col-12">
+                        <fieldset>
+                            
+                            <label for="AStudent"><input type="radio" name="AStudent" id="">Так</label>
+                            <label for="NotAStudent"><input type="radio" name="NotAStudent" id="">Ні</label>
+                        
+                        </fieldset>
+                        
+                    </div>
+
+                    <h5>2. Яку зону бажаєте відвідати/орендувати?</h5>
+                    <div class="col-6 d-inline-flex">
+                            <label for="WhiteZone">
+                                <input type="checkbox" name="WhiteZone" id="WhiteZone" aria-label="White Zone">White Zone
+                            </label>
+                            
+                            <label for="GrayZone">
+                                <input type="checkbox" name="GrayZone" id="GrayZone" aria-label="Gray Zone">Gray Zone
+                            </label>
+                            
+                            <label for="RedZone">
+                                <input type="checkbox" name="RedZone" id="RedZone" aria-label="Red Zone">Red Zone
+                            </label>                            
+                    </div>
+                    <div class="col-6 d-inline-flex">
+                        <label for="BlueZone">
+                            <input type="checkbox" name="BlueZone" id="BlueZone" aria-label="Blue Zone">Blue Zone
+                        </label>
+                        <label for="MeetingRoom">
+                            <input type="checkbox" name="MeetingRoom" id="MeetingRoom" aria-label="Meeting room">Meeting room
+                        </label>
+                        <label for="EventHall">
+                            <input type="checkbox" name="EventHall" id="EventHall" aria-label="Event Hall">Event Hall
+                        </label>
+                    </div>
+                    <h5>3. Яке робоче місце вам потрібне?</h5>
+                    <div class="col-12 d-inline-block">
+                        <label for="PC">
+                            <input type="checkbox" name="PC" id="" placeholder="">з ПК
+                        </label>
+                        <label for="Notebook">
+                            <input type="checkbox" name="Notebook" id="" placeholder="">з ноутбуком
+                        </label>
+                        <label for="Usuall">
+                            <input type="checkbox" name="Usuall" id="" placeholder="">звичайне
+                        </label>
+                    </div>
+
+
+                    <h5>4. Скільки годин ві плануєте знаходитись в кімнаті/зоні...?</h5>
+                    <div class="col-6">
+                        <input type="number" name="" id="" placeholder="" maxlength="10" minlength="0">
+                    </div>
+                    <div class="col-6">
+                        <label for="wholeDay" class="d-flex"> 
+                            <input type="radio" name="wholeDay" id="">Весь день
+                        </label>
+                    </div>
+                    <h5>5. На яку кількість людей раозраховуєте?</h5>
+                    <div class="col-6">
+                        <input type="number" name="" id="" placeholder="" maxlength="10" minlength="0">
+                    </div>
+                    <div class="col-6">
+                        <label for="wholePlace" class="d-flex"> 
+                            <input type="radio" name="wholePlace" id="">Всю зону / залу
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer text-center mx-auto">
+                    <button class="btn change6">Розрахувати</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+
     <section class="sec1 container-fluid">
         <div class="row">
             <div class="wrapper-center">
@@ -185,7 +277,8 @@
                         <br><br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Орендувати</button>
-                            <button class="change6 ml-3">Розрахувати вартість</button>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
+                                вартість</button>
                         </div>
 
                     </div>
@@ -218,7 +311,8 @@
                         <br><br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Орендувати</button>
-                            <button class="change6 ml-3">Розрахувати вартість</button>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
+                                вартість</button>
                         </div>
 
                     </div>
@@ -251,7 +345,8 @@
                         <br><br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Орендувати</button>
-                            <button class="change6 ml-3">Розрахувати вартість</button>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
+                                вартість</button>
                         </div>
 
                     </div>
@@ -284,7 +379,8 @@
                         <br><br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Орендувати</button>
-                            <button class="change6 ml-3">Розрахувати вартість</button>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
+                                вартість</button>
                         </div>
 
                     </div>
@@ -316,7 +412,8 @@
                         <br><br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Орендувати</button>
-                            <button class="change6 ml-3">Розрахувати вартість</button>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
+                                вартість</button>
                         </div>
                     </div>
                 </div>
@@ -352,7 +449,8 @@
                         <br><br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Орендувати</button>
-                            <button class="change6 ml-3">Розрахувати вартість</button>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
+                                вартість</button>
                         </div>
 
                     </div>
