@@ -39,7 +39,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade lh-2" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade lh-2 p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content container-fluid p-0">
@@ -54,71 +54,72 @@
                     <div class="col-12">
                         <fieldset>
                             
-                            <input type="radio" name="radio" id="">&nbsp;&nbsp;Так<label for=""></label>
-                            <input type="radio" name="radio" id="">&nbsp;&nbsp;Ні<label for="" class="ml-4"></label>
+                            <input type="radio" name="radio" id="yes">&nbsp;&nbsp;<label class="radio-labels">Так</label>
+                            <input type="radio" name="radio" id="no">&nbsp;&nbsp;<label class="radio-labels">Ні</label>
                         
                         </fieldset>
                         
                     </div>
 
                     <h5>2. Яку зону бажаєте відвідати/орендувати?</h5>
-                    
+                    <div class="col-12 p-0" id="zoneContainer">
                         <fieldset class="col-6">
-                            <input type="checkbox" name="WhiteZone" id="WhiteZone">&nbsp;&nbsp;White Zone<label for="WhiteZone"></label>  
+                            <input type="radio" name="zones" id="WhiteZone">&nbsp;&nbsp;<label for="WhiteZone">White Zone</label>  
                             <br>                          
-                            <input type="checkbox" name="GrayZone" id="GrayZone">&nbsp;&nbsp;Gray Zone<label for="GrayZone"></label> 
+                            <input type="radio" name="zones" id="GrayZone">&nbsp;&nbsp;<label for="GrayZone">Gray Zone</label> 
                             <br>                           
-                            <input type="checkbox" name="RedZone" id="RedZone">&nbsp;&nbsp;Red Zone<label for="RedZone"></label>   
+                            <input type="radio" name="zones" id="RedZone">&nbsp;&nbsp;<label for="RedZone">Red Zone</label>   
                         </fieldset>
 
                         <fieldset class="col-6">
-                            <label for="BlueZone">
-                                <input type="checkbox" name="BlueZone" id="BlueZone">&nbsp;&nbsp;Blue Zone
-                            </label>
-                            <label for="MeetingRoom">
-                                <input type="checkbox" name="MeetingRoom" id="MeetingRoom">&nbsp;&nbsp;Meeting room
-                            </label>
-                            <label for="EventHall">
-                                <input type="checkbox" name="EventHall" id="EventHall">&nbsp;&nbsp;Event Hall
-                            </label>
+                            <input type="radio" name="zones" id="BlueZone">&nbsp;&nbsp;<label for="BlueZone">Blue Zone</label>
+                            <br>
+                            <input type="radio" name="zones" id="MeetingRoom">&nbsp;&nbsp;<label for="MeetingRoom">Meeting room</label>
+                            <br>
+                            <input type="radio" name="zones" id="EventHall">&nbsp;&nbsp;<label for="EventHall">Event Hall</label>
+                            
                         </fieldset>
+                    </div>
+                        
                     
                     <h5>3. Яке робоче місце вам потрібне?</h5>
 
                         <fieldset class="col-12">
-                            <input type="checkbox" name="PC" id="" placeholder="">&nbsp;&nbsp;з ПК
-                            <label for="PC"></label>
-                            <br>
-                            <input type="checkbox" name="Notebook" id="" placeholder="">&nbsp;&nbsp;з ноутбуком
-                            <label for="Notebook"></label>
-                            <br>
-                            <input type="checkbox" name="Usuall" id="" placeholder="">&nbsp;&nbsp;звичайне
-                            <label for="Usuall"></label>
+                            <form name="Form">
+                                <input type="checkbox" name="PC" id="PC" placeholder="">&nbsp;&nbsp;
+                                <label for="PC">з ПК (5 од.)</label>
+                                <br>
+                                <input type="checkbox" name="Notebook" id="Notebook" placeholder="">&nbsp;&nbsp;
+                                <label for="Notebook">з ноутбуком</label>
+                                <br>
+                                <input type="checkbox" name="Usuall" id="Usuall" placeholder="">&nbsp;&nbsp;
+                                <label for="Usuall">звичайне</label>
+                            </form>
                         </fieldset>
 
                     <h5>4. Скільки годин ві плануєте знаходитись в кімнаті/зоні...?</h5>
 
-                    <fieldset class="col-12 col-sm-6">
-                            <input type="number" name="" id="" placeholder="" maxlength="10" minlength="0">
-                    </fieldset>
-
-                    <fieldset class="col-12 col-sm-6">                        
-                        <input type="radio" name="wholeDay" id="">&nbsp;&nbsp;Весь день<label for="wholeDay"></label>
+                    <fieldset class="w-100 mb-3 mb-sm-0">
+                        <div class="quantity " id="quant1"><input type="number" name="" id="hoursQuantity" placeholder="" max="12.5" min="1" class="col-12 col-sm-6" step="1" value="1"></div>                
+                        <input type="checkbox" name="" id="wholeDay" class="ml-3">&nbsp;&nbsp;<label for="" class=" radio-labels"> Весь день</label>
                     </fieldset>
 
                     <h5>5. На яку кількість людей розраховуєте?</h5>
-                    <fieldset class="col-12 col-sm-6">
-                            <input type="number" name="" id="" placeholder="" maxlength="10" minlength="0">
-                    </fieldset>
-
-                    <fieldset class="col-12 col-sm-6">
-                           <input type="radio" name="wholePlace" id="">&nbsp;&nbsp;Всю зону / залу <label for="wholePlace"></label>
-                    </fieldset>
-
+                    <fieldset class="w-100 row m-0">
+                        <div class="quantity quant2 col-12 col-sm-6 p-0" id="quant2"><input class="pl-3 w-100" type="number" name="" id="seatsCounter" max="60" min="1" step="1" value="1">
+                            <span class="small-text">(максимальна кількість місць у <span class="r-text bld" id="zonePlaceCounter"></span>)</span>
+                        </div>
+                        <div class="col-12 col-sm-5 mt-3 p-0">
+                            <input type="checkbox" name="Place" id="wholePlace">&nbsp;&nbsp;<label class=" radio-labels"> Всю зону / залу</label>
+                        </div>
+                        </fieldset>
+                    <script src="js/buttonsOnInputNumber.js"></script>
                 </div>
                 <div class="modal-footer text-center mx-auto">
-                    <button class="btn change6">Розрахувати</button>
+                    <button class="btn change6" onclick="getPrice();">Розрахувати</button>
+                    <div id="cost"></div>
                 </div>
+                <script src="js/calculateMoneyPerSession.js"></script>
             </div>
         </div>
     </div>
