@@ -298,7 +298,16 @@ $images: (item1: "../images/whitezone.jpg",
             .tick-after-ul {
                 ul {
                     li{
-                       
+                       .border-none {
+                        border:none!important;
+                        background: $yellow;
+                        width: 50px;
+                        margin-top: .3em;
+                           &:hover,&:focus, &:active {
+                               box-shadow: none!important;
+                           }
+                           
+                       }
                     }
                 }
             }

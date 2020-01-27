@@ -405,8 +405,19 @@ a:hover {
   margin-top: .5em;
   margin-bottom: .5em;
 }
+/* line 301, ../sass/grisha.scss */
+.sec2 .container .media-object .tick-after-ul ul li .border-none {
+  border: none !important;
+  background: #ffc107;
+  width: 50px;
+  margin-top: .3em;
+}
+/* line 306, ../sass/grisha.scss */
+.sec2 .container .media-object .tick-after-ul ul li .border-none:hover, .sec2 .container .media-object .tick-after-ul ul li .border-none:focus, .sec2 .container .media-object .tick-after-ul ul li .border-none:active {
+  box-shadow: none !important;
+}
 @media screen and (max-width: 768px) {
-  /* line 306, ../sass/grisha.scss */
+  /* line 315, ../sass/grisha.scss */
   .sec2 .container .media-object .top-left, .sec2 .container .media-object .show-button-on-hover {
     opacity: 1 !important;
   }
