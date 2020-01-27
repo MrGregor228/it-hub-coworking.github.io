@@ -55,6 +55,11 @@ sup {
     }
 }
 
+.modal {
+    z-index: 9999999;
+    
+}
+
 strong {
     font-weight: bold !important;
 }
@@ -293,13 +298,7 @@ $images: (item1: "../images/whitezone.jpg",
             .tick-after-ul {
                 ul {
                     li{
-                        &:before {
-                            font-weight: 900;
-                            content: "\2713";
-                            font-size: 18px;
-                            margin-right: .25em;
-                            color: green;
-                        }
+                       
                     }
                 }
             }
