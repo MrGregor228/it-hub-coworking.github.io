@@ -156,36 +156,42 @@ sup {
   position: relative;
   bottom: 3px;
 }
-/* line 100, ../sass/grisha.scss */
+@media screen and (max-width: 350px) {
+  /* line 94, ../sass/grisha.scss */
+  .modal .radio-labels {
+    font-size: 14px;
+  }
+}
+/* line 103, ../sass/grisha.scss */
 .modal .quantity {
   position: relative;
 }
-/* line 104, ../sass/grisha.scss */
+/* line 107, ../sass/grisha.scss */
 .modal input[type=number] {
   -moz-appearance: textfield;
 }
-/* line 106, ../sass/grisha.scss */
+/* line 109, ../sass/grisha.scss */
 .modal input[type=number]::-webkit-inner-spin-button, .modal input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* line 114, ../sass/grisha.scss */
+/* line 117, ../sass/grisha.scss */
 .modal input[type=number]:focus {
   outline: 0;
 }
-/* line 119, ../sass/grisha.scss */
+/* line 122, ../sass/grisha.scss */
 .modal .quantity input {
   line-height: 1.65;
   float: left;
   display: block;
 }
-/* line 128, ../sass/grisha.scss */
+/* line 131, ../sass/grisha.scss */
 .modal .quantity-nav {
   float: left;
   position: relative;
   height: 42px;
 }
-/* line 134, ../sass/grisha.scss */
+/* line 137, ../sass/grisha.scss */
 .modal .quantity-button {
   position: relative;
   cursor: pointer;
@@ -203,7 +209,7 @@ sup {
   -o-user-select: none;
   user-select: none;
 }
-/* line 152, ../sass/grisha.scss */
+/* line 155, ../sass/grisha.scss */
 .modal .quantity-button.quantity-up {
   line-height: 1.5;
   background-color: #ffc107;
@@ -213,7 +219,7 @@ sup {
   top: 0;
   border-bottom: 1px solid orange;
 }
-/* line 162, ../sass/grisha.scss */
+/* line 165, ../sass/grisha.scss */
 .modal .quantity-button.quantity-down {
   line-height: 1em !important;
   background-color: #ffc107;
@@ -222,12 +228,12 @@ sup {
   bottom: 11px;
   height: 15px;
 }
-/* line 170, ../sass/grisha.scss */
+/* line 173, ../sass/grisha.scss */
 .modal .quantity-button.quantity-down svg {
   position: relative;
   top: -3px;
 }
-/* line 178, ../sass/grisha.scss */
+/* line 181, ../sass/grisha.scss */
 .modal * input[type="radio"] {
   padding-left: 5px;
   padding-right: 5px;
@@ -241,128 +247,128 @@ sup {
   width: 20px;
   height: 20px;
 }
-/* line 197, ../sass/grisha.scss */
+/* line 200, ../sass/grisha.scss */
 .modal input[type="radio"]:checked {
   background-color: orange;
   border: 5px solid #ffc107;
 }
 
-/* line 203, ../sass/grisha.scss */
+/* line 206, ../sass/grisha.scss */
 strong {
   font-weight: bold !important;
 }
 
-/* line 207, ../sass/grisha.scss */
+/* line 210, ../sass/grisha.scss */
 .wht {
   color: #ffffff !important;
 }
 
-/* line 211, ../sass/grisha.scss */
+/* line 214, ../sass/grisha.scss */
 .golden {
   color: #ffc107 !important;
 }
 
-/* line 215, ../sass/grisha.scss */
+/* line 218, ../sass/grisha.scss */
 .r-text {
   color: #d41010 !important;
 }
 
-/* line 219, ../sass/grisha.scss */
+/* line 222, ../sass/grisha.scss */
 .hid {
   display: none !important;
 }
 
-/* line 223, ../sass/grisha.scss */
+/* line 226, ../sass/grisha.scss */
 .mw1280 {
   max-width: 1280px !important;
 }
 
-/* line 227, ../sass/grisha.scss */
+/* line 230, ../sass/grisha.scss */
 .mw992 {
   max-width: 992px !important;
 }
 
-/* line 231, ../sass/grisha.scss */
+/* line 234, ../sass/grisha.scss */
 .pt-10 {
   height: 150px;
 }
 @media screen and (max-width: 576px) {
-  /* line 231, ../sass/grisha.scss */
+  /* line 234, ../sass/grisha.scss */
   .pt-10 {
     height: 120px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1280px) {
-  /* line 231, ../sass/grisha.scss */
+  /* line 234, ../sass/grisha.scss */
   .pt-10 {
     height: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 231, ../sass/grisha.scss */
+  /* line 234, ../sass/grisha.scss */
   .pt-10 {
     height: 90px;
   }
 }
 
-/* line 248, ../sass/grisha.scss */
+/* line 251, ../sass/grisha.scss */
 .br-0 {
   border-radius: 0px !important;
 }
 
-/* line 252, ../sass/grisha.scss */
+/* line 255, ../sass/grisha.scss */
 .mw320 {
   max-width: 200px !important;
   max-height: 200px !important;
 }
 
-/* line 257, ../sass/grisha.scss */
+/* line 260, ../sass/grisha.scss */
 .fz35 {
   font-size: 35px;
 }
 
-/* line 261, ../sass/grisha.scss */
+/* line 264, ../sass/grisha.scss */
 .box-shadow-underlined {
   box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
 }
 
-/* line 266, ../sass/grisha.scss */
+/* line 269, ../sass/grisha.scss */
 a:hover {
   text-decoration: none !important;
 }
 
-/* line 270, ../sass/grisha.scss */
+/* line 273, ../sass/grisha.scss */
 .bld {
   font-weight: bold;
 }
 
-/* line 274, ../sass/grisha.scss */
+/* line 277, ../sass/grisha.scss */
 .blck {
   color: black !important;
 }
 
-/* line 278, ../sass/grisha.scss */
+/* line 281, ../sass/grisha.scss */
 .lh-1 {
   line-height: 1 !important;
 }
 
-/* line 282, ../sass/grisha.scss */
+/* line 285, ../sass/grisha.scss */
 .lh-2 {
   line-height: 1.5 !important;
 }
 
-/* line 286, ../sass/grisha.scss */
+/* line 289, ../sass/grisha.scss */
 .nav-link {
   text-align: center;
 }
 
-/* line 290, ../sass/grisha.scss */
+/* line 293, ../sass/grisha.scss */
 .sec1 {
   position: relative;
   width: 100%;
   height: 92vh;
 }
-/* line 295, ../sass/grisha.scss */
+/* line 298, ../sass/grisha.scss */
 .sec1 .wrapper-center {
   position: absolute;
   top: 50%;
@@ -370,7 +376,7 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-/* line 313, ../sass/grisha.scss */
+/* line 316, ../sass/grisha.scss */
 .sec2 .container .card {
   text-align: center;
   margin-right: 15px !important;
@@ -379,18 +385,18 @@ a:hover {
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 313, ../sass/grisha.scss */
+  /* line 316, ../sass/grisha.scss */
   .sec2 .container .card {
     margin-right: 0 !important;
   }
 }
-/* line 326, ../sass/grisha.scss */
+/* line 329, ../sass/grisha.scss */
 .sec2 .container .card .card-body .text-center * {
   color: #ffc107;
   font-size: 3em;
   margin-bottom: .5em;
 }
-/* line 335, ../sass/grisha.scss */
+/* line 338, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img {
   position: relative;
   width: 100%;
@@ -400,31 +406,31 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
-/* line 344, ../sass/grisha.scss */
+/* line 347, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-1 {
   background-image: url("../images/whitezone.jpg");
 }
-/* line 348, ../sass/grisha.scss */
+/* line 351, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-2 {
   background-image: url("../images/grayzone.jpg");
 }
-/* line 352, ../sass/grisha.scss */
+/* line 355, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-3 {
   background-image: url("../images/redzone.jpg");
 }
-/* line 356, ../sass/grisha.scss */
+/* line 359, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-4 {
   background-image: url("../images/bluezone.jpg");
 }
-/* line 360, ../sass/grisha.scss */
+/* line 363, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-5 {
   background-image: url("../images/meetingroom.jpg");
 }
-/* line 364, ../sass/grisha.scss */
+/* line 367, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-6 {
   background-image: url("../images/eventhall.jpg");
 }
-/* line 368, ../sass/grisha.scss */
+/* line 371, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .show-button-on-hover {
   position: absolute;
   top: 0;
@@ -438,14 +444,14 @@ a:hover {
   z-index: 3;
   transition: .3s linear;
 }
-/* line 381, ../sass/grisha.scss */
+/* line 384, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .show-button-on-hover .btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 389, ../sass/grisha.scss */
+/* line 392, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption {
   opacity: 0;
   position: absolute;
@@ -455,7 +461,7 @@ a:hover {
   transition: .3s linear;
   z-index: 4;
 }
-/* line 398, ../sass/grisha.scss */
+/* line 401, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.top-left {
   width: 50px;
   height: 50px;
@@ -464,69 +470,69 @@ a:hover {
   padding: 0.5em;
   font-size: 20px;
 }
-/* line 407, ../sass/grisha.scss */
+/* line 410, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.bottom-left {
   bottom: 0;
   left: 0;
   padding: 0.75em;
 }
-/* line 413, ../sass/grisha.scss */
+/* line 416, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.gray-bg {
   background-color: gray;
   color: white;
 }
-/* line 418, ../sass/grisha.scss */
+/* line 421, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.red-bg {
   background-color: #d41010;
   color: white;
 }
-/* line 423, ../sass/grisha.scss */
+/* line 426, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.blue-bg {
   background-color: #2b5cff;
   color: white;
 }
 @media screen and (max-width: 768px) {
-  /* line 389, ../sass/grisha.scss */
+  /* line 392, ../sass/grisha.scss */
   .sec2 .container .media-object .small-img .image-caption {
     opacity: 0;
   }
 }
-/* line 435, ../sass/grisha.scss */
+/* line 438, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img:hover .image-caption,
 .sec2 .container .media-object .small-img:hover .show-button-on-hover {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  /* line 442, ../sass/grisha.scss */
+  /* line 445, ../sass/grisha.scss */
   .sec2 .container .media-object .small-img:hover .top-left,
   .sec2 .container .media-object .small-img:hover .bottom-left {
     opacity: 0;
   }
 }
-/* line 450, ../sass/grisha.scss */
+/* line 453, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container {
   position: relative;
   padding: .75em .75em 0 .75em;
 }
 @media screen and (max-width: 768px) {
-  /* line 450, ../sass/grisha.scss */
+  /* line 453, ../sass/grisha.scss */
   .sec2 .container .media-object .text-container {
     padding: 0;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 576px) {
-  /* line 450, ../sass/grisha.scss */
+  /* line 453, ../sass/grisha.scss */
   .sec2 .container .media-object .text-container {
     padding: .75em .75em 0 .75em;
   }
 }
 
-/* line 462, ../sass/grisha.scss */
+/* line 465, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container .media-object-heading {
   font-size: 25px;
   font-weight: bold;
 }
-/* line 466, ../sass/grisha.scss */
+/* line 469, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container .media-object-heading:after {
   display: block;
   content: "";
@@ -536,19 +542,19 @@ a:hover {
   margin-top: .5em;
   margin-bottom: .5em;
 }
-/* line 482, ../sass/grisha.scss */
+/* line 485, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul ul li .border-none {
   border: none !important;
   background: #ffc107;
   width: 50px;
   margin-top: .3em;
 }
-/* line 488, ../sass/grisha.scss */
+/* line 491, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul ul li .border-none:hover, .sec2 .container .media-object .tick-after-ul ul li .border-none:focus, .sec2 .container .media-object .tick-after-ul ul li .border-none:active {
   box-shadow: none !important;
 }
 @media screen and (max-width: 768px) {
-  /* line 501, ../sass/grisha.scss */
+  /* line 504, ../sass/grisha.scss */
   .sec2 .container .media-object .top-left,
   .sec2 .container .media-object .show-button-on-hover {
     opacity: 1 !important;

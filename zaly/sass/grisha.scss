@@ -94,6 +94,9 @@ sup {
     .radio-labels {
         position: relative;
         bottom: 3px;
+        @media screen and (max-width:350px){
+            font-size: 14px;
+        }
     }
 
     //   INPUT NUMBER

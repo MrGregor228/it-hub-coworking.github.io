@@ -51,7 +51,7 @@
                 </div>
                 <div class="modal-body row">
                     <h5>1. Ви є студентом / працівником КЕІ КНЕУ?</h5>
-                    <div class="col-12">
+                    <div class="col-12 p-0">
                         <fieldset>
                             
                             <input type="radio" name="radio" id="yes">&nbsp;&nbsp;<label class="radio-labels">Так</label>
@@ -63,20 +63,20 @@
 
                     <h5>2. Яку зону бажаєте відвідати/орендувати?</h5>
                     <div class="col-12 p-0" id="zoneContainer">
-                        <fieldset class="col-6">
-                            <input type="radio" name="zones" id="WhiteZone">&nbsp;&nbsp;<label for="WhiteZone">White Zone</label>  
+                        <fieldset class="col-6 p-0">
+                            <input type="radio" name="zones" id="WhiteZone" onclick="whitezone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">White Zone</label>  
                             <br>                          
-                            <input type="radio" name="zones" id="GrayZone">&nbsp;&nbsp;<label for="GrayZone">Gray Zone</label> 
+                            <input type="radio" name="zones" id="GrayZone" onclick="grayzone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Gray Zone</label> 
                             <br>                           
-                            <input type="radio" name="zones" id="RedZone">&nbsp;&nbsp;<label for="RedZone">Red Zone</label>   
+                            <input type="radio" name="zones" id="RedZone" onclick="redzone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Red Zone</label>   
                         </fieldset>
 
-                        <fieldset class="col-6">
-                            <input type="radio" name="zones" id="BlueZone">&nbsp;&nbsp;<label for="BlueZone">Blue Zone</label>
+                        <fieldset class="col-6 p-0">
+                            <input type="radio" name="zones" id="BlueZone" onclick="bluezone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Blue Zone</label>
                             <br>
-                            <input type="radio" name="zones" id="MeetingRoom">&nbsp;&nbsp;<label for="MeetingRoom">Meeting room</label>
+                            <input type="radio" name="zones" id="MeetingRoom" onclick="meetingroom();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Meeting room</label>
                             <br>
-                            <input type="radio" name="zones" id="EventHall">&nbsp;&nbsp;<label for="EventHall">Event Hall</label>
+                            <input type="radio" name="zones" id="EventHall" onclick="eventhall();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Event Hall</label>
                             
                         </fieldset>
                     </div>
@@ -84,13 +84,13 @@
                     
                     <h5>3. Яке робоче місце вам потрібне?</h5>
 
-                        <fieldset class="col-12">
+                        <fieldset class="col-12 p-0">
                             <form name="Form">
                                 <input type="checkbox" name="PC" id="PC" placeholder="">&nbsp;&nbsp;
-                                <label for="PC">з ПК (5 од.)</label>
+                                <label for="PC">з ПК <span class="small-text text-muted">(White Zone 5 од.)</span></label>
                                 <br>
                                 <input type="checkbox" name="Notebook" id="Notebook" placeholder="">&nbsp;&nbsp;
-                                <label for="Notebook">з ноутбуком</label>
+                                <label for="Notebook">з ноутбуком <span class="small-text text-muted">(10 од.)</span></label>
                                 <br>
                                 <input type="checkbox" name="Usuall" id="Usuall" placeholder="">&nbsp;&nbsp;
                                 <label for="Usuall">звичайне</label>
@@ -100,14 +100,14 @@
                     <h5>4. Скільки годин ві плануєте знаходитись в кімнаті/зоні...?</h5>
 
                     <fieldset class="w-100 mb-3 mb-sm-0">
-                        <div class="quantity " id="quant1"><input type="number" name="" id="hoursQuantity" placeholder="" max="12.5" min="1" class="col-12 col-sm-6" step="1" value="1"></div>                
-                        <input type="checkbox" name="" id="wholeDay" class="ml-3">&nbsp;&nbsp;<label for="" class=" radio-labels"> Весь день</label>
+                        <div class="quantity " id="quant1"><input type="number" name="" id="hoursQuantity" placeholder="" max="12.5" min="1" class="col-12 col-sm-6" step="0.5" value="1"></div>                
+                        <input type="checkbox" name="" id="wholeDay" class="ml-sm-3 ml-0">&nbsp;&nbsp;<label for="" class=" radio-labels"> Весь день</label>
                     </fieldset>
 
                     <h5>5. На яку кількість людей розраховуєте?</h5>
                     <fieldset class="w-100 row m-0">
-                        <div class="quantity quant2 col-12 col-sm-6 p-0" id="quant2"><input class="pl-3 w-100" type="number" name="" id="seatsCounter" max="60" min="1" step="1" value="1">
-                            <span class="small-text">(максимальна кількість місць у <span class="r-text bld" id="zonePlaceCounter"></span>)</span>
+                        <div class="quantity quant2 col-12 col-sm-6 p-0" id="quant2"><input class="pl-3 w-100" type="number" name="" id="seatsCounter" min="1" step="1" value="1">
+                            <span class="small-text text-muted">(максимальна кількість місць у <span class="r-text bld" id="zonePlaceCounter"></span>)</span>
                         </div>
                         <div class="col-12 col-sm-5 mt-3 p-0">
                             <input type="checkbox" name="Place" id="wholePlace">&nbsp;&nbsp;<label class=" radio-labels"> Всю зону / залу</label>
@@ -116,8 +116,8 @@
                     <script src="js/buttonsOnInputNumber.js"></script>
                 </div>
                 <div class="modal-footer text-center mx-auto">
-                    <button class="btn change6" onclick="getPrice();">Розрахувати</button>
-                    <div id="cost"></div>
+                    <button class="btn change6 mx-auto" onclick="getPrice();">Розрахувати</button>
+                    <div id="cost" class="col-12"></div>
                 </div>
                 <script src="js/calculateMoneyPerSession.js"></script>
             </div>
