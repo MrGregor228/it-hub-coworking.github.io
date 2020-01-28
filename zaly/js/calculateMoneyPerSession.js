@@ -54,39 +54,82 @@ function whitezone() {
     zonePlaceCounter.innerHTML = "White Zone " + numberOfSeats.whiteZone;
     seatsCounter.max = numberOfSeats.whiteZone;
     seatsCounter.value = numberOfSeats.whiteZone;
+    workPlaceWithPC.removeAttribute("disabled", "true");
 }
 function grayzone() {
     zonePlaceCounter.innerHTML = "Gray Zone " + numberOfSeats.grayZone;
     seatsCounter.max = numberOfSeats.grayZone;
     seatsCounter.value = numberOfSeats.grayZone;
+    workPlaceWithPC.setAttribute("disabled", "true");
+    workPlaceWithPC.checked = false;
+
 }
 function redzone() {
     zonePlaceCounter.innerHTML = "Red Zone " + numberOfSeats.redZone;
     seatsCounter.max = numberOfSeats.redZone;
     seatsCounter.value = numberOfSeats.redZone;
+    workPlaceWithPC.setAttribute("disabled", "true");
+    workPlaceWithPC.checked = false;
+
 }
 function bluezone() {
     zonePlaceCounter.innerHTML = "Blue Zone " + numberOfSeats.blueZone;
     seatsCounter.max = numberOfSeats.blueZone;
     seatsCounter.value = numberOfSeats.blueZone;
+    workPlaceWithPC.setAttribute("disabled", "true");
+    workPlaceWithPC.checked = false;
+
 }
 function meetingroom() {
     zonePlaceCounter.innerHTML = "Meeting room  " + numberOfSeats.meetingRoom;
     seatsCounter.max = numberOfSeats.meetingRoom;
     seatsCounter.value = numberOfSeats.meetingRoom;
+    workPlaceWithPC.setAttribute("disabled", "true");
+    workPlaceWithPC.checked = false;
+
 }
 function eventhall() {
     zonePlaceCounter.innerHTML = "Event Hall  " + numberOfSeats.eventHall;
     seatsCounter.max = numberOfSeats.eventHall;
     seatsCounter.value = numberOfSeats.eventHall;
+    workPlaceWithPC.setAttribute("disabled", "true");
+    workPlaceWithPC.checked = false;
+
 }
 
-var zonesChecker = setInterval(function () {
-    if (grayZone.checked == true || blueZone.checked == true || meetingRoom.checked == true || redZone.checked == true || eventHall.checked == true) {
+wholePlace.onclick = function () {
+    if (whiteZone.checked == true && wholePlace.checked == true) {
+        seatsCounter.max = numberOfSeats.whiteZone;
+        seatsCounter.value = numberOfSeats.whiteZone;
+        workPlaceWithPC.setAttribute("disabled", "false");
+    } else if (grayZone.checked == true && wholePlace.checked == true) {
+        seatsCounter.max = numberOfSeats.grayZone;
+        seatsCounter.value = numberOfSeats.grayZone;
+        workPlaceWithPC.setAttribute("disabled", "true");
+    } else if (blueZone.checked == true && wholePlace.checked == true) {
+        seatsCounter.max = numberOfSeats.redZone;
+        seatsCounter.value = numberOfSeats.redZone;
+        workPlaceWithPC.setAttribute("disabled", "true");
+    } else if (meetingRoom.checked == true && wholePlace.checked == true) {
+        seatsCounter.max = numberOfSeats.blueZone;
+        seatsCounter.value = numberOfSeats.blueZone;
+        workPlaceWithPC.setAttribute("disabled", "true");
+    } else if (redZone.checked == true && wholePlace.checked == true) {
+        seatsCounter.max = numberOfSeats.meetingRoom;
+        seatsCounter.value = numberOfSeats.meetingRoom;
+        workPlaceWithPC.setAttribute("disabled", "true");
+    } else if (eventHall.checked == true && wholePlace.checked == true) {
+        seatsCounter.max = numberOfSeats.eventHall;
+        seatsCounter.value = numberOfSeats.eventHall;
         workPlaceWithPC.setAttribute("disabled", "true");
     } else {
-        workPlaceWithPC.removeAttribute("disabled", "true");
+        alert('Выберете помещение!');
+        wholePlace.checked = false;
+        console.log("Помилка");
     }
+};
+ 
+var zonesChecker = setInterval(function () {
 
     if (wholeDay.checked == true) {
         hoursQuantity.setAttribute("disabled", "true");
@@ -95,97 +138,117 @@ var zonesChecker = setInterval(function () {
     } else if (wholePlace.checked == true) {
         seatsCounter.setAttribute("disabled", "true");
         $("#quant2 .quantity-button").css("display", "none");
-        let seats = function () {
-            if (whiteZone.checked == true) {
-                seatsCounter.max = numberOfSeats.whiteZone;
-                seatsCounter.value = numberOfSeats.whiteZone;
-            } else if (grayZone.checked == true) {
-                seatsCounter.max = numberOfSeats.grayZone;
-                seatsCounter.value = numberOfSeats.grayZone;
-            } else if (blueZone.checked == true) {
-                seatsCounter.max = numberOfSeats.redZone;
-                seatsCounter.value = numberOfSeats.redZone;
-            } else if (meetingRoom.checked == true) {
-                seatsCounter.max = numberOfSeats.blueZone;
-                seatsCounter.value = numberOfSeats.blueZone;
-            } else if (redZone.checked == true) {
-                seatsCounter.max = numberOfSeats.meetingRoom;
-                seatsCounter.value = numberOfSeats.meetingRoom;
-            } else if (eventHall.checked == true) {
-                seatsCounter.max = numberOfSeats.eventHall;
-                seatsCounter.value = numberOfSeats.eventHall;
-            } else {
-                console.log("Помилка");
-            }
-        };
-        return seats();
     } else {
         $("#quant1 .quantity-button").css("display", "block");
         $("#quant2 .quantity-button").css("display", "block");
 
         hoursQuantity.removeAttribute("disabled", "true");
         seatsCounter.removeAttribute("disabled", "true");
+    } 
+
+    if (grayZone.checked == true || blueZone.checked == true || meetingRoom.checked == true || redZone.checked == true || eventHall.checked == true) {
+        workPlaceWithPC.setAttribute("disabled", "true");
+    } else {
+        workPlaceWithPC.removeAttribute("disabled", "true");
     }
-    
+
 }, 500);
 
 var student = {
+    // usuall place
     firstHour: 18,
     everyNextHour: 14,
+    // place with laptop
     placeWithLaptop: 19,
     everyNextHourWithLaptop: 15,
+    // place with PC
     placeWithPC: 20,
     everyNextHourWithPC: 16
 };
 
 var notStudent = {
+    // usuall place
     firstHour: 34,
     everyNextHour: 22,
+    // place with laptop
     placeWithLaptop: 35,
     everyNextHourWithLaptop: 23,
+    // place with PC
     placeWithPC: 37,
     everyNextHourWithPC: 24
 };
 
 function getPrice() {
     price = 0;
+
     if (isAStudent.checked == true) {
         console.log("Студент/работник КЕІ");
         console.log("Час за обычным раб.местом: " + student.firstHour + "\n" + "Час за ПК: " + student.placeWithPC + "\n" + "Час за ноутом: " + student.placeWithLaptop);
         if (workPlaceWithPC.checked == true) {
             console.log("Часов за ПК " + hoursQuantity.value);
-            price = (seatsCounter.value * student.placeWithPC) + (hoursQuantity.value * student.everyNextHourWithPC);
-            console.log("Человек " + seatsCounter.value * student.placeWithPC);
+            price = (seatsCounter.value * student.placeWithPC) + ((hoursQuantity.value - 1) * student.everyNextHourWithPC);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " +price + " грн";
+            clearInterval(zonesChecker);
         } else if (workPlaceWithNotebook.checked == true) {            
             console.log("Часов за ноутом" + hoursQuantity.value);
-            price = (seatsCounter.value * student.placeWithLaptop) + (hoursQuantity.value * student.everyNextHourWithLaptop);
-            console.log("Человек " + seatsCounter.value * student.placeWithLaptop);
+            price = (seatsCounter.value * student.placeWithLaptop) + ((hoursQuantity.value - 1) * student.everyNextHourWithLaptop);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " +price + " грн";
+            clearInterval(zonesChecker);
         } else if (workPlaceOrdinary.checked == true) {
             console.log("Часов за обычным раб.местом" + hoursQuantity.value);
-            price = (seatsCounter.value * student.firstHour) + (hoursQuantity.value * student.everyNextHour);
-            console.log("Человек " + seatsCounter.value * student.firstHour);
+            price = (seatsCounter.value * student.firstHour) + ((hoursQuantity.value - 1) * student.everyNextHour);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " +price + " грн";
+            clearInterval(zonesChecker);
         } else {
             alert('Ви студент КЕІ КНЕУ чи ні?');
         }
-        console.log(+price);
-        cost.innerHTML = +price;
-        clearInterval(zonesChecker);
+        $('.hider').css("animation", "hiderrr .3s linear forwards");        
+        $('.hider').css("height", "0%");
+        setTimeout(function () {
+             $('.hider').css("display", "none");
+        },500);
+       
+                        
     } else if (isNotAStudent.checked == true) {
         console.log("Не студент");
         console.log("Час за обычным раб.местом: " + notStudent.firstHour + "\n" + "Час за ПК: " + notStudent.placeWithPC + "\n" + "Час за ноутом: " + notStudent.placeWithLaptop);
-        console.log();
+        if (workPlaceWithPC.checked == true) {
+            console.log("Часов за ПК " + hoursQuantity.value);
+            price = (seatsCounter.value * notStudent.placeWithPC) + ((hoursQuantity.value - 1) * notStudent.everyNextHourWithPC);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " +price + " грн";
+            clearInterval(zonesChecker);
+        } else if (workPlaceWithNotebook.checked == true) {            
+            console.log("Часов за ноутом" + hoursQuantity.value);
+            price = (seatsCounter.value * notStudent.placeWithLaptop) + ((hoursQuantity.value - 1) * notStudent.everyNextHourWithLaptop);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " +price + " грн";
+            clearInterval(zonesChecker);
+        } else if (workPlaceOrdinary.checked == true) {
+            console.log("Часов за обычным раб.местом" + hoursQuantity.value);
+            price = (seatsCounter.value * notStudent.firstHour) + ((hoursQuantity.value - 1) * notStudent.everyNextHour);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " +price + " грн";
+            clearInterval(zonesChecker);
+        } else {
+            alert('Ви студент КЕІ КНЕУ чи ні?');
+        } 
+        $('.hider').css("animation", "hiderrr .3s linear forwards");        
+        $('.hider').css("height", "0%");
+        setTimeout(function () {
+            $('.hider').css("display", "none");
+        }, 500);
+        
+                        
     } else {
-        console.log("Сделайте выбор!")
+       
     }
-    // if () {
-
-    // } else {
-
-    // }
-
-
-    // cost.innerHTML = ;
+   
 }
+
 getPrice();
 // hoursQuantity
 // seatsCounter
