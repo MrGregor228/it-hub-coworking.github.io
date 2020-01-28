@@ -295,7 +295,7 @@ strong {
 @media screen and (max-width: 576px) {
   /* line 234, ../sass/grisha.scss */
   .pt-10 {
-    height: 120px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1280px) {
@@ -370,6 +370,7 @@ a:hover {
 }
 /* line 298, ../sass/grisha.scss */
 .sec1 .wrapper-center {
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -378,11 +379,16 @@ a:hover {
 @media screen and (max-width: 576px) {
   /* line 298, ../sass/grisha.scss */
   .sec1 .wrapper-center {
-    margin-right: 0 !important;
+    width: 90%;
+    font-size: 20px;
+  }
+  /* line 308, ../sass/grisha.scss */
+  .sec1 .wrapper-center.pt-10 {
+    height: 10px !important;
   }
 }
 
-/* line 319, ../sass/grisha.scss */
+/* line 326, ../sass/grisha.scss */
 .sec2 .container .card {
   text-align: center;
   margin-right: 15px !important;
@@ -391,18 +397,18 @@ a:hover {
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 319, ../sass/grisha.scss */
+  /* line 326, ../sass/grisha.scss */
   .sec2 .container .card {
     margin-right: 0 !important;
   }
 }
-/* line 332, ../sass/grisha.scss */
+/* line 339, ../sass/grisha.scss */
 .sec2 .container .card .card-body .text-center * {
   color: #ffc107;
   font-size: 3em;
   margin-bottom: .5em;
 }
-/* line 341, ../sass/grisha.scss */
+/* line 348, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img {
   position: relative;
   width: 100%;
@@ -412,31 +418,31 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
-/* line 350, ../sass/grisha.scss */
+/* line 357, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-1 {
   background-image: url("../images/whitezone.jpg");
 }
-/* line 354, ../sass/grisha.scss */
+/* line 361, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-2 {
   background-image: url("../images/grayzone.jpg");
 }
-/* line 358, ../sass/grisha.scss */
+/* line 365, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-3 {
   background-image: url("../images/redzone.jpg");
 }
-/* line 362, ../sass/grisha.scss */
+/* line 369, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-4 {
   background-image: url("../images/bluezone.jpg");
 }
-/* line 366, ../sass/grisha.scss */
+/* line 373, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-5 {
   background-image: url("../images/meetingroom.jpg");
 }
-/* line 370, ../sass/grisha.scss */
+/* line 377, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-6 {
   background-image: url("../images/eventhall.jpg");
 }
-/* line 374, ../sass/grisha.scss */
+/* line 381, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .show-button-on-hover {
   position: absolute;
   top: 0;
@@ -450,14 +456,14 @@ a:hover {
   z-index: 3;
   transition: .3s linear;
 }
-/* line 387, ../sass/grisha.scss */
+/* line 394, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .show-button-on-hover .btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 395, ../sass/grisha.scss */
+/* line 402, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption {
   opacity: 0;
   position: absolute;
@@ -467,7 +473,7 @@ a:hover {
   transition: .3s linear;
   z-index: 4;
 }
-/* line 404, ../sass/grisha.scss */
+/* line 411, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.top-left {
   width: 50px;
   height: 50px;
@@ -476,69 +482,69 @@ a:hover {
   padding: 0.5em;
   font-size: 20px;
 }
-/* line 413, ../sass/grisha.scss */
+/* line 420, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.bottom-left {
   bottom: 0;
   left: 0;
   padding: 0.75em;
 }
-/* line 419, ../sass/grisha.scss */
+/* line 426, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.gray-bg {
   background-color: gray;
   color: white;
 }
-/* line 424, ../sass/grisha.scss */
+/* line 431, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.red-bg {
   background-color: #d41010;
   color: white;
 }
-/* line 429, ../sass/grisha.scss */
+/* line 436, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img .image-caption.blue-bg {
   background-color: #2b5cff;
   color: white;
 }
 @media screen and (max-width: 768px) {
-  /* line 395, ../sass/grisha.scss */
+  /* line 402, ../sass/grisha.scss */
   .sec2 .container .media-object .small-img .image-caption {
     opacity: 0;
   }
 }
-/* line 441, ../sass/grisha.scss */
+/* line 448, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img:hover .image-caption,
 .sec2 .container .media-object .small-img:hover .show-button-on-hover {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  /* line 448, ../sass/grisha.scss */
+  /* line 455, ../sass/grisha.scss */
   .sec2 .container .media-object .small-img:hover .top-left,
   .sec2 .container .media-object .small-img:hover .bottom-left {
     opacity: 0;
   }
 }
-/* line 456, ../sass/grisha.scss */
+/* line 463, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container {
   position: relative;
   padding: .75em .75em 0 .75em;
 }
 @media screen and (max-width: 768px) {
-  /* line 456, ../sass/grisha.scss */
+  /* line 463, ../sass/grisha.scss */
   .sec2 .container .media-object .text-container {
     padding: 0;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 576px) {
-  /* line 456, ../sass/grisha.scss */
+  /* line 463, ../sass/grisha.scss */
   .sec2 .container .media-object .text-container {
     padding: .75em .75em 0 .75em;
   }
 }
 
-/* line 468, ../sass/grisha.scss */
+/* line 475, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container .media-object-heading {
   font-size: 25px;
   font-weight: bold;
 }
-/* line 472, ../sass/grisha.scss */
+/* line 479, ../sass/grisha.scss */
 .sec2 .container .media-object .text-container .media-object-heading:after {
   display: block;
   content: "";
@@ -548,19 +554,19 @@ a:hover {
   margin-top: .5em;
   margin-bottom: .5em;
 }
-/* line 488, ../sass/grisha.scss */
+/* line 495, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul ul li .border-none {
   border: none !important;
   background: #ffc107;
   width: 50px;
   margin-top: .3em;
 }
-/* line 494, ../sass/grisha.scss */
+/* line 501, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul ul li .border-none:hover, .sec2 .container .media-object .tick-after-ul ul li .border-none:focus, .sec2 .container .media-object .tick-after-ul ul li .border-none:active {
   box-shadow: none !important;
 }
 @media screen and (max-width: 768px) {
-  /* line 507, ../sass/grisha.scss */
+  /* line 514, ../sass/grisha.scss */
   .sec2 .container .media-object .top-left,
   .sec2 .container .media-object .show-button-on-hover {
     opacity: 1 !important;

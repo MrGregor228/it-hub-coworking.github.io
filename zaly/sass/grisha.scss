@@ -236,7 +236,7 @@ strong {
     // background: orange;
 
     @media screen and (max-width:576px) {
-        height: 120px;
+        height: 100px;
     }
 
     @media screen and (min-width:900px) and (max-width:1280px) {
@@ -296,13 +296,20 @@ a:hover {
     height: 92vh;
 
     .wrapper-center {
-        @media screen and (max-width:576px) {
-            margin-right: 0 !important;
-        }
+        width: 80%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media screen and (max-width:576px) {
+            width: 90%;
+            font-size: 20px;
+            &.pt-10 {
+                height: 10px!important;
+            }
+        }
+       
     }
 }
 
