@@ -44,7 +44,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content container-fluid p-0">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Розрахунок вартості</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -89,14 +89,14 @@
 
                         <fieldset class="col-12 p-0">
                             <form name="Form">
-                                <input type="checkbox" name="PC" id="PC" placeholder="">&nbsp;&nbsp;
-                                <label for="PC">з ПК <span class="small-text text-muted">(White Zone 5 од.)</span></label>
+                                <input type="radio" name="rad" id="PC" placeholder="" onclick="workPlacesChecker();">&nbsp;&nbsp;
+                                <label for="PC" class="radio-labels">з ПК <span class="small-text text-muted">(White Zone 5 од.)</span></label>
                                 <br>
-                                <input type="checkbox" name="Notebook" id="Notebook" placeholder="">&nbsp;&nbsp;
-                                <label for="Notebook">з ноутбуком <span class="small-text text-muted">(10 од.)</span></label>
+                                <input type="radio" name="rad" id="Notebook" placeholder="" onclick="workPlacesChecker();">&nbsp;&nbsp;
+                                <label for="Notebook" class="radio-labels">з ноутбуком <span class="small-text text-muted">(10 од.)</span></label>
                                 <br>
-                                <input type="checkbox" name="Usuall" id="Usuall" placeholder="">&nbsp;&nbsp;
-                                <label for="Usuall">звичайне</label>
+                                <input type="radio" name="rad" id="Usuall" placeholder="" onclick="workPlacesChecker();">&nbsp;&nbsp;
+                                <label for="Usuall" class="radio-labels">звичайне</label>
                             </form>
                         </fieldset>
 
@@ -120,6 +120,7 @@
                 </div>
                 <div class="modal-footer text-center mx-auto">
                     <button class="btn change6 mx-auto" onclick="getPrice();">Розрахувати</button>
+                    <button class="btn change6 mx-auto" onclick="reGetPrice();" id="reGet">Перерахувати</button>
                     <div id="cost" class="col-12"></div>
                 </div>
             </div>
