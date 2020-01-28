@@ -129,7 +129,7 @@ wholePlace.onclick = function () {
         seatsCounter.value = numberOfSeats.eventHall;
         workPlaceWithPC.setAttribute("disabled", "true");
     } else {
-        alert('Выберете помещение!');
+
         wholePlace.checked = false;
         console.log("Помилка");
     }
@@ -204,6 +204,9 @@ function workPlacesChecker() {
         numberOfSeats.meetingRoom = 8;
         numberOfSeats.eventHall = 60;
 
+        $(workPlaceWithPC).css("opacity", "1");
+        $(workPlaceWithNotebook).css("opacity", "1");
+
         if (whiteZone.checked == true) { // WHITE ZONE FOR ORDINARY SEATS
 
             seatsCounter.max = numberOfSeats.whiteZone;
@@ -211,81 +214,76 @@ function workPlacesChecker() {
             zonePlaceCounter.innerHTML = "White Zone " + numberOfSeats.whiteZone;
 
             workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
+            workPlaceWithPC.disabled = false;
 
         } else if (grayZone.checked == true) { // GRAY ZONE FOR ORDINARY SEATS
+
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = false;
+            workPlaceWithNotebook.checked = false;
 
             seatsCounter.max = numberOfSeats.grayZone;
             seatsCounter.value = 1;
             zonePlaceCounter.innerHTML = "Gray Zone " + numberOfSeats.grayZone;
 
-            workPlaceWithPC.disabled = true;
-             workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
-
         } else if (redZone.checked == true) { // RED ZONE FOR ORDINARY SEATS
 
-            zonePlaceCounter.innerHTML = "Red Zone " + numberOfSeats.redZone;
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = false;
+            workPlaceWithNotebook.checked = false;
 
             seatsCounter.max = numberOfSeats.redZone;
             seatsCounter.value = 1;
-
-            workPlaceWithPC.disabled = true;
-             workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
+            zonePlaceCounter.innerHTML = "Red Zone " + numberOfSeats.redZone;
 
         } else if (blueZone.checked == true) { // BLUE ZONE FOR ORDINARY SEATS
-
-            zonePlaceCounter.innerHTML = "Blue Zone " + numberOfSeats.blueZone;
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = false;
+            workPlaceWithNotebook.checked = false;
 
             seatsCounter.max = numberOfSeats.blueZone;
             seatsCounter.value = 1;
-
-            workPlaceWithPC.disabled = true;
-             workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
+            zonePlaceCounter.innerHTML = "Blue Zone " + numberOfSeats.blueZone;
 
         } else if (meetingRoom.checked == true) { // MEETING ROOM FOR ORDINARY SEATS
-
-            zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = true;
+            $(workPlaceWithNotebook).css("opacity", "0.5");
+            workPlaceWithNotebook.checked = false;
 
             seatsCounter.max = numberOfSeats.meetingRoom;
             seatsCounter.value = 1;
-
-            workPlaceWithPC.disabled = true;
-             workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
+            zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
 
         } else if (eventHall.checked == true) { // EVENT HALL FOR ORDINARY SEATS
-
-            zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = true;
+            $(workPlaceWithNotebook).css("opacity", "0.5");
+            workPlaceWithNotebook.checked = false;
 
             seatsCounter.max = numberOfSeats.eventHall;
             seatsCounter.value = 1;
-
-            workPlaceWithPC.disabled = true;
-            workPlaceWithNotebook.disabled = true;
-
-            $(workPlaceWithPC).css("background", "red");
-            $(workPlaceWithNotebook).css("background", "red");
-
+            zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
         } else { // DEFAULT FOR ORDINARY SEAT
             workPlaceWithNotebook.disabled = false;
             workPlaceWithPC.disabled = false;
-            $(workPlaceWithPC).css("background", "lightgray");
-            $(workPlaceWithNotebook).css("background", "lightgray");
+
+            workPlaceWithPC.checked = false;
+            workPlaceWithNotebook.checked = false;
+
+            $(workPlaceWithPC).css("opacity", "1");
+            $(workPlaceWithNotebook).css("opacity", "1");
         }
-
-
-
-        // zonePlaceCounter.innerHTML = "Blue Zone " + numberOfSeats.blueZone;
-        // zonePlaceCounter.innerHTML = "Meeting room  " + numberOfSeats.meetingRoom;
-        // zonePlaceCounter.innerHTML = "Event Hall  " + numberOfSeats.eventHall;
-
     } else if (workPlaceWithNotebook.checked == true) { // Если опция с НОУТБУКОМ
 
         numberOfSeats.whiteZone = workPlaceNotebook;
@@ -294,90 +292,91 @@ function workPlacesChecker() {
         numberOfSeats.blueZone = workPlaceNotebook - 2;
         numberOfSeats.meetingRoom = workPlaceNotebook - 2;
 
+        $(workPlaceWithPC).css("opacity", "1");
+        $(workPlaceWithNotebook).css("opacity", "1");
 
         if (whiteZone.checked == true) { // WHITE ZONE FOR NOTEBOOK SEATS
+
+            workPlaceWithPC.disabled = false;
+            workPlaceWithNotebook.disabled = false;
 
             seatsCounter.max = numberOfSeats.whiteZone;
             seatsCounter.value = 1;
             zonePlaceCounter.innerHTML = "White Zone " + numberOfSeats.whiteZone;
 
-            workPlaceWithPC.disabled = false;
-            workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-
         } else if (grayZone.checked == true) { // GRAY ZONE FOR NOTEBOOK SEATS
+
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = false;
 
             seatsCounter.max = numberOfSeats.grayZone;
             seatsCounter.value = 1;
-
             zonePlaceCounter.innerHTML = "Gray Zone " + numberOfSeats.grayZone;
-
-            workPlaceWithPC.disabled = true;
-            workPlaceWithPC.checked = false;
-            workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
 
         } else if (redZone.checked == true) { // RED ZONE FOR NOTEBOOK SEATS
 
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = false;
+
             seatsCounter.max = numberOfSeats.redZone;
             seatsCounter.value = 1;
-
             zonePlaceCounter.innerHTML = "Red Zone " + numberOfSeats.redZone;
-
-            workPlaceWithPC.disabled = true;
-            workPlaceWithPC.checked = false;
-            workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
 
         } else if (blueZone.checked == true) { // BLUE ZONE FOR NOTEBOOK SEATS
 
+            workPlaceWithPC.checked = false;
+            workPlaceWithPC.disabled = true;
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = false;
+
             seatsCounter.max = numberOfSeats.blueZone;
             seatsCounter.value = 1;
-
             zonePlaceCounter.innerHTML = "Blue Zone " + numberOfSeats.blueZone;
-
-            workPlaceWithPC.disabled = true;
-            workPlaceWithPC.checked = false;
-            workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
 
         } else if (meetingRoom.checked == true) { // MEETING ROOM FOR NOTEBOOK SEATS
 
-            seatsCounter.max = numberOfSeats.meetingRoom;
-            seatsCounter.value = 1;
-
-            zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
+            workPlaceWithNotebook.checked = false;
+            workPlaceWithPC.checked = false;
 
             workPlaceWithPC.disabled = true;
-            workPlaceWithPC.checked = false;
-            workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
-            $(workPlaceWithPC).css("background", "red");
+            $(workPlaceWithPC).css("opacity", "0.5");
+            workPlaceWithNotebook.disabled = true;
+            $(workPlaceWithNotebook).css("opacity", "0.5");
+
+
+            seatsCounter.max = numberOfSeats.meetingRoom;
+            seatsCounter.value = 1;
+            zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
 
         } else if (eventHall.checked == true) { // EVENT HALL FOR NOTEBOOK SEATS
 
-            seatsCounter.max = numberOfSeats.eventHall;
-            seatsCounter.value = 1;
-
-            zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
+            workPlaceWithNotebook.checked = false;
+            workPlaceWithPC.checked = false;
 
             workPlaceWithPC.disabled = true;
-            workPlaceWithPC.checked = false;
+            $(workPlaceWithPC).css("opacity", "0.5");
             workPlaceWithNotebook.disabled = true;
-            workPlaceWithNotebook.checked = false;
+            $(workPlaceWithNotebook).css("opacity", "0.5");
 
-            $(workPlaceWithPC).css("background", "red");
-            $(workPlaceWithNotebook).css("background", "red");
+
+            seatsCounter.max = numberOfSeats.eventHall;
+            seatsCounter.value = 1;
+            zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
 
         } else { // DEFAULT FOR NOTEBOOK SEATS
 
-            workPlaceWithPC.disabled = false;
-            $(workPlaceWithPC).css("background", "lightgray");
             workPlaceWithNotebook.disabled = false;
-            $(workPlaceWithNotebook).css("background", "lightgray");
+            workPlaceWithPC.disabled = false;
+
+            workPlaceWithPC.checked = false;
+            workPlaceWithNotebook.checked = false;
+
+            $(workPlaceWithPC).css("opacity", "1");
+            $(workPlaceWithNotebook).css("opacity", "1");
         }
         seatsCounter.max = workPlaceNotebook;
         seatsCounter.value = 1;
@@ -388,79 +387,30 @@ function workPlacesChecker() {
 
         if (whiteZone.checked == true) { // WHITE ZONE FOR PC SEATS
 
+            workPlaceWithPC.disabled = false;
+            workPlaceWithNotebook.disabled = false;
+
             seatsCounter.max = numberOfSeats.whiteZone;
             seatsCounter.value = 1;
             zonePlaceCounter.innerHTML = "White Zone " + numberOfSeats.whiteZone;
-            
-            workPlaceWithPC.disabled = false;
-            $(workPlaceWithPC).css("background", "lightgray");
-            $(workPlaceWithPC.checked).css("background", "orange");
-            
 
-         } else if (grayZone.checked == true || redZone.checked == true || blueZone.checked == true || meetingRoom.checked == true || eventHall.checked == true) { // GRAY ZONE FOR PC SEATS
+
+        } else { // DEFAULT FOR PC SEATS
+
             workPlaceWithPC.disabled = true;
             workPlaceWithPC.checked = false;
-            $(workPlaceWithPC).css("background", "red");
+
+            $(workPlaceWithPC).css("opacity", "0.5");
         }
-        //     workPlaceWithPC.disabled = true;
-        //     workPlaceWithPC.checked = false;
-        //     $(workPlaceWithPC).css("background", "red");
 
-        // } else if (redZone.checked == true) { // RED ZONE FOR PC SEATS
-
-        //     seatsCounter.max = numberOfSeats.redZone;
-        //     seatsCounter.value = 1;
-
-        //     zonePlaceCounter.innerHTML = "Red Zone " + numberOfSeats.redZone;
-
-        //     workPlaceWithPC.disabled = true;
-        //     workPlaceWithPC.checked = false;
-        //     $(workPlaceWithPC).css("background", "red");
-
-        // } else if (blueZone.checked == true) { // BLUE ZONE FOR PC SEATS
-
-        //     seatsCounter.max = numberOfSeats.blueZone;
-        //     seatsCounter.value = 1;
-
-        //     zonePlaceCounter.innerHTML = "Blue Zone " + numberOfSeats.blueZone;
-
-        //     workPlaceWithPC.disabled = true;
-        //     workPlaceWithPC.checked = false;
-        //     $(workPlaceWithPC).css("background", "red");
-
-        // } else if (meetingRoom.checked == true) { // MEETING ROOM FOR PC SEATS
-
-        //     seatsCounter.max = numberOfSeats.meetingRoom;
-        //     seatsCounter.value = 1;
-
-        //     zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
-
-        //     workPlaceWithPC.disabled = true;
-        //     workPlaceWithPC.checked = false;
-        //     $(workPlaceWithPC).css("background", "red");
-
-        // } else if (eventHall.checked == true) { // EVENT HALL FOR PC SEATS
-
-        //     seatsCounter.max = numberOfSeats.eventHall;
-        //     seatsCounter.value = 1;
-
-        //     zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
-
-        //     workPlaceWithPC.disabled = true;
-        //     workPlaceWithPC.checked = false;
-        //     workPlaceWithNotebook.disabled = true;
-        //     workPlaceWithNotebook.checked = false;
-
-        //     $(workPlaceWithPC).css("opacity", "0.5");
-        //     $(workPlaceWithNotebook).css("opacity", "0.5");
-
-        // }
+        seatsCounter.max = workPlacePC;
+        seatsCounter.value = 1;
 
     } else { // DEFAULT FOR PC SEATS
         workPlaceWithPC.disabled = false;
-        $(workPlaceWithPC).css("background", "lightgray");
+        $(workPlaceWithPC).css("opacity", "1");
         workPlaceWithNotebook.disabled = false;
-        $(workPlaceWithNotebook).css("background", "lightgray");
+        $(workPlaceWithNotebook).css("opacity", "1");
         console.log("В этой зоне отсутствуют компьютеры!");
     }
 }
@@ -498,6 +448,8 @@ function getPrice() {
         $('.hider').css("height", "0%");
         setTimeout(function () {
             $('.hider').css("display", "none");
+            $(reGet).css("animation", "showwww .3s linear forwards");
+            $(reGet).css("display", "block");
         }, 500);
 
 
@@ -529,6 +481,8 @@ function getPrice() {
         $('.hider').css("height", "0%");
         setTimeout(function () {
             $('.hider').css("display", "none");
+            $("#reGet").css("animation", "showwww .3s linear forwards");
+            $("#reGet").css("display", "block");
         }, 500);
     }
     setInterval(zonesChecker, 500);
@@ -536,6 +490,11 @@ function getPrice() {
 getPrice();
 
 function reGetPrice() {
+    $("#reGet").css("animation", "hiderrr .3s linear forwards");
+    setTimeout(function () {
+        $("#reGet").css("display", "none");
+
+    }, 500);
     isAStudent.checked = false;
     isNotAStudent.checked = false;
 
@@ -550,8 +509,8 @@ function reGetPrice() {
     workPlaceWithNotebook.checked = false;
     workPlaceOrdinary.checked = false;
 
-    $(workPlaceWithPC).css("background", "lightgray");
-    $(workPlaceWithNotebook).css("background", "lightgray");
+    $(workPlaceWithPC).css("opacity", "1");
+    $(workPlaceWithNotebook).css("opacity", "1");
 
     seatsCounter.value = 1;
     hoursQuantity.value = 1;
@@ -559,7 +518,7 @@ function reGetPrice() {
     wholeDay.checked = false;
     wholePlace.checked = false;
 
-    
+
 
     var zonesChecker = setInterval(function () {
 
@@ -583,7 +542,7 @@ function reGetPrice() {
         } else {
             workPlaceWithPC.removeAttribute("disabled", "true");
         }
-        
+
 
     }, 500);
 
@@ -591,7 +550,6 @@ function reGetPrice() {
     setTimeout(function () {
         $('.hider').css("display", "block");
     }, 500);
-
+    cost.innerHTML = "";
     return zonesChecker;
 }
-reGetPrice();
