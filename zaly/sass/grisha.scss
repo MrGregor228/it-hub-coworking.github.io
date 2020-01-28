@@ -288,6 +288,9 @@ a:hover {
 
 .nav-link {
     text-align: center;
+    @media screen and (max-width:992px) {
+        text-align: left;
+    }
 }
 
 .sec1 {
