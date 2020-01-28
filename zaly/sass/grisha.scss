@@ -296,6 +296,9 @@ a:hover {
     height: 92vh;
 
     .wrapper-center {
+        @media screen and (max-width:576px) {
+            margin-right: 0 !important;
+        }
         position: absolute;
         top: 50%;
         left: 50%;
@@ -456,7 +459,7 @@ $images: (item1: "../images/whitezone.jpg",
 
                 @media screen and (max-width:768px) {
                     padding: 0;
-
+    
                     @media screen and (max-width:576px) {
                         padding: .75em .75em 0 .75em;
                     }
