@@ -582,7 +582,7 @@ function getPrice() {
             clearInterval(zonesChecker);
 
         } else {
-            alert('Ви студент КЕІ КНЕУ чи ні?');
+            // alert('Ви студент КЕІ КНЕУ чи ні?');
         }
         $('.hider').css("animation", "hiderrr .3s linear forwards");
         $('.hider').css("height", "0%");
@@ -687,7 +687,7 @@ function getPrice() {
             clearInterval(zonesChecker);
 
         } else {
-            alert('Ви студент КЕІ КНЕУ чи ні?');
+            // alert('Ви студент КЕІ КНЕУ чи ні?');
         }
         $('.hider').css("animation", "hiderrr .3s linear forwards");
         $('.hider').css("height", "0%");
