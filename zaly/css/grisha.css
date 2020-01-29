@@ -578,10 +578,15 @@ a:hover {
 /* line 523, ../sass/grisha.scss */
 .navig-zones {
   position: fixed;
-  right: 0;
   top: 40%;
   z-index: 99999;
   transition: all .3s linear;
+}
+@media screen and (min-width: 865px) {
+  /* line 523, ../sass/grisha.scss */
+  .navig-zones {
+    right: 0;
+  }
 }
 @media screen and (max-width: 865px) {
   /* line 523, ../sass/grisha.scss */
@@ -590,32 +595,32 @@ a:hover {
   }
 }
 
-/* line 533, ../sass/grisha.scss */
+/* line 535, ../sass/grisha.scss */
 .arrow-to-show-menu {
   display: none;
   position: fixed;
   right: 0;
-  top: 20%;
+  top: 30%;
   width: 50px;
   z-index: 99999;
   transition: all .3s linear;
 }
-/* line 542, ../sass/grisha.scss */
+/* line 544, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu:hover, .arrow-to-show-menu .hide-menu:focus, .arrow-to-show-menu .hide-menu:active, .arrow-to-show-menu .show-menu:hover, .arrow-to-show-menu .show-menu:focus, .arrow-to-show-menu .show-menu:active {
   box-shadow: none;
   outline: none;
 }
-/* line 547, ../sass/grisha.scss */
+/* line 549, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu {
   display: none;
   animation-fill-mode: both;
 }
-/* line 551, ../sass/grisha.scss */
+/* line 553, ../sass/grisha.scss */
 .arrow-to-show-menu .show-menu {
   animation-fill-mode: both;
 }
 @media screen and (max-width: 865px) {
-  /* line 533, ../sass/grisha.scss */
+  /* line 535, ../sass/grisha.scss */
   .arrow-to-show-menu {
     display: block;
   }

@@ -1,26 +1,27 @@
-var hideMenu = document.getElementById('hide-menu'),
-    navigZone = document.getElementById('list-examples'),
-    showMenu = document.getElementById('show-menu'),
-    queryNavigationZone = $('#list-examples');
+var hideMenu = $('.hide-menu'),
+    navigZone = $('list-examples'),
+    showMenu = $('.show-menu');
 
 function showButton() {
-    hideMenu.style = 'animation: showButton .7s linear';
-    hideMenu.style = 'display: block';
-    showMenu.style = 'animation: hideButton .7s linear';
-    showMenu.style = 'display: none';
-    $('#list-examples').css('right', '0');
+    hideMenu.css('animation', 'showButton .7s linear');
+    hideMenu.css('display', 'block');
+    showMenu.css('animation', 'hideButton .7s linear');
+    showMenu.css('display', 'none');
+    $('.navig-zones').attr('style', 'right: 0px !important');
 }
 
 function hideButton() {
-    showMenu.style = 'animation: showButton .7s linear';    
-    showMenu.style = 'display: block';
-    hideMenu.style = 'animation: hideButton .7s linear';    
-    hideMenu.style = 'display: none';
-    $('#list-examples').css('right', '-100%');
+    showMenu.css('animation', 'showButton .7s linear');    
+    showMenu.css('display', 'block');
+    hideMenu.css('animation', 'hideButton .7s linear');    
+    hideMenu.css('display', 'none');
+    $('.navig-zones').attr('style', 'right: -100% !important');
 }
 
-setInterval(function () {
-    if (screen.width > 865 && $(queryNavigationZone).css('right', '-100%') == true) {
-        navigationZone.css('right', '0px');
+    if (screen.width < 865) {
+        $('.navig-zones').attr('style', 'right: -100%');
+    } else if (screen.width > 865){
+        $('.navig-zones').attr('style', 'right: 0');
+    } else {
+        console.log('Ошибка');
     }
-},100);
