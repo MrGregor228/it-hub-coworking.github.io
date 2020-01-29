@@ -525,6 +525,60 @@ $images: (item1: "../images/whitezone.jpg",
     right: 0;
     top:40%;
     z-index: 99999;
+    transition: all .3s linear;
+    @media screen and (max-width:865px) {
+        right: -100%;
+    }
+}
+.arrow-to-show-menu {
+    display: none;
+    position: fixed;
+    right:0;
+    top: 20%;
+    width: 50px;
+    z-index: 99999;
+    transition: all .3s linear;
+    .hide-menu,.show-menu {
+        &:hover, &:focus, &:active {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    .hide-menu {
+        display: none;
+        animation-fill-mode: both;
+    }
+    .show-menu {
+        animation-fill-mode: both;
+    }
+    @media screen and (max-width:865px) {
+            display: block;
+    }
+}
+@keyframes showButton {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        display: block!important;
+    }
+}
+
+@keyframes hideButton {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none!important;
+    }
 }
 
 @keyframes showwww {
@@ -534,6 +588,7 @@ $images: (item1: "../images/whitezone.jpg",
 
     100% {
         opacity: 1;
+        
     }
 }
 
