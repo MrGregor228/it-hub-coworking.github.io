@@ -520,6 +520,13 @@ $images: (item1: "../images/whitezone.jpg",
     }
 }
 
+.navig-zones {
+    position: fixed;
+    right: 0;
+    top:40%;
+    z-index: 99999;
+}
+
 @keyframes showwww {
     0% {
         opacity: 0;

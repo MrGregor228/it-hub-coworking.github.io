@@ -139,7 +139,14 @@
             </div>
         </div>
     </section>
-
+<div id="list-example" class="list-group navig-zones">
+    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-5">Item 5</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-6">Item 6</a>
+</div>
     <section class="sec2 container-fluid lh-2">
         <div class="row justify-content-center services">
             <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
@@ -148,14 +155,7 @@
                     <hr class="text-slicer">
                 </div>
 
-                <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-5">Item 5</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-6">Item 6</a>
-                  </div>
+                
 
 
                 <div class="container-fluid row justify-content-center m-0">
@@ -497,7 +497,8 @@
     </script>
     <script>
         
-    	$('.tool').tooltip('enable')
+        $('.tool').tooltip('enable');
+        $('body').scrollspy({ target: '#list-example' })
     
     </script>
     <!-- FONTAWESOME JS -->
