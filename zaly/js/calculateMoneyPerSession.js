@@ -42,6 +42,25 @@ var cost = document.getElementById('cost'),
 // console.log(workPlacePC);
 // console.log(workPlaceNotebook);
 
+var wholePricesForRooms = {
+    // Full price for White Zone
+    white: 346,
+    nextWhite: 288,
+    // Full price for Gray Zone
+    gray: 259,
+    nextGray: 161,
+    // Full price for Red Zone
+    red: 330,
+    nextRed: 234,
+    // Full price for Blue Zone
+    blue: 191,
+    nextBlue: 133,
+    // Full price for Meeting Room
+    meeting: 150,
+    // Full price for Event Hall
+    event: 260
+};
+
 var numberOfSeats = {
     whiteZone: 18,
     grayZone: 10,
@@ -49,6 +68,30 @@ var numberOfSeats = {
     blueZone: 8,
     meetingRoom: 8,
     eventHall: 60
+};
+
+var student = {
+    // usuall place
+    firstHour: 18,
+    everyNextHour: 14,
+    // place with laptop
+    placeWithLaptop: 19,
+    everyNextHourWithLaptop: 15,
+    // place with PC
+    placeWithPC: 20,
+    everyNextHourWithPC: 16
+};
+
+var notStudent = {
+    // usuall place
+    firstHour: 34,
+    everyNextHour: 22,
+    // place with laptop
+    placeWithLaptop: 35,
+    everyNextHourWithLaptop: 23,
+    // place with PC
+    placeWithPC: 37,
+    everyNextHourWithPC: 24
 };
 
 function whitezone() {
@@ -105,29 +148,68 @@ function eventhall() {
 
 wholePlace.onclick = function () {
     if (whiteZone.checked == true && wholePlace.checked == true) {
+
         seatsCounter.max = numberOfSeats.whiteZone;
         seatsCounter.value = numberOfSeats.whiteZone;
+
+        workPlaceWithPC.checked = false;
+        workPlaceWithNotebook.checked = false;
+        workPlaceOrdinary.checked = false;
+
         workPlaceWithPC.setAttribute("disabled", "false");
+
     } else if (grayZone.checked == true && wholePlace.checked == true) {
+
+        workPlaceWithPC.checked = false;
+        workPlaceWithNotebook.checked = false;
+        workPlaceOrdinary.checked = false;
+
         seatsCounter.max = numberOfSeats.grayZone;
         seatsCounter.value = numberOfSeats.grayZone;
         workPlaceWithPC.setAttribute("disabled", "true");
+
     } else if (blueZone.checked == true && wholePlace.checked == true) {
-        seatsCounter.max = numberOfSeats.redZone;
-        seatsCounter.value = numberOfSeats.redZone;
-        workPlaceWithPC.setAttribute("disabled", "true");
-    } else if (meetingRoom.checked == true && wholePlace.checked == true) {
+
+        workPlaceWithPC.checked = false;
+        workPlaceWithNotebook.checked = false;
+        workPlaceOrdinary.checked = false;
+
         seatsCounter.max = numberOfSeats.blueZone;
         seatsCounter.value = numberOfSeats.blueZone;
         workPlaceWithPC.setAttribute("disabled", "true");
-    } else if (redZone.checked == true && wholePlace.checked == true) {
+
+    } else if (meetingRoom.checked == true && wholePlace.checked == true) {
+
+        workPlaceWithPC.checked = false;
+        workPlaceWithNotebook.checked = false;
+        workPlaceOrdinary.checked = false;
+
+        seatsCounter.disabled = true;
+        
         seatsCounter.max = numberOfSeats.meetingRoom;
         seatsCounter.value = numberOfSeats.meetingRoom;
         workPlaceWithPC.setAttribute("disabled", "true");
+
+    } else if (redZone.checked == true && wholePlace.checked == true) {
+
+        workPlaceWithPC.checked = false;
+        workPlaceWithNotebook.checked = false;
+        workPlaceOrdinary.checked = false;
+
+        seatsCounter.max = numberOfSeats.redZone;
+        seatsCounter.value = numberOfSeats.redZone;
+        workPlaceWithPC.setAttribute("disabled", "true");
+
     } else if (eventHall.checked == true && wholePlace.checked == true) {
+
+        workPlaceWithPC.checked = false;
+        workPlaceWithNotebook.checked = false;
+        workPlaceOrdinary.checked = false;
+
         seatsCounter.max = numberOfSeats.eventHall;
         seatsCounter.value = numberOfSeats.eventHall;
         workPlaceWithPC.setAttribute("disabled", "true");
+
     } else {
 
         wholePlace.checked = false;
@@ -159,29 +241,6 @@ var zonesChecker = setInterval(function () {
 
 }, 500);
 
-var student = {
-    // usuall place
-    firstHour: 18,
-    everyNextHour: 14,
-    // place with laptop
-    placeWithLaptop: 19,
-    everyNextHourWithLaptop: 15,
-    // place with PC
-    placeWithPC: 20,
-    everyNextHourWithPC: 16
-};
-
-var notStudent = {
-    // usuall place
-    firstHour: 34,
-    everyNextHour: 22,
-    // place with laptop
-    placeWithLaptop: 35,
-    everyNextHourWithLaptop: 23,
-    // place with PC
-    placeWithPC: 37,
-    everyNextHourWithPC: 24
-};
 
 //     whiteZone: 18,
 //     grayZone: 10,
@@ -264,6 +323,7 @@ function workPlacesChecker() {
             zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
 
         } else if (eventHall.checked == true) { // EVENT HALL FOR ORDINARY SEATS
+            
             workPlaceWithPC.checked = false;
             workPlaceWithPC.disabled = true;
             $(workPlaceWithPC).css("opacity", "0.5");
@@ -271,8 +331,10 @@ function workPlacesChecker() {
             $(workPlaceWithNotebook).css("opacity", "0.5");
             workPlaceWithNotebook.checked = false;
 
+            seatsCounter.disabled = true;
+
             seatsCounter.max = numberOfSeats.eventHall;
-            seatsCounter.value = 1;
+            seatsCounter.value = 60;
             zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
         } else { // DEFAULT FOR ORDINARY SEAT
             workPlaceWithNotebook.disabled = false;
@@ -362,9 +424,10 @@ function workPlacesChecker() {
             workPlaceWithNotebook.disabled = true;
             $(workPlaceWithNotebook).css("opacity", "0.5");
 
+            seatsCounter.disabled = true;
 
             seatsCounter.max = numberOfSeats.eventHall;
-            seatsCounter.value = 1;
+            seatsCounter.value = 60;
             zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
 
         } else { // DEFAULT FOR NOTEBOOK SEATS
@@ -441,6 +504,47 @@ function getPrice() {
             console.log(+price + " грн");
             cost.innerHTML = "Вартість становить: " + price + " грн";
             clearInterval(zonesChecker);
+        } if (whiteZone.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.white * ((hoursQuantity.value - 1) * wholePricesForRooms.nextWhite);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+        } else if (grayZone.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.gray * ((hoursQuantity.value - 1) * wholePricesForRooms.nextGray);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
+        } else if (blueZone.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.blue * ((hoursQuantity.value - 1) * wholePricesForRooms.nextBlue);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
+        } else if (meetingRoom.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.meeting * hoursQuantity.value;
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
+        } else if (redZone.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.red * ((hoursQuantity.value - 1) * wholePricesForRooms.nextRed);
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
+        } else if (eventHall.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.event * hoursQuantity.value;
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
         } else {
             alert('Ви студент КЕІ КНЕУ чи ні?');
         }
