@@ -318,6 +318,9 @@ function workPlacesChecker() {
             $(workPlaceWithNotebook).css("opacity", "0.5");
             workPlaceWithNotebook.checked = false;
 
+            seatsCounter.setAttribute("disabled", "true");
+            $("#quant2 .quantity-button").css("display", "none");
+            
             seatsCounter.max = numberOfSeats.meetingRoom;
             seatsCounter.value = 1;
             zonePlaceCounter.innerHTML = "Meeting Room " + numberOfSeats.meetingRoom;
@@ -331,7 +334,8 @@ function workPlacesChecker() {
             $(workPlaceWithNotebook).css("opacity", "0.5");
             workPlaceWithNotebook.checked = false;
 
-            seatsCounter.disabled = true;
+            seatsCounter.setAttribute("disabled", "true");
+            $("#quant2 .quantity-button").css("display", "none");
 
             seatsCounter.max = numberOfSeats.eventHall;
             seatsCounter.value = 60;
@@ -424,10 +428,11 @@ function workPlacesChecker() {
             workPlaceWithNotebook.disabled = true;
             $(workPlaceWithNotebook).css("opacity", "0.5");
 
-            seatsCounter.disabled = true;
+            seatsCounter.setAttribute("disabled", "true");
+            $("#quant2 .quantity-button").css("display", "none");
 
             seatsCounter.max = numberOfSeats.eventHall;
-            seatsCounter.value = 60;
+            seatsCounter.value = numberOfSeats.eventHall;
             zonePlaceCounter.innerHTML = "Event Hall " + numberOfSeats.eventHall;
 
         } else { // DEFAULT FOR NOTEBOOK SEATS
@@ -505,24 +510,48 @@ function getPrice() {
             cost.innerHTML = "Вартість становить: " + price + " грн";
             clearInterval(zonesChecker);
         } if (whiteZone.checked == true && wholePlace.checked == true) {
-
-            price = wholePricesForRooms.white * ((hoursQuantity.value - 1) * wholePricesForRooms.nextWhite);
+            
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.white;
+            } else {
+                price = wholePricesForRooms.white * ((hoursQuantity.value - 1) * wholePricesForRooms.nextWhite);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }
+            
             console.log(+price + " грн");
             cost.innerHTML = "Вартість становить: " + price + " грн";
-            clearInterval(zonesChecker);
+            clearInterval(zonesChecker);                       
+           
         } else if (grayZone.checked == true && wholePlace.checked == true) {
 
-            price = wholePricesForRooms.gray * ((hoursQuantity.value - 1) * wholePricesForRooms.nextGray);
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.gray;
+            } else {
+                price = wholePricesForRooms.gray * ((hoursQuantity.value - 1) * wholePricesForRooms.nextGray);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }         
             console.log(+price + " грн");
             cost.innerHTML = "Вартість становить: " + price + " грн";
-            clearInterval(zonesChecker);
+            clearInterval(zonesChecker); 
 
         } else if (blueZone.checked == true && wholePlace.checked == true) {
 
-            price = wholePricesForRooms.blue * ((hoursQuantity.value - 1) * wholePricesForRooms.nextBlue);
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.blue;
+            } else {
+                price = wholePricesForRooms.blue * ((hoursQuantity.value - 1) * wholePricesForRooms.nextBlue);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }         
+
             console.log(+price + " грн");
             cost.innerHTML = "Вартість становить: " + price + " грн";
-            clearInterval(zonesChecker);
+            clearInterval(zonesChecker); 
 
         } else if (meetingRoom.checked == true && wholePlace.checked == true) {
 
@@ -533,10 +562,17 @@ function getPrice() {
 
         } else if (redZone.checked == true && wholePlace.checked == true) {
 
-            price = wholePricesForRooms.red * ((hoursQuantity.value - 1) * wholePricesForRooms.nextRed);
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.red;
+            } else {
+                price = wholePricesForRooms.red * ((hoursQuantity.value - 1) * wholePricesForRooms.nextRed);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }         
             console.log(+price + " грн");
             cost.innerHTML = "Вартість становить: " + price + " грн";
-            clearInterval(zonesChecker);
+            clearInterval(zonesChecker); 
 
         } else if (eventHall.checked == true && wholePlace.checked == true) {
 
@@ -578,6 +614,78 @@ function getPrice() {
             console.log(+price + " грн");
             cost.innerHTML = "Вартість становить: " + price + " грн";
             clearInterval(zonesChecker);
+        } if (whiteZone.checked == true && wholePlace.checked == true) {
+            
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.white;
+            } else {
+                price = wholePricesForRooms.white * ((hoursQuantity.value - 1) * wholePricesForRooms.nextWhite);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }
+            
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);                       
+           
+        } else if (grayZone.checked == true && wholePlace.checked == true) {
+
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.gray;
+            } else {
+                price = wholePricesForRooms.gray * ((hoursQuantity.value - 1) * wholePricesForRooms.nextGray);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }         
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker); 
+
+        } else if (blueZone.checked == true && wholePlace.checked == true) {
+
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.blue;
+            } else {
+                price = wholePricesForRooms.blue * ((hoursQuantity.value - 1) * wholePricesForRooms.nextBlue);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }         
+
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker); 
+
+        } else if (meetingRoom.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.meeting * hoursQuantity.value;
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
+        } else if (redZone.checked == true && wholePlace.checked == true) {
+
+            if (hoursQuantity.value == 1) {
+                price = wholePricesForRooms.red;
+            } else {
+                price = wholePricesForRooms.red * ((hoursQuantity.value - 1) * wholePricesForRooms.nextRed);
+                console.log(+price + " грн");
+                cost.innerHTML = "Вартість становить: " + price + " грн";
+                clearInterval(zonesChecker); 
+            }         
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker); 
+
+        } else if (eventHall.checked == true && wholePlace.checked == true) {
+
+            price = wholePricesForRooms.event * hoursQuantity.value;
+            console.log(+price + " грн");
+            cost.innerHTML = "Вартість становить: " + price + " грн";
+            clearInterval(zonesChecker);
+
         } else {
             alert('Ви студент КЕІ КНЕУ чи ні?');
         }

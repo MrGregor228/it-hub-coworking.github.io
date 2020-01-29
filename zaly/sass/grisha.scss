@@ -522,10 +522,12 @@ $images: (item1: "../images/whitezone.jpg",
 
 .navig-zones {
     position: fixed;
-    right: 0;
     top:40%;
     z-index: 99999;
     transition: all .3s linear;
+    @media screen and (min-width:865px) {
+        right: 0;
+    }
     @media screen and (max-width:865px) {
         right: -100%;
     }
@@ -534,7 +536,7 @@ $images: (item1: "../images/whitezone.jpg",
     display: none;
     position: fixed;
     right:0;
-    top: 20%;
+    top: 30%;
     width: 50px;
     z-index: 99999;
     transition: all .3s linear;
