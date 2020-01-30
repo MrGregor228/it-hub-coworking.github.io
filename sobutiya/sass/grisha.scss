@@ -159,3 +159,25 @@ a:hover {
         text-align: left;
     }
 }
+.bouncing-link {
+    position: relative;
+    animation: bouncing .7s linear;
+    transition: all .3s linear;
+}
+@keyframes bouncing {
+    0%{
+        top: 0px;
+    }
+    25%{
+        top: -20px;
+    }
+    50%{
+        top: 0px    ;
+    }
+    75%{
+        top:-12px;
+    }
+    100%{
+        top:0px;
+    }
+}
