@@ -47,6 +47,7 @@
                     </button>
                 </div>
                 <div class="modal-body row">
+                    
                     <div class="hider" style="animation: height .3s linear;">
 
                     
@@ -64,19 +65,19 @@
                     <h5>2. Яку зону бажаєте відвідати/Замовити?</h5>
                     <div class="col-12 p-0" id="zoneContainer">
                         <fieldset class="col-6 p-0">
-                            <input type="radio" name="zones" id="WhiteZone" onclick="whitezone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">White Zone</label>  
+                            <input type="radio" name="zones" id="WhiteZone" onchange="whitezone();whitezone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">White Zone</label>  
                             <br>                          
-                            <input type="radio" name="zones" id="GrayZone"  onclick="grayzone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Gray Zone</label> 
+                            <input type="radio" name="zones" id="GrayZone"  onchange="grayzone();grayzone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Gray Zone</label> 
                             <br>                           
-                            <input type="radio" name="zones" id="RedZone"  onclick="redzone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Red Zone</label>   
+                            <input type="radio" name="zones" id="RedZone"  onchange="redzone();redzone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Red Zone</label>   
                         </fieldset>
 
                         <fieldset class="col-6 p-0">
-                            <input type="radio" name="zones" id="BlueZone"  onclick="bluezone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Blue Zone</label>
+                            <input type="radio" name="zones" id="BlueZone"  onchange="bluezone();bluezone();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Blue Zone</label>
                             <br>
-                            <input type="radio" name="zones" id="MeetingRoom"  onclick="meetingroom();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Meeting room</label>
+                            <input type="radio" name="zones" id="MeetingRoom"  onchange="meetingroom();meetingroom();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Meeting room</label>
                             <br>
-                            <input type="radio" name="zones" id="EventHall"  onclick="eventhall();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Event Hall</label>
+                            <input type="radio" name="zones" id="EventHall"  onchange="eventhall();eventhall();">&nbsp;&nbsp;<label class="radio-labels" for="zones">Event Hall</label>
                             
                         </fieldset>
                     </div>
@@ -101,7 +102,7 @@
 
                     <fieldset class="w-100 mb-3 mb-sm-0">
                         <div class="quantity " id="quant1"><input type="number" name="" id="hoursQuantity" placeholder="" max="12.5" min="1" class="col-12 col-sm-6" step="0.5" value="1"></div>                
-                        <input type="checkbox" name="" id="wholeDay" class="ml-sm-3 ml-0">&nbsp;&nbsp;<label for="" class=" radio-labels"> Весь день</label>
+                        <input type="checkbox" name="" id="wholeDay" class="ml-sm-3 ml-0" onchange="blockHoursQuantity();">&nbsp;&nbsp;<label for="" class=" radio-labels"> Весь день</label>
                     </fieldset>
 
                     <h5>5. На яку кількість людей розраховуєте?</h5>
@@ -110,7 +111,7 @@
                             <span class="small-text text-muted">(максимальна кількість місць у <span class="r-text bld" id="zonePlaceCounter"></span>)</span>
                         </div>
                         <div class="col-12 col-sm-5 mt-3 p-0">
-                            <input type="checkbox" name="Place" id="wholePlace">&nbsp;&nbsp;<label class=" radio-labels"> Всю зону / залу</label>
+                            <input type="checkbox" name="Place" id="wholePlace">&nbsp;&nbsp;<label class=" radio-labels" onchange="blockPCNotebookUsuall();"> Всю зону / залу</label>
                         </div>
                         </fieldset>
                     <script src="js/buttonsOnInputNumber.js"></script>
@@ -122,6 +123,9 @@
                 </div>
             </div>
                 <script src="js/calculateMoneyPerSession.js"></script>
+                <!-- <script>
+                    whilePlacesNotChoosed();
+                </script> -->
             </div>
         </div>
     </div>
