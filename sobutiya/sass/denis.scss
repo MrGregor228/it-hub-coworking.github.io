@@ -1,0 +1,40 @@
+$yellow: #ffc107;
+
+.sec1 {
+    height: 90vh;
+    .row {
+        padding: 0;
+        .wrapper-center {
+            margin-right: auto;
+            margin-left: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    // Текст под заголовком //
+    .podnazva {
+        font-size: 18px;
+    }
+    .text-slicer {
+        width: 12em;
+        height: 2.5px;
+        background-color: $yellow;
+    }
+    
+    
+}
+
+.sec2 {
+    .komanda {
+        font-size: 30px;
+    }
+
+    .card-title {
+        font-size: 25px;
+    }
+    
+}
+
+
