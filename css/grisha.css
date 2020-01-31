@@ -196,12 +196,12 @@ a:hover {
   -webkit-transition-timing-function: linear;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-  box-shadow: 0px 0 0 #ffc107 inset, 5px 5px 0 lightgray;
+  box-shadow: 0px 0 0 #ffc107 inset;
 }
 /* line 119, ../sass/grisha.scss */
 .change6:hover {
   background: none;
-  box-shadow: 200px 0 0 #ffc107 inset, 2px 2px 0 lightgray;
+  box-shadow: 200px 0 0 #ffc107 inset;
   border-color: black;
   border-radius: 0px;
 }
