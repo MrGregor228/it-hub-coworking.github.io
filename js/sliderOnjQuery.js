@@ -5,7 +5,7 @@ var pauseButton = document.getElementById('pause');
 var playing = true;
 
 var textOfTheSliderContainer = document.getElementById('text-of-the-slide');
-var textOfTheSlide = ["White Zone", "Gray Zone", "Red Zone", "Blue Zone", "Meeting Room", "Event Hall"];
+var textOfTheSlide = ["White Zone", "Gray Zone", "Red Zone", "Blue Zone", "Meeting Room", "Event Hall", "Coffee Time"];
 
 function nextSlide() {
     goToSlide(currentSlide + 1);
@@ -48,6 +48,8 @@ setInterval(function() {
         textOfTheSliderContainer.innerHTML = textOfTheSlide[4];
     } else if (currentSlide == 5) {
         textOfTheSliderContainer.innerHTML = textOfTheSlide[5];
+    } else if (currentSlide == 6) {
+        textOfTheSliderContainer.innerHTML = textOfTheSlide[6];
     } else {
         console.log("Ошибка");
     }

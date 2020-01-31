@@ -289,13 +289,19 @@ a:hover {
   background-position: center center;
   background-size: cover;
 }
-/* line 209, ../sass/grisha.scss */
+/* line 208, ../sass/grisha.scss */
+.sec1 .row .relative-wrapper #slides .slide:nth-of-type(7) {
+  background: url("../images/slide7.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 214, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .showing {
   width: 100%;
   opacity: 1;
   z-index: 3;
 }
-/* line 217, ../sass/grisha.scss */
+/* line 222, ../sass/grisha.scss */
 .sec1 .row #names-of-slides {
   position: absolute;
   width: 320px !important;
@@ -306,38 +312,38 @@ a:hover {
   transition: width .3s linear;
 }
 @media screen and (max-width: 768px) {
-  /* line 217, ../sass/grisha.scss */
+  /* line 222, ../sass/grisha.scss */
   .sec1 .row #names-of-slides {
     text-align: center !important;
     width: 160px !important;
     bottom: 0%;
   }
-  /* line 229, ../sass/grisha.scss */
+  /* line 234, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .white-bg {
     padding-top: 0.75em !important;
   }
-  /* line 232, ../sass/grisha.scss */
+  /* line 237, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .text-of-the-slide {
     font-size: 23px !important;
   }
-  /* line 235, ../sass/grisha.scss */
+  /* line 240, ../sass/grisha.scss */
   .sec1 .row #names-of-slides #previous, .sec1 .row #names-of-slides #next {
     display: none !important;
   }
 }
-/* line 240, ../sass/grisha.scss */
+/* line 245, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .white-bg {
   background-color: white;
   padding: .75em;
   animation: width .3s linear 1;
   transition: .3s linear;
 }
-/* line 245, ../sass/grisha.scss */
+/* line 250, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .white-bg .text-of-the-slide {
   font-size: 25px;
   transition: .3s linear;
 }
-/* line 252, ../sass/grisha.scss */
+/* line 257, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #previous, .sec1 .row #names-of-slides .buttons-panel #next, .sec1 .row #names-of-slides .buttons-panel #pause {
   color: orange;
   font-size: 25px;
@@ -347,32 +353,32 @@ a:hover {
   padding: .75em;
   transition: background .3s linear;
 }
-/* line 260, ../sass/grisha.scss */
+/* line 265, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #previous:hover, .sec1 .row #names-of-slides .buttons-panel #next:hover, .sec1 .row #names-of-slides .buttons-panel #pause:hover {
   background: #f2f2f2;
 }
-/* line 264, ../sass/grisha.scss */
+/* line 269, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #pause {
   font-size: 23px;
 }
 
-/* line 274, ../sass/grisha.scss */
+/* line 279, ../sass/grisha.scss */
 .sec4 * {
   text-align: left !important;
 }
-/* line 278, ../sass/grisha.scss */
+/* line 283, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 281, ../sass/grisha.scss */
+/* line 286, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 284, ../sass/grisha.scss */
+/* line 289, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 290, ../sass/grisha.scss */
+/* line 295, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -380,18 +386,18 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 298, ../sass/grisha.scss */
+/* line 303, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
 }
 
-/* line 304, ../sass/grisha.scss */
+/* line 309, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 304, ../sass/grisha.scss */
+  /* line 309, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;
