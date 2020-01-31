@@ -14,6 +14,7 @@ $yellow:#ffc107;
 .card-title {
     font-weight: bold;
     font-size: 19.5px;
+    white-space: nowrap;
 
     &:after {
         margin-top: 7px;
@@ -59,17 +60,24 @@ $yellow:#ffc107;
         @media screen and (max-width:576px) {
             margin-right: 0 !important;
         }
+        .card-title {
+            font-size: 15px;
+            color: gray;
+            &:after {
+                display: none;
+            }
+        }
 
         line-height: 1.5;
 
         .card-body {
             .conditioner {
-                margin-bottom: 0.5em !important;
+                margin-bottom: 0.25em !important;
             }
 
             .text-center * {
                 color: $yellow;
-                font-size: 3em;
+                font-size: 2.5em;
                 margin-bottom: 1em;
 
             }

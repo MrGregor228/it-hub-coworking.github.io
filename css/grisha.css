@@ -65,14 +65,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 3, ../sass/grisha.scss */
 * {
-  font-family: 'IBM Plex Serif', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* line 7, ../sass/grisha.scss */
-path * {
+.path {
   stroke-dasharray: 1000;
   stroke-dashoffset: -250;
-  animation: dash 4.75s linear forwards !important;
+  animation: dash 1s linear forwards !important;
 }
 
 @keyframes dash {
@@ -206,42 +206,102 @@ a:hover {
   border-radius: 0px;
 }
 
-/* line 128, ../sass/grisha.scss */
+/* line 127, ../sass/grisha.scss */
+.mousewheel {
+  margin-top: 10em !important;
+}
+
+/* line 131, ../sass/grisha.scss */
+#landShow {
+  position: fixed;
+  bottom: 3em;
+  left: 1em;
+  font-size: 25px;
+  border-radius: 3px;
+  z-index: 11;
+}
+
+/* line 139, ../sass/grisha.scss */
+#langShowerMenu {
+  background-color: #fff;
+  position: fixed;
+  bottom: 7.25em;
+  font-size: 17px;
+  box-shadow: 0 0 0 2px #ffc107;
+  left: 1.8em;
+  z-index: 10;
+  height: 105px;
+  overflow: hidden;
+  animation: plusHeight .3s 1 linear both;
+}
+/* line 150, ../sass/grisha.scss */
+#langShowerMenu a {
+  color: black;
+  width: 100%;
+  padding: 0.5em;
+  transition: background .3s linear;
+}
+/* line 155, ../sass/grisha.scss */
+#langShowerMenu a:hover {
+  background: #ffdb6d;
+}
+/* line 159, ../sass/grisha.scss */
+#langShowerMenu.hiddddden {
+  animation: minusHeight .3s 1 linear both;
+}
+
+@keyframes minusHeight {
+  0% {
+    height: 105px;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes plusHeight {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 105px;
+  }
+}
+/* line 173, ../sass/grisha.scss */
 .carousel-control-prev,
 .carousel-control-next {
   font-size: 25px;
   color: greenyellow;
 }
 
-/* line 136, ../sass/grisha.scss */
+/* line 181, ../sass/grisha.scss */
 .sec1 {
   height: 90vh;
 }
-/* line 142, ../sass/grisha.scss */
+/* line 187, ../sass/grisha.scss */
 .sec1 .row .col-12 {
   padding: 0;
 }
-/* line 146, ../sass/grisha.scss */
+/* line 191, ../sass/grisha.scss */
 .sec1 .row .wrapper-centerd {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 152, ../sass/grisha.scss */
+/* line 197, ../sass/grisha.scss */
 .sec1 .row .wrapper-centerd .main-text {
   font-size: 30px;
   font-family: "Atures900" !important;
 }
-/* line 157, ../sass/grisha.scss */
+/* line 202, ../sass/grisha.scss */
 .sec1 .row .wrapper-centerd .card-text {
   font-weight: bold;
 }
-/* line 161, ../sass/grisha.scss */
+/* line 206, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper {
   position: relative;
 }
-/* line 164, ../sass/grisha.scss */
+/* line 209, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide {
   position: absolute;
   top: 0;
@@ -253,97 +313,97 @@ a:hover {
   opacity: 0;
   transition: .5s linear;
 }
-/* line 174, ../sass/grisha.scss */
+/* line 219, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(1) {
   background: url("../images/slide3.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 180, ../sass/grisha.scss */
+/* line 225, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(2) {
   background: url("../images/slide2.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 186, ../sass/grisha.scss */
+/* line 231, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(3) {
   background: url("../images/slide1.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 191, ../sass/grisha.scss */
+/* line 236, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(4) {
   background: url("../images/slide4.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 197, ../sass/grisha.scss */
+/* line 242, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(5) {
   background: url("../images/slide6.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 203, ../sass/grisha.scss */
+/* line 248, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(6) {
   background: url("../images/slide5.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 208, ../sass/grisha.scss */
+/* line 253, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(7) {
   background: url("../images/slide7.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 214, ../sass/grisha.scss */
+/* line 259, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .showing {
   width: 100%;
   opacity: 1;
   z-index: 3;
 }
-/* line 222, ../sass/grisha.scss */
+/* line 267, ../sass/grisha.scss */
 .sec1 .row #names-of-slides {
   position: absolute;
   width: 320px !important;
   left: 0;
   bottom: 15%;
-  z-index: 20;
+  z-index: 9;
   background: white;
   transition: width .3s linear;
 }
 @media screen and (max-width: 768px) {
-  /* line 222, ../sass/grisha.scss */
+  /* line 267, ../sass/grisha.scss */
   .sec1 .row #names-of-slides {
     text-align: center !important;
     width: 160px !important;
     bottom: 0%;
   }
-  /* line 234, ../sass/grisha.scss */
+  /* line 279, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .white-bg {
     padding-top: 0.75em !important;
   }
-  /* line 237, ../sass/grisha.scss */
+  /* line 282, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .text-of-the-slide {
     font-size: 23px !important;
   }
-  /* line 240, ../sass/grisha.scss */
+  /* line 285, ../sass/grisha.scss */
   .sec1 .row #names-of-slides #previous, .sec1 .row #names-of-slides #next {
     display: none !important;
   }
 }
-/* line 245, ../sass/grisha.scss */
+/* line 290, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .white-bg {
   background-color: white;
   padding: .75em;
   animation: width .3s linear 1;
   transition: .3s linear;
 }
-/* line 250, ../sass/grisha.scss */
+/* line 295, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .white-bg .text-of-the-slide {
   font-size: 25px;
   transition: .3s linear;
 }
-/* line 257, ../sass/grisha.scss */
+/* line 302, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #previous, .sec1 .row #names-of-slides .buttons-panel #next, .sec1 .row #names-of-slides .buttons-panel #pause {
   color: orange;
   font-size: 25px;
@@ -353,32 +413,32 @@ a:hover {
   padding: .75em;
   transition: background .3s linear;
 }
-/* line 265, ../sass/grisha.scss */
+/* line 310, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #previous:hover, .sec1 .row #names-of-slides .buttons-panel #next:hover, .sec1 .row #names-of-slides .buttons-panel #pause:hover {
   background: #f2f2f2;
 }
-/* line 269, ../sass/grisha.scss */
+/* line 314, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #pause {
   font-size: 23px;
 }
 
-/* line 279, ../sass/grisha.scss */
+/* line 324, ../sass/grisha.scss */
 .sec4 * {
   text-align: left !important;
 }
-/* line 283, ../sass/grisha.scss */
+/* line 328, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 286, ../sass/grisha.scss */
+/* line 331, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 289, ../sass/grisha.scss */
+/* line 334, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 295, ../sass/grisha.scss */
+/* line 340, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -386,18 +446,18 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 303, ../sass/grisha.scss */
+/* line 348, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
 }
 
-/* line 309, ../sass/grisha.scss */
+/* line 354, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 309, ../sass/grisha.scss */
+  /* line 354, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;

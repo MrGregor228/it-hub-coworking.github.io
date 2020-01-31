@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/grisha.css">
     <link rel="stylesheet" href="css/navigHeader.css">
+    <link rel="stylesheet" href="css/langShow.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/denis.css">
     <!-- Fontawesome CSS -->
@@ -28,6 +29,7 @@
 
     <script src="js/heading.js"></script>
     <script src="js/windowOnloadAddClass.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <title>IT HUB | Головна</title>
 </head>
@@ -48,11 +50,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-lg-auto mr-5 lh-2">
                         <li class="nav-item mr-3 active">
-                            <a class="nav-link mt-lg-0" href="https://ithub-test.ml/">Головна<span
+                            <a class="nav-link mt-lg-0" href="../">Головна<span
                                     class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" href="#">Послуги</a>
                         </li>
                         <li class="nav-item mr-3">
                             <a class="nav-link" href="#">Тарифи</a>
@@ -61,16 +60,33 @@
                             <a class="nav-link" href="zaly/">Зали</a>
                         </li>
                         <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Green Hub</a>
+                        </li>
+                        <li class="nav-item mr-3">
                             <a class="nav-link" href="sobutiya/">Заходи</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFirst" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Про нас <i class="fas fa-angle-down"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownFirst">
                                 <a class="dropdown-item" href="#">Про IT HUB</a>
-                                <a class="dropdown-item" href="#">Наша команда</a>
+                                <a class="dropdown-item" href="#">Правила</a>
+                                <a class="dropdown-item" href="#">Послуги</a>
+                                <a class="dropdown-item" href="#">Галерея</a>
+                                <a class="dropdown-item" href="#">Партнери</a>
+                                <a class="dropdown-item" href="#">Контакти</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-3 d-block d-lg-none">
+                            <a href="" class="nav-link dropdown-toggle" href="#" id="navbarDropdownSecond" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-globe"></i> <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSecond">
+                                <a class="dropdown-item" href="#">Ru</a>
+                                <a class="dropdown-item" href="#">En</a>
                             </div>
                         </li>
                     </ul>
@@ -83,6 +99,9 @@
         </div>
     </header>
     <!-- <script src="js/loadingHeader.js"></script> -->
+    <script src="js/displayLangButton.js"></script>
+    <script src="js/langShowerMenu.js"></script>
+
     <div class="pt-10"></div>
     <section class="sec1 container-fluid">
         <div class="row h-100">
@@ -92,6 +111,9 @@
                     <p class="card-text">IT HUB – це мережа інноваційних локацій <span class="box-shadow-underlined">для роботи, заходів та бізнес-зустрічей</span> в Криворізькому економічному інституті ДВНЗ «Київський національний економічний університет імені Вадима Гетьмана».</p>
                     <br>
                     <p class="card-text">Ми допоможемо кожному розкрити свої ідеї та потенціал <span class="box-shadow-underlined">у максимально комфортних умовах</span>.</p>
+                    <div class="container-fluid mt-5 m-0 row pt-10 align-items-center mousewheel">
+                        <img src="images/scrolling_mousewheel.gif" width="25" alt="" class="d-block mx-auto">
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-7 col-lg-8 col-xl-8">
@@ -128,9 +150,7 @@
         
         
     </section>
-    <div class="container-fluid pt-5 mb-5 m-0 row pt-10 align-items-center">
-        <img src="images/scrolling_mousewheel.gif" width="25" alt="" class="d-block mx-auto">
-    </div>
+    
     <section class="sec2 container-fluid">
 
         <div class="row justify-content-center services">
@@ -180,7 +200,7 @@
     <br>
     <section class="sec3 container-fluid">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center container mx-auto">
             <h1 class="mt-4 mb-3 text-center w-100 nazva">НАШІ ПЕРЕВАГИ</h1>
             <div class="col-12">
                 <hr class="text-slicer">
@@ -188,123 +208,54 @@
 
 
 
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
+            <div class="card col-12 col-sm-5 col-md-5 col-lg-2 mt-3">
                 <div class="card-body">
                     <div class="text-center">
                         <i class="fad fa-map-marker-alt"></i>
                     </div>
                     <h5 class="card-title">Розміщення</h5>
-                  
-                    <p class="card-text">Ми знаходимося майже в центрі міста. Домовитися про бізнес зустрічі простіше простого.</p>
+                    <!-- <p class="card-text">Ми знаходимося майже в центрі міста. Домовитися про бізнес зустрічі простіше простого.</p> -->
                 </div>
             </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
+            <div class="card col-12 col-sm-5 col-md-5 col-lg-2 mt-3">
                 <div class="card-body">
                     <div class="text-center">
                         <i class="fad fa-star"></i>
                     </div>
                     <h5 class="card-title">Послуги</h5>
                   
-                    <p class="card-text">У нас у вартість включено все, що може знадобитися для комфортної роботи. </p>
+                    <!-- <p class="card-text">У нас у вартість включено все, що може знадобитися для комфортної роботи. </p> -->
                 </div>
             </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
+            <div class="card col-12 col-sm-5 col-md-5 col-lg-2 mt-3">
                 <div class="card-body">
                     <div class="text-center">
-                        <!-- <i class="fad fa-coffee-togo"></i> -->
                         <i class="fad fa-clock"></i>
                     </div>
                     <h5 class="card-title">Графік роботи</h5>
                   
-                    <p class="card-text">Ми працюємо 7 днів на тиждень
-                        з 8:30 до 21:00. Ніяких перерв, свят і вихідних.</p>
+                    <!-- <p class="card-text">Ми працюємо 7 днів на тиждень
+                        з 8:30 до 21:00. Ніяких перерв, свят і вихідних.</p> -->
                 </div>
             </div>
-            <!-- <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
-                <div class="card-body">
-                    <div class="text-center">
-                        <i class="fad fa-microphone-stand"></i>
-                    </div>
-                    <h5 class="card-title">Радиомикрофони и микшерский пульт</h5>
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
-                <div class="card-body">
-                    <div class="text-center">
-                        <i class="fad fa-desktop-alt"></i>
-                    </div>
-                    <h5 class="card-title">Экран</h5>
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
-                <div class="card-body">
-                    <div class="text-center">
-                        <i class="fad fa-projector"></i>
-                    </div>
-                    <h5 class="card-title">Проектор</h5>
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
-                <div class="card-body">
-                    <div class="text-center">
-                        <i class="fad fa-print"></i>
-                    </div>
-                    <h5 class="card-title">Печать ч/б (10 лис.)</h5>
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
-                <div class="card-body">
-                    <div class="text-center">
-                        <i class="fad fa-camera"></i>
-                    </div>
-                    <h5 class="card-title">Фотосъемка</h5>
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-
-            </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
-                <div class="card-body">
-                    <div class="text-center">
-                        <i class="fad fa-person-booth"></i>
-                    </div>
-                    <h5 class="card-title">Гардеробная комната</h5>
-                  
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div> -->
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
+            <div class="card col-12 col-sm-5 col-md-5 col-lg-2 mt-3">
                 <div class="card-body">
                     <div class="text-center">
                         <i class="fad fa-hand-holding-usd"></i>
                     </div>
                     <h5 class="card-title">Ціна</h5>
-                  
-                    <p class="card-text">Орендувати у нас робоче місце вигідніше ніж орендувати офіс в центрі, оплачувати комунальні, інтернет, закуповувати чай каву і робити прибирання.</p>
+<!--                   
+                    <p class="card-text">Орендувати у нас робоче місце вигідніше ніж орендувати офіс в центрі, оплачувати комунальні, інтернет, закуповувати чай каву і робити прибирання.</p> -->
                 </div>
             </div>
-            <div class="card col-12 col-sm-5 col-md-5 col-lg-3 mt-3">
+            <div class="card col-12 col-sm-5 col-md-5 col-lg-2 mt-3">
                 <div class="card-body">
                     <div class="text-center">
                         <i class="fas fa-plus"></i>
                     </div>
-                    <h5 class="card-title">І ЩЕ</h5>
+                    <h5 class="card-title">Комфорт</h5>
                     
-                    <p class="card-text"> У нас свіжий ремонт, нові меблі і техніка. Ми не економимо на каві, чаї, печеві і зарплатах наших адмінів.</p>
+                    <!-- <p class="card-text"> У нас свіжий ремонт, нові меблі і техніка. Ми не економимо на каві, чаї, печеві і зарплатах наших адмінів.</p> -->
                 </div>
             </div>
         </div>
@@ -326,6 +277,23 @@
                     <div class="owl-stage">
 
                         <div class="owl-item active">
+
+                            <div class="card col-12 mx-auto" style="max-width: 320px;">
+                                <div class="card-body text-left">
+                                    <div class="mx-auto mt-3 mb-3">
+                                        <img src="images/dev1.jpg" alt="">
+                                    </div>
+                                    <h5 class="card-title">Григорій Каданер</h5>
+                                    <div class="slider-text-slicer"></div>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                                        eveniet quo soluta numquam dolorum commodi totam impedit quis iusto beatae? Odit
+                                        quos, unde pariatur fuga earum facere dicta iure cumque.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="owl-item">
 
                             <div class="card col-12 mx-auto" style="max-width: 320px;">
                                 <div class="card-body text-left">
@@ -428,8 +396,7 @@
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         <br>
 
-    </section>
-
+    </section>                                
     <footer class="sec7 container-fluid">
         <div class="row container mx-auto">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4">
