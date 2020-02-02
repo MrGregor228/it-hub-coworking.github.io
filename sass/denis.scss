@@ -33,6 +33,10 @@ $yellow:#ffc107;
 }
 
 .sec2 {
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
     .services {
         .card {
             line-height: 1.5;
@@ -52,6 +56,10 @@ $yellow:#ffc107;
 
 
 .sec3 {
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
     .card {
         text-align: center;
         margin-right: 15px !important;
@@ -62,7 +70,7 @@ $yellow:#ffc107;
         }
         .card-title {
             font-size: 15px;
-            color: gray;
+            // color: gray;
             &:after {
                 display: none;
             }
@@ -84,6 +92,15 @@ $yellow:#ffc107;
         }
     }
 }
+
+.sec5 {
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+}
+    
+
 
 .sec7 {
     .headin6_foot {
