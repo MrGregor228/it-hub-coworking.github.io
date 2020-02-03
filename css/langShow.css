@@ -39,7 +39,7 @@
 
 @keyframes minusHeight {
   0% {
-    height: 105px;
+    height: 72px;
   }
   100% {
     height: 0;
@@ -50,6 +50,6 @@
     height: 0px;
   }
   100% {
-    height: 105px;
+    height: 72px;
   }
 }
