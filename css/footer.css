@@ -45,10 +45,6 @@
     opacity: 0;
   }
 }
-/* line 57, ../sass/footer.scss */
-.myform {
-  max-width: 320px;
-}
 /* line 60, ../sass/footer.scss */
 .myform .mega-legend {
   font-size: 19.5px;
@@ -97,18 +93,17 @@
 /* line 111, ../sass/footer.scss */
 .myform input[type="text"], .myform input[type="email"] {
   border: none;
-  background: lightgoldenrodyellow !important;
+  background: #ededed !important;
   border-radius: 0;
-  border: 2.5px solid #ffc107;
   font-size: 15px !important;
   outline: none;
   padding: .5rem 1rem .5rem 1rem;
 }
-/* line 121, ../sass/footer.scss */
+/* line 120, ../sass/footer.scss */
 .myform input[type="text"]:hover, .myform input[type="text"]:focus, .myform input[type="text"]:active, .myform input[type="email"]:hover, .myform input[type="email"]:focus, .myform input[type="email"]:active {
-  background: #f5f5a4 !important;
+  background: #f9f9f9 !important;
 }
-/* line 129, ../sass/footer.scss */
+/* line 128, ../sass/footer.scss */
 .myform input[type="submit"] {
   background: none;
   border-color: black;
@@ -122,46 +117,41 @@
   transition-timing-function: linear;
   box-shadow: 0px 0 0 #ffc107 inset, 5px 5px 0 lightgray !important;
 }
-/* line 142, ../sass/footer.scss */
+/* line 141, ../sass/footer.scss */
 .myform input[type="submit"]:hover {
   background: none;
   box-shadow: 200px 0 0 #ffc107 inset, 2px 2px 0 lightgray !important;
   border-color: black;
   border-radius: 0px;
 }
-/* line 149, ../sass/footer.scss */
+/* line 148, ../sass/footer.scss */
 .myform input[type="submit"][disabled] {
   pointer-events: none;
   cursor: text;
   box-shadow: none !important;
   background-color: lightgray !important;
 }
-/* line 159, ../sass/footer.scss */
+/* line 158, ../sass/footer.scss */
 .myform textarea {
-  background: lightgoldenrodyellow !important;
+  background: #ededed !important;
   overflow-y: hidden;
   border: none;
   border-radius: 0px;
-  border: 2.5px solid #ffc107;
 }
-/* line 166, ../sass/footer.scss */
+/* line 164, ../sass/footer.scss */
 .myform textarea:hover, .myform textarea:focus, .myform textarea:active {
-  background: #f5f5a4 !important;
+  background: #f9f9f9 !important;
 }
 
-/* line 177, ../sass/footer.scss */
-.sec7 .adr {
-  width: 80%;
-}
-/* line 181, ../sass/footer.scss */
+/* line 175, ../sass/footer.scss */
 .sec7 .fz35 * {
   color: #ffc107 !important;
 }
-/* line 184, ../sass/footer.scss */
+/* line 178, ../sass/footer.scss */
 .sec7 .fz35 *:hover {
   text-decoration: none !important;
 }
-/* line 188, ../sass/footer.scss */
+/* line 182, ../sass/footer.scss */
 .sec7 .headin6_foot {
   margin-top: 0;
   margin-bottom: 0.4em;
@@ -170,23 +160,23 @@
   font-size: 16px;
   letter-spacing: .04em;
 }
-/* line 197, ../sass/footer.scss */
+/* line 191, ../sass/footer.scss */
 .sec7 .footer_soc {
   color: gray;
   transition: .3s linear;
 }
-/* line 201, ../sass/footer.scss */
+/* line 195, ../sass/footer.scss */
 .sec7 .footer_soc:hover {
   text-decoration: none;
   color: black;
 }
-/* line 206, ../sass/footer.scss */
+/* line 200, ../sass/footer.scss */
 .sec7 .footer_soc .yellow_bg {
   color: #ffc107 !important;
   font-size: 25px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 213, ../sass/footer.scss */
+  /* line 207, ../sass/footer.scss */
   .sec7 *.col-12 {
     padding-left: 0px;
     padding-right: 0px;
