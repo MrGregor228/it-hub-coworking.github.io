@@ -55,7 +55,7 @@ $wht: #ffffff;
 
 // Google Form
 .myform {
-    max-width: 320px;
+    
 
     .mega-legend {
         font-size: 19.5px;
@@ -111,9 +111,8 @@ $wht: #ffffff;
         &[type="text"],
         &[type="email"] {
             border: none;
-            background: lightgoldenrodyellow !important;
+            background: lighten(lightgray, 10%) !important;
             border-radius: 0;
-            border: 2.5px solid $yellow;
             font-size: 15px !important;
             outline: none;
             padding: .5rem 1rem .5rem 1rem;
@@ -121,7 +120,7 @@ $wht: #ffffff;
             &:hover,
             &:focus,
             &:active {
-                background: darken(lightgoldenrodyellow, 10%) !important;
+                background: lighten(lightgray, 15%) !important;
             }
 
         }
@@ -157,16 +156,15 @@ $wht: #ffffff;
     }
 
     textarea {
-        background: lightgoldenrodyellow !important;
+        background: lighten(lightgray, 10%) !important;
         overflow-y: hidden;
         border: none;
         border-radius: 0px;
-        border: 2.5px solid $yellow;
 
         &:hover,
         &:focus,
         &:active {
-            background: darken(lightgoldenrodyellow, 10%) !important;
+            background: lighten(lightgray, 15%) !important;
         }
     }
 
@@ -174,10 +172,6 @@ $wht: #ffffff;
 
 // Google Form
 .sec7 {    
-    .adr {
-        width: 80%;
-    }
-
     .fz35 * {
         color: $yellow !important;
 
