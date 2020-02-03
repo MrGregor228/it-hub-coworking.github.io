@@ -78,9 +78,11 @@ sup {
     .modal-body {
         padding: 2em;
     }
+
     .small-text {
-        font-size: 14px!important;
+        font-size: 14px !important;
     }
+
     .modal-header {
         background: $yellow;
 
@@ -94,7 +96,8 @@ sup {
     .radio-labels {
         position: relative;
         bottom: 3px;
-        @media screen and (max-width:350px){
+
+        @media screen and (max-width:350px) {
             font-size: 14px;
         }
     }
@@ -143,7 +146,7 @@ sup {
         color: #333;
         font-size: 15px;
         font-weight: bold;
-        
+
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
         -webkit-user-select: none;
@@ -163,13 +166,14 @@ sup {
         }
 
         &.quantity-down {
-            line-height: 1em!important;
+            line-height: 1em !important;
             background-color: $yellow;
             color: orange;
             position: absolute;
-            
+
             bottom: 11px;
             height: 15px;
+
             svg {
                 position: relative;
                 top: -3px;
@@ -288,6 +292,7 @@ a:hover {
 
 .nav-link {
     text-align: center;
+
     @media screen and (max-width:992px) {
         text-align: left;
     }
@@ -309,7 +314,7 @@ a:hover {
             width: 90%;
             font-size: 20px;
         }
-       
+
     }
 }
 
@@ -466,7 +471,7 @@ $images: (item1: "../images/whitezone.jpg",
 
                 @media screen and (max-width:768px) {
                     padding: 0;
-    
+
                     @media screen and (max-width:576px) {
                         padding: .75em .75em 0 .75em;
                     }
@@ -490,22 +495,18 @@ $images: (item1: "../images/whitezone.jpg",
             }
 
             .tick-after-ul {
-                ul {
-                    li {
-                        .border-none {
-                            border: none !important;
-                            background: $yellow;
-                            width: 50px;
-                            margin-top: .3em;
+                .border-none {
+                    border: none !important;
+                    background: $yellow;
+                    width: 45px;
+                    margin-top: .3em;
 
-                            &:hover,
-                            &:focus,
-                            &:active {
-                                box-shadow: none !important;
-                            }
-
-                        }
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        box-shadow: none !important;
                     }
+
                 }
             }
 
@@ -522,51 +523,64 @@ $images: (item1: "../images/whitezone.jpg",
 
 .navig-zones {
     position: fixed;
-    top:40%;
+    top: 40%;
     z-index: 99999;
     transition: all .3s linear;
+
     @media screen and (min-width:865px) {
         right: 0;
     }
+
     @media screen and (max-width:865px) {
         right: -100%;
     }
 }
+
 .arrow-to-show-menu {
     display: none;
     position: fixed;
-    right:0;
+    right: 0;
     top: 30%;
     width: 50px;
     z-index: 99999;
     transition: all .3s linear;
-    .hide-menu,.show-menu {
-        &:hover, &:focus, &:active {
+
+    .hide-menu,
+    .show-menu {
+
+        &:hover,
+        &:focus,
+        &:active {
             box-shadow: none;
             outline: none;
         }
     }
+
     .hide-menu {
         display: none;
         animation-fill-mode: both;
     }
+
     .show-menu {
         animation-fill-mode: both;
     }
+
     @media screen and (max-width:865px) {
-            display: block;
+        display: block;
     }
 }
+
 @keyframes showButton {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
 
     100% {
-        display: block!important;
+        display: block !important;
     }
 }
 
@@ -574,12 +588,13 @@ $images: (item1: "../images/whitezone.jpg",
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
 
     100% {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -590,7 +605,7 @@ $images: (item1: "../images/whitezone.jpg",
 
     100% {
         opacity: 1;
-        
+
     }
 }
 
