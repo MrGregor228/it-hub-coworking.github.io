@@ -3,6 +3,7 @@ $yellow: #ffc107;
 $red: rgb(212, 16, 16);
 $wht: #ffffff;
 
+
 .text-slicer {
     width: 12em;
     height: 2.5px;
@@ -12,6 +13,39 @@ $wht: #ffffff;
 .sec1 {
     .zaly {
         font-size: 20px;
+    }
+}
+
+.sec2 {
+    .card {
+        border: 20px;
+    }
+    .card-title {
+        font-size:  30px;
+        text-align: left;
+    }
+    .card-subtitle {
+        font-size: 15px;
+        text-align: left;
+    }
+    .card-text {
+        margin-bottom: 25px;
+    }
+    .spisok {
+        position: relative;
+        li {
+            &:before {               
+                content: "";
+                display: block;
+                width:10px;
+                height: 10px;
+                background-color: $yellow;
+                border-radius: 30px;
+                position: absolute;
+                left: -21px;
+                margin-top: 5px;
+            }
+        }
     }
 }
 
