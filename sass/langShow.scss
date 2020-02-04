@@ -10,6 +10,15 @@ $wht: #ffffff;
     font-size: 25px;
     border-radius: 3px;
     z-index: 11;
+    transition: .3s linear;
+    &:hover, &:focus {
+        background: lighten($yellow, 10%);
+    }
+    @media screen and (max-width:450px){
+        font-size: 20px;
+        bottom: 2em;
+        left: 1em;
+    }
 }
 #langShowerMenu {
     background-color: #fff;
@@ -22,6 +31,7 @@ $wht: #ffffff;
     height: 105px;
     overflow: hidden;
     animation: plusHeight .3s 1 linear both;
+    transition: .3s linear;
     a {
         color: black;
         width: 100%;
@@ -33,6 +43,10 @@ $wht: #ffffff;
     }
     &.hiddddden {
         animation: minusHeight .3s 1 linear both;
+    }
+    @media screen and (max-width:450px){
+        bottom: 4.75em;
+        left: 1.33em;
     }
 }
 @keyframes minusHeight {

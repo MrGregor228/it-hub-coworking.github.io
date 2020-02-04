@@ -6,9 +6,22 @@
   font-size: 25px;
   border-radius: 3px;
   z-index: 11;
+  transition: .3s linear;
+}
+/* line 14, ../sass/langShow.scss */
+#landShow:hover, #landShow:focus {
+  background: #ffce3a;
+}
+@media screen and (max-width: 450px) {
+  /* line 6, ../sass/langShow.scss */
+  #landShow {
+    font-size: 20px;
+    bottom: 2em;
+    left: 1em;
+  }
 }
 
-/* line 14, ../sass/langShow.scss */
+/* line 23, ../sass/langShow.scss */
 #langShowerMenu {
   background-color: #fff;
   position: fixed;
@@ -20,21 +33,29 @@
   height: 105px;
   overflow: hidden;
   animation: plusHeight .3s 1 linear both;
+  transition: .3s linear;
 }
-/* line 25, ../sass/langShow.scss */
+/* line 35, ../sass/langShow.scss */
 #langShowerMenu a {
   color: black;
   width: 100%;
   padding: 0.5em;
   transition: background .3s linear;
 }
-/* line 30, ../sass/langShow.scss */
+/* line 40, ../sass/langShow.scss */
 #langShowerMenu a:hover {
   background: #ffdb6d;
 }
-/* line 34, ../sass/langShow.scss */
+/* line 44, ../sass/langShow.scss */
 #langShowerMenu.hiddddden {
   animation: minusHeight .3s 1 linear both;
+}
+@media screen and (max-width: 450px) {
+  /* line 23, ../sass/langShow.scss */
+  #langShowerMenu {
+    bottom: 4.75em;
+    left: 1.33em;
+  }
 }
 
 @keyframes minusHeight {

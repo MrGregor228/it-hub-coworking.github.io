@@ -521,6 +521,52 @@ $images: (item1: "../images/whitezone.jpg",
     }
 }
 
+.sec3 {
+    .card {
+        .card-subtitle {
+            font-size: 14px;
+        }
+        .card-title {
+            font-size: 30px;
+        }
+        .btn-group {
+            .btn {
+                padding: .25em;
+                font-size: 13px;
+                border-radius: 0;
+                color: black;
+                &:focus, &:active {
+                    outline: none;
+                    box-shadow:none;
+                    background-color: #ffc107;
+                    color: black;
+                }
+                .btn-warning {
+                    color: black!important;
+                }
+            }            
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                position: relative;
+                margin-top: 10px;
+                &:before {
+                    content: "";
+                    position:relative;
+                    display:inline-flex;
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 8px;
+                    border-radius: 50%;
+                    background:  #ffc107;
+                }
+            }
+        }
+    }
+}
+
 .navig-zones {
     position: fixed;
     top: 40%;
