@@ -575,7 +575,55 @@ a:hover {
   }
 }
 
-/* line 524, ../sass/grisha.scss */
+/* line 526, ../sass/grisha.scss */
+.sec3 .card .card-subtitle {
+  font-size: 14px;
+}
+/* line 529, ../sass/grisha.scss */
+.sec3 .card .card-title {
+  font-size: 30px;
+}
+/* line 533, ../sass/grisha.scss */
+.sec3 .card .btn-group .btn {
+  padding: .25em;
+  font-size: 13px;
+  border-radius: 0;
+  color: black;
+}
+/* line 538, ../sass/grisha.scss */
+.sec3 .card .btn-group .btn:focus, .sec3 .card .btn-group .btn:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #ffc107;
+  color: black;
+}
+/* line 544, ../sass/grisha.scss */
+.sec3 .card .btn-group .btn .btn-warning {
+  color: black !important;
+}
+/* line 549, ../sass/grisha.scss */
+.sec3 .card ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 552, ../sass/grisha.scss */
+.sec3 .card ul li {
+  position: relative;
+  margin-top: 10px;
+}
+/* line 555, ../sass/grisha.scss */
+.sec3 .card ul li:before {
+  content: "";
+  position: relative;
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #ffc107;
+}
+
+/* line 570, ../sass/grisha.scss */
 .navig-zones {
   position: fixed;
   top: 40%;
@@ -583,19 +631,19 @@ a:hover {
   transition: all .3s linear;
 }
 @media screen and (min-width: 865px) {
-  /* line 524, ../sass/grisha.scss */
+  /* line 570, ../sass/grisha.scss */
   .navig-zones {
     right: 0;
   }
 }
 @media screen and (max-width: 865px) {
-  /* line 524, ../sass/grisha.scss */
+  /* line 570, ../sass/grisha.scss */
   .navig-zones {
     right: -100%;
   }
 }
 
-/* line 539, ../sass/grisha.scss */
+/* line 585, ../sass/grisha.scss */
 .arrow-to-show-menu {
   display: none;
   position: fixed;
@@ -605,7 +653,7 @@ a:hover {
   z-index: 99999;
   transition: all .3s linear;
 }
-/* line 551, ../sass/grisha.scss */
+/* line 597, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu:hover, .arrow-to-show-menu .hide-menu:focus, .arrow-to-show-menu .hide-menu:active,
 .arrow-to-show-menu .show-menu:hover,
 .arrow-to-show-menu .show-menu:focus,
@@ -613,17 +661,17 @@ a:hover {
   box-shadow: none;
   outline: none;
 }
-/* line 559, ../sass/grisha.scss */
+/* line 605, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu {
   display: none;
   animation-fill-mode: both;
 }
-/* line 564, ../sass/grisha.scss */
+/* line 610, ../sass/grisha.scss */
 .arrow-to-show-menu .show-menu {
   animation-fill-mode: both;
 }
 @media screen and (max-width: 865px) {
-  /* line 539, ../sass/grisha.scss */
+  /* line 585, ../sass/grisha.scss */
   .arrow-to-show-menu {
     display: block;
   }
