@@ -99,21 +99,21 @@ sup {
 /* line 39, ../sass/grisha.scss */
 .change6 {
   background: none;
+  border-width: 1px;
   border-color: black;
   border-radius: 0px;
+  font-size: 14px;
   color: #000;
   box-shadow: 0 0 1px #ccc;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-timing-function: linear;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-  box-shadow: 0px 0 0 #ffc107 inset;
   padding: 0.35em;
 }
-/* line 52, ../sass/grisha.scss */
+/* line 53, ../sass/grisha.scss */
 .change6:hover {
-  background: none;
-  box-shadow: 200px 0 0 #ffc107 inset;
+  background: #ffc107;
   border-color: black;
   border-radius: 0px;
 }
@@ -558,60 +558,60 @@ a:hover {
 }
 /* line 498, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul .border-none {
-  border: none !important;
-  background: #ffc107;
+  border: 1px solid black !important;
   width: 45px;
   margin-top: .3em;
 }
 /* line 504, ../sass/grisha.scss */
 .sec2 .container .media-object .tick-after-ul .border-none:hover, .sec2 .container .media-object .tick-after-ul .border-none:focus, .sec2 .container .media-object .tick-after-ul .border-none:active {
+  background: #ffc107;
   box-shadow: none !important;
 }
 @media screen and (max-width: 768px) {
-  /* line 515, ../sass/grisha.scss */
+  /* line 516, ../sass/grisha.scss */
   .sec2 .container .media-object .top-left,
   .sec2 .container .media-object .show-button-on-hover {
     opacity: 1 !important;
   }
 }
 
-/* line 526, ../sass/grisha.scss */
+/* line 527, ../sass/grisha.scss */
 .sec3 .card .card-subtitle {
   font-size: 14px;
 }
-/* line 529, ../sass/grisha.scss */
+/* line 530, ../sass/grisha.scss */
 .sec3 .card .card-title {
   font-size: 30px;
 }
-/* line 533, ../sass/grisha.scss */
+/* line 534, ../sass/grisha.scss */
 .sec3 .card .btn-group .btn {
   padding: .25em;
   font-size: 13px;
   border-radius: 0;
   color: black;
 }
-/* line 538, ../sass/grisha.scss */
+/* line 539, ../sass/grisha.scss */
 .sec3 .card .btn-group .btn:focus, .sec3 .card .btn-group .btn:active {
   outline: none;
   box-shadow: none;
   background-color: #ffc107;
   color: black;
 }
-/* line 544, ../sass/grisha.scss */
+/* line 545, ../sass/grisha.scss */
 .sec3 .card .btn-group .btn .btn-warning {
   color: black !important;
 }
-/* line 549, ../sass/grisha.scss */
+/* line 550, ../sass/grisha.scss */
 .sec3 .card ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 552, ../sass/grisha.scss */
+/* line 553, ../sass/grisha.scss */
 .sec3 .card ul li {
   position: relative;
   margin-top: 10px;
 }
-/* line 555, ../sass/grisha.scss */
+/* line 556, ../sass/grisha.scss */
 .sec3 .card ul li:before {
   content: "";
   position: relative;
@@ -623,7 +623,7 @@ a:hover {
   background: #ffc107;
 }
 
-/* line 570, ../sass/grisha.scss */
+/* line 571, ../sass/grisha.scss */
 .navig-zones {
   position: fixed;
   top: 40%;
@@ -631,19 +631,19 @@ a:hover {
   transition: all .3s linear;
 }
 @media screen and (min-width: 865px) {
-  /* line 570, ../sass/grisha.scss */
+  /* line 571, ../sass/grisha.scss */
   .navig-zones {
     right: 0;
   }
 }
 @media screen and (max-width: 865px) {
-  /* line 570, ../sass/grisha.scss */
+  /* line 571, ../sass/grisha.scss */
   .navig-zones {
     right: -100%;
   }
 }
 
-/* line 585, ../sass/grisha.scss */
+/* line 586, ../sass/grisha.scss */
 .arrow-to-show-menu {
   display: none;
   position: fixed;
@@ -653,7 +653,7 @@ a:hover {
   z-index: 99999;
   transition: all .3s linear;
 }
-/* line 597, ../sass/grisha.scss */
+/* line 598, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu:hover, .arrow-to-show-menu .hide-menu:focus, .arrow-to-show-menu .hide-menu:active,
 .arrow-to-show-menu .show-menu:hover,
 .arrow-to-show-menu .show-menu:focus,
@@ -661,17 +661,17 @@ a:hover {
   box-shadow: none;
   outline: none;
 }
-/* line 605, ../sass/grisha.scss */
+/* line 606, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu {
   display: none;
   animation-fill-mode: both;
 }
-/* line 610, ../sass/grisha.scss */
+/* line 611, ../sass/grisha.scss */
 .arrow-to-show-menu .show-menu {
   animation-fill-mode: both;
 }
 @media screen and (max-width: 865px) {
-  /* line 585, ../sass/grisha.scss */
+  /* line 586, ../sass/grisha.scss */
   .arrow-to-show-menu {
     display: block;
   }

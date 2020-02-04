@@ -51,7 +51,7 @@
                 </div>
                 <div class="modal-body row">
 
-                    <div class="hider" style="animation: height .3s linear;">
+                    <div>
 
 
                         <h5>1. Ви є студентом / працівником КЕІ КНЕУ?</h5>
@@ -146,7 +146,7 @@
                         <script src="js/buttonsOnInputNumber.js"></script>
                     </div>
                     <div class="modal-footer text-center mx-auto">
-                        <button class="btn change6 mx-auto" onclick="getPrice();">Розрахувати</button>
+                        <button class="btn change6 mx-auto hider" onclick="getPrice();"style="animation: height .3s linear;">Розрахувати</button>
                         <button class="btn change6 mx-auto" onclick="reGetPrice();" id="reGet"
                             style="display: none;">Перерахувати</button>
                         <div id="cost" class="col-12"></div>
@@ -318,9 +318,8 @@
                     <div class="text-container col-12 col-md-8">
 
                         <h5 class="media-object-heading">White Zone</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat praesentium dolorum
-                            quisquam, repellendus dicta sunt voluptatibus omnis quia eos voluptas alias minus, officia
-                            ullam. Facere ex ducimus enim nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni nulla, iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores, illum omnis! Eius, vitae dolor? iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores?</p>
+
                         <h5 class="bld mt-3 mb-2">Розцінки</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">60 / 70
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -330,22 +329,22 @@
                         <p class="small">Вмістимість <span class="float-right bld">18 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-warning tool" data-toggle="tooltip" data-title="Wi-Fi"><i
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
                                     class="fad fa-wifi"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Фліпчарт"><i class="fad fa-user-chart"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="ПК"><i class="fad fa-tv"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
                         </div>
-                        <br><br>
+                        <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Замовити</button>
                             <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
@@ -366,9 +365,8 @@
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Gray Zone</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat praesentium dolorum
-                            quisquam, repellendus dicta sunt voluptatibus omnis quia eos voluptas alias minus, officia
-                            ullam. Facere ex ducimus enim nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni nulla, iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores, illum omnis! Eius, vitae dolor? iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores?</p>
+
                         <h5 class="bld mt-3 mb-2">Розцінки</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">60 / 70
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -378,16 +376,16 @@
                         <p class="small">Вмістимість <span class="float-right bld">10 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-warning tool" data-toggle="tooltip" data-title="Wi-Fi"><i
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
                                     class="fad fa-wifi"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
                         </div>
-                        <br><br>
+                        <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Замовити</button>
                             <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
@@ -407,9 +405,8 @@
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Red Zone</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat praesentium dolorum
-                            quisquam, repellendus dicta sunt voluptatibus omnis quia eos voluptas alias minus, officia
-                            ullam. Facere ex ducimus enim nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni nulla, iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores, illum omnis! Eius, vitae dolor? iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores?</p>
+
                         <h5 class="bld mt-3 mb-2">Розцінки</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">60 / 70
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -419,17 +416,17 @@
                         <p class="small">Вмістимість <span class="float-right bld">11 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-warning tool" data-toggle="tooltip" data-title="Wi-Fi"><i
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
                                     class="fad fa-wifi"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
 
                         </div>
-                        <br><br>
+                        <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Замовити</button>
                             <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
@@ -450,9 +447,7 @@
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Blue Zone</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat praesentium dolorum
-                            quisquam, repellendus dicta sunt voluptatibus omnis quia eos voluptas alias minus, officia
-                            ullam. Facere ex ducimus enim nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni nulla, iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores, illum omnis! Eius, vitae dolor? iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores?</p>
                         <h5 class="bld mt-3 mb-2">Розцінки</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">60 / 70
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -462,16 +457,16 @@
                         <p class="small">Вмістимість <span class="float-right bld">8 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-warning tool" data-toggle="tooltip" data-title="Wi-Fi"><i
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
                                     class="fad fa-wifi"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
                         </div>
-                        <br><br>
+                        <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Замовити</button>
                             <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
@@ -491,9 +486,8 @@
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Metting Room</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat praesentium dolorum
-                            quisquam, repellendus dicta sunt voluptatibus omnis quia eos voluptas alias minus, officia
-                            ullam. Facere ex ducimus enim nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni nulla, iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores, illum omnis! Eius, vitae dolor? iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores?</p>
+
                         <h5 class="bld mt-3 mb-2">Розцінки</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">60 / 70
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -503,16 +497,16 @@
                         <p class="small">Вмістимість <span class="float-right bld">8 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-warning tool" data-toggle="tooltip" data-title="Wi-Fi"><i
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
                                     class="fad fa-wifi"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
                         </div>
-                        <br><br>
+                        <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Замовити</button>
                             <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
@@ -532,9 +526,8 @@
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Event Hall</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat praesentium dolorum
-                            quisquam, repellendus dicta sunt voluptatibus omnis quia eos voluptas alias minus, officia
-                            ullam. Facere ex ducimus enim nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni nulla, iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores, illum omnis! Eius, vitae dolor? iure vitae atque quos similique beatae molestias facere, provident necessitatibus dolores quidem praesentium asperiores?</p>
+
                         <h5 class="bld mt-3 mb-2">Розцінки</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">60 / 70
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -544,23 +537,23 @@
                         <p class="small">Вмістимість <span class="float-right bld">60 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-warning tool" data-toggle="tooltip" data-title="Wi-Fi"><i
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
                                     class="fad fa-wifi"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Проектор"><i class="fad fa-projector"></i></button>
-                            <button class="btn border-none bg-warning ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Радіомікрофони та мікшерський пульт"><i
                                     class="fad fa-microphone-stand"></i></button>
                         </div>
-                        <br><br>
+                        <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="change6">Замовити</button>
                             <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
