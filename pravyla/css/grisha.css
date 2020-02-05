@@ -278,7 +278,13 @@ a:hover {
   position: relative;
   border-left: 8px solid #ffeeba !important;
 }
-/* line 195, ../sass/grisha.scss */
+@media screen and (max-width: 576px) {
+  /* line 192, ../sass/grisha.scss */
+  .sec1 blockquote {
+    border-left: 0px !important;
+  }
+}
+/* line 198, ../sass/grisha.scss */
 .sec1 blockquote:before {
   content: "“" !important;
   font-family: Arial;
@@ -289,12 +295,12 @@ a:hover {
   top: 5px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 205, ../sass/grisha.scss */
+  /* line 208, ../sass/grisha.scss */
   .sec1 .ul-bullets-list {
     margin-left: 0px !important;
   }
 }
-/* line 210, ../sass/grisha.scss */
+/* line 213, ../sass/grisha.scss */
 .sec1 .ul-bullets-list li:before {
   content: "";
   display: block;
@@ -306,7 +312,7 @@ a:hover {
   margin-top: 8px;
   left: -5px;
 }
-/* line 224, ../sass/grisha.scss */
+/* line 227, ../sass/grisha.scss */
 .sec1 .ul-bullets-list ol li:before {
   display: none;
 }

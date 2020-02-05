@@ -38,6 +38,17 @@ $yellow: #ffc107;
     //         text-shadow: 3px 3px 0px lightgray!important;
     //     }
     // }
+
+    .active {
+        background-color: $yellow !important;
+    border: none !important;
+    color: black !important;
+    &:hover, &:active, &:focus {
+        background-color: $yellow !important;
+        border: none !important;
+        color: black !important;
+    }
+    }
     @media screen and (min-width:1280px){
         .mw1280 {
             max-width: 1280px!important;
@@ -78,6 +89,7 @@ $yellow: #ffc107;
                 }
             }
         }
+        
         @media screen and (max-width:992px){
             padding-top: 1em;
             padding-bottom: 1em;
@@ -187,5 +199,16 @@ $yellow: #ffc107;
         &:active {
             box-shadow: inset 0 1.8em #fff, inset 0 2em lighten($yellow, 20%);
         }
+    }
+}
+
+.dropdown-link-active {
+    background-color: $yellow !important;
+    border: none !important;
+    color: black !important;
+    &:hover, &:active, &:focus {
+        background-color: $yellow !important;
+        border: none !important;
+        color: black !important;
     }
 }
