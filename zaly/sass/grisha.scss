@@ -71,6 +71,34 @@ sup {
 
     transition: .15s linear;
 }
+.iframe-placeholder {
+    position: relative;
+    z-index: 999999999;
+    .close {
+        position: absolute;
+        opacity: 1;
+        left: 50%;
+        bottom:0%;
+        transform: translate(-50%,0);
+        right: 2em;
+        width: 75px;
+        height: 60px;
+        background: $yellow!important;
+        
+    }
+}
+iframe {
+    position: relative;
+    width: 100%;
+    min-height: 95vh;
+    
+}
+
+.modal {
+    position: relative;
+}
+
+
 
 .modal {
     z-index: 9999999;
