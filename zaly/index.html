@@ -163,11 +163,50 @@
 
 
     <!-- Extra large modal blueZoneMap -->
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="blueZoneMap">
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="blueZoneMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1580904893910!6m8!1m7!1sCAoSLEFGMVFpcE9vZG11Z2RpYVpwTFQtU0J1Ty1jQThwbC1FQXRRalFoQXZSMmtj!2m2!1d47.9091336!2d33.3442032!3f302.889101842978!4f3.825160242592716!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Extra large modal redZoneMap -->
+     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="redZoneMap">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="w-100 d-block iframe-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1580906559936!6m8!1m7!1sCAoSLEFGMVFpcE5lNVZPY0JDNmd2Q3RUUlEyeW93a1VPb0VwYWpLdDFoYUo5MkRM!2m2!1d47.9086401!2d33.3447988!3f20.246331912881722!4f-5.830827410137701!5f0.4587413682243934" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Extra large modal eventHallMap -->
+     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="eventHallMap">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="w-100 d-block iframe-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1580907181551!6m8!1m7!1sCAoSLEFGMVFpcE84YlpBVy1ucXlmWE1WSFFVLXVPc3ZWZFp3V1ROR3Z3S05pTzlL!2m2!1d47.9092525!2d33.3442408!3f285.34602462710615!4f-7.627368931222804!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Extra large modal mettingRoomMap -->
+     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="mettingRoomMap">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="w-100 d-block iframe-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1580907475139!6m8!1m7!1sCAoSLEFGMVFpcE1vY1NVQmVQODJMOUFwdGRlSW0tbGVaX3QtVVBCblMxaHQtVUxx!2m2!1d47.9090436!2d33.3442694!3f313.5961143659381!4f-0.3673059853653342!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -404,7 +443,7 @@
                     <div class="small-img img-3 col-12 col-md-4">
                         <div class="text-center image-caption top-left red-bg"><i class="far fa-house-return"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#redZoneMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left red-bg">Red Zone</div>
                     </div>
@@ -485,7 +524,7 @@
                     <div class="small-img img-5 col-12 col-md-4">
                         <div class="text-center image-caption top-left"><i class="far fa-handshake"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0">Подивитися</button>
+                            <button class="btn btn-outline-light br-0"  data-toggle="modal" data-target="#mettingRoomMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left">Metting Room</div>
                     </div>
@@ -525,7 +564,7 @@
                     <div class="small-img img-6 col-12 col-md-4">
                         <div class="text-center image-caption top-left"><i class="far fa-calendar-day"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#eventHall Map">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left">Event Hall</div>
                     </div>
