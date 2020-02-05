@@ -659,23 +659,18 @@ a:hover {
   top: 40%;
   z-index: 99999;
   transition: all .3s linear;
+  right: -100%;
 }
-@media screen and (min-width: 865px) {
-  /* line 599, ../sass/grisha.scss */
-  .navig-zones {
-    right: 0;
-  }
-}
-@media screen and (max-width: 865px) {
-  /* line 599, ../sass/grisha.scss */
-  .navig-zones {
-    right: -100%;
-  }
+/* line 605, ../sass/grisha.scss */
+.navig-zones .active {
+  background: #ffc107;
+  border: none;
+  color: black;
 }
 
-/* line 614, ../sass/grisha.scss */
+/* line 612, ../sass/grisha.scss */
 .arrow-to-show-menu {
-  display: none;
+  display: block;
   position: fixed;
   right: 0;
   top: 30%;
@@ -683,7 +678,7 @@ a:hover {
   z-index: 99999;
   transition: all .3s linear;
 }
-/* line 626, ../sass/grisha.scss */
+/* line 624, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu:hover, .arrow-to-show-menu .hide-menu:focus, .arrow-to-show-menu .hide-menu:active,
 .arrow-to-show-menu .show-menu:hover,
 .arrow-to-show-menu .show-menu:focus,
@@ -691,20 +686,14 @@ a:hover {
   box-shadow: none;
   outline: none;
 }
-/* line 634, ../sass/grisha.scss */
+/* line 632, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu {
   display: none;
   animation-fill-mode: both;
 }
-/* line 639, ../sass/grisha.scss */
+/* line 637, ../sass/grisha.scss */
 .arrow-to-show-menu .show-menu {
   animation-fill-mode: both;
-}
-@media screen and (max-width: 865px) {
-  /* line 614, ../sass/grisha.scss */
-  .arrow-to-show-menu {
-    display: block;
-  }
 }
 
 @keyframes showButton {

@@ -601,18 +601,16 @@ $images: (item1: "../images/whitezone.jpg",
     top: 40%;
     z-index: 99999;
     transition: all .3s linear;
-
-    @media screen and (min-width:865px) {
-        right: 0;
-    }
-
-    @media screen and (max-width:865px) {
-        right: -100%;
+    right: -100%;
+    .active {
+        background: $yellow;
+        border:none;
+        color: black;
     }
 }
 
 .arrow-to-show-menu {
-    display: none;
+    display: block;
     position: fixed;
     right: 0;
     top: 30%;
@@ -638,10 +636,6 @@ $images: (item1: "../images/whitezone.jpg",
 
     .show-menu {
         animation-fill-mode: both;
-    }
-
-    @media screen and (max-width:865px) {
-        display: block;
     }
 }
 
