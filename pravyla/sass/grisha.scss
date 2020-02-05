@@ -189,6 +189,19 @@ a:hover {
 
 .sec1 {
     height: 100%!important;
+    blockquote {
+        position: relative;
+        border-left: 8px solid lighten($yellow, 35%) !important;
+        &:before {
+            content: "“" !important;
+            font-family: Arial;
+            color: lighten($yellow, 25%) !important;
+            font-size: 70px !important;
+            position: absolute !important;
+            left: 15px !important;
+            top: 5px !important;
+        }
+    }
     .ul-bullets-list {
         @media screen and (max-width:576px){
             margin-left: 0px!important;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -272,13 +273,28 @@ a:hover {
 .sec1 {
   height: 100% !important;
 }
+/* line 192, ../sass/grisha.scss */
+.sec1 blockquote {
+  position: relative;
+  border-left: 8px solid #ffeeba !important;
+}
+/* line 195, ../sass/grisha.scss */
+.sec1 blockquote:before {
+  content: "“" !important;
+  font-family: Arial;
+  color: #ffe187 !important;
+  font-size: 70px !important;
+  position: absolute !important;
+  left: 15px !important;
+  top: 5px !important;
+}
 @media screen and (max-width: 576px) {
-  /* line 192, ../sass/grisha.scss */
+  /* line 205, ../sass/grisha.scss */
   .sec1 .ul-bullets-list {
     margin-left: 0px !important;
   }
 }
-/* line 197, ../sass/grisha.scss */
+/* line 210, ../sass/grisha.scss */
 .sec1 .ul-bullets-list li:before {
   content: "";
   display: block;
@@ -290,7 +306,7 @@ a:hover {
   margin-top: 8px;
   left: -5px;
 }
-/* line 211, ../sass/grisha.scss */
+/* line 224, ../sass/grisha.scss */
 .sec1 .ul-bullets-list ol li:before {
   display: none;
 }
