@@ -5,7 +5,7 @@ var priceForSmartOffice = document.getElementById('priceForSmartOffice'),
     btn4 = document.getElementById('btnWarningFourth'),
     btn5 = document.getElementById('btnWarningFifth');
 
-let buttonsPrices = {
+var buttonsPrices = {
     _4people: "11 000",
     _6people: "18 000",
     _8people: "24 000",
