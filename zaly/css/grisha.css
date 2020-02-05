@@ -605,55 +605,7 @@ a:hover {
   }
 }
 
-/* line 555, ../sass/grisha.scss */
-.sec3 .card .card-subtitle {
-  font-size: 14px;
-}
-/* line 558, ../sass/grisha.scss */
-.sec3 .card .card-title {
-  font-size: 30px;
-}
-/* line 562, ../sass/grisha.scss */
-.sec3 .card .btn-group .btn {
-  padding: .25em;
-  font-size: 13px;
-  border-radius: 0;
-  color: black;
-}
-/* line 567, ../sass/grisha.scss */
-.sec3 .card .btn-group .btn:focus, .sec3 .card .btn-group .btn:active {
-  outline: none;
-  box-shadow: none;
-  background-color: #ffc107;
-  color: black;
-}
-/* line 573, ../sass/grisha.scss */
-.sec3 .card .btn-group .btn .btn-warning {
-  color: black !important;
-}
-/* line 578, ../sass/grisha.scss */
-.sec3 .card ul {
-  list-style-type: none;
-  padding: 0;
-}
-/* line 581, ../sass/grisha.scss */
-.sec3 .card ul li {
-  position: relative;
-  margin-top: 10px;
-}
-/* line 584, ../sass/grisha.scss */
-.sec3 .card ul li:before {
-  content: "";
-  position: relative;
-  display: inline-flex;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background: #ffc107;
-}
-
-/* line 599, ../sass/grisha.scss */
+/* line 553, ../sass/grisha.scss */
 .navig-zones {
   position: fixed;
   top: 40%;
@@ -661,14 +613,14 @@ a:hover {
   transition: all .3s linear;
   right: -100%;
 }
-/* line 605, ../sass/grisha.scss */
+/* line 559, ../sass/grisha.scss */
 .navig-zones .active {
   background: #ffc107;
   border: none;
   color: black;
 }
 
-/* line 612, ../sass/grisha.scss */
+/* line 566, ../sass/grisha.scss */
 .arrow-to-show-menu {
   display: block;
   position: fixed;
@@ -678,7 +630,7 @@ a:hover {
   z-index: 99999;
   transition: all .3s linear;
 }
-/* line 624, ../sass/grisha.scss */
+/* line 578, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu:hover, .arrow-to-show-menu .hide-menu:focus, .arrow-to-show-menu .hide-menu:active,
 .arrow-to-show-menu .show-menu:hover,
 .arrow-to-show-menu .show-menu:focus,
@@ -686,12 +638,12 @@ a:hover {
   box-shadow: none;
   outline: none;
 }
-/* line 632, ../sass/grisha.scss */
+/* line 586, ../sass/grisha.scss */
 .arrow-to-show-menu .hide-menu {
   display: none;
   animation-fill-mode: both;
 }
-/* line 637, ../sass/grisha.scss */
+/* line 591, ../sass/grisha.scss */
 .arrow-to-show-menu .show-menu {
   animation-fill-mode: both;
 }
