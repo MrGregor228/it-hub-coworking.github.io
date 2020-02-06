@@ -136,6 +136,12 @@ sup {
   z-index: 999999999;
 }
 /* line 77, ../sass/grisha.scss */
+.iframe-placeholder iframe {
+  position: relative;
+  width: 100%;
+  min-height: 95vh;
+}
+/* line 83, ../sass/grisha.scss */
 .iframe-placeholder .close {
   position: absolute;
   opacity: 1;
@@ -146,13 +152,6 @@ sup {
   width: 75px;
   height: 60px;
   background: #ffc107 !important;
-}
-
-/* line 90, ../sass/grisha.scss */
-iframe {
-  position: relative;
-  width: 100%;
-  min-height: 95vh;
 }
 
 /* line 97, ../sass/grisha.scss */
