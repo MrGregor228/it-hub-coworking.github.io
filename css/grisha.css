@@ -511,18 +511,22 @@ a:hover {
   text-align: left !important;
 }
 /* line 401, ../sass/grisha.scss */
+.sec4 .job {
+  font-size: 14px;
+}
+/* line 405, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 404, ../sass/grisha.scss */
+/* line 408, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 407, ../sass/grisha.scss */
+/* line 411, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 413, ../sass/grisha.scss */
+/* line 417, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -530,25 +534,25 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 421, ../sass/grisha.scss */
+/* line 425, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-/* line 429, ../sass/grisha.scss */
+/* line 433, ../sass/grisha.scss */
 .sec6 .nazva {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-/* line 433, ../sass/grisha.scss */
+/* line 437, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 433, ../sass/grisha.scss */
+  /* line 437, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;
