@@ -411,6 +411,9 @@ $images: (item1: "../images/whitezone.jpg",
                     background-image: url('../images/eventhall.jpg');
                 }
 
+                &.img-7 {
+                    background-image: url('../images/greenhub.jpg');
+                }
                 .show-button-on-hover {
                     position: absolute;
                     top: 0;
@@ -468,6 +471,11 @@ $images: (item1: "../images/whitezone.jpg",
 
                     &.blue-bg {
                         background-color: rgb(43, 92, 255);
+                        color: white;
+                    }
+
+                    &.green-bg {
+                        background-color: green;
                         color: white;
                     }
 
