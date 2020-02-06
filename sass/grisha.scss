@@ -380,9 +380,9 @@ a:hover {
                 outline:none;
                 padding: .75em;
                 transition: background .3s linear;
-            &:hover {
-                background: darken(white, 5%);
-            }
+                &:hover {
+                    background: darken(white, 5%);
+                }
             }
             #pause {
                 font-size: 23px;
@@ -398,8 +398,39 @@ a:hover {
         text-align: left !important;
     }
 
+
     .job {
         font-size: 14px;
+    }
+
+    .slider-1 {
+        position: relative;
+            .falseNavigationLeft{
+                position: absolute;
+                height: 100%;
+                top: 50%;
+                left: 0;
+                transform: translate(0%, -50%);
+            }
+
+            .falseNavigationRight {
+                position: absolute;
+                height: 100%;
+                top: 50%;
+                right: 0;
+                transform: translate(0%, -50%);
+            }
+
+            .falseNavigationLeft,.falseNavigationRight {
+                transition: .3s linear;
+                color: $yellow;
+                &:hover, &:focus, &:active {
+                    box-shadow: none;
+                }
+                &:hover {
+                    opacity: .6;
+                }
+            }
     }
 
     .card {
