@@ -616,7 +616,7 @@ a:hover {
 /* line 561, ../sass/grisha.scss */
 .navig-zones {
   position: fixed;
-  top: 40%;
+  top: 35%;
   z-index: 99999;
   transition: all .3s linear;
   right: -100%;
