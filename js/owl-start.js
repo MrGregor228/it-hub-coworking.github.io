@@ -1,10 +1,9 @@
 $(document).ready(function () {
 
-	$('.slider-1').owlCarousel({
+	var owl = $('.slider-1');
+	owl.owlCarousel({
 		loop: true,
-		nav: true,
-		navText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
-		pagination: true,
+		nav: true,		pagination: true,
 		autoplay: true,
 		autoplayTimeout: 7000,
 		autoplayHoverPause: true,
@@ -30,8 +29,13 @@ $(document).ready(function () {
 				loop: true
 			}
 		}
+	});	
+	$('.falseNavigationLeft').click(function() {
+		owl.trigger('prev.owl.carousel', [300]);
 	});
-
-	
-	
+	// Go to the previous item
+	$('.falseNavigationRight').click(function() {
+		// Parameters has to be in square bracket '[]'
+		owl.trigger('next.owl.carousel', [300]);
+	});
 });
