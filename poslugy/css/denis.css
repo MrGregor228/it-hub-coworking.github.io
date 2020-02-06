@@ -6,7 +6,27 @@
 .sec1 .row {
   padding: 0;
 }
-/* line 7, ../sass/denis.scss */
+/* line 8, ../sass/denis.scss */
+.sec1 .row .card {
+  text-align: center;
+  margin-right: 15px !important;
+  border: none !important;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 576px) {
+  /* line 8, ../sass/denis.scss */
+  .sec1 .row .card {
+    margin-right: 0 !important;
+  }
+}
+/* line 21, ../sass/denis.scss */
+.sec1 .row .card .card-body .text-center * {
+  color: #ffc107;
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+/* line 29, ../sass/denis.scss */
 .sec1 .row .wrapper-center {
   margin-right: auto;
   margin-left: auto;
@@ -15,22 +35,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 17, ../sass/denis.scss */
+/* line 39, ../sass/denis.scss */
 .sec1 .podnazva {
   font-size: 18px;
 }
-/* line 20, ../sass/denis.scss */
+/* line 42, ../sass/denis.scss */
 .sec1 .text-slicer {
   width: 12em;
   height: 2.5px;
   background-color: #ffc107;
 }
 
-/* line 30, ../sass/denis.scss */
+/* line 52, ../sass/denis.scss */
 .sec2 .komanda {
   font-size: 30px;
 }
-/* line 34, ../sass/denis.scss */
+/* line 56, ../sass/denis.scss */
 .sec2 .card-title {
   font-size: 25px;
 }

@@ -412,8 +412,14 @@ $images: (item1: "../images/whitezone.jpg",
                 }
 
                 &.img-7 {
+                     background-image: url("../images/greenzone.jpg");
+                }
+
+                &.img-8 {
                     background-image: url('../images/greenhub.jpg');
                 }
+
+                
                 .show-button-on-hover {
                     position: absolute;
                     top: 0;
