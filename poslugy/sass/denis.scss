@@ -4,6 +4,28 @@ $yellow: #ffc107;
     height: 90vh;
     .row {
         padding: 0;
+
+        .card {
+            text-align: center;
+            margin-right: 15px !important;
+            border: none !important;
+            font-weight: bold;
+
+            @media screen and (max-width:576px) {
+                margin-right: 0 !important;
+            }
+
+            line-height: 1.5;
+
+            .card-body {
+                .text-center * {
+                    color: $yellow;
+                    font-size: 3em;
+                    margin-bottom: .5em;
+                }
+            }
+        }
+        
         .wrapper-center {
             margin-right: auto;
             margin-left: auto;
@@ -34,6 +56,8 @@ $yellow: #ffc107;
     .card-title {
         font-size: 25px;
     }
+
+    
     
 }
 
