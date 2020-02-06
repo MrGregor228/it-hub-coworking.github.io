@@ -2,9 +2,8 @@ $(document).ready(function () {
 
 	$('.slider-1').owlCarousel({
 		loop: true,
-		margin: 10,
 		nav: true,
-		navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+		navText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
 		pagination: true,
 		autoplay: true,
 		autoplayTimeout: 7000,
@@ -32,5 +31,7 @@ $(document).ready(function () {
 			}
 		}
 	});
+
+	
 	
 });
