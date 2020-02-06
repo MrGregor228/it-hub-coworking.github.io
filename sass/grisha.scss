@@ -303,6 +303,11 @@ a:hover {
                     background-position: center center;
                     background-size: cover;
                 }
+                &:nth-of-type(8) {
+                    background: url('../images/slide8.jpg') no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
             }
             .showing {
                 width: 100%;
