@@ -588,7 +588,7 @@ function getPrice() {
             // alert('Ви студент КЕІ КНЕУ чи ні?');
         }
         $('.hider').css("animation", "hiderrr .3s linear forwards");
-        $('.hider').css("height", "0%");
+        
         setTimeout(function () {
             $('.hider').css("display", "none");
             $(reGet).css("animation", "showwww .3s linear forwards");
@@ -693,7 +693,6 @@ function getPrice() {
             // alert('Ви студент КЕІ КНЕУ чи ні?');
         }
         $('.hider').css("animation", "hiderrr .3s linear forwards");
-        $('.hider').css("height", "0%");
         setTimeout(function () {
             $('.hider').css("display", "none");
             $("#reGet").css("animation", "showwww .3s linear forwards");

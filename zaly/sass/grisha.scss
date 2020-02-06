@@ -74,6 +74,12 @@ sup {
 .iframe-placeholder {
     position: relative;
     z-index: 999999999;
+    iframe {
+        position: relative;
+        width: 100%;
+        min-height: 95vh;
+        
+    }
     .close {
         position: absolute;
         opacity: 1;
@@ -86,12 +92,6 @@ sup {
         background: $yellow!important;
         
     }
-}
-iframe {
-    position: relative;
-    width: 100%;
-    min-height: 95vh;
-    
 }
 
 .modal {
