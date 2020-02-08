@@ -340,10 +340,6 @@ a:hover {
   font-size: 30px;
   font-family: "Atures900" !important;
 }
-/* line 247, ../sass/grisha.scss */
-.sec1 .row .wrapper-centerd .card-text {
-  font-weight: bold;
-}
 @media screen and (max-width: 400px) {
   /* line 236, ../sass/grisha.scss */
   .sec1 .row .wrapper-centerd {
