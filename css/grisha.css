@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -117,27 +117,41 @@ strong {
 
 /* line 50, ../sass/grisha.scss */
 .pt-10 {
-  height: 120px;
+  height: 200px;
 }
 @media screen and (max-width: 576px) {
   /* line 50, ../sass/grisha.scss */
   .pt-10 {
-    height: 100px;
-  }
-}
-@media screen and (max-width: 576px) and (max-width: 340px) {
-  /* line 56, ../sass/grisha.scss */
-  .pt-10.next-pt {
     height: 180px;
   }
-  /* line 60, ../sass/grisha.scss */
+  /* line 56, ../sass/grisha.scss */
+  .pt-10.next-pt {
+    height: 0px !important;
+  }
+}
+@media screen and (max-width: 576px) and (max-width: 400px) {
+  /* line 61, ../sass/grisha.scss */
+  .pt-10.pt-10 {
+    height: 120px;
+  }
+  /* line 65, ../sass/grisha.scss */
+  .pt-10.next-pt {
+    height: 290px !important;
+  }
+}
+@media screen and (max-width: 576px) and (max-width: 350px) {
+  /* line 71, ../sass/grisha.scss */
+  .pt-10.next-pt {
+    height: 440px !important;
+  }
+  /* line 75, ../sass/grisha.scss */
   .pt-10#text-of-the-slide {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 576px) {
-  /* line 68, ../sass/grisha.scss */
+  /* line 82, ../sass/grisha.scss */
   .pt-10.next-pt {
     display: none;
   }
@@ -155,54 +169,54 @@ strong {
   }
 }
 
-/* line 82, ../sass/grisha.scss */
+/* line 96, ../sass/grisha.scss */
 .mw320 {
   max-width: 200px !important;
   max-height: 200px !important;
 }
 
-/* line 87, ../sass/grisha.scss */
+/* line 101, ../sass/grisha.scss */
 .fz35 {
   font-size: 35px;
 }
 
-/* line 91, ../sass/grisha.scss */
+/* line 105, ../sass/grisha.scss */
 .box-shadow-underlined {
   box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
 }
 
-/* line 95, ../sass/grisha.scss */
+/* line 109, ../sass/grisha.scss */
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: .3s linear;
 }
-/* line 100, ../sass/grisha.scss */
+/* line 114, ../sass/grisha.scss */
 .grayscale:hover {
   filter: grayscale(0%);
 }
 
-/* line 105, ../sass/grisha.scss */
+/* line 119, ../sass/grisha.scss */
 a:hover {
   text-decoration: none !important;
 }
 
-/* line 109, ../sass/grisha.scss */
+/* line 123, ../sass/grisha.scss */
 .bld {
   font-weight: bold;
 }
 
-/* line 113, ../sass/grisha.scss */
+/* line 127, ../sass/grisha.scss */
 .blck {
   color: black !important;
 }
 
-/* line 117, ../sass/grisha.scss */
+/* line 131, ../sass/grisha.scss */
 .lh-2 {
   line-height: 1.5;
 }
 
-/* line 121, ../sass/grisha.scss */
+/* line 135, ../sass/grisha.scss */
 .change6 {
   background: none;
   border-color: black;
@@ -215,7 +229,7 @@ a:hover {
   transition-timing-function: linear;
   box-shadow: 0px 0 0 #ffc107 inset;
 }
-/* line 134, ../sass/grisha.scss */
+/* line 148, ../sass/grisha.scss */
 .change6:hover {
   background: none;
   box-shadow: 200px 0 0 #ffc107 inset;
@@ -223,12 +237,12 @@ a:hover {
   border-radius: 0px;
 }
 
-/* line 142, ../sass/grisha.scss */
+/* line 156, ../sass/grisha.scss */
 .mousewheel {
   margin-top: 10em !important;
 }
 
-/* line 146, ../sass/grisha.scss */
+/* line 160, ../sass/grisha.scss */
 #landShow {
   position: fixed;
   bottom: 3em;
@@ -238,7 +252,7 @@ a:hover {
   z-index: 11;
 }
 
-/* line 154, ../sass/grisha.scss */
+/* line 168, ../sass/grisha.scss */
 #langShowerMenu {
   background-color: #fff;
   position: fixed;
@@ -251,24 +265,24 @@ a:hover {
   overflow: hidden;
   animation: plusHeight .3s 1 linear both;
 }
-/* line 165, ../sass/grisha.scss */
+/* line 179, ../sass/grisha.scss */
 #langShowerMenu a {
   color: black;
   width: 100%;
   padding: 0.5em;
   transition: background .3s linear;
 }
-/* line 170, ../sass/grisha.scss */
+/* line 184, ../sass/grisha.scss */
 #langShowerMenu a:hover {
   background: #ffdb6d;
 }
-/* line 174, ../sass/grisha.scss */
+/* line 188, ../sass/grisha.scss */
 #langShowerMenu.hiddddden {
   animation: minusHeight .3s 1 linear both;
 }
 
 @media screen and (max-width: 440px) {
-  /* line 179, ../sass/grisha.scss */
+  /* line 193, ../sass/grisha.scss */
   #landShow, #langShowerMenu {
     display: none;
   }
@@ -289,33 +303,28 @@ a:hover {
     height: 105px;
   }
 }
-/* line 192, ../sass/grisha.scss */
+/* line 206, ../sass/grisha.scss */
 .carousel-control-prev,
 .carousel-control-next {
   font-size: 25px;
   color: greenyellow;
 }
 
-/* line 200, ../sass/grisha.scss */
+/* line 214, ../sass/grisha.scss */
 .sec1 {
-  height: 90vh;
+  height: 93vh;
 }
-/* line 206, ../sass/grisha.scss */
+/* line 220, ../sass/grisha.scss */
 .sec1 .row .col-12 {
   padding: 0;
 }
-/* line 209, ../sass/grisha.scss */
+/* line 223, ../sass/grisha.scss */
 .sec1 .row .bouncing-link-cont {
   position: relative;
   animation: bouncing .7s linear infinite;
   transition: all .3s linear;
-  padding-top: 10vh;
-}
-@media screen and (min-width: 400px) {
-  /* line 209, ../sass/grisha.scss */
-  .sec1 .row .bouncing-link-cont {
-    display: none;
-  }
+  margin-top: 5vh;
+  margin-bottom: 7vh;
 }
 @keyframes bouncing {
   0% {
@@ -328,33 +337,33 @@ a:hover {
     top: 0px;
   }
 }
-/* line 236, ../sass/grisha.scss */
+/* line 251, ../sass/grisha.scss */
 .sec1 .row .wrapper-centerd {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 242, ../sass/grisha.scss */
+/* line 257, ../sass/grisha.scss */
 .sec1 .row .wrapper-centerd .main-text {
   font-size: 30px;
   font-family: "Atures900" !important;
 }
-/* line 247, ../sass/grisha.scss */
+/* line 262, ../sass/grisha.scss */
 .sec1 .row .wrapper-centerd .card-text {
   font-weight: bold;
 }
 @media screen and (max-width: 400px) {
-  /* line 236, ../sass/grisha.scss */
+  /* line 251, ../sass/grisha.scss */
   .sec1 .row .wrapper-centerd {
     position: relative;
   }
 }
-/* line 254, ../sass/grisha.scss */
+/* line 269, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper {
   position: relative;
 }
-/* line 257, ../sass/grisha.scss */
+/* line 272, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide {
   position: absolute;
   top: 0;
@@ -366,62 +375,62 @@ a:hover {
   opacity: 0;
   transition: .5s linear;
 }
-/* line 267, ../sass/grisha.scss */
+/* line 282, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(1) {
   background: url("../images/slide3.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 273, ../sass/grisha.scss */
+/* line 288, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(2) {
   background: url("../images/slide2.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 279, ../sass/grisha.scss */
+/* line 294, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(3) {
   background: url("../images/slide1.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 284, ../sass/grisha.scss */
+/* line 299, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(4) {
   background: url("../images/slide4.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 290, ../sass/grisha.scss */
+/* line 305, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(5) {
   background: url("../images/slide6.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 296, ../sass/grisha.scss */
+/* line 311, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(6) {
   background: url("../images/slide5.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 301, ../sass/grisha.scss */
+/* line 316, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(7) {
   background: url("../images/slide7.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 306, ../sass/grisha.scss */
+/* line 321, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(8) {
   background: url("../images/slide8.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 312, ../sass/grisha.scss */
+/* line 327, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .showing {
   width: 100%;
   opacity: 1;
   z-index: 3;
 }
 @media screen and (max-width: 400px) {
-  /* line 256, ../sass/grisha.scss */
+  /* line 271, ../sass/grisha.scss */
   .sec1 .row .relative-wrapper #slides {
     position: relative;
     width: 100%;
@@ -429,7 +438,7 @@ a:hover {
     margin-top: 5vh;
   }
 }
-/* line 326, ../sass/grisha.scss */
+/* line 341, ../sass/grisha.scss */
 .sec1 .row #names-of-slides {
   position: absolute;
   width: 320px !important;
@@ -441,53 +450,53 @@ a:hover {
   transition: width .3s linear;
 }
 @media screen and (max-width: 768px) {
-  /* line 326, ../sass/grisha.scss */
+  /* line 341, ../sass/grisha.scss */
   .sec1 .row #names-of-slides {
     text-align: center !important;
     width: 160px !important;
     bottom: 0%;
   }
-  /* line 339, ../sass/grisha.scss */
+  /* line 354, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .white-bg {
     padding-top: 0.75em !important;
   }
-  /* line 342, ../sass/grisha.scss */
+  /* line 357, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .text-of-the-slide {
     font-size: 23px !important;
   }
-  /* line 345, ../sass/grisha.scss */
+  /* line 360, ../sass/grisha.scss */
   .sec1 .row #names-of-slides #previous, .sec1 .row #names-of-slides #next {
     display: none !important;
   }
 }
 @media screen and (max-width: 576px) {
-  /* line 350, ../sass/grisha.scss */
+  /* line 365, ../sass/grisha.scss */
   .sec1 .row #names-of-slides#names-of-slides {
     width: 80px !important;
     margin: 0;
   }
-  /* line 356, ../sass/grisha.scss */
+  /* line 371, ../sass/grisha.scss */
   .sec1 .row #names-of-slides #text-of-the-slide {
     display: none !important;
   }
-  /* line 359, ../sass/grisha.scss */
+  /* line 374, ../sass/grisha.scss */
   .sec1 .row #names-of-slides .white-bg {
     padding: 0 !important;
   }
 }
-/* line 363, ../sass/grisha.scss */
+/* line 378, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .white-bg {
   background-color: white;
   padding: .75em;
   animation: width .3s linear 1;
   transition: .3s linear;
 }
-/* line 368, ../sass/grisha.scss */
+/* line 383, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .white-bg .text-of-the-slide {
   font-size: 25px;
   transition: .3s linear;
 }
-/* line 375, ../sass/grisha.scss */
+/* line 390, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #previous, .sec1 .row #names-of-slides .buttons-panel #next, .sec1 .row #names-of-slides .buttons-panel #pause {
   color: orange;
   font-size: 25px;
@@ -497,32 +506,32 @@ a:hover {
   padding: .75em;
   transition: background .3s linear;
 }
-/* line 383, ../sass/grisha.scss */
+/* line 398, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #previous:hover, .sec1 .row #names-of-slides .buttons-panel #next:hover, .sec1 .row #names-of-slides .buttons-panel #pause:hover {
   background: #f2f2f2;
 }
-/* line 387, ../sass/grisha.scss */
+/* line 402, ../sass/grisha.scss */
 .sec1 .row #names-of-slides .buttons-panel #pause {
   font-size: 23px;
 }
 
-/* line 397, ../sass/grisha.scss */
+/* line 412, ../sass/grisha.scss */
 .sec4 * {
   text-align: left !important;
 }
-/* line 402, ../sass/grisha.scss */
+/* line 417, ../sass/grisha.scss */
 .sec4 .job {
   font-size: 14px;
 }
-/* line 406, ../sass/grisha.scss */
+/* line 421, ../sass/grisha.scss */
 .sec4 .card-text {
   font-size: 14px;
 }
-/* line 409, ../sass/grisha.scss */
+/* line 424, ../sass/grisha.scss */
 .sec4 .slider-1 {
   position: relative;
 }
-/* line 411, ../sass/grisha.scss */
+/* line 426, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft {
   position: absolute;
   height: 100%;
@@ -530,7 +539,7 @@ a:hover {
   left: 0;
   transform: translate(0%, -50%);
 }
-/* line 419, ../sass/grisha.scss */
+/* line 434, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationRight {
   position: absolute;
   height: 100%;
@@ -538,32 +547,32 @@ a:hover {
   right: 0;
   transform: translate(0%, -50%);
 }
-/* line 427, ../sass/grisha.scss */
+/* line 442, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft, .sec4 .slider-1 .falseNavigationRight {
   transition: .3s linear;
   color: #ffc107;
 }
-/* line 430, ../sass/grisha.scss */
+/* line 445, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft:hover, .sec4 .slider-1 .falseNavigationLeft:focus, .sec4 .slider-1 .falseNavigationLeft:active, .sec4 .slider-1 .falseNavigationRight:hover, .sec4 .slider-1 .falseNavigationRight:focus, .sec4 .slider-1 .falseNavigationRight:active {
   box-shadow: none;
 }
-/* line 433, ../sass/grisha.scss */
+/* line 448, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft:hover, .sec4 .slider-1 .falseNavigationRight:hover {
   opacity: .6;
 }
-/* line 439, ../sass/grisha.scss */
+/* line 454, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 442, ../sass/grisha.scss */
+/* line 457, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 445, ../sass/grisha.scss */
+/* line 460, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 451, ../sass/grisha.scss */
+/* line 466, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -571,25 +580,25 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 459, ../sass/grisha.scss */
+/* line 474, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-/* line 467, ../sass/grisha.scss */
+/* line 482, ../sass/grisha.scss */
 .sec6 .nazva {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-/* line 471, ../sass/grisha.scss */
+/* line 486, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 471, ../sass/grisha.scss */
+  /* line 486, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;
