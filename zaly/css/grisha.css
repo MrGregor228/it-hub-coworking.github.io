@@ -443,7 +443,11 @@ a:hover {
 .sec2 .container .media-object {
   height: 100vh;
 }
-/* line 382, ../sass/grisha.scss */
+/* line 383, ../sass/grisha.scss */
+.sec2 .container .media-object.coffee {
+  height: 70vh;
+}
+/* line 386, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img {
   position: relative;
   width: 100%;
@@ -453,40 +457,36 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
-/* line 391, ../sass/grisha.scss */
+/* line 395, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-1 {
   background-image: url("../images/whitezone.jpg");
 }
-/* line 395, ../sass/grisha.scss */
+/* line 399, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-2 {
   background-image: url("../images/grayzone.jpg");
 }
-/* line 399, ../sass/grisha.scss */
+/* line 403, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-3 {
   background-image: url("../images/redzone.jpg");
 }
-/* line 403, ../sass/grisha.scss */
+/* line 407, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-4 {
   background-image: url("../images/bluezone.jpg");
 }
-/* line 407, ../sass/grisha.scss */
+/* line 411, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-5 {
   background-image: url("../images/meetingroom.jpg");
 }
-/* line 411, ../sass/grisha.scss */
+/* line 415, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-6 {
   background-image: url("../images/eventhall.jpg");
 }
-/* line 415, ../sass/grisha.scss */
+/* line 419, ../sass/grisha.scss */
 .sec2 .container .media-object .small-img.img-7 {
   background-image: url("../images/greenzone.jpg");
 }
-/* line 419, ../sass/grisha.scss */
-.sec2 .container .media-object .small-img.img-8 {
-  background-image: url("../images/greenhub.jpg");
-}
 /* line 423, ../sass/grisha.scss */
-.sec2 .container .media-object .small-img.img-9 {
+.sec2 .container .media-object .small-img.img-8 {
   background-image: url("../images/coffeetime.jpg");
 }
 /* line 427, ../sass/grisha.scss */

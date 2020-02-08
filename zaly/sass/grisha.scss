@@ -378,7 +378,11 @@ $images: (item1: "../images/whitezone.jpg",
         }
 
         .media-object {
-            height: 100vh;;
+            height: 100vh;
+            
+            &.coffee {
+                height: 70vh;
+            }
             .small-img {
                 position: relative;
                 width: 100%;
@@ -417,10 +421,6 @@ $images: (item1: "../images/whitezone.jpg",
                 }
 
                 &.img-8 {
-                    background-image: url('../images/greenhub.jpg');
-                }
-
-                &.img-9 {
                     background-image: url('../images/coffeetime.jpg');
                 }
                 
