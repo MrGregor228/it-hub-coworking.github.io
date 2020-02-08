@@ -1,0 +1,700 @@
+/* line 5, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/grisha.scss */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* line 18, ../sass/grisha.scss */
+sup {
+  font-size: 12px !important;
+}
+
+/* line 22, ../sass/grisha.scss */
+.pt-10 {
+  height: 150px;
+}
+@media screen and (max-width: 576px) {
+  /* line 22, ../sass/grisha.scss */
+  .pt-10 {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  /* line 22, ../sass/grisha.scss */
+  .pt-10 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 22, ../sass/grisha.scss */
+  .pt-10 {
+    height: 90px;
+  }
+}
+
+/* line 39, ../sass/grisha.scss */
+.change6 {
+  background: none;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 0px;
+  font-size: 14px;
+  color: #000;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  padding: 0.35em;
+}
+/* line 53, ../sass/grisha.scss */
+.change6:hover {
+  background: #ffc107;
+  border-color: black;
+  border-radius: 0px;
+}
+
+/* line 60, ../sass/grisha.scss */
+* input {
+  box-shadow: none !important;
+  outline: none;
+  transition: .15s linear;
+}
+/* line 64, ../sass/grisha.scss */
+* input:hover, * input:focus, * input:active {
+  box-shadow: none !important;
+  outline: none;
+}
+
+/* line 74, ../sass/grisha.scss */
+.iframe-placeholder {
+  position: relative;
+  z-index: 999999999;
+}
+/* line 77, ../sass/grisha.scss */
+.iframe-placeholder iframe {
+  position: relative;
+  width: 100%;
+  min-height: 95vh;
+}
+/* line 83, ../sass/grisha.scss */
+.iframe-placeholder .close {
+  position: absolute;
+  opacity: 1;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0);
+  right: 2em;
+  width: 75px;
+  height: 60px;
+  background: #ffc107 !important;
+}
+
+/* line 97, ../sass/grisha.scss */
+.modal {
+  position: relative;
+}
+
+/* line 103, ../sass/grisha.scss */
+.modal {
+  z-index: 9999999;
+}
+/* line 106, ../sass/grisha.scss */
+.modal .modal-body {
+  padding: 2em;
+}
+/* line 110, ../sass/grisha.scss */
+.modal .small-text {
+  font-size: 14px !important;
+}
+/* line 114, ../sass/grisha.scss */
+.modal .modal-header {
+  background: #ffc107;
+}
+/* line 119, ../sass/grisha.scss */
+.modal h5 {
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+/* line 124, ../sass/grisha.scss */
+.modal .radio-labels {
+  position: relative;
+  bottom: 3px;
+}
+@media screen and (max-width: 350px) {
+  /* line 124, ../sass/grisha.scss */
+  .modal .radio-labels {
+    font-size: 14px;
+  }
+}
+/* line 134, ../sass/grisha.scss */
+.modal .quantity {
+  position: relative;
+}
+/* line 138, ../sass/grisha.scss */
+.modal input[type=number] {
+  -moz-appearance: textfield;
+}
+/* line 140, ../sass/grisha.scss */
+.modal input[type=number]::-webkit-inner-spin-button, .modal input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* line 148, ../sass/grisha.scss */
+.modal input[type=number]:focus {
+  outline: 0;
+}
+/* line 153, ../sass/grisha.scss */
+.modal .quantity input {
+  line-height: 1.65;
+  float: left;
+  display: block;
+}
+/* line 162, ../sass/grisha.scss */
+.modal .quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+/* line 168, ../sass/grisha.scss */
+.modal .quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 40px;
+  text-align: center;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 186, ../sass/grisha.scss */
+.modal .quantity-button.quantity-up {
+  line-height: 1.5;
+  background-color: #ffc107;
+  color: orange;
+  position: absolute;
+  height: 16px;
+  top: 0;
+  border-bottom: 1px solid orange;
+}
+/* line 196, ../sass/grisha.scss */
+.modal .quantity-button.quantity-down {
+  line-height: 1em !important;
+  background-color: #ffc107;
+  color: orange;
+  position: absolute;
+  bottom: 11px;
+  height: 15px;
+}
+/* line 205, ../sass/grisha.scss */
+.modal .quantity-button.quantity-down svg {
+  position: relative;
+  top: -3px;
+}
+/* line 213, ../sass/grisha.scss */
+.modal * input[type="radio"] {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 15px;
+  -webkit-appearance: button;
+  border: none;
+  background-color: lightgray;
+  color: #FFF;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+}
+/* line 232, ../sass/grisha.scss */
+.modal input[type="radio"]:checked {
+  background-color: orange;
+  border: 5px solid #ffc107;
+}
+
+/* line 238, ../sass/grisha.scss */
+strong {
+  font-weight: bold !important;
+}
+
+/* line 242, ../sass/grisha.scss */
+.wht {
+  color: #ffffff !important;
+}
+
+/* line 246, ../sass/grisha.scss */
+.golden {
+  color: #ffc107 !important;
+}
+
+/* line 250, ../sass/grisha.scss */
+.r-text {
+  color: #d41010 !important;
+}
+
+/* line 254, ../sass/grisha.scss */
+.hid {
+  display: none !important;
+}
+
+/* line 258, ../sass/grisha.scss */
+.mw1280 {
+  max-width: 1280px !important;
+}
+
+/* line 262, ../sass/grisha.scss */
+.mw992 {
+  max-width: 992px !important;
+}
+
+/* line 266, ../sass/grisha.scss */
+.pt-10 {
+  height: 150px;
+}
+@media screen and (max-width: 576px) {
+  /* line 266, ../sass/grisha.scss */
+  .pt-10 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  /* line 266, ../sass/grisha.scss */
+  .pt-10 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 266, ../sass/grisha.scss */
+  .pt-10 {
+    height: 90px;
+  }
+}
+
+/* line 283, ../sass/grisha.scss */
+.br-0 {
+  border-radius: 0px !important;
+}
+
+/* line 287, ../sass/grisha.scss */
+.mw320 {
+  max-width: 200px !important;
+  max-height: 200px !important;
+}
+
+/* line 292, ../sass/grisha.scss */
+.fz35 {
+  font-size: 35px;
+}
+
+/* line 296, ../sass/grisha.scss */
+.box-shadow-underlined {
+  box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
+}
+
+/* line 301, ../sass/grisha.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 305, ../sass/grisha.scss */
+.bld {
+  font-weight: bold;
+}
+
+/* line 309, ../sass/grisha.scss */
+.blck {
+  color: black !important;
+}
+
+/* line 313, ../sass/grisha.scss */
+.lh-1 {
+  line-height: 1 !important;
+}
+
+/* line 317, ../sass/grisha.scss */
+.lh-2 {
+  line-height: 1.5 !important;
+}
+
+/* line 321, ../sass/grisha.scss */
+.nav-link {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  /* line 321, ../sass/grisha.scss */
+  .nav-link {
+    text-align: left;
+  }
+}
+
+/* line 329, ../sass/grisha.scss */
+.sec1 {
+  position: relative;
+  width: 100%;
+  height: 92vh;
+}
+/* line 334, ../sass/grisha.scss */
+.sec1 .wrapper-center {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 576px) {
+  /* line 334, ../sass/grisha.scss */
+  .sec1 .wrapper-center {
+    width: 90%;
+    font-size: 20px;
+  }
+}
+
+/* line 359, ../sass/grisha.scss */
+.sec2 .container .card {
+  text-align: center;
+  margin-right: 15px !important;
+  border: none !important;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 576px) {
+  /* line 359, ../sass/grisha.scss */
+  .sec2 .container .card {
+    margin-right: 0 !important;
+  }
+}
+/* line 372, ../sass/grisha.scss */
+.sec2 .container .card .card-body .text-center * {
+  color: #ffc107;
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+/* line 381, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  max-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 390, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-1 {
+  background-image: url("../images/whitezone.jpg");
+}
+/* line 394, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-2 {
+  background-image: url("../images/grayzone.jpg");
+}
+/* line 398, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-3 {
+  background-image: url("../images/redzone.jpg");
+}
+/* line 402, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-4 {
+  background-image: url("../images/bluezone.jpg");
+}
+/* line 406, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-5 {
+  background-image: url("../images/meetingroom.jpg");
+}
+/* line 410, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-6 {
+  background-image: url("../images/eventhall.jpg");
+}
+/* line 414, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-7 {
+  background-image: url("../images/greenzone.jpg");
+}
+/* line 418, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img.img-8 {
+  background-image: url("../images/greenhub.jpg");
+}
+/* line 423, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .show-button-on-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition: .3s linear;
+}
+/* line 436, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .show-button-on-hover .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 444, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption {
+  opacity: 0;
+  position: absolute;
+  width: 125px;
+  background: white;
+  font-weight: bold;
+  transition: .3s linear;
+  z-index: 4;
+}
+/* line 453, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption.top-left {
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+  font-size: 20px;
+}
+/* line 462, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption.bottom-left {
+  bottom: 0;
+  left: 0;
+  padding: 0.75em;
+}
+/* line 468, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption.gray-bg {
+  background-color: gray;
+  color: white;
+}
+/* line 473, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption.red-bg {
+  background-color: #d41010;
+  color: white;
+}
+/* line 478, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption.blue-bg {
+  background-color: #2b5cff;
+  color: white;
+}
+/* line 483, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img .image-caption.green-bg {
+  background-color: green;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  /* line 444, ../sass/grisha.scss */
+  .sec2 .container .media-object .small-img .image-caption {
+    opacity: 0;
+  }
+}
+/* line 495, ../sass/grisha.scss */
+.sec2 .container .media-object .small-img:hover .image-caption,
+.sec2 .container .media-object .small-img:hover .show-button-on-hover {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  /* line 502, ../sass/grisha.scss */
+  .sec2 .container .media-object .small-img:hover .top-left,
+  .sec2 .container .media-object .small-img:hover .bottom-left {
+    opacity: 0;
+  }
+}
+/* line 510, ../sass/grisha.scss */
+.sec2 .container .media-object .text-container {
+  position: relative;
+  padding: .75em .75em 0 .75em;
+}
+@media screen and (max-width: 768px) {
+  /* line 510, ../sass/grisha.scss */
+  .sec2 .container .media-object .text-container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  /* line 510, ../sass/grisha.scss */
+  .sec2 .container .media-object .text-container {
+    padding: .75em .75em 0 .75em;
+  }
+}
+
+/* line 522, ../sass/grisha.scss */
+.sec2 .container .media-object .text-container .media-object-heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* line 526, ../sass/grisha.scss */
+.sec2 .container .media-object .text-container .media-object-heading:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 175px;
+  background: #ffc107;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+/* line 540, ../sass/grisha.scss */
+.sec2 .container .media-object .tick-after-ul .border-none {
+  border: 1px solid black !important;
+  width: 45px;
+  margin-top: .3em;
+}
+/* line 546, ../sass/grisha.scss */
+.sec2 .container .media-object .tick-after-ul .border-none:hover, .sec2 .container .media-object .tick-after-ul .border-none:focus, .sec2 .container .media-object .tick-after-ul .border-none:active {
+  background: #ffc107;
+  box-shadow: none !important;
+}
+@media screen and (max-width: 768px) {
+  /* line 558, ../sass/grisha.scss */
+  .sec2 .container .media-object .top-left,
+  .sec2 .container .media-object .show-button-on-hover {
+    opacity: 1 !important;
+  }
+}
+
+/* line 567, ../sass/grisha.scss */
+.navig-zones {
+  position: fixed;
+  top: 35%;
+  z-index: 99999;
+  transition: all .3s linear;
+  right: -100%;
+}
+/* line 573, ../sass/grisha.scss */
+.navig-zones .active {
+  background: #ffc107;
+  border: none;
+  color: black;
+}
+
+/* line 580, ../sass/grisha.scss */
+.arrow-to-show-menu {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  width: 50px;
+  z-index: 99999;
+  transition: all .3s linear;
+}
+/* line 592, ../sass/grisha.scss */
+.arrow-to-show-menu .hide-menu:hover, .arrow-to-show-menu .hide-menu:focus, .arrow-to-show-menu .hide-menu:active,
+.arrow-to-show-menu .show-menu:hover,
+.arrow-to-show-menu .show-menu:focus,
+.arrow-to-show-menu .show-menu:active {
+  box-shadow: none;
+  outline: none;
+}
+/* line 600, ../sass/grisha.scss */
+.arrow-to-show-menu .hide-menu {
+  display: none;
+  animation-fill-mode: both;
+}
+/* line 605, ../sass/grisha.scss */
+.arrow-to-show-menu .show-menu {
+  animation-fill-mode: both;
+}
+
+@keyframes showButton {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    display: block !important;
+  }
+}
+@keyframes hideButton {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    display: none !important;
+  }
+}
+@keyframes showwww {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hiderrr {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
