@@ -136,13 +136,13 @@ strong {
   }
   /* line 65, ../sass/grisha.scss */
   .pt-10.next-pt {
-    height: 290px !important;
+    height: 150px !important;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 350px) {
   /* line 71, ../sass/grisha.scss */
   .pt-10.next-pt {
-    height: 440px !important;
+    height: 220px !important;
   }
   /* line 75, ../sass/grisha.scss */
   .pt-10#text-of-the-slide {
