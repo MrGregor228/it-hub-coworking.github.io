@@ -354,7 +354,7 @@ $images: (item1: "../images/whitezone.jpg",
     item6: "../images/eventhall.jpg"
 );
 
-.sec2 {
+.sec1 {
     .container {
         .card {
             text-align: center;
@@ -386,34 +386,6 @@ $images: (item1: "../images/whitezone.jpg",
                 background-repeat: $bRepeat;
                 background-size: $bSize;
                 background-position: $bPosition;
-
-                &.img-1 {
-                    background-image: url('../images/whitezone.jpg');
-                }
-
-                &.img-2 {
-                    background-image: url('../images/grayzone.jpg');
-                }
-
-                &.img-3 {
-                    background-image: url('../images/redzone.jpg');
-                }
-
-                &.img-4 {
-                    background-image: url('../images/bluezone.jpg');
-                }
-
-                &.img-5 {
-                    background-image: url('../images/meetingroom.jpg');
-                }
-
-                &.img-6 {
-                    background-image: url('../images/eventhall.jpg');
-                }
-
-                &.img-7 {
-                     background-image: url("../images/greenzone.jpg");
-                }
 
                 &.img-8 {
                     background-image: url('../images/greenhub.jpg');
