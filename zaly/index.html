@@ -214,6 +214,32 @@
             </div>
         </div>
     </div>
+     <!-- Extra large modal mettingRoomMap -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="whiteZoneMap">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="w-100 d-block iframe-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581167324771!6m8!1m7!1sCAoSLEFGMVFpcFBrZTJMb1d1Nlh0MlVGZzktTV81MTRYa0FMc2VnQnBuamhiaVZa!2m2!1d47.9090579!2d33.3441639!3f36.82239400187053!4f19.518858989443515!5f0.4000000000000002" frameborder="0" style="border:0;" allowfullscreen=""></<iframe>" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Extra large modal mettingRoomMap -->
+     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="grayZoneMap">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="w-100 d-block iframe-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581167582023!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f43.80413746650677!4f-0.695017128751303!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></<iframe>" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="list-item arrow-to-show-menu">
         <div class="first">
@@ -255,7 +281,7 @@
                         <div class="text-center image-caption top-left"><i class="far fa-house-return"></i></div>
 
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#whiteZoneMap">Подивитися</button>
                         </div>
 
                         <div class="text-center image-caption bottom-left">White Zone</div>
@@ -306,7 +332,7 @@
                         <div class="text-center image-caption top-left gray-bg"><i class="far fa-house-return"></i>
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#grayZoneMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left gray-bg">Gray Zone</div>
                     </div>
