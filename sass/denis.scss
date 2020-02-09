@@ -14,7 +14,7 @@ $yellow:#ffc107;
 .card-title {
     font-weight: bold;
     font-size: 19.5px;
-    white-space: nowrap;
+    
 
     &:after {
         margin-top: 7px;
@@ -37,6 +37,7 @@ $yellow:#ffc107;
         margin-top: 10vh;
         margin-bottom: 10vh;
     }
+
     .services {
         .card {
             line-height: 1.5;
@@ -60,6 +61,7 @@ $yellow:#ffc107;
         margin-top: 10vh;
         margin-bottom: 10vh;
     }
+
     .card {
         text-align: center;
         margin-right: 15px !important;
@@ -68,8 +70,10 @@ $yellow:#ffc107;
         @media screen and (max-width:576px) {
             margin-right: 0 !important;
         }
+
         .card-title {
             font-size: 20px;
+
             // color: gray;
             &:after {
                 display: none;
@@ -93,13 +97,23 @@ $yellow:#ffc107;
     }
 }
 
+.slider-2 {
+    .card-title {
+        &:after {
+            content: "";
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+}
+
 .sec5 {
     .nazva {
         margin-top: 10vh;
         margin-bottom: 10vh;
     }
 }
-    
+
 
 
 .sec7 {
