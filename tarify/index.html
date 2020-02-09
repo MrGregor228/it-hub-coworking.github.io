@@ -104,15 +104,15 @@
                         </ul>                      
 
                         <div class="mt-auto" id="residentShowAndHide">
-                            <p class="text-left bld mt-3 mb-3"><span>34</span>  грн<span class="text-muted"> / перша година</span></p>
-                            <p class="text-left bld mt-3 mb-3"><span>22</span>  грн<span class="text-muted"> / наступні</span></p>
+                            <p class="text-left bld mt-3 mb-3"><span>18</span>  грн<span class="text-muted"> / перша година</span></p>
+                            <p class="text-left bld mt-3 mb-3"><span>14</span>  грн<span class="text-muted"> / наступні</span></p>
                         </div>               
                         
                         <p class="text-left bld mt-3 mb-3 mt-auto text-center w-100"><span id="residentInnerText"></span></p>
 
                         <a href="#" class="btn btn-warning w-100">Забронювати</a>                        
                 </div>
-                <script src="js/studentPrice.js"></script>
+                <script src="js/residentPrice.js"></script>
             </div>
 
             <div class="card m-3" style="max-width: 280px;">
@@ -251,11 +251,11 @@
                     <h5 class="card-title">Red Zone</h5>
                     <p class="card-text text-muted lh-2">Локація для Вашої команди до 11 осіб для роботи та заходів</p>
                         <div class="btn-group text-center w-100 mt-3" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-warning btn-warning">1 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >2 год.</button>
-                            <button type="button" class="btn btn-outline-warning">3 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >6 год.</button>
-                            <button type="button" class="btn btn-outline-warning">12 год.</button>
+                            <button type="button" class="btn btn-outline-warning btn-warning" id="redZoneWarningFirst" onclick="checkRedZoneButtonsClickFirst();">1 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="redZoneWarningSecond" onclick="checkRedZoneButtonsClickSecond();">2 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="redZoneWarningThird" onclick="checkRedZoneButtonsClickThird();">3 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="redZoneWarningFourth" onclick="checkRedZoneButtonsClickFourth();">6 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="redZoneWarningFifth" onclick="checkRedZoneButtonsClickFifth();">12 год.</button>
                         </div>
                         <ul class="mt-5 lh-2">
                             <li>Wi-Fi</li>
@@ -267,10 +267,15 @@
                             <li>Живі рослини</li>
                             <li>Прибирання</li>
                         </ul>
-                        <p class="text-left bld mt-3 mb-3  mt-auto"><span>330</span>  грн<span class="text-muted"> / перша година</span></p>
-                        <p class="text-left bld mt-3 mb-3"><span>234</span>  грн<span class="text-muted"> / наступні</span></p>
+                        <div class="mt-auto" id="redZoneShowAndHide">
+                            <p class="text-left bld mt-3 mb-3  mt-auto"><span>330</span>  грн<span class="text-muted"> / перша година</span></p>
+                            <p class="text-left bld mt-3 mb-3"><span>234</span>  грн<span class="text-muted"> / наступні</span></p>
+                        </div>
+                        <p class="text-left bld mt-3 mb-3 mt-auto text-center w-100"><span id="redZoneInnerText"></span></p>
+
                         <a href="#" class="btn btn-warning w-100">Забронювати</a>
                 </div>
+                <script src="js/redZonePrices.js"></script>
             </div>
 
             <div class="card m-3" style="max-width: 280px;">
@@ -279,11 +284,11 @@
                     <h5 class="card-title">Blue Zone</h5>
                     <p class="card-text text-muted lh-2">Локація для Вашої команди до 8 осіб для роботи та заходів</p>
                         <div class="btn-group text-center w-100 mt-3" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-warning btn-warning">1 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >2 год.</button>
-                            <button type="button" class="btn btn-outline-warning">3 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >6 год.</button>
-                            <button type="button" class="btn btn-outline-warning">12 год.</button>
+                            <button type="button" class="btn btn-outline-warning btn-warning" id="blueZoneWarningFirst" onclick="checkBlueZoneButtonsClickFirst();">1 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="blueZoneWarningSecond" onclick="checkBlueZoneButtonsClickSecond();">2 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="blueZoneWarningThird" onclick="checkBlueZoneButtonsClickThird();">3 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="blueZoneWarningFourth" onclick="checkBlueZoneButtonsClickFourth();">6 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="blueZoneWarningFifth" onclick="checkBlueZoneButtonsClickFifth();">12 год.</button>
                         </div>
                         <ul class="mt-5 lh-2 h-25">
                             <li>Wi-Fi</li>
@@ -295,10 +300,16 @@
                             <li>Живі рослини</li>
                             <li>Прибирання</li>
                         </ul>
-                        <p class="text-left bld mt-3 mb-3  mt-auto"><span>191</span>  грн<span class="text-muted"> / перша година</span></p>
-                        <p class="text-left bld mt-3 mb-3"><span>133</span>  грн<span class="text-muted"> / наступні</span></p>
+                        
+                        <div class="mt-auto" id="blueZoneShowAndHide">
+                            <p class="text-left bld mt-3 mb-3  mt-auto"><span>191</span>  грн<span class="text-muted"> / перша година</span></p>
+                            <p class="text-left bld mt-3 mb-3"><span>133</span>  грн<span class="text-muted"> / наступні</span></p>
+                        </div>
+                        <p class="text-left bld mt-3 mb-3 mt-auto text-center w-100"><span id="blueZoneInnerText"></span></p>
+
                         <a href="#" class="btn btn-warning w-100">Забронювати</a>
                 </div>
+                <script src="js/blueZonePrice.js"></script>
             </div>
             <div class="col-12"></div>
 
@@ -308,11 +319,11 @@
                     <h5 class="card-title">Green Zone</h5>
                     <p class="card-text text-muted lh-2">Локація для Вашої команди до 10 осіб для роботи та заходів</p>
                         <div class="btn-group text-center w-100 mt-3" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-warning btn-warning">1 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >2 год.</button>
-                            <button type="button" class="btn btn-outline-warning">3 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >6 год.</button>
-                            <button type="button" class="btn btn-outline-warning">12 год.</button>
+                            <button type="button" class="btn btn-outline-warning btn-warning" id="greenZoneWarningFirst" onclick="checkGreenZoneButtonsClickFirst();">1 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenZoneWarningSecond" onclick="checkGreenZoneButtonsClickSecond();">2 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenZoneWarningThird" onclick="checkGreenZoneButtonsClickThird();">3 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenZoneWarningFourth" onclick="checkGreenZoneButtonsClickFourth();">6 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenZoneWarningFifth" onclick="checkGreenZoneButtonsClickFifth();">12 год.</button>
                         </div>
                         <ul class="mt-5 lh-2">
                             <li>Wi-Fi</li>
@@ -324,10 +335,14 @@
                             <li>Живі рослини</li>
                             <li>Прибирання</li>
                         </ul>
-                        <p class="text-left bld mt-3 mb-3  mt-auto"><span>191</span>  грн<span class="text-muted"> / перша година</span></p>
-                        <p class="text-left bld mt-3 mb-3"><span>133</span>  грн<span class="text-muted"> / наступні</span></p>
+                        <div class="mt-auto" id="greenZoneShowAndHide">
+                            <p class="text-left bld mt-3 mb-3  mt-auto"><span>191</span>  грн<span class="text-muted"> / перша година</span></p>
+                            <p class="text-left bld mt-3 mb-3"><span>133</span>  грн<span class="text-muted"> / наступні</span></p>
+                        </div>
+                        <p class="text-left bld mt-3 mb-3 mt-auto text-center w-100"><span id="greenZoneInnerText"></span></p>
                         <a href="#" class="btn btn-warning w-100">Забронювати</a>                       
                 </div>
+                <script src="js/greenZonePrice.js"></script>
             </div>
 
             <div class="card m-3" style="max-width: 280px;">
@@ -336,11 +351,11 @@
                     <h5 class="card-title">Green Hub</h5>
                     <p class="card-text text-muted lh-2">Локація для Вашої команди до 80 осіб для роботи та заходів</p>
                         <div class="btn-group text-center w-100 mt-3" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-warning btn-warning">1 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >2 год.</button>
-                            <button type="button" class="btn btn-outline-warning">3 год.</button>
-                            <button type="button" class="btn btn-outline-warning" >6 год.</button>
-                            <button type="button" class="btn btn-outline-warning">12 год.</button>
+                            <button type="button" class="btn btn-outline-warning btn-warning" id="greenHubWarningFirst" onclick="checkGreenHubButtonsClickFirst();">1 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenHubWarningSecond" onclick="checkGreenHubButtonsClickSecond();">2 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenHubWarningThird" onclick="checkGreenHubButtonsClickThird();">3 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenHubWarningFourth" onclick="checkGreenHubButtonsClickFourth();">6 год.</button>
+                            <button type="button" class="btn btn-outline-warning" id="greenHubWarningFifth" onclick="checkGreenHubButtonsClickFifth();">12 год.</button>
                         </div>
                         <ul class="mt-5 lh-2">
                             <li>Wi-Fi</li>
@@ -354,9 +369,12 @@
                             <li>Кондиціонування</li>
                             <li>Прибирання</li>
                         </ul>
-                        <p class="text-left bld mt-3 mb-3  mt-auto"><span>260</span>  грн<span class="text-muted"> / година</span></p>
+                        <p class="text-left bld mt-3 mb-3 mt-auto" id="greenHubShowAndHide"><span>260</span>  грн<span class="text-muted"> / година</span></p>
+
+                        <p class="text-left bld mt-3 mb-3 mt-auto text-center w-100"><span id="greenHubInnerText"></span></p>
                         <a href="#" class="btn btn-warning w-100">Забронювати</a>
                 </div>
+                <script src="js/greenHubPrice.js"></script>
             </div>
 
 
