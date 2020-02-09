@@ -427,6 +427,10 @@ a:hover {
     .card-text {
         font-size: 14px;
     }
+    .card-title {
+        white-space: nowrap;
+    }
+
     .slider-1 {
         position: relative;
         
@@ -489,6 +493,52 @@ a:hover {
 .slider-2 {
     position: relative;
     pointer-events: initial !important;
+
+    .owl-stage-outer {
+        .owl-stage {
+            .owl-item {
+                .card {
+                    .card-title {
+                        &:after {
+                            background:none;
+                            width: 100%;
+                            text-align: right;
+                            position: absolute;
+                            bottom:1.5em;
+                            right:1em;
+                            color: lightgray;
+                            font-size: 12px;
+                            font-style: italic;
+                        }
+                    }
+                    .title1 {
+                        &:after {
+                            content: "09.02.2020 10:03";                            
+                        }
+                    }
+                    .title2 {
+                        &:after {
+                            content: "07.02.2020 13:30";
+                        }
+                    }
+                    .title3 {
+                        &:after {
+                            content: "04.02.2020 11:00";
+                        }
+                    }
+                    .title4 {
+                        &:after {
+                            content: "01.02.2020 14:33";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    
     
     .falseNavigationLeftSecond{
         position: absolute;
