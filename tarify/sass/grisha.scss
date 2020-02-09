@@ -188,12 +188,17 @@ a:hover {
     height: 100%!important;
     .row {
         .card {
+            position: relative;
             display: block;
+            height: 720px;
+            .card-body {
+                height: 100%;
+            }
             .card-subtitle {
                 font-size: 14px;
             }
             .card-title {
-                font-size: 30px;
+                font-size: 25px;
                 letter-spacing: 2px;
             }
             .btn-group {
@@ -217,6 +222,7 @@ a:hover {
                 list-style-type: none;
                 padding: 0;
                 li {
+                    font-size: 14px;
                     position: relative;
                     margin-top: 10px;
                     &:before {
@@ -230,6 +236,10 @@ a:hover {
                         background:  #ffc107;
                     }
                 }
+            }
+            .bottom-buttons-cont {
+               
+                
             }
         }
     }
