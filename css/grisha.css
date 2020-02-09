@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -537,7 +537,7 @@ a:hover {
 .sec4 .slider-1 {
   position: relative;
 }
-/* line 432, ../sass/grisha.scss */
+/* line 433, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft {
   position: absolute;
   height: 100%;
@@ -545,7 +545,7 @@ a:hover {
   left: 0;
   transform: translate(0%, -50%);
 }
-/* line 440, ../sass/grisha.scss */
+/* line 441, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationRight {
   position: absolute;
   height: 100%;
@@ -553,32 +553,32 @@ a:hover {
   right: 0;
   transform: translate(0%, -50%);
 }
-/* line 448, ../sass/grisha.scss */
+/* line 449, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft, .sec4 .slider-1 .falseNavigationRight {
   transition: .3s linear;
   color: #ffc107;
 }
-/* line 451, ../sass/grisha.scss */
+/* line 452, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft:hover, .sec4 .slider-1 .falseNavigationLeft:focus, .sec4 .slider-1 .falseNavigationLeft:active, .sec4 .slider-1 .falseNavigationRight:hover, .sec4 .slider-1 .falseNavigationRight:focus, .sec4 .slider-1 .falseNavigationRight:active {
   box-shadow: none;
 }
-/* line 454, ../sass/grisha.scss */
+/* line 455, ../sass/grisha.scss */
 .sec4 .slider-1 .falseNavigationLeft:hover, .sec4 .slider-1 .falseNavigationRight:hover {
   opacity: .6;
 }
-/* line 460, ../sass/grisha.scss */
+/* line 461, ../sass/grisha.scss */
 .sec4 .card {
   border: none !important;
 }
-/* line 463, ../sass/grisha.scss */
+/* line 464, ../sass/grisha.scss */
 .sec4 .card .card-title {
   font-weight: bold;
 }
-/* line 466, ../sass/grisha.scss */
+/* line 467, ../sass/grisha.scss */
 .sec4 .card .card-title:after {
   display: none !important;
 }
-/* line 472, ../sass/grisha.scss */
+/* line 473, ../sass/grisha.scss */
 .sec4 .slider-text-slicer {
   margin-bottom: .5em !important;
   height: 3px;
@@ -586,25 +586,65 @@ a:hover {
   background: #ffc107;
   box-sizing: border-box;
 }
-/* line 480, ../sass/grisha.scss */
+/* line 481, ../sass/grisha.scss */
 .sec4 .nazva {
   text-align: center !important;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-/* line 488, ../sass/grisha.scss */
+/* line 489, ../sass/grisha.scss */
+.slider-2 {
+  position: relative;
+  pointer-events: initial !important;
+}
+/* line 492, ../sass/grisha.scss */
+.slider-2 .falseNavigationLeftSecond {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: -10px;
+  transform: translate(0%, -50%);
+}
+/* line 500, ../sass/grisha.scss */
+.slider-2 .falseNavigationRightSecond {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  right: -10px;
+  transform: translate(0%, -50%);
+}
+/* line 508, ../sass/grisha.scss */
+.slider-2 .falseNavigationLeftSecond, .slider-2 .falseNavigationRightSecond {
+  transition: .3s linear;
+  color: #ffc107;
+}
+/* line 511, ../sass/grisha.scss */
+.slider-2 .falseNavigationLeftSecond:hover, .slider-2 .falseNavigationLeftSecond:focus, .slider-2 .falseNavigationLeftSecond:active, .slider-2 .falseNavigationRightSecond:hover, .slider-2 .falseNavigationRightSecond:focus, .slider-2 .falseNavigationRightSecond:active {
+  box-shadow: none;
+}
+/* line 514, ../sass/grisha.scss */
+.slider-2 .falseNavigationLeftSecond:hover, .slider-2 .falseNavigationRightSecond:hover {
+  opacity: .6;
+}
+/* line 519, ../sass/grisha.scss */
+.slider-2 .owl-stage-outer .owl-item {
+  position: relative;
+  user-select: initial !important;
+}
+
+/* line 526, ../sass/grisha.scss */
 .sec6 .nazva {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-/* line 492, ../sass/grisha.scss */
+/* line 530, ../sass/grisha.scss */
 .sec6 iframe {
   width: 70%;
   height: 500px;
 }
 @media screen and (max-width: 768px) {
-  /* line 492, ../sass/grisha.scss */
+  /* line 530, ../sass/grisha.scss */
   .sec6 iframe {
     width: 100%;
     height: 350px;

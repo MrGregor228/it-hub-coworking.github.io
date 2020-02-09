@@ -429,6 +429,7 @@ a:hover {
     }
     .slider-1 {
         position: relative;
+        
             .falseNavigationLeft{
                 position: absolute;
                 height: 100%;
@@ -484,6 +485,43 @@ a:hover {
     }
 }
 
+
+.slider-2 {
+    position: relative;
+    pointer-events: initial !important;
+    .falseNavigationLeftSecond{
+        position: absolute;
+        height: 100%;
+        top: 50%;
+        left: -10px;
+        transform: translate(0%, -50%);
+    }
+
+    .falseNavigationRightSecond {
+        position: absolute;
+        height: 100%;
+        top: 50%;
+        right: -10px;
+        transform: translate(0%, -50%);
+    }
+
+    .falseNavigationLeftSecond,.falseNavigationRightSecond {
+        transition: .3s linear;
+        color: $yellow;
+        &:hover, &:focus, &:active {
+            box-shadow: none;
+        }
+        &:hover {
+            opacity: .6;
+        }
+    }
+    .owl-stage-outer{
+        .owl-item {
+            position: relative; 
+            user-select: initial !important;              
+        }
+    }
+}
 .sec6 {
     .nazva {
         margin-top: 10vh;
