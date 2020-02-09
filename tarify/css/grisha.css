@@ -269,46 +269,53 @@ a:hover {
 }
 /* line 190, ../sass/grisha.scss */
 .sec1 .row .card {
+  position: relative;
   display: block;
+  height: 720px;
 }
-/* line 192, ../sass/grisha.scss */
+/* line 194, ../sass/grisha.scss */
+.sec1 .row .card .card-body {
+  height: 100%;
+}
+/* line 197, ../sass/grisha.scss */
 .sec1 .row .card .card-subtitle {
   font-size: 14px;
 }
-/* line 195, ../sass/grisha.scss */
+/* line 200, ../sass/grisha.scss */
 .sec1 .row .card .card-title {
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 2px;
 }
-/* line 200, ../sass/grisha.scss */
+/* line 205, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn {
   padding: .25em;
   font-size: 13px;
   border-radius: 0;
   color: black;
 }
-/* line 205, ../sass/grisha.scss */
+/* line 210, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn:focus, .sec1 .row .card .btn-group .btn:active {
   outline: none;
   box-shadow: none;
   background-color: #ffc107;
   color: black;
 }
-/* line 211, ../sass/grisha.scss */
+/* line 216, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn .btn-warning {
   color: black !important;
 }
-/* line 216, ../sass/grisha.scss */
+/* line 221, ../sass/grisha.scss */
 .sec1 .row .card ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 219, ../sass/grisha.scss */
+/* line 224, ../sass/grisha.scss */
 .sec1 .row .card ul li {
+  font-size: 14px;
   position: relative;
   margin-top: 10px;
 }
-/* line 222, ../sass/grisha.scss */
+/* line 228, ../sass/grisha.scss */
 .sec1 .row .card ul li:before {
   content: "";
   position: relative;

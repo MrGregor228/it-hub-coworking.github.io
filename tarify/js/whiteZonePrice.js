@@ -3,18 +3,26 @@ var priceForSmartOffice = document.getElementById('priceForSmartOffice'),
     btn2 = document.getElementById('btnWarningSecond'),
     btn3 = document.getElementById('btnWarningThird'),
     btn4 = document.getElementById('btnWarningFourth'),
-    btn5 = document.getElementById('btnWarningFifth');
+    btn5 = document.getElementById('btnWarningFifth'),
+    whiteZoneHidenContent = document.getElementById('whiteZoneHidenContent');
 
 var buttonsPrices = {
-    _4people: "11 000",
-    _6people: "18 000",
-    _8people: "24 000",
-    _10people: "30 000",
-    _20people: "60 000"
+    firstHour: "В сумі 346 грн",
+    secondHour: "В сумі 634 грн",
+    thirdHour: "В сумі 922 грн",
+    sixHours: "В сумі 1 786 грн",
+    twelveHours: "В сумі 3 514 грн"
 };
 
 
+function whiteZonePricesEnabled() {
+    whiteZoneHidenContent.style = "display: block;";
+}
+eventHallPricesEnabled();
 
+function whiteZoneHidePrices() {
+    whiteZoneHidenContent.style = "display: none;";
+}
 
 
 function checkButtonsClickFirst() {    
@@ -24,9 +32,10 @@ function checkButtonsClickFirst() {
     btn4.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._4people; 
+    priceForSmartOffice.innerHTML = buttonsPrices.firstHour; 
 
-    btn1.classList.add('btn-warning');  
+    btn1.classList.add('btn-warning');
+    whiteZoneHidePrices();  
     
 }
 
@@ -36,9 +45,10 @@ function checkButtonsClickSecond() {
     btn4.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._6people;
+    priceForSmartOffice.innerHTML = buttonsPrices.secondHour;
 
     btn2.classList.add('btn-warning');
+    whiteZoneHidePrices();
 }
 function checkButtonsClickThird() {
     btn2.classList.remove('btn-warning');
@@ -46,9 +56,10 @@ function checkButtonsClickThird() {
     btn4.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._8people;
+    priceForSmartOffice.innerHTML = buttonsPrices.thirdHour;
 
     btn3.classList.add('btn-warning');
+    whiteZoneHidePrices();
 }
 function checkButtonsClickFourth() {
     btn2.classList.remove('btn-warning');
@@ -56,9 +67,10 @@ function checkButtonsClickFourth() {
     btn1.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._10people;
+    priceForSmartOffice.innerHTML = buttonsPrices.sixHours;
 
     btn4.classList.add('btn-warning');
+    whiteZoneHidePrices();
 }
 function checkButtonsClickFifth() {
     btn2.classList.remove('btn-warning');
@@ -66,7 +78,8 @@ function checkButtonsClickFifth() {
     btn4.classList.remove('btn-warning');
     btn1.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._20people;
+    priceForSmartOffice.innerHTML = buttonsPrices.twelveHours;
 
     btn5.classList.add('btn-warning');
+    whiteZoneHidePrices();
 }
