@@ -6,11 +6,11 @@ var priceForSmartOffice = document.getElementById('priceForSmartOffice'),
     btn5 = document.getElementById('btnWarningFifth');
 
 var buttonsPrices = {
-    _4people: "11 000",
-    _6people: "18 000",
-    _8people: "24 000",
-    _10people: "30 000",
-    _20people: "60 000"
+    firstHour: "346",
+    secondHour: "634",
+    thirdHour: "922",
+    sixHours: "1 210",
+    twelveHours: "1 498"
 };
 
 
@@ -24,7 +24,7 @@ function checkButtonsClickFirst() {
     btn4.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._4people; 
+    priceForSmartOffice.innerHTML = buttonsPrices.firstHour; 
 
     btn1.classList.add('btn-warning');  
     
@@ -36,7 +36,7 @@ function checkButtonsClickSecond() {
     btn4.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._6people;
+    priceForSmartOffice.innerHTML = buttonsPrices.secondHour;
 
     btn2.classList.add('btn-warning');
 }
@@ -46,7 +46,7 @@ function checkButtonsClickThird() {
     btn4.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._8people;
+    priceForSmartOffice.innerHTML = buttonsPrices.thirdHour;
 
     btn3.classList.add('btn-warning');
 }
@@ -56,7 +56,7 @@ function checkButtonsClickFourth() {
     btn1.classList.remove('btn-warning');
     btn5.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._10people;
+    priceForSmartOffice.innerHTML = buttonsPrices.sixHours;
 
     btn4.classList.add('btn-warning');
 }
@@ -66,7 +66,7 @@ function checkButtonsClickFifth() {
     btn4.classList.remove('btn-warning');
     btn1.classList.remove('btn-warning');
 
-    priceForSmartOffice.innerHTML = buttonsPrices._20people;
+    priceForSmartOffice.innerHTML = buttonsPrices.twelveHours;
 
     btn5.classList.add('btn-warning');
 }
