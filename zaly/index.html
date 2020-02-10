@@ -228,8 +228,8 @@
         </div>
     </div>
      
-     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="grayZoneMap" style="z-index: 999999999;">
-        <div class="modal-dialog modal-xl" role="document">
+     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -240,6 +240,18 @@
             </div>
         </div>
     </div>
+    <div class="modal" tabindex="-1" role="dialog" id="grayZoneMap">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="w-100 d-block iframe-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="greenZoneMap">
         <div class="modal-dialog modal-xl" role="document">
@@ -666,7 +678,6 @@
         </script>
 
     <script>
-        $('#grayZoneMap').modal('show');
         $('.tool').tooltip('enable');
         $('body').scrollspy({ target: '#list-example' });
 
