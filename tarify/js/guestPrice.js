@@ -5,6 +5,7 @@ var fullGuestPrice = document.getElementById('guestInnerText'),
     guestBtn4 = document.getElementById('guestWarningFourth'),
     guestBtn5 = document.getElementById('guestWarningFifth'),
     guestHidenContent = document.getElementById('GuestShowAndHide');
+    guestHiddenInnerText = document.getElementById('guest-hidden-inner-text');
 
 var guestHoursPrices = {
     firstHour: "В сумі 34 грн",
@@ -21,6 +22,7 @@ guestPricesEnabled();
 
 function guestHidePrices() {
     guestHidenContent.style = "display: none;";
+    guestHiddenInnerText.style = "display: block";
 }
 
 

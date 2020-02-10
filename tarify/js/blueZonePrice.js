@@ -5,6 +5,7 @@ var fullBlueZonePrice = document.getElementById('blueZoneInnerText'),
     blueZoneBtn4 = document.getElementById('blueZoneWarningFourth'),
     blueZoneBtn5 = document.getElementById('blueZoneWarningFifth'),
     blueZoneHidenContent = document.getElementById('blueZoneShowAndHide');
+    blueHiddenInnerText = document.getElementById('blue-hidden-inner-text');
 
 var blueZoneHoursPrices = {
     firstHour: "В сумі 191 грн",
@@ -21,6 +22,7 @@ blueZonePricesEnabled();
 
 function blueZoneHidePrices() {
     blueZoneHidenContent.style = "display: none;";
+    blueHiddenInnerText.style = "display: block";
 }
 
 

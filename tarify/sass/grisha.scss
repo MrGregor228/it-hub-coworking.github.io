@@ -207,7 +207,10 @@ a:hover {
             .price-text {
                 font-size: 14px;
             }
-            #white-hidden-inner-text {
+            #white-hidden-inner-text, #guest-hidden-inner-text, #resident-hidden-inner-text,
+            #meeting-hidden-inner-text, #event-hidden-inner-text, #gray-hidden-inner-text,
+            #red-hidden-inner-text, #blue-hidden-inner-text, #green-hidden-inner-text,
+            #greenHub-hidden-inner-text {
                 display: none;
             }
             .btn-group {

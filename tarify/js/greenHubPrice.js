@@ -5,6 +5,7 @@ var fullGreenHubPrice = document.getElementById('greenHubInnerText'),
     greenHubBtn4 = document.getElementById('greenHubWarningFourth'),
     greenHubBtn5 = document.getElementById('greenHubWarningFifth'),
     greenHubHidenContent = document.getElementById('greenHubShowAndHide');
+    greenHubHiddenInnerText = document.getElementById('greenHub-hidden-inner-text');
 
 var greenHubHoursPrices = {
     firstHour: "В сумі 260 грн",
@@ -21,6 +22,7 @@ greenHubPricesEnabled();
 
 function greenHubHidePrices() {
     greenHubHidenContent.style = "display: none;";
+    greenHubHiddenInnerText.style = "display: block";
 }
 
 

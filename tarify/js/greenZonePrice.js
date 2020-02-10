@@ -5,6 +5,7 @@ var fullGreenZonePrice = document.getElementById('greenZoneInnerText'),
     greenZoneBtn4 = document.getElementById('greenZoneWarningFourth'),
     greenZoneBtn5 = document.getElementById('greenZoneWarningFifth'),
     greenZoneHidenContent = document.getElementById('greenZoneShowAndHide');
+    greenHiddenInnerText = document.getElementById('green-hidden-inner-text');
 
 var greenZoneHoursPrices = {
     firstHour: "В сумі 191 грн",
@@ -21,6 +22,7 @@ greenZonePricesEnabled();
 
 function greenZoneHidePrices() {
     greenZoneHidenContent.style = "display: none;";
+    greenHiddenInnerText.style = "display: block";
 }
 
 

@@ -5,6 +5,7 @@ var fullMeetingPrice = document.getElementById('meetingInnerText'),
     meetingBtn4 = document.getElementById('meetingWarningFourth'),
     meetingBtn5 = document.getElementById('meetingWarningFifth'),
     meetingHidenContent = document.getElementById('meetingShowAndHide');
+    meetingHiddenInnerText = document.getElementById('meeting-hidden-inner-text');
 
 var meetingHoursPrices = {
     firstHour: "В сумі 150 грн",
@@ -21,6 +22,7 @@ meetingPricesEnabled();
 
 function meetingHidePrices() {
     meetingHidenContent.style = "display: none;";
+    meetingHiddenInnerText.style = "display: block";
 }
 
 

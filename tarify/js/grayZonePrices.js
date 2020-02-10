@@ -5,6 +5,7 @@ var fullGrayZonePrice = document.getElementById('grayZoneInnerText'),
     grayZoneBtn4 = document.getElementById('grayZoneWarningFourth'),
     grayZoneBtn5 = document.getElementById('grayZoneWarningFifth'),
     grayZoneHidenContent = document.getElementById('grayZoneShowAndHide');
+    grayHiddenInnerText = document.getElementById('gray-hidden-inner-text');
 
 var grayZoneHoursPrices = {
     firstHour: "В сумі 259 грн",
@@ -21,6 +22,7 @@ grayZonePricesEnabled();
 
 function grayZoneHidePrices() {
     grayZoneHidenContent.style = "display: none;";
+    grayHiddenInnerText.style = "display: block";
 }
 
 
