@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -271,51 +271,63 @@ a:hover {
 .sec1 .row .card {
   position: relative;
   display: block;
-  height: 720px;
+  height: 650px;
 }
 /* line 194, ../sass/grisha.scss */
 .sec1 .row .card .card-body {
   height: 100%;
 }
 /* line 197, ../sass/grisha.scss */
-.sec1 .row .card .card-subtitle {
+.sec1 .row .card .card-text {
   font-size: 14px;
 }
 /* line 200, ../sass/grisha.scss */
+.sec1 .row .card .card-subtitle {
+  font-size: 14px;
+}
+/* line 203, ../sass/grisha.scss */
 .sec1 .row .card .card-title {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
-/* line 205, ../sass/grisha.scss */
+/* line 207, ../sass/grisha.scss */
+.sec1 .row .card .price-text {
+  font-size: 14px;
+}
+/* line 210, ../sass/grisha.scss */
+.sec1 .row .card #white-hidden-inner-text {
+  display: none;
+}
+/* line 214, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn {
   padding: .25em;
   font-size: 13px;
   border-radius: 0;
   color: black;
 }
-/* line 210, ../sass/grisha.scss */
+/* line 219, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn:focus, .sec1 .row .card .btn-group .btn:active {
   outline: none;
   box-shadow: none;
   background-color: #ffc107;
   color: black;
 }
-/* line 216, ../sass/grisha.scss */
+/* line 225, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn .btn-warning {
   color: black !important;
 }
-/* line 221, ../sass/grisha.scss */
+/* line 230, ../sass/grisha.scss */
 .sec1 .row .card ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 224, ../sass/grisha.scss */
+/* line 233, ../sass/grisha.scss */
 .sec1 .row .card ul li {
   font-size: 14px;
   position: relative;
   margin-top: 10px;
 }
-/* line 228, ../sass/grisha.scss */
+/* line 237, ../sass/grisha.scss */
 .sec1 .row .card ul li:before {
   content: "";
   position: relative;

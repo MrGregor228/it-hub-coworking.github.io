@@ -190,16 +190,25 @@ a:hover {
         .card {
             position: relative;
             display: block;
-            height: 720px;
+            height: 650px;
             .card-body {
                 height: 100%;
+            }
+            .card-text {
+                font-size: 14px;
             }
             .card-subtitle {
                 font-size: 14px;
             }
             .card-title {
-                font-size: 25px;
+                font-size: 20px;
                 letter-spacing: 2px;
+            }
+            .price-text {
+                font-size: 14px;
+            }
+            #white-hidden-inner-text {
+                display: none;
             }
             .btn-group {
                 .btn {
@@ -236,10 +245,6 @@ a:hover {
                         background:  #ffc107;
                     }
                 }
-            }
-            .bottom-buttons-cont {
-               
-                
             }
         }
     }
