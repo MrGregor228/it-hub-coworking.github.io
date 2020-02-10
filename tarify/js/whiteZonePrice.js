@@ -4,7 +4,8 @@ var priceForSmartOffice = document.getElementById('priceForSmartOffice'),
     btn3 = document.getElementById('btnWarningThird'),
     btn4 = document.getElementById('btnWarningFourth'),
     btn5 = document.getElementById('btnWarningFifth'),
-    whiteZoneHidenContent = document.getElementById('whiteZoneHidenContent');
+    whiteZoneHidenContent = document.getElementById('whiteZoneHidenContent'),
+    hiddenInnerText = document.getElementsById('white-hidden-inner-text');
 
 var buttonsPrices = {
     firstHour: "В сумі 346 грн",
@@ -22,6 +23,7 @@ eventHallPricesEnabled();
 
 function whiteZoneHidePrices() {
     whiteZoneHidenContent.style = "display: none;";
+    hiddenInnerText.style = "display: block";
 }
 
 
