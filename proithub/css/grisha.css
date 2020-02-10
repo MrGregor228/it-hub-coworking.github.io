@@ -131,127 +131,127 @@ sup {
   outline: none;
 }
 
-/* line 74, ../sass/grisha.scss */
+/* line 75, ../sass/grisha.scss */
 strong {
   font-weight: bold !important;
 }
 
-/* line 78, ../sass/grisha.scss */
+/* line 79, ../sass/grisha.scss */
 .wht {
   color: #ffffff !important;
 }
 
-/* line 82, ../sass/grisha.scss */
+/* line 83, ../sass/grisha.scss */
 .golden {
   color: #ffc107 !important;
 }
 
-/* line 86, ../sass/grisha.scss */
+/* line 87, ../sass/grisha.scss */
 .r-text {
   color: #d41010 !important;
 }
 
-/* line 90, ../sass/grisha.scss */
+/* line 91, ../sass/grisha.scss */
 .hid {
   display: none !important;
 }
 
-/* line 94, ../sass/grisha.scss */
+/* line 95, ../sass/grisha.scss */
 .mw1280 {
   max-width: 1280px !important;
 }
 
-/* line 98, ../sass/grisha.scss */
+/* line 99, ../sass/grisha.scss */
 .mw992 {
   max-width: 992px !important;
 }
 
-/* line 102, ../sass/grisha.scss */
+/* line 103, ../sass/grisha.scss */
 .pt-10 {
   height: 150px;
 }
 @media screen and (max-width: 576px) {
-  /* line 102, ../sass/grisha.scss */
+  /* line 103, ../sass/grisha.scss */
   .pt-10 {
     height: 100px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1280px) {
-  /* line 102, ../sass/grisha.scss */
+  /* line 103, ../sass/grisha.scss */
   .pt-10 {
     height: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 102, ../sass/grisha.scss */
+  /* line 103, ../sass/grisha.scss */
   .pt-10 {
     height: 90px;
   }
 }
 
-/* line 119, ../sass/grisha.scss */
+/* line 120, ../sass/grisha.scss */
 .br-0 {
   border-radius: 0px !important;
 }
 
-/* line 123, ../sass/grisha.scss */
+/* line 124, ../sass/grisha.scss */
 .mw320 {
   max-width: 200px !important;
   max-height: 200px !important;
 }
 
-/* line 128, ../sass/grisha.scss */
+/* line 129, ../sass/grisha.scss */
 .fz35 {
   font-size: 35px;
 }
 
-/* line 131, ../sass/grisha.scss */
+/* line 133, ../sass/grisha.scss */
 .fz20 {
   font-size: 20px;
 }
 
-/* line 135, ../sass/grisha.scss */
+/* line 137, ../sass/grisha.scss */
 .box-shadow-underlined {
   box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
 }
 
-/* line 140, ../sass/grisha.scss */
+/* line 142, ../sass/grisha.scss */
 a:hover {
   text-decoration: none !important;
 }
 
-/* line 144, ../sass/grisha.scss */
+/* line 146, ../sass/grisha.scss */
 .bld {
   font-weight: bold;
 }
 
-/* line 148, ../sass/grisha.scss */
+/* line 150, ../sass/grisha.scss */
 .blck {
   color: black !important;
 }
 
-/* line 152, ../sass/grisha.scss */
+/* line 154, ../sass/grisha.scss */
 .lh-1 {
   line-height: 1 !important;
 }
 
-/* line 156, ../sass/grisha.scss */
+/* line 158, ../sass/grisha.scss */
 .lh-2 {
   line-height: 1.5 !important;
 }
 
-/* line 160, ../sass/grisha.scss */
+/* line 162, ../sass/grisha.scss */
 .nav-link {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  /* line 160, ../sass/grisha.scss */
+  /* line 162, ../sass/grisha.scss */
   .nav-link {
     text-align: left;
   }
 }
 
-/* line 166, ../sass/grisha.scss */
+/* line 170, ../sass/grisha.scss */
 .bouncing-link {
   position: relative;
   animation: bouncing .7s linear infinite;
@@ -269,28 +269,28 @@ a:hover {
     top: 0px;
   }
 }
-/* line 190, ../sass/grisha.scss */
+/* line 196, ../sass/grisha.scss */
 .sec1 {
   height: 100% !important;
 }
-/* line 192, ../sass/grisha.scss */
+/* line 199, ../sass/grisha.scss */
 .sec1 blockquote {
   position: relative;
   border-left: 8px solid #ffeeba !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 192, ../sass/grisha.scss */
+  /* line 199, ../sass/grisha.scss */
   .sec1 blockquote {
     border-left: 0px !important;
   }
 }
-/* line 198, ../sass/grisha.scss */
+/* line 207, ../sass/grisha.scss */
 .sec1 blockquote .card-images {
   max-height: 40vh;
   float: left;
   margin: 0 1.5em .5em 0;
 }
-/* line 202, ../sass/grisha.scss */
+/* line 212, ../sass/grisha.scss */
 .sec1 blockquote .card-images.second-img {
   max-width: 100%;
   float: right;
@@ -298,7 +298,7 @@ a:hover {
   margin-left: 1.5em;
 }
 @media screen and (max-width: 992px) {
-  /* line 198, ../sass/grisha.scss */
+  /* line 207, ../sass/grisha.scss */
   .sec1 blockquote .card-images {
     float: none;
     display: block;
@@ -308,14 +308,13 @@ a:hover {
     margin-top: 1em;
     margin-bottom: 1.5em;
   }
-  /* line 216, ../sass/grisha.scss */
+  /* line 228, ../sass/grisha.scss */
   .sec1 blockquote .card-images.second-img {
-    margin: 0;
     margin-top: 1em;
     margin-bottom: 1.5em;
   }
 }
-/* line 223, ../sass/grisha.scss */
+/* line 236, ../sass/grisha.scss */
 .sec1 blockquote:before {
   content: "“" !important;
   font-family: Arial;
@@ -326,12 +325,32 @@ a:hover {
   top: 5px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 233, ../sass/grisha.scss */
+  /* line 236, ../sass/grisha.scss */
+  .sec1 blockquote:before {
+    left: 0 !important;
+  }
+}
+/* line 250, ../sass/grisha.scss */
+.sec1 blockquote .firstIframe,
+.sec1 blockquote .secondIframe {
+  width: 96%;
+  height: 35vh;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 576px) {
+  /* line 250, ../sass/grisha.scss */
+  .sec1 blockquote .firstIframe,
+  .sec1 blockquote .secondIframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 264, ../sass/grisha.scss */
   .sec1 .ul-bullets-list {
     margin-left: 0px !important;
   }
 }
-/* line 238, ../sass/grisha.scss */
+/* line 270, ../sass/grisha.scss */
 .sec1 .ul-bullets-list li:before {
   content: "";
   display: block;
@@ -343,7 +362,7 @@ a:hover {
   margin-top: 8px;
   left: -5px;
 }
-/* line 252, ../sass/grisha.scss */
+/* line 285, ../sass/grisha.scss */
 .sec1 .ul-bullets-list ol li:before {
   display: none;
 }

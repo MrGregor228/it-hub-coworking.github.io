@@ -71,6 +71,7 @@ sup {
 
     transition: .15s linear;
 }
+
 strong {
     font-weight: bold !important;
 }
@@ -128,6 +129,7 @@ strong {
 .fz35 {
     font-size: 35px;
 }
+
 .fz20 {
     font-size: 20px;
 }
@@ -159,10 +161,12 @@ a:hover {
 
 .nav-link {
     text-align: center;
+
     @media screen and (max-width:992px) {
         text-align: left;
     }
 }
+
 .bouncing-link {
     position: relative;
     animation: bouncing .7s linear infinite;
@@ -170,42 +174,49 @@ a:hover {
 }
 
 @keyframes bouncing {
-    0%{
+    0% {
         top: 0px;
     }
+
     // 25%{
     //     top: -20px;
     // }
-    50%{
-        top: -10px    ;
+    50% {
+        top: -10px;
     }
+
     // 75%{
     //     top:-12px;
     // }
-    100%{
-        top:0px;
+    100% {
+        top: 0px;
     }
 }
 
 .sec1 {
-    height: 100%!important;
+    height: 100% !important;
+
     blockquote {
         position: relative;
         border-left: 8px solid lighten($yellow, 35%) !important;
+
         @media screen and (max-width:576px) {
-            border-left:0px !important;
+            border-left: 0px !important;
         }
+
         .card-images {
-            max-height: 40vh; 
-            float: left; 
+            max-height: 40vh;
+            float: left;
             margin: 0 1.5em .5em 0;
+
             &.second-img {
                 max-width: 100%;
                 float: right;
                 margin: 0;
-                margin-left:1.5em; 
+                margin-left: 1.5em;
             }
-            @media screen and (max-width:992px){
+
+            @media screen and (max-width:992px) {
                 float: none;
                 display: block;
                 margin-right: auto;
@@ -213,13 +224,15 @@ a:hover {
                 max-width: 100%;
                 margin-top: 1em;
                 margin-bottom: 1.5em;
+
                 &.second-img {
-                    margin: 0;
+                    
                     margin-top: 1em;
                     margin-bottom: 1.5em;
                 }
             }
         }
+
         &:before {
             content: "“" !important;
             font-family: Arial;
@@ -227,13 +240,32 @@ a:hover {
             font-size: 70px !important;
             position: absolute !important;
             left: 15px !important;
-            top: 5px !important;            
+            top: 5px !important;
+
+            @media screen and (max-width:576px) {
+                left: 0 !important;
+            }
+        }
+
+        .firstIframe,
+        .secondIframe {
+            width: 96%;
+            height: 35vh;
+            margin-top: 3rem;
+
+            @media screen and (max-width:576px) {
+               
+                width: 100%;
+            }
+
         }
     }
+
     .ul-bullets-list {
-        @media screen and (max-width:576px){
-            margin-left: 0px!important;
+        @media screen and (max-width:576px) {
+            margin-left: 0px !important;
         }
+
         li {
             &:before {
                 content: "";
@@ -247,6 +279,7 @@ a:hover {
                 left: -5px;
             }
         }
+
         ol {
             li {
                 &:before {
