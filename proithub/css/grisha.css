@@ -290,7 +290,14 @@ a:hover {
   float: left;
   margin: 0 1.5em .5em 0;
 }
-@media screen and (max-width: 576px) {
+/* line 202, ../sass/grisha.scss */
+.sec1 blockquote .card-images.second-img {
+  max-width: 100%;
+  float: right;
+  margin: 0;
+  margin-left: 1.5em;
+}
+@media screen and (max-width: 992px) {
   /* line 198, ../sass/grisha.scss */
   .sec1 blockquote .card-images {
     float: none;
@@ -298,9 +305,17 @@ a:hover {
     margin-right: auto;
     margin-left: auto;
     max-width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+  /* line 216, ../sass/grisha.scss */
+  .sec1 blockquote .card-images.second-img {
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
   }
 }
-/* line 210, ../sass/grisha.scss */
+/* line 223, ../sass/grisha.scss */
 .sec1 blockquote:before {
   content: "“" !important;
   font-family: Arial;
@@ -311,12 +326,12 @@ a:hover {
   top: 5px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 220, ../sass/grisha.scss */
+  /* line 233, ../sass/grisha.scss */
   .sec1 .ul-bullets-list {
     margin-left: 0px !important;
   }
 }
-/* line 225, ../sass/grisha.scss */
+/* line 238, ../sass/grisha.scss */
 .sec1 .ul-bullets-list li:before {
   content: "";
   display: block;
@@ -328,7 +343,7 @@ a:hover {
   margin-top: 8px;
   left: -5px;
 }
-/* line 239, ../sass/grisha.scss */
+/* line 252, ../sass/grisha.scss */
 .sec1 .ul-bullets-list ol li:before {
   display: none;
 }
