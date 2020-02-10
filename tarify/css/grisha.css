@@ -295,39 +295,42 @@ a:hover {
   font-size: 14px;
 }
 /* line 210, ../sass/grisha.scss */
-.sec1 .row .card #white-hidden-inner-text {
+.sec1 .row .card #white-hidden-inner-text, .sec1 .row .card #guest-hidden-inner-text, .sec1 .row .card #resident-hidden-inner-text,
+.sec1 .row .card #meeting-hidden-inner-text, .sec1 .row .card #event-hidden-inner-text, .sec1 .row .card #gray-hidden-inner-text,
+.sec1 .row .card #red-hidden-inner-text, .sec1 .row .card #blue-hidden-inner-text, .sec1 .row .card #green-hidden-inner-text,
+.sec1 .row .card #greenHub-hidden-inner-text {
   display: none;
 }
-/* line 214, ../sass/grisha.scss */
+/* line 217, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn {
   padding: .25em;
   font-size: 13px;
   border-radius: 0;
   color: black;
 }
-/* line 219, ../sass/grisha.scss */
+/* line 222, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn:focus, .sec1 .row .card .btn-group .btn:active {
   outline: none;
   box-shadow: none;
   background-color: #ffc107;
   color: black;
 }
-/* line 225, ../sass/grisha.scss */
+/* line 228, ../sass/grisha.scss */
 .sec1 .row .card .btn-group .btn .btn-warning {
   color: black !important;
 }
-/* line 230, ../sass/grisha.scss */
+/* line 233, ../sass/grisha.scss */
 .sec1 .row .card ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 233, ../sass/grisha.scss */
+/* line 236, ../sass/grisha.scss */
 .sec1 .row .card ul li {
   font-size: 14px;
   position: relative;
   margin-top: 10px;
 }
-/* line 237, ../sass/grisha.scss */
+/* line 240, ../sass/grisha.scss */
 .sec1 .row .card ul li:before {
   content: "";
   position: relative;

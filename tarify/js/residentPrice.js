@@ -5,6 +5,7 @@ var fullresidentPrice = document.getElementById('residentInnerText'),
     residentBtn4 = document.getElementById('residentWarningFourth'),
     residentBtn5 = document.getElementById('residentWarningFifth'),
     residentHidenContent = document.getElementById('residentShowAndHide');
+    residentHiddenInnerText = document.getElementById('resident-hidden-inner-text');
 
 var residentHoursPrices = {
     firstHour: "В сумі 18 грн",
@@ -21,6 +22,7 @@ residentPricesEnabled();
 
 function residentHidePrices() {
     residentHidenContent.style = "display: none;";
+    residentHiddenInnerText.style = "display: block";
 }
 
 

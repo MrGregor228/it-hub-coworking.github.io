@@ -5,6 +5,7 @@ var fullEventHallPrice = document.getElementById('eventHallInnerText'),
     eventHallBtn4 = document.getElementById('eventHallWarningFourth'),
     eventHallBtn5 = document.getElementById('eventHallWarningFifth'),
     eventHallHidenContent = document.getElementById('eventHallShowAndHide');
+    eventHiddenInnerText = document.getElementById('event-hidden-inner-text');
 
 var eventHallHoursPrices = {
     firstHour: "В сумі 260 грн",
@@ -21,6 +22,7 @@ eventHallPricesEnabled();
 
 function eventHallHidePrices() {
     eventHallHidenContent.style = "display: none;";
+    eventHiddenInnerText.style = "display: block";
 }
 
 

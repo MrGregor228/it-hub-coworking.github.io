@@ -5,6 +5,7 @@ var fullRedZonePrice = document.getElementById('redZoneInnerText'),
     redZoneBtn4 = document.getElementById('redZoneWarningFourth'),
     redZoneBtn5 = document.getElementById('redZoneWarningFifth'),
     redZoneHidenContent = document.getElementById('redZoneShowAndHide');
+    redHiddenInnerText = document.getElementById('red-hidden-inner-text');
 
 var redZoneHoursPrices = {
     firstHour: "В сумі 330 грн",
@@ -21,6 +22,7 @@ redZonePricesEnabled();
 
 function redZoneHidePrices() {
     redZoneHidenContent.style = "display: none;";
+    redHiddenInnerText.style = "display: block";
 }
 
 
