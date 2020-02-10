@@ -228,7 +228,7 @@
         </div>
     </div>
      
-     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="grayZoneMap">
+     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="grayZoneMap" style="z-index: 999999999;">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
@@ -292,17 +292,7 @@
     </div>
     <section class="sec2 container-fluid lh-2">
         <div class="row justify-content-center services">
-            <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0"
-                class="scrollspy-example">
-                <!-- <h1 class="mt-3 mb-3 text-center w-100 nazva d-block">Послуги</h1>
-                <div class="col-12">
-                    <hr class="text-slicer">
-                </div> -->
-
-
-
-
-              
+            <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">              
                 <br>
                 <div class="row media-object align-items-center" id="list-item-1">
                     <div class="small-img img-1 col-12 col-md-4">
@@ -355,6 +345,7 @@
                     </div>
                 </div>
                 <hr>
+                
                 <div class="row media-object align-items-center" id="list-item-2">
                     <div class="small-img img-2 col-12 col-md-4">
                         <div class="text-center image-caption top-left gray-bg"><i class="far fa-house-return"></i></div>
@@ -668,9 +659,9 @@
         </script>
 
     <script>
-
+        $('#grayZoneMap').modal('show');
         $('.tool').tooltip('enable');
-        $('body').scrollspy({ target: '#list-example' })
+        $('body').scrollspy({ target: '#list-example' });
 
     </script>
     <!-- FONTAWESOME JS -->
