@@ -1,7 +1,31 @@
 $yellow: #ffc107;
 
 .sec1 {
-    height: 90vh;
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .services {
+        .card {
+            line-height: 1.5;
+            border: none;
+
+            .card-title {
+                &:after {
+                    margin-top: 7px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .card-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sec2 {
     .row {
         padding: 0;
 
@@ -15,12 +39,19 @@ $yellow: #ffc107;
                 margin-right: 0 !important;
             }
 
+            .card-title {                
+                word-wrap: normal;
+                text-align: center;
+                font-size: 12px;
+                width: 100%;
+            }
+
             line-height: 1.5;
 
             .card-body {
                 .text-center * {
                     color: $yellow;
-                    font-size: 3em;
+                    font-size: 2.5em;
                     margin-bottom: .5em;
                 }
             }
@@ -47,30 +78,3 @@ $yellow: #ffc107;
     
     
 }
-
-.sec2 {
-    .nazva {
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-    }
-
-    .services {
-        .card {
-            line-height: 1.5;
-            border: none;
-
-            .card-title {
-                &:after {
-                    margin-top: 7px;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                }
-            }
-            .card-text {
-            font-size: 14px;
-            }
-        }
-    }
-}
-
-
