@@ -49,16 +49,28 @@ $yellow: #ffc107;
 }
 
 .sec2 {
-    .komanda {
-        font-size: 30px;
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
 
-    .card-title {
-        font-size: 25px;
-    }
+    .services {
+        .card {
+            line-height: 1.5;
+            border: none;
 
-    
-    
+            .card-title {
+                &:after {
+                    margin-top: 7px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .card-text {
+            font-size: 14px;
+            }
+        }
+    }
 }
 
 

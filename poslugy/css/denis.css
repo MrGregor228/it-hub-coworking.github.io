@@ -47,10 +47,22 @@
 }
 
 /* line 52, ../sass/denis.scss */
-.sec2 .komanda {
-  font-size: 30px;
+.sec2 .nazva {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
-/* line 56, ../sass/denis.scss */
-.sec2 .card-title {
-  font-size: 25px;
+/* line 58, ../sass/denis.scss */
+.sec2 .services .card {
+  line-height: 1.5;
+  border: none;
+}
+/* line 63, ../sass/denis.scss */
+.sec2 .services .card .card-title:after {
+  margin-top: 7px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* line 69, ../sass/denis.scss */
+.sec2 .services .card .card-text {
+  font-size: 14px;
 }
