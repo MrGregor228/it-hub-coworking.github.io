@@ -164,19 +164,20 @@
 .sec7 .footer_soc {
   color: gray;
   transition: .3s linear;
+  font-size: 14px;
 }
-/* line 195, ../sass/footer.scss */
+/* line 196, ../sass/footer.scss */
 .sec7 .footer_soc:hover {
   text-decoration: none;
   color: black;
 }
-/* line 200, ../sass/footer.scss */
+/* line 201, ../sass/footer.scss */
 .sec7 .footer_soc .yellow_bg {
   color: #ffc107 !important;
   font-size: 25px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 207, ../sass/footer.scss */
+  /* line 208, ../sass/footer.scss */
   .sec7 *.col-12 {
     padding-left: 0px;
     padding-right: 0px;

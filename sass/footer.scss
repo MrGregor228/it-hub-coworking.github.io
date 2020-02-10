@@ -191,7 +191,8 @@ $wht: #ffffff;
     .footer_soc {
         color: gray;
         transition: .3s linear;
-
+        font-size: 14px;
+        
         &:hover {
             text-decoration: none;
             color: black;

@@ -32,6 +32,23 @@ $yellow:#ffc107;
     max-width: 992px;
 }
 
+.news-sec {
+    .slider-2 {
+        .owl-stage-outer {
+            .owl-stage {
+                .owl-item {
+                    .card {
+                        line-height: 1.5;
+                        .card-text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .sec2 {
     .nazva {
         margin-top: 10vh;
@@ -49,6 +66,9 @@ $yellow:#ffc107;
                     margin-left: 0px;
                     margin-right: 0px;
                 }
+            }
+            .card-text {
+            font-size: 14px;
             }
         }
     }
@@ -78,6 +98,10 @@ $yellow:#ffc107;
             &:after {
                 display: none;
             }
+        }
+        
+        .card-text {
+            font-size: 14px;
         }
 
         line-height: 1.5;

@@ -6,18 +6,18 @@
   z-index: 999999;
   transition: .3s linear;
 }
-/* line 42, ../sass/navigHeader.scss */
+/* line 10, ../sass/navigHeader.scss */
 .nav-cont .greenhub {
   width: 120px !important;
 }
-/* line 46, ../sass/navigHeader.scss */
+/* line 14, ../sass/navigHeader.scss */
 .nav-cont .active {
   background-color: white !important;
   border: none !important;
   color: black !important;
   box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
 }
-/* line 51, ../sass/navigHeader.scss */
+/* line 19, ../sass/navigHeader.scss */
 .nav-cont .active:hover, .nav-cont .active:active, .nav-cont .active:focus {
   background-color: white !important;
   border: none !important;
@@ -25,7 +25,7 @@
   box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
 }
 @media screen and (min-width: 1280px) {
-  /* line 60, ../sass/navigHeader.scss */
+  /* line 28, ../sass/navigHeader.scss */
   .nav-cont .mw1280 {
     max-width: 1280px !important;
     margin-right: auto;
@@ -33,14 +33,14 @@
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1279px) {
-  /* line 67, ../sass/navigHeader.scss */
+  /* line 35, ../sass/navigHeader.scss */
   .nav-cont .mw992 {
     max-width: 992px !important;
     margin-right: auto;
     margin-left: auto;
   }
 }
-/* line 74, ../sass/navigHeader.scss */
+/* line 42, ../sass/navigHeader.scss */
 .nav-cont .navbar {
   background: none !important;
   z-index: 99999;
@@ -48,11 +48,11 @@
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 81, ../sass/navigHeader.scss */
+/* line 49, ../sass/navigHeader.scss */
 .nav-cont .navbar .gray-box {
   position: relative;
 }
-/* line 84, ../sass/navigHeader.scss */
+/* line 52, ../sass/navigHeader.scss */
 .nav-cont .navbar .gray-box .navbar-brand {
   letter-spacing: 3px;
   font-family: 'Atures900' !important;
@@ -63,120 +63,120 @@
   height: 100%;
   transition: .3s linear;
 }
-/* line 93, ../sass/navigHeader.scss */
+/* line 61, ../sass/navigHeader.scss */
 .nav-cont .navbar .gray-box .navbar-brand .smtxt {
   font-family: 'Atures900' !important;
   font-size: 20px;
 }
 @media screen and (max-width: 992px) {
-  /* line 74, ../sass/navigHeader.scss */
+  /* line 42, ../sass/navigHeader.scss */
   .nav-cont .navbar {
     padding-top: 1em;
     padding-bottom: 1em;
     box-shadow: 0 0 3px gray;
   }
-  /* line 104, ../sass/navigHeader.scss */
+  /* line 72, ../sass/navigHeader.scss */
   .nav-cont .navbar .nav-link, .nav-cont .navbar.nav-item {
     display: list-item !important;
     max-width: 100px !important;
   }
 }
-/* line 110, ../sass/navigHeader.scss */
+/* line 78, ../sass/navigHeader.scss */
 .nav-cont .navbar .nav-link {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder !important;
   box-shadow: inset 0 0 #fff, inset 0 0 #ffe7a0;
   transition: .3s linear;
 }
-/* line 130, ../sass/navigHeader.scss */
+/* line 98, ../sass/navigHeader.scss */
 .nav-cont .navbar .nav-link:hover, .nav-cont .navbar .nav-link:focus, .nav-cont .navbar .nav-link:active {
   box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffdb6d;
 }
-/* line 137, ../sass/navigHeader.scss */
+/* line 105, ../sass/navigHeader.scss */
 .nav-cont .navbar .active {
   width: 80px;
   box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffdb6d;
 }
-/* line 142, ../sass/navigHeader.scss */
+/* line 110, ../sass/navigHeader.scss */
 .nav-cont .navbar .dropdown-toggle:after {
   display: none;
 }
-/* line 146, ../sass/navigHeader.scss */
+/* line 114, ../sass/navigHeader.scss */
 .nav-cont .navbar .fa-angle-down {
   position: relative;
   top: 1px;
   left: 3px;
 }
-/* line 152, ../sass/navigHeader.scss */
+/* line 120, ../sass/navigHeader.scss */
 .nav-cont .navbar .dropdown-menu {
   max-width: 320px;
 }
-/* line 157, ../sass/navigHeader.scss */
+/* line 125, ../sass/navigHeader.scss */
 .nav-cont .tel-link {
   color: black !important;
   transition: .3s linear;
 }
-/* line 162, ../sass/navigHeader.scss */
+/* line 130, ../sass/navigHeader.scss */
 .nav-cont .tel-link-span {
   color: transparent;
   fill: transparent;
   transition: .3s linear;
 }
 @media screen and (max-width: 992px) {
-  /* line 162, ../sass/navigHeader.scss */
+  /* line 130, ../sass/navigHeader.scss */
   .nav-cont .tel-link-span {
     color: #ffc107 !important;
     fill: #ffc107 !important;
   }
 }
-/* line 174, ../sass/navigHeader.scss */
+/* line 142, ../sass/navigHeader.scss */
 .nav-cont .tel-link:hover > .tel-link-span {
   color: #ffc107 !important;
   fill: #ffc107 !important;
 }
 
-/* line 181, ../sass/navigHeader.scss */
+/* line 149, ../sass/navigHeader.scss */
 .scrolled {
   box-shadow: 0 0 5px #252525;
 }
-/* line 183, ../sass/navigHeader.scss */
+/* line 151, ../sass/navigHeader.scss */
 .scrolled .navbar-brand {
   color: black !important;
 }
-/* line 186, ../sass/navigHeader.scss */
+/* line 154, ../sass/navigHeader.scss */
 .scrolled .tel-link {
   color: black !important;
 }
-/* line 189, ../sass/navigHeader.scss */
+/* line 157, ../sass/navigHeader.scss */
 .scrolled.nav-cont {
   background: white !important;
 }
-/* line 191, ../sass/navigHeader.scss */
+/* line 159, ../sass/navigHeader.scss */
 .scrolled.nav-cont .nav-link {
   color: black;
 }
-/* line 194, ../sass/navigHeader.scss */
+/* line 162, ../sass/navigHeader.scss */
 .scrolled.nav-cont .nav-link:after {
   display: none;
 }
-/* line 200, ../sass/navigHeader.scss */
+/* line 168, ../sass/navigHeader.scss */
 .scrolled .active {
   box-shadow: inset 0 1.5em #fff, inset 0 1.8em #ffdb6d !important;
   transition: all .5s linear;
 }
-/* line 204, ../sass/navigHeader.scss */
+/* line 172, ../sass/navigHeader.scss */
 .scrolled .active:hover, .scrolled .active:focus, .scrolled .active:active {
   box-shadow: inset 0 1.8em #fff, inset 0 2em #ffdb6d;
 }
 
-/* line 212, ../sass/navigHeader.scss */
+/* line 180, ../sass/navigHeader.scss */
 .dropdown-link-active {
   background-color: #ffc107 !important;
   border: none !important;
   color: black !important;
 }
-/* line 216, ../sass/navigHeader.scss */
+/* line 184, ../sass/navigHeader.scss */
 .dropdown-link-active:hover, .dropdown-link-active:active, .dropdown-link-active:focus {
   background-color: #ffc107 !important;
   border: none !important;
