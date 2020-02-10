@@ -378,7 +378,7 @@ $images: (item1: "../images/whitezone.jpg",
         }
 
         .media-object {
-            height: 100vh;
+            min-height: 100vh;
             
             &.coffee {
                 height: 70vh;

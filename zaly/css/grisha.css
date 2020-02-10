@@ -441,7 +441,7 @@ a:hover {
 }
 /* line 380, ../sass/grisha.scss */
 .sec2 .container .media-object {
-  height: 100vh;
+  min-height: 100vh;
 }
 /* line 383, ../sass/grisha.scss */
 .sec2 .container .media-object.coffee {
