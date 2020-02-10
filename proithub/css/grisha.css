@@ -285,6 +285,22 @@ a:hover {
   }
 }
 /* line 198, ../sass/grisha.scss */
+.sec1 blockquote .card-images {
+  max-height: 40vh;
+  float: left;
+  margin: 0 1.5em .5em 0;
+}
+@media screen and (max-width: 576px) {
+  /* line 198, ../sass/grisha.scss */
+  .sec1 blockquote .card-images {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+}
+/* line 210, ../sass/grisha.scss */
 .sec1 blockquote:before {
   content: "“" !important;
   font-family: Arial;
@@ -295,12 +311,12 @@ a:hover {
   top: 5px !important;
 }
 @media screen and (max-width: 576px) {
-  /* line 208, ../sass/grisha.scss */
+  /* line 220, ../sass/grisha.scss */
   .sec1 .ul-bullets-list {
     margin-left: 0px !important;
   }
 }
-/* line 213, ../sass/grisha.scss */
+/* line 225, ../sass/grisha.scss */
 .sec1 .ul-bullets-list li:before {
   content: "";
   display: block;
@@ -312,7 +328,7 @@ a:hover {
   margin-top: 8px;
   left: -5px;
 }
-/* line 227, ../sass/grisha.scss */
+/* line 239, ../sass/grisha.scss */
 .sec1 .ul-bullets-list ol li:before {
   display: none;
 }

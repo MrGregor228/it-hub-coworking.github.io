@@ -195,6 +195,18 @@ a:hover {
         @media screen and (max-width:576px) {
             border-left:0px !important;
         }
+        .card-images {
+            max-height: 40vh; 
+            float: left; 
+            margin: 0 1.5em .5em 0;
+            @media screen and (max-width:576px){
+                float: none;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 100%;
+            }
+        }
         &:before {
             content: "“" !important;
             font-family: Arial;
