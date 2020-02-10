@@ -228,8 +228,8 @@
         </div>
     </div>
      
-     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="grayZoneMap">
-        <div class="modal-dialog modal-xl" role="document">
+     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -240,6 +240,18 @@
             </div>
         </div>
     </div>
+    <div class="modal" tabindex="-1" role="dialog" id="grayZoneMap">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="w-100 d-block iframe-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="greenZoneMap">
         <div class="modal-dialog modal-xl" role="document">
@@ -292,17 +304,7 @@
     </div>
     <section class="sec2 container-fluid lh-2">
         <div class="row justify-content-center services">
-            <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0"
-                class="scrollspy-example">
-                <!-- <h1 class="mt-3 mb-3 text-center w-100 nazva d-block">Послуги</h1>
-                <div class="col-12">
-                    <hr class="text-slicer">
-                </div> -->
-
-
-
-
-              
+            <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">              
                 <br>
                 <div class="row media-object align-items-center" id="list-item-1">
                     <div class="small-img img-1 col-12 col-md-4">
@@ -355,6 +357,7 @@
                     </div>
                 </div>
                 <hr>
+                
                 <div class="row media-object align-items-center" id="list-item-2">
                     <div class="small-img img-2 col-12 col-md-4">
                         <div class="text-center image-caption top-left gray-bg"><i class="far fa-house-return"></i></div>
@@ -675,9 +678,8 @@
         </script>
 
     <script>
-
         $('.tool').tooltip('enable');
-        $('body').scrollspy({ target: '#list-example' })
+        $('body').scrollspy({ target: '#list-example' });
 
     </script>
     <!-- FONTAWESOME JS -->
