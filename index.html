@@ -76,6 +76,48 @@
 </head>
 
 <body>
+    <div class="preloader text-center" id="overlay">
+        <div class="centred-text-cont text-center">
+            <span id="typed"></span>
+
+
+        </div>
+        <div class="progres mt-5">
+            <div class="bar"></div>
+        </div>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+        <script>
+            window.onload = function () {
+                var typed = new Typed('#typed', {
+                    strings: [" IT HUB ^100 <span class='orange-text'>Coworking</span>"],
+                    typeSpeed: 60,
+                    backSpeed: 200,
+                    smartBackspace: false, // this is a default
+                    fadeOut: true,
+                    loop: false
+                });
+                var progress = $('.progres .bar');
+                //Set width to 100%
+                progress.animate({
+                    width: '250px'
+                }, 1000);
+                setTimeout(function () {
+                    $('#overlay').fadeOut();
+                    setTimeout(function () {
+                        $('#overlay').css('display', "none");
+                    }, 500);
+
+                }, 2500);
+            };
+        </script>
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script>
+
+
+
+        </script>
+    </div>
     <header class="nav-cont">
         <div class="mw992 mw1280">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -890,49 +932,6 @@
                 <script src="js/dateNow.js"></script> • IT HUB</p>
         </div>
     </footer>
-
-    <div class="preloader text-center" id="overlay">
-        <div class="centred-text-cont text-center">
-            <span id="typed"></span>
-
-
-        </div>
-        <div class="progres mt-5">
-            <div class="bar"></div>
-        </div>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
-        <script>
-            window.onload = function () {
-                var typed = new Typed('#typed', {
-                    strings: [" IT HUB ^100 <span class='orange-text'>Coworking</span>"],
-                    typeSpeed: 60,
-                    backSpeed: 200,
-                    smartBackspace: false, // this is a default
-                    fadeOut: true,
-                    loop: false
-                });
-                var progress = $('.progres .bar');
-                //Set width to 100%
-                progress.animate({
-                    width: '250px'
-                }, 1000);
-                setTimeout(function () {
-                    $('#overlay').fadeOut();
-                    setTimeout(function () {
-                        $('#overlay').css('display', "none");
-                    }, 500);
-
-                }, 2500);
-            };
-        </script>
-        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-        <script>
-
-
-
-        </script>
-    </div>
 
     <!-- FONTAWESOME JS -->
     <script src="fontawesome/js/all.min.js"></script>
