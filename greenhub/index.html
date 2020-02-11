@@ -2,6 +2,16 @@
 <html lang="ru">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158193212-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158193212-1');
+    </script>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,12 +49,14 @@
     <script src="../js/displayLangButton.js"></script>
     <script src="../js/langShowerMenu.js"></script>
 
-                <!-- GREEN HUB -->
+    <!-- GREEN HUB -->
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="greenHubMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337973240!6m8!1m7!1sCAoSLEFGMVFpcE05d2xGOXNHaTJPY05MV2lZWXg3N1VOVW5NUkJtcnMxZTdMQ1BQ!2m2!1d47.887913!2d33.387079!3f19.00489221123421!4f-0.6659202453636084!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337973240!6m8!1m7!1sCAoSLEFGMVFpcE05d2xGOXNHaTJPY05MV2lZWXg3N1VOVW5NUkJtcnMxZTdMQ1BQ!2m2!1d47.887913!2d33.387079!3f19.00489221123421!4f-0.6659202453636084!5f0.7820865974627469"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -63,13 +75,15 @@
                         <div class="text-center image-caption top-left green-bg"><i class="far fa-house-return"></i>
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#greenHubMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#greenHubMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left green-bg">Green Hub</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Green Hub</h5>
-                        <p>Екологічний простір для об'єднання людей, які бажають долучитися до принципів сталого розвитку та екологічного способу життя.</p>
+                        <p>Екологічний простір для об'єднання людей, які бажають долучитися до принципів сталого
+                            розвитку та екологічного способу життя.</p>
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година<span class="float-right bld">260
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -78,60 +92,64 @@
                         <p class="small">Площа <span class="float-right bld">81 м<sup>2</sup> </span> </p>
                         <p class="small">Вмістимість <span class="float-right bld">до 80 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
-                            <div class="tick-after-ul">
-                                <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                        class="fad fa-wifi"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip" data-title="Кава,чай"><i class="fas fa-coffee"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="БФП (друк ч/б 10 арк.)"><i class="fas fa-print"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Фліпчарт"><i class="fad fa-user-chart"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Інтерактивна дошка та проектор"><i class="far fa-chalkboard"></i></button>
-                                    <br>
-                                <button class="btn border-none bg-outline-dark ml-0 tool" data-toggle="tooltip"
-                                    data-title="Фотозйомка"><i class="far fa-camera-alt"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Радіомікрофони та мікшерський пульт"><i class="fad fa-microphone-stand"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
-                                <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Прибирання"><i class="far fa-vacuum"></i></button>
-                            </div>
+                        <div class="tick-after-ul">
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Кава,чай"><i class="fas fa-coffee"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="БФП (друк ч/б 10 арк.)"><i class="fas fa-print"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Фліпчарт"><i class="fad fa-user-chart"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Інтерактивна дошка та проектор"><i class="far fa-chalkboard"></i></button>
+                            <br>
+                            <button class="btn border-none bg-outline-dark ml-0 tool" data-toggle="tooltip"
+                                data-title="Фотозйомка"><i class="far fa-camera-alt"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Радіомікрофони та мікшерський пульт"><i
+                                    class="fad fa-microphone-stand"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                            <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
+                                data-title="Прибирання"><i class="far fa-vacuum"></i></button>
+                        </div>
                         <br>
-                        
-                        
+
+
                     </div>
                 </div>
-    </div>
-    <hr class="mw992">
+            </div>
+            <hr class="mw992">
 
-    </section>
-    <script src="../js/displayFooter.js"></script>
-    <script src='../js/onclickSubmitButton.js'></script>
+            </section>
+            <script src="../js/displayFooter.js"></script>
+            <script src='../js/onclickSubmitButton.js'></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+            <!-- Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous">
+                </script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous">
+                </script>
 
-<script>
+            <script>
 
-    $('.tool').tooltip('enable');
-    $('body').scrollspy({ target: '#list-example' })
+                $('.tool').tooltip('enable');
+                $('body').scrollspy({ target: '#list-example' })
 
-</script>
+            </script>
 
-    <!-- FONTAWESOME JS -->
-    <script src="../fontawesome/js/all.min.js"></script>
+            <!-- FONTAWESOME JS -->
+            <script src="../fontawesome/js/all.min.js"></script>
 
 
 

@@ -2,6 +2,16 @@
 <html lang="ru">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158193212-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158193212-1');
+    </script>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,7 +156,8 @@
                         <script src="js/buttonsOnInputNumber.js"></script>
                     </div>
                     <div class="modal-footer text-center mx-auto">
-                        <button class="btn change6 mx-auto hider" onclick="getPrice();" style="animation: height .3s linear;">Розрахувати</button>
+                        <button class="btn change6 mx-auto hider" onclick="getPrice();"
+                            style="animation: height .3s linear;">Розрахувати</button>
                         <button class="btn change6 mx-auto" onclick="reGetPrice();" id="reGet"
                             style="display: none;">Перерахувати</button>
                         <div id="cost" class="col-12"></div>
@@ -167,7 +178,9 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337715384!6m8!1m7!1sCAoSLEFGMVFpcFBNVDJaejFoZFdmQVVTVWduaHdGemJlV2x3ZEZIVFY4X2N6SXJu!2m2!1d47.9090718!2d33.3442006!3f249.200908123472!4f-0.11734010274162188!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337715384!6m8!1m7!1sCAoSLEFGMVFpcFBNVDJaejFoZFdmQVVTVWduaHdGemJlV2x3ZEZIVFY4X2N6SXJu!2m2!1d47.9090718!2d33.3442006!3f249.200908123472!4f-0.11734010274162188!5f0.7820865974627469"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -175,12 +188,14 @@
             </div>
         </div>
     </div>
-     <!-- Extra large modal redZoneMap -->
-     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="redZoneMap">
+    <!-- Extra large modal redZoneMap -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="redZoneMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337663360!6m8!1m7!1sCAoSLEFGMVFpcFAtcjN6Z1Q2M3RBcTZZd1J4ZXdocWZUOTZTOTRUSVRYVlFmYjFs!2m2!1d47.9090441!2d33.3447441!3f141.73381158740813!4f-0.601042623920705!5f0.8969032673201152" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337663360!6m8!1m7!1sCAoSLEFGMVFpcFAtcjN6Z1Q2M3RBcTZZd1J4ZXdocWZUOTZTOTRUSVRYVlFmYjFs!2m2!1d47.9090441!2d33.3447441!3f141.73381158740813!4f-0.601042623920705!5f0.8969032673201152"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -188,12 +203,14 @@
             </div>
         </div>
     </div>
-     <!-- Extra large modal eventHallMap -->
-     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="eventHallMap">
+    <!-- Extra large modal eventHallMap -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="eventHallMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337769040!6m8!1m7!1sCAoSLEFGMVFpcFBrVzA1c0ptOEwtUFJlbGNhQk9lQjRQam1mMlVUY1BObElhY0FO!2m2!1d47.90905129999999!2d33.344281!3f302.87056016274755!4f-4.1751914527310845!5f0.4000000000000002" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337769040!6m8!1m7!1sCAoSLEFGMVFpcFBrVzA1c0ptOEwtUFJlbGNhQk9lQjRQam1mMlVUY1BObElhY0FO!2m2!1d47.90905129999999!2d33.344281!3f302.87056016274755!4f-4.1751914527310845!5f0.4000000000000002"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -201,12 +218,14 @@
             </div>
         </div>
     </div>
-   
-     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="mettingRoomMap">
+
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="mettingRoomMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337475974!6m8!1m7!1sCAoSLEFGMVFpcE5lb2JvY0doSllqMmE5ZWRVQ2FnUG1YSTBOUEdNNWRZWFRyZk16!2m2!1d47.9090444!2d33.3444428!3f158.04982126769315!4f2.2256931959358894!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337475974!6m8!1m7!1sCAoSLEFGMVFpcE5lb2JvY0doSllqMmE5ZWRVQ2FnUG1YSTBOUEdNNWRZWFRyZk16!2m2!1d47.9090444!2d33.3444428!3f158.04982126769315!4f2.2256931959358894!5f0.7820865974627469"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -214,25 +233,29 @@
             </div>
         </div>
     </div>
-    
+
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="whiteZoneMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581167324771!6m8!1m7!1sCAoSLEFGMVFpcFBrZTJMb1d1Nlh0MlVGZzktTV81MTRYa0FMc2VnQnBuamhiaVZa!2m2!1d47.9090579!2d33.3441639!3f36.82239400187053!4f19.518858989443515!5f0.4000000000000002" frameborder="0" style="border:0;" allowfullscreen=""><iframe> 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581167324771!6m8!1m7!1sCAoSLEFGMVFpcFBrZTJMb1d1Nlh0MlVGZzktTV81MTRYa0FMc2VnQnBuamhiaVZa!2m2!1d47.9090579!2d33.3441639!3f36.82239400187053!4f19.518858989443515!5f0.4000000000000002"
+                        frameborder="0" style="border:0;" allowfullscreen=""><iframe>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                 </div>
             </div>
         </div>
     </div>
-     
-     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -242,22 +265,26 @@
     </div>
     <div class="modal" tabindex="-1" role="dialog" id="grayZoneMap">
         <div class="modal-dialog modal-xl" role="document">
-          <div class="modal-content">
-            <div class="w-100 d-block iframe-placeholder">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="modal-content">
+                <div class="w-100 d-block iframe-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581343063170!6m8!1m7!1sCAoSLEFGMVFpcE1PVjh1SDlCYU9HRFBQMjNuQV9WQi1WZWcxam0yc2c3V2Z6bHpl!2m2!1d47.90929939999999!2d33.343845!3f57.011128013357705!4f-23.038271475636265!5f0.7820865974627469"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true" id="greenZoneMap">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337840213!6m8!1m7!1sCAoSLEFGMVFpcE5qTzI5NUctdzcyWHhiMi14ZHY1N29ITlZKT2N3dzFEWnU4dWtX!2m2!1d47.9091816!2d33.3439299!3f5.2210756635040525!4f0.14725025338096032!5f0.8209569335816856" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337840213!6m8!1m7!1sCAoSLEFGMVFpcE5qTzI5NUctdzcyWHhiMi14ZHY1N29ITlZKT2N3dzFEWnU4dWtX!2m2!1d47.9091816!2d33.3439299!3f5.2210756635040525!4f0.14725025338096032!5f0.8209569335816856"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -270,7 +297,9 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="w-100 d-block iframe-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1581337625265!6m8!1m7!1sCAoSLEFGMVFpcE1kOHFOb1kweV9HbkhzZ2ZZOXU5MU1zcDF0MFlORHp0QjZ2QUdW!2m2!1d47.9090525!2d33.3443535!3f262.5523057576244!4f-6.846921882511296!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1581337625265!6m8!1m7!1sCAoSLEFGMVFpcE1kOHFOb1kweV9HbkhzZ2ZZOXU5MU1zcDF0MFlORHp0QjZ2QUdW!2m2!1d47.9090525!2d33.3443535!3f262.5523057576244!4f-6.846921882511296!5f0.7820865974627469"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -279,7 +308,7 @@
         </div>
     </div>
 
-    
+
 
     <div class="list-item arrow-to-show-menu">
         <div class="first">
@@ -304,14 +333,16 @@
     </div>
     <section class="sec2 container-fluid lh-2">
         <div class="row justify-content-center services">
-            <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">              
+            <div class="container" data-spy="scroll" data-target="#list-example" data-offset="0"
+                class="scrollspy-example">
                 <br>
                 <div class="row media-object align-items-center" id="list-item-1">
                     <div class="small-img img-1 col-12 col-md-4">
                         <div class="text-center image-caption top-left"><i class="far fa-house-return"></i></div>
 
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#whiteZoneMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#whiteZoneMap">Подивитися</button>
                         </div>
 
                         <div class="text-center image-caption bottom-left">White Zone</div>
@@ -319,7 +350,11 @@
                     <div class="text-container col-12 col-md-8">
 
                         <h5 class="media-object-heading">White Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
+                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
+                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
+                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
+                            атмосфера та якісний сервіс – <strong
+                                class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">346 / 288
@@ -330,8 +365,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">18 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -357,18 +392,24 @@
                     </div>
                 </div>
                 <hr>
-                
+
                 <div class="row media-object align-items-center" id="list-item-2">
                     <div class="small-img img-2 col-12 col-md-4">
-                        <div class="text-center image-caption top-left gray-bg"><i class="far fa-house-return"></i></div>
+                        <div class="text-center image-caption top-left gray-bg"><i class="far fa-house-return"></i>
+                        </div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#grayZoneMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#grayZoneMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left gray-bg">Gray Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Gray Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
+                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
+                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
+                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
+                            атмосфера та якісний сервіс – <strong
+                                class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">259 / 161
@@ -379,8 +420,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">10 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -404,13 +445,18 @@
                     <div class="small-img img-3 col-12 col-md-4">
                         <div class="text-center image-caption top-left red-bg"><i class="far fa-house-return"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#redZoneMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#redZoneMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left red-bg">Red Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Red Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
+                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
+                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
+                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
+                            атмосфера та якісний сервіс – <strong
+                                class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">330 / 234
@@ -421,8 +467,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">11 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -448,13 +494,18 @@
                         <div class="text-center image-caption top-left blue-bg"><i class="far fa-house-return"></i>
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#blueZoneMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#blueZoneMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left blue-bg">Blue Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Blue Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
+                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
+                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
+                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
+                            атмосфера та якісний сервіс – <strong
+                                class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">191 / 133
                                 &#8372;</span class="float-right bld"> </p class="small">
@@ -464,8 +515,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">8 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -489,13 +540,18 @@
                     <div class="small-img img-5 col-12 col-md-4">
                         <div class="text-center image-caption top-left"><i class="far fa-handshake"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0"  data-toggle="modal" data-target="#mettingRoomMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#mettingRoomMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left">Metting Room</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Metting Room</h5>
-                        <p>Ідеальне рішення для спілкування у вузькому колі: без зайвих очей та зі звукоізоляцією. Зустріч, презентацію, стратегічну сесію чи конференц-колл зручно проводити у переговорній кімнаті. Бездротова конференц-система на 12 мікрофонів забезпечить цілковиту конфіденційність, закривається на вимогу гостей та дозволить проводити заходи різного типу.</p>
+                        <p>Ідеальне рішення для спілкування у вузькому колі: без зайвих очей та зі звукоізоляцією.
+                            Зустріч, презентацію, стратегічну сесію чи конференц-колл зручно проводити у переговорній
+                            кімнаті. Бездротова конференц-система на 12 мікрофонів забезпечить цілковиту
+                            конфіденційність, закривається на вимогу гостей та дозволить проводити заходи різного типу.
+                        </p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година<span class="float-right bld">150
@@ -506,8 +562,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">8 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -531,13 +587,18 @@
                     <div class="small-img img-6 col-12 col-md-4">
                         <div class="text-center image-caption top-left"><i class="far fa-calendar-day"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#eventHallMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#eventHallMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left">Event Hall</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Event Hall</h5>
-                        <p>Конференц-сервіс «під ключ»: обладнаний зал та допомога в організації заходів будь-якого формату та рівня складності. Індивідуальний контроль клімату, повний комплект презентаційного обладнання, будь-які варіанти розсадження, технічний супровід заходів. Дбайливо організуємо все для вашої презентації, тренінгу, майстер-класу чи семінару. Бронюйте конференц-залу, запросіть гостей, а ми зробимо все необхідне.</p>
+                        <p>Конференц-сервіс «під ключ»: обладнаний зал та допомога в організації заходів будь-якого
+                            формату та рівня складності. Індивідуальний контроль клімату, повний комплект
+                            презентаційного обладнання, будь-які варіанти розсадження, технічний супровід заходів.
+                            Дбайливо організуємо все для вашої презентації, тренінгу, майстер-класу чи семінару.
+                            Бронюйте конференц-залу, запросіть гостей, а ми зробимо все необхідне.</p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година<span class="float-right bld">260
@@ -548,8 +609,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">60 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -564,7 +625,7 @@
                                 data-title="Радіомікрофони та мікшерський пульт"><i
                                     class="fad fa-microphone-stand"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                    data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -578,15 +639,21 @@
                 <hr>
                 <div class="row media-object align-items-center" id="list-item-7">
                     <div class="small-img img-7 col-12 col-md-4">
-                        <div class="text-center image-caption top-left green-bg"><i class="far fa-house-return"></i></div>
+                        <div class="text-center image-caption top-left green-bg"><i class="far fa-house-return"></i>
+                        </div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#greenZoneMap">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#greenZoneMap">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left green-bg">Green Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Green Zone</h5>
-                        <p>Смарт-офіси закритого типу оформлені в стилістиці природних стихій. Коворкінг для фрілансу та віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
+                        <p>Смарт-офіси закритого типу оформлені в стилістиці природних стихій. Коворкінг для фрілансу та
+                            віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому
+                            заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та
+                            ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong
+                                class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година / кожна наступна <span class="float-right bld">191 / 133
@@ -597,8 +664,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">11 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -624,13 +691,15 @@
                         <div class="text-center image-caption top-left coffee-bg"><i class="far fa-house-return"></i>
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
-                            <button class="btn btn-outline-light br-0" data-toggle="modal" data-target="#coffeeTime">Подивитися</button>
+                            <button class="btn btn-outline-light br-0" data-toggle="modal"
+                                data-target="#coffeeTime">Подивитися</button>
                         </div>
                         <div class="text-center image-caption bottom-left coffee-bg">Coffee Time</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Coffee Time</h5>
-                        <p>Ефективний проект починається з кави! Організація кейтерингу на заході - це не стільки про їжу, скільки про емоції і імідж компанії.</p>
+                        <p>Ефективний проект починається з кави! Організація кейтерингу на заході - це не стільки про
+                            їжу, скільки про емоції і імідж компанії.</p>
 
                         <h5 class="bld mt-3 mb-2">Ціни</h5>
                         <p class="small">Перша година<span class="float-right bld">259
@@ -641,8 +710,8 @@
                         <p class="small">Вмістимість <span class="float-right bld">30 чоловік</span> </p>
                         <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
                         <div class="tick-after-ul">
-                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip" data-title="Wi-Fi"><i
-                                    class="fad fa-wifi"></i></button>
+                            <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
+                                data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
@@ -659,7 +728,7 @@
 
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
         <hr class="mw992 mt-5 mb-5">
     </section>
