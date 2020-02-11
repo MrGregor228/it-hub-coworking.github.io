@@ -11,6 +11,26 @@
 
         gtag('config', 'UA-158193212-1');
     </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57477226, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/57477226" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -397,7 +417,9 @@
                                 <div class="mx-auto mt-3 mb-3">
                                     <img src="images/dev1.jpg" alt="">
                                 </div>
-                                <h5 class="card-title">Сергій Логвінов<br><span class="job small-text text-muted">(Заступник голови<br> Центрально-Міської ради)</span></h5>
+                                <h5 class="card-title">Сергій Логвінов<br><span
+                                        class="job small-text text-muted">(Заступник голови<br> Центрально-Міської
+                                        ради)</span></h5>
                                 <div class="slider-text-slicer"></div>
                                 <p class="card-text">Дійсно, сьогодні дуже велике
                                     свято і я вам скажу одне:
@@ -869,43 +891,44 @@
     <div class="preloader text-center" id="overlay">
         <div class="centred-text-cont text-center">
             <span id="typed"></span>
-            
-            
+
+
         </div>
         <div class="progres mt-5">
             <div class="bar"></div>
         </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
-    <script>
-        window.onload = function () {
-            var typed = new Typed('#typed', {
-                strings: [" IT HUB ^100 <span class='orange-text'>Coworking</span>"],
-                typeSpeed: 60,
-                backSpeed: 200,
-                smartBackspace: false, // this is a default
-                fadeOut: true,
-                loop: false
-            });
-            var progress = $('.progres .bar');
-            //Set width to 100%
-            progress.animate({
-                width: '250px'
-            }, 1000);
-            setTimeout(function () {
-                $('#overlay').fadeOut();
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+        <script>
+            window.onload = function () {
+                var typed = new Typed('#typed', {
+                    strings: [" IT HUB ^100 <span class='orange-text'>Coworking</span>"],
+                    typeSpeed: 60,
+                    backSpeed: 200,
+                    smartBackspace: false, // this is a default
+                    fadeOut: true,
+                    loop: false
+                });
+                var progress = $('.progres .bar');
+                //Set width to 100%
+                progress.animate({
+                    width: '250px'
+                }, 1000);
                 setTimeout(function () {
-                    $('#overlay').css('display', "none");
-                }, 500);
-                
-            }, 2500);
-        };
-    </script>
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script>
-         
-            
-        
-    </script>
+                    $('#overlay').fadeOut();
+                    setTimeout(function () {
+                        $('#overlay').css('display', "none");
+                    }, 500);
+
+                }, 2500);
+            };
+        </script>
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script>
+
+
+
+        </script>
     </div>
 
     <!-- FONTAWESOME JS -->
@@ -926,7 +949,7 @@
     <!-- START OF OWL CAROUSEL -->
     <script src="js/owl-start.js"></script>
 
-    
+
 
 </body>
 
