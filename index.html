@@ -78,7 +78,7 @@
 </head>
 
 <body>
-    <!-- <div class="preloader text-center" id="overlay">
+    <div class="preloader text-center" id="overlay">
         <div class="centred-text-cont text-center">
             <span id="typed"></span>
 
@@ -90,7 +90,7 @@
         <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
         <script>
-            window.onload = function () {
+            function preloaderFunction() {
                 var typed = new Typed('#typed', {
                     strings: [" IT HUB ^100 <span class='orange-text'>Coworking</span>"],
                     typeSpeed: 60,
@@ -112,14 +112,15 @@
 
                 }, 2500);
             };
+            preloaderFunction();
         </script>
-        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
         <script>
 
 
 
         </script>
-    </div> -->
+    </div>
     <header class="nav-cont">
         <div class="mw992 mw1280">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
