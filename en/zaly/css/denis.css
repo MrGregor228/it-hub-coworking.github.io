@@ -1,0 +1,46 @@
+/* line 7, ../sass/denis.scss */
+.text-slicer {
+  width: 12em;
+  height: 2.5px;
+  background: #ffc107;
+}
+
+/* line 14, ../sass/denis.scss */
+.sec1 .zaly {
+  font-size: 20px;
+}
+
+/* line 20, ../sass/denis.scss */
+.sec2 .card {
+  border: 20px;
+}
+/* line 23, ../sass/denis.scss */
+.sec2 .card-title {
+  font-size: 30px;
+  text-align: left;
+}
+/* line 27, ../sass/denis.scss */
+.sec2 .card-subtitle {
+  font-size: 15px;
+  text-align: left;
+}
+/* line 31, ../sass/denis.scss */
+.sec2 .card-text {
+  margin-bottom: 25px;
+}
+/* line 34, ../sass/denis.scss */
+.sec2 .spisok {
+  position: relative;
+}
+/* line 37, ../sass/denis.scss */
+.sec2 .spisok li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffc107;
+  border-radius: 30px;
+  position: absolute;
+  left: -21px;
+  margin-top: 5px;
+}

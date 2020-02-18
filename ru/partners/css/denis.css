@@ -1,0 +1,36 @@
+/* line 3, ../sass/denis.scss */
+.sec1 {
+  height: 90vh;
+}
+/* line 5, ../sass/denis.scss */
+.sec1 .row {
+  padding: 0;
+}
+/* line 7, ../sass/denis.scss */
+.sec1 .row .wrapper-center {
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 18, ../sass/denis.scss */
+.sec1 .podnazva {
+  font-size: 18px;
+}
+/* line 21, ../sass/denis.scss */
+.sec1 .text-slicer {
+  width: 12em;
+  height: 2.5px;
+  background-color: #ffc107;
+}
+
+/* line 31, ../sass/denis.scss */
+.sec2 .komanda {
+  font-size: 30px;
+}
+/* line 35, ../sass/denis.scss */
+.sec2 .card-title {
+  font-size: 25px;
+}

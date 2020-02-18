@@ -1,0 +1,174 @@
+$yellow:#ffc107;
+
+.text-slicer {
+    width: 12em;
+    height: 2.5px;
+    background: $yellow;
+}
+
+.nazva {
+    font-weight: bold !important;
+    font-size: 35px !important;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 19.5px;
+    
+
+    &:after {
+        margin-top: 7px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        content: "";
+        height: 3px;
+        width: 65px;
+        background-color: $yellow;
+    }
+}
+
+.short-hr {
+    max-width: 992px;
+}
+
+.news-sec {
+    .slider-2 {
+        .owl-stage-outer {
+            .owl-stage {
+                .owl-item {
+                    .card {
+                        line-height: 1.5;
+                        .card-text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec2 {
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .services {
+        .card {
+            line-height: 1.5;
+            border: none;
+
+            .card-title {
+                &:after {
+                    margin-top: 7px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .card-text {
+            font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+.sec3 {
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .card {
+        text-align: center;
+        margin-right: 15px !important;
+        border: none !important;
+
+        @media screen and (max-width:576px) {
+            margin-right: 0 !important;
+        }
+
+        .card-title {
+            font-size: 20px;
+
+            // color: gray;
+            &:after {
+                display: none;
+            }
+        }
+        
+        .card-text {
+            font-size: 14px;
+        }
+
+        line-height: 1.5;
+
+        .card-body {
+            .conditioner {
+                margin-bottom: 0.25em !important;
+            }
+
+            .text-center * {
+                color: $yellow;
+                font-size: 2.5em;
+                margin-bottom: 1em;
+
+            }
+        }
+    }
+}
+
+.slider-2 {
+    .card-title {
+        &:after {
+            content: "";
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+}
+
+.sec5 {
+    .nazva {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+}
+
+
+
+.sec7 {
+    .headin6_foot {
+        margin-top: 0;
+        margin-bottom: 0.4em;
+        padding-bottom: 0px !important;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: .04em;
+    }
+
+    .footer_soc {
+        color: gray;
+        transition: .3s linear;
+
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .yellow_bg {
+            color: $yellow !important;
+            font-size: 25px !important;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        *.col-12 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

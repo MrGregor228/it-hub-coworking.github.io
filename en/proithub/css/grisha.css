@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/* line 5, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/grisha.scss */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* line 18, ../sass/grisha.scss */
+sup {
+  font-size: 12px !important;
+}
+
+/* line 22, ../sass/grisha.scss */
+.pt-10 {
+  height: 150px;
+}
+@media screen and (max-width: 576px) {
+  /* line 22, ../sass/grisha.scss */
+  .pt-10 {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  /* line 22, ../sass/grisha.scss */
+  .pt-10 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 22, ../sass/grisha.scss */
+  .pt-10 {
+    height: 90px;
+  }
+}
+
+/* line 39, ../sass/grisha.scss */
+.change6 {
+  background: none;
+  border-color: black;
+  border-radius: 0px;
+  color: #000;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  box-shadow: 0px 0 0 #ffc107 inset;
+  padding: 0.35em;
+}
+/* line 52, ../sass/grisha.scss */
+.change6:hover {
+  background: none;
+  box-shadow: 200px 0 0 #ffc107 inset;
+  border-color: black;
+  border-radius: 0px;
+}
+
+/* line 60, ../sass/grisha.scss */
+* input {
+  box-shadow: none !important;
+  outline: none;
+  transition: .15s linear;
+}
+/* line 64, ../sass/grisha.scss */
+* input:hover, * input:focus, * input:active {
+  box-shadow: none !important;
+  outline: none;
+}
+
+/* line 75, ../sass/grisha.scss */
+strong {
+  font-weight: bold !important;
+}
+
+/* line 79, ../sass/grisha.scss */
+.wht {
+  color: #ffffff !important;
+}
+
+/* line 83, ../sass/grisha.scss */
+.golden {
+  color: #ffc107 !important;
+}
+
+/* line 87, ../sass/grisha.scss */
+.r-text {
+  color: #d41010 !important;
+}
+
+/* line 91, ../sass/grisha.scss */
+.hid {
+  display: none !important;
+}
+
+/* line 95, ../sass/grisha.scss */
+.mw1280 {
+  max-width: 1280px !important;
+}
+
+/* line 99, ../sass/grisha.scss */
+.mw992 {
+  max-width: 992px !important;
+}
+
+/* line 103, ../sass/grisha.scss */
+.pt-10 {
+  height: 150px;
+}
+@media screen and (max-width: 576px) {
+  /* line 103, ../sass/grisha.scss */
+  .pt-10 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  /* line 103, ../sass/grisha.scss */
+  .pt-10 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 103, ../sass/grisha.scss */
+  .pt-10 {
+    height: 90px;
+  }
+}
+
+/* line 120, ../sass/grisha.scss */
+.br-0 {
+  border-radius: 0px !important;
+}
+
+/* line 124, ../sass/grisha.scss */
+.mw320 {
+  max-width: 200px !important;
+  max-height: 200px !important;
+}
+
+/* line 129, ../sass/grisha.scss */
+.fz35 {
+  font-size: 35px;
+}
+
+/* line 133, ../sass/grisha.scss */
+.fz20 {
+  font-size: 20px;
+}
+
+/* line 137, ../sass/grisha.scss */
+.box-shadow-underlined {
+  box-shadow: inset 0 1em #fff, inset 0 1.8em #ffdb6d;
+}
+
+/* line 142, ../sass/grisha.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 146, ../sass/grisha.scss */
+.bld {
+  font-weight: bold;
+}
+
+/* line 150, ../sass/grisha.scss */
+.blck {
+  color: black !important;
+}
+
+/* line 154, ../sass/grisha.scss */
+.lh-1 {
+  line-height: 1 !important;
+}
+
+/* line 158, ../sass/grisha.scss */
+.lh-2 {
+  line-height: 1.5 !important;
+}
+
+/* line 162, ../sass/grisha.scss */
+.nav-link {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  /* line 162, ../sass/grisha.scss */
+  .nav-link {
+    text-align: left;
+  }
+}
+
+/* line 170, ../sass/grisha.scss */
+.bouncing-link {
+  position: relative;
+  animation: bouncing .7s linear infinite;
+  transition: all .3s linear;
+}
+
+@keyframes bouncing {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* line 196, ../sass/grisha.scss */
+.sec1 {
+  height: 100% !important;
+}
+/* line 199, ../sass/grisha.scss */
+.sec1 blockquote {
+  position: relative;
+  border-left: 8px solid #ffeeba !important;
+}
+@media screen and (max-width: 576px) {
+  /* line 199, ../sass/grisha.scss */
+  .sec1 blockquote {
+    border-left: 0px !important;
+  }
+}
+/* line 207, ../sass/grisha.scss */
+.sec1 blockquote .card-images {
+  max-height: 40vh;
+  float: left;
+  margin: 0 1.5em .5em 0;
+}
+/* line 212, ../sass/grisha.scss */
+.sec1 blockquote .card-images.second-img {
+  max-width: 100%;
+  float: right;
+  margin: 0;
+  margin-left: 1.5em;
+}
+@media screen and (max-width: 992px) {
+  /* line 207, ../sass/grisha.scss */
+  .sec1 blockquote .card-images {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+  /* line 228, ../sass/grisha.scss */
+  .sec1 blockquote .card-images.second-img {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+}
+/* line 236, ../sass/grisha.scss */
+.sec1 blockquote:before {
+  content: "“" !important;
+  font-family: Arial;
+  color: #ffe187 !important;
+  font-size: 70px !important;
+  position: absolute !important;
+  left: 15px !important;
+  top: 5px !important;
+}
+@media screen and (max-width: 576px) {
+  /* line 236, ../sass/grisha.scss */
+  .sec1 blockquote:before {
+    left: 0 !important;
+  }
+}
+/* line 250, ../sass/grisha.scss */
+.sec1 blockquote .firstIframe,
+.sec1 blockquote .secondIframe {
+  width: 96%;
+  height: 35vh;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 576px) {
+  /* line 250, ../sass/grisha.scss */
+  .sec1 blockquote .firstIframe,
+  .sec1 blockquote .secondIframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 264, ../sass/grisha.scss */
+  .sec1 .ul-bullets-list {
+    margin-left: 0px !important;
+  }
+}
+/* line 270, ../sass/grisha.scss */
+.sec1 .ul-bullets-list li:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #ffc107;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 8px;
+  left: -5px;
+}
+/* line 285, ../sass/grisha.scss */
+.sec1 .ul-bullets-list ol li:before {
+  display: none;
+}
