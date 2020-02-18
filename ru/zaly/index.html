@@ -15,7 +15,7 @@
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
             m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
         })
             (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -34,7 +34,7 @@
     <!-- /Yandex.Metrika counter -->
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
+
     <!-- Роботы -->
     <meta name="robots" content="all">
     <meta name="yandex" content="index, follow">
@@ -42,7 +42,8 @@
     <meta name="document-state" content="dynamic">
     <meta name="author" content="Григорий Каданер, Денис Тухто">
 
-    <meta name="description" content="Ви можете просувати власні бізнес ідеї через використання окремих робочих місць, невеликих smart-офісів, переговорної кімнати та конференц залу...">
+    <meta name="description"
+        content="Вы можете продвигать собственные бизнес идеи из-за использования отдельных рабочих мест, небольших smart-офисов, переговорной комнаты и конференц зала ...">
     <!-- Роботы -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +70,7 @@
     <script src="../js/heading.js"></script>
 
 
-    <title>IT HUB Coworking Кривий Ріг | Зали</title>
+    <title>IT HUB Coworking Кривой Рог | Залы</title>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
         <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content container-fluid p-0">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Розрахунок вартості</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Расчет стоимости</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -95,20 +96,20 @@
                     <div>
 
 
-                        <h5>1. Ви є студентом / працівником КЕІ КНЕУ?</h5>
+                        <h5>1. Вы являетесь студентом / работником КЭИ КНЭУ?</h5>
                         <div class="col-12 p-0">
                             <fieldset>
 
                                 <input type="radio" name="radio" id="yes">&nbsp;&nbsp;<label
-                                    class="radio-labels">Так</label>
+                                    class="radio-labels">Да</label>
                                 <input type="radio" name="radio" id="no">&nbsp;&nbsp;<label
-                                    class="radio-labels">Ні</label>
+                                    class="radio-labels">Нет</label>
 
                             </fieldset>
 
                         </div>
 
-                        <h5>2. Яку зону бажаєте відвідати/Замовити?</h5>
+                        <h5>2. Какую зону хотите посетить / Заказать?</h5>
                         <div class="col-12 p-0" id="zoneContainer">
                             <fieldset class="col-6 p-0">
                                 <input type="radio" name="zones" id="WhiteZone"
@@ -141,27 +142,27 @@
                         </div>
 
 
-                        <h5>3. Яке робоче місце вам потрібне?</h5>
+                        <h5>3. Какое рабочее место вам нужно?</h5>
 
                         <fieldset class="col-12 p-0">
                             <form name="Form">
                                 <input type="radio" name="rad" id="PC" placeholder=""
                                     onclick="workPlacesChecker();">&nbsp;&nbsp;
-                                <label for="PC" class="radio-labels">з ПК <span class="small-text text-muted">(White
-                                        Zone 5 од.)</span></label>
+                                <label for="PC" class="radio-labels">с ПК <span class="small-text text-muted">(White
+                                        Zone 5 ед.)</span></label>
                                 <br>
                                 <input type="radio" name="rad" id="Notebook" placeholder=""
                                     onclick="workPlacesChecker();">&nbsp;&nbsp;
-                                <label for="Notebook" class="radio-labels">з ноутбуком <span
-                                        class="small-text text-muted">(10 од.)</span></label>
+                                <label for="Notebook" class="radio-labels">с ноутбуком <span
+                                        class="small-text text-muted">(10 ед.)</span></label>
                                 <br>
                                 <input type="radio" name="rad" id="Usuall" placeholder=""
                                     onclick="workPlacesChecker();">&nbsp;&nbsp;
-                                <label for="Usuall" class="radio-labels">звичайне</label>
+                                <label for="Usuall" class="radio-labels">обычное</label>
                             </form>
                         </fieldset>
 
-                        <h5>4. Скільки годин ві плануєте знаходитись в кімнаті/зоні...?</h5>
+                        <h5>4. Сколько часов ви планируете находиться в комнате / зоне ...?</h5>
 
                         <fieldset class="w-100 mb-3 mb-sm-0">
                             <div class="quantity " id="quant1"><input type="number" name="" id="hoursQuantity"
@@ -172,25 +173,25 @@
                                 день</label>
                         </fieldset>
 
-                        <h5>5. На яку кількість людей розраховуєте?</h5>
+                        <h5>5. На какое количество людей рассчитываете?</h5>
                         <fieldset class="w-100 row m-0">
                             <div class="quantity quant2 col-12 col-sm-6 p-0" id="quant2"><input class="pl-3 w-100"
                                     type="number" name="" id="seatsCounter" min="1" step="1" value="1">
-                                <span class="small-text text-muted">(максимальна кількість місць у <span
+                                <span class="small-text text-muted">(максимальное количество мест в <span
                                         class="r-text bld" id="zonePlaceCounter"></span>)</span>
                             </div>
                             <div class="col-12 col-sm-5 mt-3 p-0">
                                 <input type="checkbox" name="Place" id="wholePlace">&nbsp;&nbsp;<label
-                                    class=" radio-labels" onchange="blockPCNotebookUsuall();"> Всю зону / залу</label>
+                                    class=" radio-labels" onchange="blockPCNotebookUsuall();"> Всю зону / зал</label>
                             </div>
                         </fieldset>
                         <script src="js/buttonsOnInputNumber.js"></script>
                     </div>
                     <div class="modal-footer text-center mx-auto">
                         <button class="btn change6 mx-auto hider" onclick="getPrice();"
-                            style="animation: height .3s linear;">Розрахувати</button>
+                            style="animation: height .3s linear;">Рассчитать</button>
                         <button class="btn change6 mx-auto" onclick="reGetPrice();" id="reGet"
-                            style="display: none;">Перерахувати</button>
+                            style="display: none;">Пересчитать</button>
                         <div id="cost" class="col-12"></div>
                     </div>
                 </div>
@@ -373,7 +374,7 @@
 
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#whiteZoneMap">Подивитися</button>
+                                data-target="#whiteZoneMap">Посмотреть</button>
                         </div>
 
                         <div class="text-center image-caption bottom-left">White Zone</div>
@@ -381,43 +382,43 @@
                     <div class="text-container col-12 col-md-8">
 
                         <h5 class="media-object-heading">White Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
-                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
-                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
-                            атмосфера та якісний сервіс – <strong
+                        <p>Зона коворкинга оформлена в стилистике природных стихий для фриланса и удаленной работы,
+                            стартапов и небольших команд, студентов и IT-сообщества, в котором поощряются открытость и
+                            взаимоуважение, и обеспечены все условия для продуктивной и эффективной работы.
+                            Вдохновляющая атмосфера и качественный сервис - <strong
                                 class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година / кожна наступна <span class="float-right bld">346 / 288
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час / каждый следующий <span class="float-right bld">346 / 288
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">346 / 922 / 1 786
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">346 / 922 / 1 786
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">44 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">18 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">44 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">18 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="18 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Фліпчарт"><i class="fad fa-user-chart"></i></button>
+                                data-title="Флипчарт"><i class="fad fa-user-chart"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
+                                data-title="График работы  12/7"><i class="fad fa-clock"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="ПК"><i class="fad fa-tv"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -430,43 +431,43 @@
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#grayZoneMap">Подивитися</button>
+                                data-target="#grayZoneMap">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left gray-bg">Gray Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Gray Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
-                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
-                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
-                            атмосфера та якісний сервіс – <strong
+                        <p>Зона коворкинга оформлена в стилистике природных стихий для фриланса и удаленной работы,
+                            стартапов и небольших команд, студентов и IT-сообщества, в котором поощряются открытость и
+                            взаимоуважение, и обеспечены все условия для продуктивной и эффективной работы.
+                            Вдохновляющая атмосфера и качественный сервис - <strong
                                 class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година / кожна наступна <span class="float-right bld">259 / 161
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час / каждый следующий <span class="float-right bld">259 / 161
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">259 / 581 / 1 064
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">259 / 581 / 1 064
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">45 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">10 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">45 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">10 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="10 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
+                                data-title="График работы  12/7"><i class="fad fa-clock"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -477,44 +478,44 @@
                         <div class="text-center image-caption top-left red-bg"><i class="far fa-house-return"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#redZoneMap">Подивитися</button>
+                                data-target="#redZoneMap">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left red-bg">Red Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Red Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
-                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
-                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
-                            атмосфера та якісний сервіс – <strong
+                        <p>Зона коворкинга оформлена в стилистике природных стихий для фриланса и удаленной работы,
+                            стартапов и небольших команд, студентов и IT-сообщества, в котором поощряются открытость и
+                            взаимоуважение, и обеспечены все условия для продуктивной и эффективной работы.
+                            Вдохновляющая атмосфера и качественный сервис - <strong
                                 class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година / кожна наступна <span class="float-right bld">330 / 234
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час / каждый следующий <span class="float-right bld">330 / 234
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">330 / 798 / 1 500
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">330 / 798 / 1 500
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">50 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">11 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">50 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">11 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="11 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
 
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -526,42 +527,42 @@
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#blueZoneMap">Подивитися</button>
+                                data-target="#blueZoneMap">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left blue-bg">Blue Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Blue Zone</h5>
-                        <p>Зона коворкінгу оформлена в стилістиці природних стихій для фрілансу та віддаленої роботи,
-                            стартапів та невеликих команд, студентів та IT-спільноти, у якому заохочуються відкритість
-                            та взаємоповага, та забезпечені всі умови для продуктивної та ефективної роботи. Надихаюча
-                            атмосфера та якісний сервіс – <strong
+                        <p>Зона коворкинга оформлена в стилистике природных стихий для фриланса и удаленной работы,
+                            стартапов и небольших команд, студентов и IT-сообщества, в котором поощряются открытость и
+                            взаимоуважение, и обеспечены все условия для продуктивной и эффективной работы.
+                            Вдохновляющая атмосфера и качественный сервис - <strong
                                 class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година / кожна наступна <span class="float-right bld">191 / 133
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час / каждый следующий <span class="float-right bld">191 / 133
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">191 / 457 / 856
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">191 / 457 / 856
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">22 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">8 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">22 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">8 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="8 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
+                                data-title="График работы  12/7"><i class="fad fa-clock"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -572,43 +573,44 @@
                         <div class="text-center image-caption top-left"><i class="far fa-handshake"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#mettingRoomMap">Подивитися</button>
+                                data-target="#mettingRoomMap">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left">Metting Room</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Metting Room</h5>
-                        <p>Ідеальне рішення для спілкування у вузькому колі: без зайвих очей та зі звукоізоляцією.
-                            Зустріч, презентацію, стратегічну сесію чи конференц-колл зручно проводити у переговорній
-                            кімнаті. Бездротова конференц-система на 12 мікрофонів забезпечить цілковиту
-                            конфіденційність, закривається на вимогу гостей та дозволить проводити заходи різного типу.
+                        <p>Идеальное решение для общения в узком кругу без лишних глаз и со звукоизоляцией. Встреча,
+                            презентацию, стратегическую сессию или конференц-колл удобно проводить в переговорной
+                            комнате. Беспроводная конференц-система на 12 микрофонов обеспечит полную
+                            конфиденциальность, закрывается по требованию гостей и позволит проводить мероприятия
+                            различного типа.
                         </p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година<span class="float-right bld">150
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час<span class="float-right bld">150
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">150 / 450 / 900
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">150 / 450 / 900
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">20 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">8 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">20 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">8 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="8 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
+                                data-title="График работы  12/7"><i class="fad fa-clock"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -619,50 +621,50 @@
                         <div class="text-center image-caption top-left"><i class="far fa-calendar-day"></i></div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#eventHallMap">Подивитися</button>
+                                data-target="#eventHallMap">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left">Event Hall</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Event Hall</h5>
-                        <p>Конференц-сервіс «під ключ»: обладнаний зал та допомога в організації заходів будь-якого
-                            формату та рівня складності. Індивідуальний контроль клімату, повний комплект
-                            презентаційного обладнання, будь-які варіанти розсадження, технічний супровід заходів.
-                            Дбайливо організуємо все для вашої презентації, тренінгу, майстер-класу чи семінару.
-                            Бронюйте конференц-залу, запросіть гостей, а ми зробимо все необхідне.</p>
+                        <p>Конференц-сервис «под ключ»: оборудован зал и помощь в организации мероприятий любого формата
+                            и уровня сложности. Индивидуальный контроль климата, полный комплект презентационного
+                            оборудования, любые варианты рассадки, техническое сопровождение мероприятий. Бережно
+                            организуем все для вашей презентации, тренинга, мастер-класса или семинара. Заказывайте
+                            конференц-зала, пригласите гостей, а мы сделаем все необходимое.</p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година<span class="float-right bld">260
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час<span class="float-right bld">260
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">260 / 780 / 1 560
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">260 / 780 / 1 560
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">118 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">60 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">118 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">60 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="60 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
+                                data-title="График работы  12/7"><i class="fad fa-clock"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Проектор"><i class="fad fa-projector"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Радіомікрофони та мікшерський пульт"><i
+                                data-title="Радиомикрофоны и микшерский пульт"><i
                                     class="fad fa-microphone-stand"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -674,44 +676,44 @@
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#greenZoneMap">Подивитися</button>
+                                data-target="#greenZoneMap">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left green-bg">Green Zone</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Green Zone</h5>
-                        <p>Смарт-офіси закритого типу оформлені в стилістиці природних стихій. Коворкінг для фрілансу та
-                            віддаленої роботи, стартапів та невеликих команд, студентів та IT-спільноти, у якому
-                            заохочуються відкритість та взаємоповага, та забезпечені всі умови для продуктивної та
-                            ефективної роботи. Надихаюча атмосфера та якісний сервіс – <strong
+                        <p>Смарт-офисы закрытого типа оформлены в стилистике природных стихий. Коворкинг для фриланса и
+                            удаленной работы, стартапов и небольших команд, студентов и IT-сообщества, в котором
+                            поощряются открытость и взаимоуважение, и обеспечены все условия для продуктивной и
+                            эффективной работы. Вдохновляющая атмосфера и качественный сервис - <strong
                                 class="box-shadow-underlined"><strong>Welcome!</strong></strong></p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година / кожна наступна <span class="float-right bld">191 / 133
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час / каждый следующий <span class="float-right bld">191 / 133
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">191 / 457 / 856
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">191 / 457 / 856
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">22 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">11 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">22 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">11 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="18 робочих місць"><i class="fas fa-chair-office"></i></button>
+                                data-title="11 рабочих мест"><i class="fas fa-chair-office"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
                                 data-title="Аренда ноутбука"><i class="fad fa-laptop"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
 
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
@@ -723,38 +725,38 @@
                         </div>
                         <div class="show-button-on-hover show-button-on-sm">
                             <button class="btn btn-outline-light br-0" data-toggle="modal"
-                                data-target="#coffeeTime">Подивитися</button>
+                                data-target="#coffeeTime">Посмотреть</button>
                         </div>
                         <div class="text-center image-caption bottom-left coffee-bg">Coffee Time</div>
                     </div>
                     <div class="text-container col-12 col-md-8">
                         <h5 class="media-object-heading">Coffee Time</h5>
-                        <p>Ефективний проект починається з кави! Організація кейтерингу на заході - це не стільки про
-                            їжу, скільки про емоції і імідж компанії.</p>
+                        <p>Эффективный проект начинается с кофе! Организация кейтеринга на западе - это не столько о
+                            еде, сколько об эмоциях и имидж компании.</p>
 
-                        <h5 class="bld mt-3 mb-2">Ціни</h5>
-                        <p class="small">Перша година<span class="float-right bld">259
+                        <h5 class="bld mt-3 mb-2">Цены</h5>
+                        <p class="small">Первый час<span class="float-right bld">259
                                 &#8372;</span class="float-right bld"> </p class="small">
-                        <p class="small">Вся кімната на 1 / 3 / 6 год<span class="float-right bld">259 / 518 / 777
+                        <p class="small">Вся комната на 1 / 3 / 6 ч.<span class="float-right bld">259 / 518 / 777
                                 &#8372;</span class="float-right bld"></p>
-                        <p class="small">Площа <span class="float-right bld">56 м<sup>2</sup> </span> </p>
-                        <p class="small">Вмістимість <span class="float-right bld">30 осіб</span> </p>
-                        <h5 class="bld mt-3 mb-2">Наявність послуг:</h5>
+                        <p class="small">Площадь <span class="float-right bld">56 м<sup>2</sup> </span> </p>
+                        <p class="small">Вместимость <span class="float-right bld">30 людей</span> </p>
+                        <h5 class="bld mt-3 mb-2">Наличие услуг:</h5>
                         <div class="tick-after-ul">
                             <button class="btn border-none bg-outline-dark tool" data-toggle="tooltip"
                                 data-title="Wi-Fi"><i class="fad fa-wifi"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Кондиціювання"><i class="fad fa-air-conditioner"></i></button>
+                                data-title="Кондиционирование"><i class="fad fa-air-conditioner"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Графік роботи 12/7"><i class="fad fa-clock"></i></button>
+                                data-title="График работы  12/7"><i class="fad fa-clock"></i></button>
                             <button class="btn border-none bg-outline-dark ml-0 ml-sm-2 tool" data-toggle="tooltip"
-                                data-title="Наявність рослин"><i class="fas fa-hand-holding-seedling"></i></button>
+                                data-title="Наличие растений"><i class="fas fa-hand-holding-seedling"></i></button>
                         </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="tel:0973094192" class="btn change6">Замовити</a>
-                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Розрахувати
-                                вартість</button>
+                            <a href="tel:0973094192" class="btn change6">Заказать</a>
+                            <button class="change6 ml-3" data-toggle="modal" data-target="#exampleModal">Рассчитать
+                                стоимость</button>
                         </div>
 
                     </div>
