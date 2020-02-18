@@ -481,7 +481,7 @@ function workPlacesChecker() {
         $(workPlaceWithPC).css("opacity", "1");
         workPlaceWithNotebook.disabled = false;
         $(workPlaceWithNotebook).css("opacity", "1");
-        console.log("В этой зоне отсутствуют компьютеры!");
+        console.log("No PC");
     }
 }
 
@@ -496,20 +496,20 @@ function getPrice() {
         if (workPlaceWithPC.checked == true) {
             console.log("Часов за ПК " + hoursQuantity.value);
             price = (seatsCounter.value * student.placeWithPC) + ((hoursQuantity.value - 1) * student.everyNextHourWithPC);
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
         } else if (workPlaceWithNotebook.checked == true) {
             console.log("Часов за ноутом" + hoursQuantity.value);
             price = (seatsCounter.value * student.placeWithLaptop) + ((hoursQuantity.value - 1) * student.everyNextHourWithLaptop);
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
         } else if (workPlaceOrdinary.checked == true) {
             console.log("Часов за обычным раб.местом" + hoursQuantity.value);
             price = (seatsCounter.value * student.firstHour) + ((hoursQuantity.value - 1) * student.everyNextHour);
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
         } if (whiteZone.checked == true && wholePlace.checked == true) {
             
@@ -518,13 +518,13 @@ function getPrice() {
             } else {
                 console.log("Price =" + "(wholePricesForRooms.white)" + wholePricesForRooms.white + " * " + " ((hoursQuantity.value - 1) " + ((hoursQuantity.value - 1) + " * " + " wholePricesForRooms.nextWhite " + wholePricesForRooms.nextWhite));
                 price = wholePricesForRooms.white + ((hoursQuantity.value - 1) * wholePricesForRooms.nextWhite);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }
             
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);                       
            
         } else if (grayZone.checked == true && wholePlace.checked == true) {
@@ -533,12 +533,12 @@ function getPrice() {
                 price = wholePricesForRooms.gray;
             } else {
                 price = wholePricesForRooms.gray + ((hoursQuantity.value - 1) * wholePricesForRooms.nextGray);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }         
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker); 
 
         } else if (blueZone.checked == true && wholePlace.checked == true) {
@@ -547,20 +547,20 @@ function getPrice() {
                 price = wholePricesForRooms.blue;
             } else {
                 price = wholePricesForRooms.blue + ((hoursQuantity.value - 1) * wholePricesForRooms.nextBlue);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }         
 
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker); 
 
         } else if (meetingRoom.checked == true && wholePlace.checked == true) {
 
             price = wholePricesForRooms.meeting * hoursQuantity.value;
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
 
         } else if (redZone.checked == true && wholePlace.checked == true) {
@@ -569,19 +569,19 @@ function getPrice() {
                 price = wholePricesForRooms.red;
             } else {
                 price = wholePricesForRooms.red + ((hoursQuantity.value - 1) * wholePricesForRooms.nextRed);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }         
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker); 
 
         } else if (eventHall.checked == true && wholePlace.checked == true) {
 
             price = wholePricesForRooms.event * hoursQuantity.value;
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
 
         } else {
@@ -602,20 +602,20 @@ function getPrice() {
         if (workPlaceWithPC.checked == true) {
             console.log("Часов за ПК " + hoursQuantity.value);
             price = (seatsCounter.value * notStudent.placeWithPC) + ((hoursQuantity.value - 1) * notStudent.everyNextHourWithPC);
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
         } else if (workPlaceWithNotebook.checked == true) {
             console.log("Часов за ноутом" + hoursQuantity.value);
             price = (seatsCounter.value * notStudent.placeWithLaptop) + ((hoursQuantity.value - 1) * notStudent.everyNextHourWithLaptop);
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
         } else if (workPlaceOrdinary.checked == true) {
             console.log("Часов за обычным раб.местом" + hoursQuantity.value);
             price = (seatsCounter.value * notStudent.firstHour) + ((hoursQuantity.value - 1) * notStudent.everyNextHour);
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
         } if (whiteZone.checked == true && wholePlace.checked == true) {
             
@@ -623,13 +623,13 @@ function getPrice() {
                 price = wholePricesForRooms.white;
             } else {
                 price = wholePricesForRooms.white + ((hoursQuantity.value - 1) * wholePricesForRooms.nextWhite);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }
             
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);                       
            
         } else if (grayZone.checked == true && wholePlace.checked == true) {
@@ -638,12 +638,12 @@ function getPrice() {
                 price = wholePricesForRooms.gray;
             } else {
                 price = wholePricesForRooms.gray + ((hoursQuantity.value - 1) * wholePricesForRooms.nextGray);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }         
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker); 
 
         } else if (blueZone.checked == true && wholePlace.checked == true) {
@@ -652,20 +652,20 @@ function getPrice() {
                 price = wholePricesForRooms.blue;
             } else {
                 price = wholePricesForRooms.blue + ((hoursQuantity.value - 1) * wholePricesForRooms.nextBlue);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }         
 
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker); 
 
         } else if (meetingRoom.checked == true && wholePlace.checked == true) {
 
             price = wholePricesForRooms.meeting * hoursQuantity.value;
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
 
         } else if (redZone.checked == true && wholePlace.checked == true) {
@@ -674,19 +674,19 @@ function getPrice() {
                 price = wholePricesForRooms.red;
             } else {
                 price = wholePricesForRooms.red + ((hoursQuantity.value - 1) * wholePricesForRooms.nextRed);
-                console.log(+price + " грн");
-                cost.innerHTML = "Вартість становить: " + price + " грн";
+                console.log(+price + " UAH");
+                cost.innerHTML = "Totaly: " + price + " UAH";
                 clearInterval(zonesChecker); 
             }         
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker); 
 
         } else if (eventHall.checked == true && wholePlace.checked == true) {
 
             price = wholePricesForRooms.event * hoursQuantity.value;
-            console.log(+price + " грн");
-            cost.innerHTML = "Вартість становить: " + price + " грн";
+            console.log(+price + " UAH");
+            cost.innerHTML = "Totaly: " + price + " UAH";
             clearInterval(zonesChecker);
 
         } else {
