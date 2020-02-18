@@ -1,2 +1,0 @@
-var langButton = "<button class='btn btn-warning' id='landShow' onclick=''><i class='far fa-globe'></i></button><div class='dropdown hiddddden' id='langShowerMenu'> <a href='#' class='drop-link d-block'>Ru</a> <a href='#' class='drop-link d-block'>En</a></div> <script src='js/langShowerMenu.js'></script>";
-document.write(langButton);
