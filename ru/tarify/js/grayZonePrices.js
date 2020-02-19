@@ -8,11 +8,11 @@ var fullGrayZonePrice = document.getElementById('grayZoneInnerText'),
     grayHiddenInnerText = document.getElementById('gray-hidden-inner-text');
 
 var grayZoneHoursPrices = {
-    firstHour: "В сумі 259 грн",
-    secondHour: "В сумі 420 грн",
-    thirdHour: "В сумі 581 грн",
-    sixHours: "В сумі 1064 грн",
-    twelveHours: "В сумі 2030 грн"
+    firstHour: "В сумме 259 грн",
+    secondHour: "В сумме 420 грн",
+    thirdHour: "В сумме 581 грн",
+    sixHours: "В сумме 1064 грн",
+    twelveHours: "В сумме 2030 грн"
 };
 
 function grayZonePricesEnabled() {

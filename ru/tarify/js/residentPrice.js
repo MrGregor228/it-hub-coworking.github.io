@@ -8,11 +8,11 @@ var fullresidentPrice = document.getElementById('residentInnerText'),
     residentHiddenInnerText = document.getElementById('resident-hidden-inner-text');
 
 var residentHoursPrices = {
-    firstHour: "В сумі 18 грн",
-    secondHour: "В сумі 32 грн",
-    thirdHour: "В сумі 54 грн",
-    sixHours: "В сумі 108 грн",
-    twelveHours: "В сумі 216 грн"
+    firstHour: "В сумме 18 грн",
+    secondHour: "В сумме 32 грн",
+    thirdHour: "В сумме 54 грн",
+    sixHours: "В сумме 108 грн",
+    twelveHours: "В сумме 216 грн"
 };
 
 function residentPricesEnabled() {

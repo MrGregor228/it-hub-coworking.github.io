@@ -8,11 +8,11 @@ var priceForSmartOffice = document.getElementById('priceForSmartOffice'),
     whiteHiddenInnerText = document.getElementById('white-hidden-inner-text');
 
 var buttonsPrices = {
-    firstHour: "В сумі 346 грн",
-    secondHour: "В сумі 634 грн",
-    thirdHour: "В сумі 922 грн",
-    sixHours: "В сумі 1 786 грн",
-    twelveHours: "В сумі 3 514 грн"
+    firstHour: "В сумме 346 грн",
+    secondHour: "В сумме 634 грн",
+    thirdHour: "В сумме 922 грн",
+    sixHours: "В сумме 1 786 грн",
+    twelveHours: "В сумме 3 514 грн"
 };
 
 
