@@ -8,11 +8,11 @@ var fullGuestPrice = document.getElementById('guestInnerText'),
     guestHiddenInnerText = document.getElementById('guest-hidden-inner-text');
 
 var guestHoursPrices = {
-    firstHour: "В сумі 34 грн",
-    secondHour: "В сумі 56 грн",
-    thirdHour: "В сумі 78 грн",
-    sixHours: "В сумі 144 грн",
-    twelveHours: "В сумі 276 грн"
+    firstHour: "В сумме 34 грн",
+    secondHour: "В сумме 56 грн",
+    thirdHour: "В сумме 78 грн",
+    sixHours: "В сумме 144 грн",
+    twelveHours: "В сумме 276 грн"
 };
 
 function guestPricesEnabled() {

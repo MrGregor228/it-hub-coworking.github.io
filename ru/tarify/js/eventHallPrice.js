@@ -8,11 +8,11 @@ var fullEventHallPrice = document.getElementById('eventHallInnerText'),
     eventHiddenInnerText = document.getElementById('event-hidden-inner-text');
 
 var eventHallHoursPrices = {
-    firstHour: "В сумі 260 грн",
-    secondHour: "В сумі 520 грн",
-    thirdHour: "В сумі 780 грн",
-    sixHours: "В сумі 1560 грн",
-    twelveHours: "В сумі 3120 грн"
+    firstHour: "В сумме 260 грн",
+    secondHour: "В сумме 520 грн",
+    thirdHour: "В сумме 780 грн",
+    sixHours: "В сумме 1560 грн",
+    twelveHours: "В сумме 3120 грн"
 };
 
 function eventHallPricesEnabled() {

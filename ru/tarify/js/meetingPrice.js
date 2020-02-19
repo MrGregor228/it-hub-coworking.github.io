@@ -8,11 +8,11 @@ var fullMeetingPrice = document.getElementById('meetingInnerText'),
     meetingHiddenInnerText = document.getElementById('meeting-hidden-inner-text');
 
 var meetingHoursPrices = {
-    firstHour: "В сумі 150 грн",
-    secondHour: "В сумі 300 грн",
-    thirdHour: "В сумі 450 грн",
-    sixHours: "В сумі 900 грн",
-    twelveHours: "В сумі 1800 грн"
+    firstHour: "В сумме 150 грн",
+    secondHour: "В сумме 300 грн",
+    thirdHour: "В сумме 450 грн",
+    sixHours: "В сумме 900 грн",
+    twelveHours: "В сумме 1800 грн"
 };
 
 function meetingPricesEnabled() {

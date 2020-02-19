@@ -8,11 +8,11 @@ var fullGreenZonePrice = document.getElementById('greenZoneInnerText'),
     greenHiddenInnerText = document.getElementById('green-hidden-inner-text');
 
 var greenZoneHoursPrices = {
-    firstHour: "В сумі 191 грн",
-    secondHour: "В сумі 324 грн",
-    thirdHour: "В сумі 457 грн",
-    sixHours: "В сумі 856 грн",
-    twelveHours: "В сумі 1654 грн"
+    firstHour: "В сумме 191 грн",
+    secondHour: "В сумме 324 грн",
+    thirdHour: "В сумме 457 грн",
+    sixHours: "В сумме 856 грн",
+    twelveHours: "В сумме 1654 грн"
 };
 
 function greenZonePricesEnabled() {

@@ -8,11 +8,11 @@ var fullRedZonePrice = document.getElementById('redZoneInnerText'),
     redHiddenInnerText = document.getElementById('red-hidden-inner-text');
 
 var redZoneHoursPrices = {
-    firstHour: "В сумі 330 грн",
-    secondHour: "В сумі 564 грн",
-    thirdHour: "В сумі 798 грн",
-    sixHours: "В сумі 1500 грн",
-    twelveHours: "В сумі 2904 грн"
+    firstHour: "В сумме 330 грн",
+    secondHour: "В сумме 564 грн",
+    thirdHour: "В сумме 798 грн",
+    sixHours: "В сумме 1500 грн",
+    twelveHours: "В сумме 2904 грн"
 };
 
 function redZonePricesEnabled() {

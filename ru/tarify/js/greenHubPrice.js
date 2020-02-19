@@ -8,11 +8,11 @@ var fullGreenHubPrice = document.getElementById('greenHubInnerText'),
     greenHubHiddenInnerText = document.getElementById('greenHub-hidden-inner-text');
 
 var greenHubHoursPrices = {
-    firstHour: "В сумі 260 грн",
-    secondHour: "В сумі 520 грн",
-    thirdHour: "В сумі 780 грн",
-    sixHours: "В сумі 1560 грн",
-    twelveHours: "В сумі 3120 грн"
+    firstHour: "В сумме 260 грн",
+    secondHour: "В сумме 520 грн",
+    thirdHour: "В сумме 780 грн",
+    sixHours: "В сумме 1560 грн",
+    twelveHours: "В сумме 3120 грн"
 };
 
 function greenHubPricesEnabled() {
