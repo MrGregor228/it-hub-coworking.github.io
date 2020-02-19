@@ -8,22 +8,32 @@
   line-height: 1.5;
   border: none;
 }
-/* line 15, ../sass/denis.scss */
+/* line 14, ../sass/denis.scss */
+.sec1 .services .card .card-title {
+  font-weight: bold;
+  font-size: 19.5px;
+}
+/* line 19, ../sass/denis.scss */
 .sec1 .services .card .card-title:after {
   margin-top: 7px;
+  display: block;
   margin-left: 0px;
   margin-right: 0px;
+  content: "";
+  height: 3px;
+  width: 65px;
+  background-color: #ffc107;
 }
-/* line 21, ../sass/denis.scss */
+/* line 31, ../sass/denis.scss */
 .sec1 .services .card .card-text {
   font-size: 14px;
 }
 
-/* line 29, ../sass/denis.scss */
+/* line 39, ../sass/denis.scss */
 .sec2 .row {
   padding: 0;
 }
-/* line 32, ../sass/denis.scss */
+/* line 42, ../sass/denis.scss */
 .sec2 .row .card {
   text-align: center;
   margin-right: 15px !important;
@@ -32,25 +42,25 @@
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
-  /* line 32, ../sass/denis.scss */
+  /* line 42, ../sass/denis.scss */
   .sec2 .row .card {
     margin-right: 0 !important;
   }
 }
-/* line 42, ../sass/denis.scss */
+/* line 52, ../sass/denis.scss */
 .sec2 .row .card .card-title {
   word-wrap: normal;
   text-align: center;
   font-size: 12px;
   width: 100%;
 }
-/* line 52, ../sass/denis.scss */
+/* line 62, ../sass/denis.scss */
 .sec2 .row .card .card-body .text-center * {
   color: #ffc107;
   font-size: 2.5em;
   margin-bottom: .5em;
 }
-/* line 60, ../sass/denis.scss */
+/* line 70, ../sass/denis.scss */
 .sec2 .row .wrapper-center {
   margin-right: auto;
   margin-left: auto;
@@ -59,11 +69,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 70, ../sass/denis.scss */
+/* line 81, ../sass/denis.scss */
 .sec2 .podnazva {
   font-size: 18px;
 }
-/* line 73, ../sass/denis.scss */
+/* line 85, ../sass/denis.scss */
 .sec2 .text-slicer {
   width: 12em;
   height: 2.5px;
