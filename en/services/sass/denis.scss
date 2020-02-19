@@ -12,12 +12,19 @@ $yellow: #ffc107;
             border: none;
 
             .card-title {
+                font-weight: bold;
                 &:after {
                     margin-top: 7px;
                     margin-left: 0px;
                     margin-right: 0px;
+                    display: block;
+                    content: "";
+                    height: 3px;
+                    width: 65px;
+                    background-color: #ffc107;
                 }
             }
+
             .card-text {
                 font-size: 14px;
             }
@@ -39,7 +46,7 @@ $yellow: #ffc107;
                 margin-right: 0 !important;
             }
 
-            .card-title {                
+            .card-title {
                 word-wrap: normal;
                 text-align: center;
                 font-size: 12px;
@@ -56,7 +63,7 @@ $yellow: #ffc107;
                 }
             }
         }
-        
+
         .wrapper-center {
             margin-right: auto;
             margin-left: auto;
@@ -66,15 +73,17 @@ $yellow: #ffc107;
             transform: translate(-50%, -50%);
         }
     }
+
     // Текст под заголовком //
     .podnazva {
         font-size: 18px;
     }
+
     .text-slicer {
         width: 12em;
         height: 2.5px;
         background-color: $yellow;
     }
-    
-    
+
+
 }
