@@ -468,7 +468,7 @@ a:hover {
 }
 /* line 369, ../sass/grisha.scss */
 .sec1 .row .relative-wrapper #slides .slide:nth-of-type(9) {
-  background: url("../zaly/images/greenzone.jpg") no-repeat;
+  background: url("../images/greenzone.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
